@@ -1,10 +1,11 @@
+'use strict';
+
 var JS_FILES = [
     'assets/javascripts/script.js'
 ];
 
 module.exports = function (grunt) {
 
-    // Project configuration.
     grunt.initConfig({
         uglify: {
             dist: {
@@ -67,10 +68,8 @@ module.exports = function (grunt) {
                     'ods-favicon.ico'
                 ],
                 dest: 'dist/images/'
-            },
-
+            }
         },
-        // serves the documentation server
         connect: {
             options: {
                 port: 9001

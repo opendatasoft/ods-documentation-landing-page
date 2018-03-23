@@ -14,24 +14,23 @@
         
         <div class="ods-header">
             <div class="ods-header__brand">
-                <button type="button"
-                        class="ods-header__menu-toggle"
-                        id="nav-button">
-                    Menu
-                </button>
-                <a href="/">
-                    <img class="ods-header__logo"
-                         src="dist/images/ODS_logo.svg"
-                         alt="OpenDataSoft Documentation">
-                </a>
-                <button type="button"
-                        class="ods-header__menu-toggle"
-                        id="helphub-button">
-                    Help Hub
-                </button>
+                <div class="ods-header__content-menu-toggle">
+                    <button type="button"
+                            class="ods-header__menu-toggle"
+                            id="nav-button">
+                        Menu
+                    </button>
+                </div>
+                <div class="ods-header__content-logo">
+                    <a href="/">
+                        <img class="ods-header__logo"
+                            src="dist/images/ODS_logo.svg"
+                            alt="OpenDataSoft Documentation">
+                    </a>
+                </div>
             </div>
         
-            <div class="ods-header__nav">
+            <div class="ods-header__nav ods-header__nav--active">
                 <div class="ods-header__nav-item">
                     <a class="ods-header__nav-item-link"
                         href="https://docs.opendatasoft.com/en/">
@@ -67,6 +66,13 @@
                         href="/apis.html">
                         API
                     </a>
+                </div>
+                <div class="ods-header__nav-item ods-header__nav-lang">
+                    <button class="ods-header__nav-lang-item ods-header__button--active">EN</button>
+                    <button class="ods-header__nav-lang-item">FR</button>
+                    <button class="ods-header__nav-lang-item">ES</button>
+                    <button class="ods-header__nav-lang-item">DE</button>
+                    <button class="ods-header__nav-lang-item">NL</button>
                 </div>
             </div>
         </div>

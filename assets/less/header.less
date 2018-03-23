@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     z-index: 50;
-    background-color: @blue-bg;
+    background-color: @blue-light;
     @media (min-width: @desktop-width) {
         display: flex;
         flex-direction: row;
@@ -15,8 +15,6 @@
 
 .ods-header__brand {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     height: 99px;
     @media (max-width: @mobile-width) {
         width: 100%;
@@ -27,16 +25,25 @@
     }
 }
 
+.ods-header__content-menu-toggle,
+.ods-header__content-logo {
+    display: flex;
+}
+
+.ods-header__content-menu-toggle {
+    width: 25%;
+    justify-content: space-around;
+}
+
+.ods-header__content-logo {
+    width: 50%;
+    justify-content: center;
+}
+
 .ods-header__menu-toggle {
-    border: none;
-    margin: auto 0;
-    background-color: white;
-    color: @blue-font;
-    border-radius: 14px;
-    padding: 5px 10px;
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 4px;
+    &:extend(.default-button);
+    &:extend(.default-font);
+    margin: auto auto;
     &:focus {
         outline: none;
     }
@@ -45,8 +52,8 @@
     }
 }
 
-.ods-header__menu-toggle--active {
-    background-color: @blue-bg;
+.ods-header__button--active {
+    background-color: @blue-medium;
     color: white;
 }
 
@@ -71,9 +78,9 @@
 
 .ods-header__nav {
     top: 100px;
-    right: -300px;
-    height: 80%;
-    background-color: @blue-bg;
+    left: -300px;
+    height: 100%;
+    background-color: @blue-light;
     z-index: 1000;
     display: flex;
     transition: 0.5s;
@@ -88,7 +95,6 @@
         margin-left: 100px;
         position: static;
         width: auto;
-        padding-top: 10px;
         flex-direction: row;
         justify-content: space-around;
         border: none;
@@ -96,7 +102,7 @@
 }
 
 .ods-header__nav--active {
-    right: 0;
+    left: 0;
 }
 
 .ods-header__nav-item {
@@ -113,6 +119,35 @@
         &:last-child {
             margin-right: 0px;
         }
+    }
+}
+
+.ods-header__nav-lang {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 10px;
+    @media (max-width: @mobile-width) {
+        flex-wrap: wrap;
+        margin: 15px 0 0 0;
+    }
+    @media (min-width: @desktop-width) {
+        flex-wrap: nowrap;
+        margin: auto 0 auto 30px;
+    }
+}
+
+.ods-header__nav-lang-item {
+    &:extend(.default-button);
+    &:extend(.default-font);
+    &:focus {
+        outline: none;
+    }
+    @media (max-width: @mobile-width) {
+        margin: 10px;
+    }
+    @media (min-width: @desktop-width) {
+        margin: auto 10px;
     }
 }
 
