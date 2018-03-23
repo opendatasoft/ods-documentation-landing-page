@@ -65,7 +65,11 @@ module.exports = function (grunt) {
                 cwd: 'assets/images/',
                 src: [
                     'ODS_logo.svg',
-                    'ods-favicon.ico'
+                    'ODS_picto_discovery.svg',
+                    'ODS_picto_faq.svg',
+                    'ODS_picto_tuto.svg',
+                    'ODS_picto_widget.svg',
+                    'ODS_favicon.ico'
                 ],
                 dest: 'dist/images/'
             }
