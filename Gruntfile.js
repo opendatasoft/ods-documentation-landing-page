@@ -1,9 +1,5 @@
 'use strict';
 
-var JS_FILES = [
-    'assets/javascripts/script.js'
-];
-
 module.exports = function (grunt) {
 
     grunt.initConfig({
@@ -14,7 +10,7 @@ module.exports = function (grunt) {
                     report: 'gzip'
                 },
                 files: {
-                    'dist/javascripts/script.min.js': JS_FILES
+                    'dist/javascripts/script.min.js': 'assets/javascripts/script.js'
                 }
             }
         },
@@ -37,20 +33,11 @@ module.exports = function (grunt) {
                 }
             },
             scripts: {
-                files: [JS_FILES],
-                tasks: ['uglify', 'concat'],
+                files: 'assets/javascripts/script.js',
+                tasks: ['uglify'],
                 options: {
                     spawn: false
                 }
-            }
-        },
-        concat: {
-            options: {
-                separator: ';'
-            },
-            dist: {
-                src: JS_FILES,
-                dest: 'dist/javascripts/script.min.js'
             }
         },
         autoprefixer: {
@@ -107,6 +94,6 @@ module.exports = function (grunt) {
 
     // Default task(s).
     grunt.registerTask('default', ['dist']);
-    grunt.registerTask('dist', ['uglify', 'less', 'concat', 'autoprefixer', 'copy']);
+    grunt.registerTask('dist', ['uglify', 'less', 'autoprefixer', 'copy']);
     grunt.registerTask('server', ['default', 'connect', 'watch']);
 };
