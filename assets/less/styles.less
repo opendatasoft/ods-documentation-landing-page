@@ -1,9 +1,11 @@
 //- Variables
 @import "variables";
+
 //- Elements
 @import "header";
 @import "footer";
 @import "components";
+
 body {
     &:extend(.default-font);
 }
@@ -11,20 +13,12 @@ body {
 .ods-wrapper {
     @media (max-width: @mobile-width) {
         width: 100%;
-        margin: 130px auto 0 auto;
+        margin: 120px auto 0 auto;
     }
     @media (min-width: @desktop-width) {
         width: 870px;
-        margin: 155px auto 0 auto;
+        margin: 110px auto 0 auto;
     }
-}
-
-.ods-wrapper__title {
-    text-align: center;
-}
-
-.ods-wrapper__title-h1 {
-    color: @blue-dark;
 }
 
 .ods-link-documentation {
@@ -33,17 +27,16 @@ body {
 
 .ods-container {
     display: flex;
+    margin-bottom: 40px;
     @media (max-width: @mobile-width) {
         flex-direction: column;
         padding: 20px 0;
-        margin-bottom: 60px;
     }
     @media (min-width: @desktop-width) {
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
         padding: 50px 40px;
-        margin-bottom: 60px;
     }
 }
 

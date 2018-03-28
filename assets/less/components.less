@@ -8,6 +8,24 @@
     border-radius: 4px;
 }
 
+// Buttons langs
+.default-button-lang {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    color: @blue-dark;
+    background-color: white;
+    &:focus {
+        outline: none;
+    }
+    @media (max-width: @mobile-width) {
+        margin: 10px;
+    }
+    @media (min-width: @desktop-width) {
+        margin: auto 10px;
+    }
+}
+
 //- Box style
 .default-box {
     display: flex;
@@ -27,4 +45,11 @@
         padding: 30px 20px 30px 0;
         margin: 0 0 40px 0;
     }
+}
+
+// Button lang active
+.ods-lang--active {
+    color: white!important;
+    background-color: transparent!important;
+    border: none!important;
 }

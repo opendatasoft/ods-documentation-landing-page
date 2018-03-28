@@ -3,7 +3,7 @@
 (function() {
 
     var btnMenu = document.getElementById("nav-button"),
-        btnClassActive = "ods-header__button--active",
+        btnClassActive = "ods-header__menu-toggle--active",
         menuElement = document.getElementsByClassName("ods-header__nav")[0],
         menuClassActive = "ods-header__nav--active";
 
