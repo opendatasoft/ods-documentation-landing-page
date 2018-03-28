@@ -51,12 +51,13 @@ module.exports = function (grunt) {
                 expand: true,
                 cwd: 'assets/images/',
                 src: [
-                    'ODS_logo.svg',
+                    'ODS_logo_header.svg',
                     'ODS_picto_discovery.svg',
                     'ODS_picto_faq.svg',
                     'ODS_picto_tuto.svg',
                     'ODS_picto_widget.svg',
-                    'ODS_favicon.ico'
+                    'ODS_favicon.ico',
+                    'ODS_logo_footer.svg'
                 ],
                 dest: 'dist/images/'
             }
