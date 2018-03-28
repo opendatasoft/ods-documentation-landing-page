@@ -118,6 +118,7 @@
         }
         &:last-child {
             margin-right: 0px;
+            
         }
     }
 }
@@ -128,10 +129,14 @@
     justify-content: space-around;
     padding: 0 10px;
     @media (max-width: @mobile-width) {
+        position: static;
         flex-wrap: wrap;
         margin: 15px 0 0 0;
     }
     @media (min-width: @desktop-width) {
+        position: absolute;
+        right: 20px;
+        top: 37px;
         flex-wrap: nowrap;
         margin: auto 0 auto 30px;
     }
