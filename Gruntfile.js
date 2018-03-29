@@ -59,7 +59,8 @@ module.exports = function (grunt) {
                     'ODS_picto_tuto.svg',
                     'ODS_picto_api.svg',
                     'ODS_favicon.ico',
-                    'ODS_logo_footer.svg'
+                    'ODS_logo_footer.svg',
+                    'ODS_logo_api_search.svg'
                 ],
                 dest: 'dist/images/'
             }
