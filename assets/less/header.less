@@ -1,11 +1,9 @@
 .ods-header {
-    height: 100px;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 50;
-    background-color: @blue-light;
     @media (min-width: @desktop-width) {
         display: flex;
         flex-direction: row;
@@ -16,6 +14,7 @@
 .ods-header__brand {
     display: flex;
     height: 99px;
+    background-color: @blue-light;
     @media (max-width: @mobile-width) {
         width: 100%;
     }
@@ -79,36 +78,37 @@
 .ods-header__nav {
     top: 100px;
     left: -300px;
-    height: 100%;
+    width: 300px;
     background-color: @blue-light;
-    z-index: 1000;
-    display: flex;
+    z-index: 49;
     transition: 0.5s;
     @media (max-width: @mobile-width) {
-        position: fixed;
-        width: 300px;
         padding-top: 15px;
-        flex-direction: column;
-        border-top: 1px solid @grey-border;
+        position: absolute;
+        overflow-y: scroll;
+        height: 100vh;
     }
     @media (min-width: @desktop-width) {
-        margin-left: 100px;
+        padding-left: 100px;
         position: static;
-        width: auto;
+        width: 100%;
         flex-direction: row;
-        justify-content: space-around;
         border: none;
+        display: flex;
     }
 }
 
 .ods-header__nav--active {
     left: 0;
+    bottom: 0;
+    height: auto;
+    padding-bottom: 40px;
 }
 
 .ods-header__nav-item {
     text-align: center;
     @media (max-width: @mobile-width) {
-        margin: 15px 0;
+        margin: 30px 0;
     }
     @media (min-width: @desktop-width) {
         margin: auto 20px;
@@ -156,13 +156,12 @@
 }
 
 .ods-header__nav-lang {
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 10px 0 0 0;
+    flex-direction: column;
+    margin: 10px auto 0 auto;
     padding: 0 10px;
     @media (max-width: @mobile-width) {
         display: flex;
+        width: 70px;
     }
     @media (min-width: @desktop-width) {
         display: none;
