@@ -17,6 +17,15 @@ module.exports = function (grunt) {
                 files: {
                     'dist/javascripts/script.min.js': 'dist/javascripts/script.min.js'
                 }
+            },
+            trad: {
+                options: {
+                    mangle: true,
+                    report: 'gzip'
+                },
+                files: {
+                    'dist/javascripts/trad.min.js': 'assets/javascripts/trad.js'
+                }
             }
         },
         less: {
