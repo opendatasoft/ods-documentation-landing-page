@@ -11,7 +11,8 @@ const state = {
     //- Variable global
     globalState : {
         lang : 'en',
-        loading: true
+        loading: true,
+        slideOut: false
     },
     //- Content trad
     content: {
@@ -47,6 +48,9 @@ const actions = {
     set_lang ({ commit }, payload) {
         commit(types.SET_LANG, payload);
     },
+    toggle_slide_out({ commit }) {
+        commit(types.TOGGLE_SLIDE_OUT);
+    },
     //- Content trad
     load_store_content ({ commit }) {
         commit(types.LOAD_STORE_CONTENT);
@@ -64,6 +68,9 @@ const mutations = {
         if (!payload) state.globalState.lang = 'en';
         else state.globalState.lang = payload;
     },
+    [types.TOGGLE_SLIDE_OUT] (state) {
+        state.globalState.slideOut = !state.globalState.slideOut;
+    },
     //- Content trad
     [types.LOAD_STORE_CONTENT](state) {
         state.content.app = content_app;
@@ -74,18 +81,18 @@ const mutations = {
     //- Metas
     [types.LOAD_STORE_METAS] (state) {
         state.metas.home = {
-            title :         state.content.home.titleMeta,
-            description :   state.content.home.descriptionMeta,
-            image :         state.content.home.imageMeta
+            title :         state.content.home.metas.title,
+            description :   state.content.home.metas.description,
+            image :         state.content.home.metas.image
         }
         state.metas.apis = {
-            title :         state.content.apis.titleMeta,
-            description :   state.content.apis.descriptionMeta,
-            image :         state.content.apis.imageMeta
+            title :         state.content.apis.metas.title,
+            description :   state.content.apis.metas.description,
+            image :         state.content.apis.metas.image
         },
         state.metas.page_not_found = {
-            title :         state.content.page_not_found.titleMeta,
-            description :   state.content.page_not_found.descriptionMeta
+            title :         state.content.page_not_found.metas.title,
+            description :   state.content.page_not_found.metas.description
         }
     }
 }

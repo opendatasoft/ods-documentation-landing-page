@@ -1,21 +1,24 @@
 <template>
     
-    <header class="ods-header">
+    <header class="ods-header"
+        :class="{ 'ods-header--active' : slideOut }">
         
         <div class="ods-header__brand">
             <div class="ods-header__content-menu-toggle">
                 <button type="button"
                         class="ods-header__menu-toggle"
-                        id="nav-button">
+                        id="nav-button"
+                        :class="{ 'ods-header__menu-toggle--active' : slideOut }"
+                        @click="toggleSlideOut()">
                     Menu
                 </button>
             </div>
             <div class="ods-header__content-logo">
-                <a href="/">
+                <router-link :to="{ name: 'home' }">
                     <img class="ods-header__logo"
                         src="../../assets/img/ODS_logo_header.svg"
                         alt="OpenDataSoft Documentation">
-                </a>
+                </router-link>
             </div>
         </div>
         
@@ -64,12 +67,12 @@
             </div>
         </div>
 
-        <!-- <app__header__slideout
+        <app__header__slideout
             :content="content"
-            :slideOut="isOpen"
             :lang="lang"
-            @close_slide_out="closeSlideOut">
-        </app__header__slideout> -->
+            :slideOut="slideOut"
+            @event_toggle_slide_out_child="toggleSlideOut">
+        </app__header__slideout>
 
     </header>
 
@@ -78,18 +81,11 @@
 <script>
 export default {
     name: 'app__header',
-    props: ['content', 'isOpen', 'lang'],
+    props: ['content', 'lang', 'slideOut'],
     methods: {
-        // openSlideOut() {
-        //     this.$emit('open_slide_out_app');
-        // },
-        // closeSlideOut() {
-        //     this.$emit('close_slide_out_app');
-        // },
-        // langLink: function (lang) {
-        //     var data = { params: { lang: lang } };
-        //     return data;
-        // }
+        toggleSlideOut() {
+            this.$emit('event_toggle_slide_out');
+        }
     }
 }
 </script>
@@ -110,6 +106,11 @@ export default {
         justify-content: flex-start;
     }
 }
+
+.ods-header--active {
+    border-bottom: 1px solid lighten(@grey-border, 30%);
+}
+
 
 .ods-header__brand {
     display: flex;
@@ -175,50 +176,33 @@ export default {
     }
 }
 
+// Only in desktop
 .ods-header__nav {
     top: 100px;
     left: -300px;
     width: 300px;
     background-color: @blue-light;
-    z-index: 49;
     transition: 0.5s;
+    padding-left: 100px;
+    position: static;
+    width: 100%;
+    flex-direction: row;
+    border: none;
+    display: flex;
     @media (max-width: @mobile-width) {
-        padding-top: 15px;
-        position: absolute;
-        overflow-y: scroll;
-        height: 100vh;
+        display: none;
     }
-    @media (min-width: @desktop-width) {
-        padding-left: 100px;
-        position: static;
-        width: 100%;
-        flex-direction: row;
-        border: none;
-        display: flex;
-    }
-}
-
-.ods-header__nav--active {
-    left: 0;
-    bottom: 0;
-    height: auto;
-    padding-bottom: 40px;
 }
 
 .ods-header__nav-item {
     text-align: center;
-    @media (max-width: @mobile-width) {
-        margin: 30px 0;
+    margin: auto 20px;
+    transition: 0.5s;
+    &:first-child {
+        margin-left: -1px;
     }
-    @media (min-width: @desktop-width) {
-        margin: auto 20px;
-        transition: 0.5s;
-        &:first-child {
-            margin-left: -1px;
-        }
-        &:last-child {
-            margin-right: 0px;
-        }
+    &:last-child {
+        margin-right: 0px;
     }
 }
 
@@ -226,51 +210,20 @@ export default {
     color: white;
     text-decoration: none;
     font-weight: 400;
+    font-size: 18px;
+    padding: 5px 0;
+    border-bottom: 2px solid transparent;
     &:active,
     &:focus,
     &hover {
         color: white;
         text-decoration: none;
-    }
-    @media (max-width: @mobile-width) {
-        font-size: 16px;
-        padding: 5px;
-    }
-    @media (min-width: @desktop-width) {
-        font-size: 18px;
-        padding: 5px 0;
-        border-bottom: 2px solid transparent;
-        text-decoration: none;
-        &:hover,
-        &:focus,
-        &:active {
-            border-bottom: 2px solid white;
-            color: white;
-            text-decoration: none;
-        }
+        border-bottom: 2px solid white;
     }
 }
 
 .ods-header__nav-item-link--active {
     border-bottom: 2px solid white;
 }
-
-// .ods-header__nav-lang {
-//     flex-direction: column;
-//     margin: 10px auto 0 auto;
-//     padding: 0 10px;
-//     @media (max-width: @mobile-width) {
-//         display: flex;
-//         width: 70px;
-//     }
-//     @media (min-width: @desktop-width) {
-//         display: none;
-//     }
-// }
-
-// .ods-header__nav-lang-item {
-//     &:extend(.default-font);
-//     &:extend(.default-button-lang);
-// }
 
 </style>

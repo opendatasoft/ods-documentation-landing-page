@@ -1,77 +1,155 @@
 <template>
-    <div>
-        <div :class="['overlay', { 'isActive' : slideOut }]" @click="closeSlideOut()">
-            <div class="slideout__container" @click.stop>
-                <div class="slideout__content" :class="{ 'isOpen' : slideOut }">
-                    <div class="slideout__close-btn-wrapper">
-                        <div class="slideout__lang-link-wrapper">
-                            <router-link :to="langLink('en')">
-                                <span class="slideout__lang-link" :aria-label="content.langLabelEn[lang]"> EN </span>
-                            </router-link>
-                            <router-link :to="langLink('fr')">
-                                <span class="slideout__lang-link" :aria-label="content.langLabelFr[lang]"> FR </span>
-                            </router-link>
-                        </div>
-                        <button type="button" class="slideout__close-btn" @click="closeSlideOut()" :aria-label="content.sidebarCloseBtnArialLabel[lang]">
-                            <i class="fa fa-times" aria-hidden="true"></i>
-                        </button>
-                    </div>
-                    <router-link :to="{ name: 'home' }">
-                        <div class="slideout__nav-bar-item-container">
-                            <div class="slideout__nav-bar-item-content">
-                                <i class="fa fa-home fa-2x" aria-hidden="true"></i>
-                            </div>
-                            <div class="slideout__nav-bar-item-content">
-                                {{ content.homeLabel[lang] }}
-                            </div>
-                        </div>
-                    </router-link>
-                    <router-link :to="{ name: 'about' }">
-                        <div class="slideout__nav-bar-item-container">
-                            <div class="slideout__nav-bar-item-content">
-                                <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
-                            </div>
-                            <div class="slideout__nav-bar-item-content">
-                                {{ content.aboutLabel[lang] }}
-                            </div>
-                        </div>
-                    </router-link>
-                </div>
-            </div>
-        </div>
+    
+    <div class="ods-header__slideout"
+        :class="{ 'ods-header__slideout--active' : slideOut }">
 
+        <div class="ods-header__slideout-container">
+            
+            <a class="ods-header__slideout-container-link"
+                id="header-platform"
+                href="https://docs.opendatasoft.com/en/">
+                Platform
+            </a>
+        
+            <a class="ods-header__slideout-container-link"
+                id="header-discovery"
+                href="https://discovery.opendatasoft.com/pages/home/">
+                Discovery
+            </a>
+
+            <a class="ods-header__slideout-container-link"
+                id="header-faq"
+                href="https://docs.opendatasoft.com/en/faq.html">
+                FAQ
+            </a>
+        
+            <a class="ods-header__slideout-container-link"
+                id="header-widgets"
+                href="https://opendatasoft.github.io/ods-widgets/docs/#/api">
+                Widgets
+            </a>
+        
+            <a class="ods-header__slideout-container-link"
+                id="header-tutorial"
+                href="https://opendatasoft.github.io/ods-widgets/docs/#/tutorial">
+                Widgets Tutorial
+            </a>
+        
+            <router-link class="ods-header__slideout-container-link"
+                id="header-api"
+                :to="{ name: 'apis' }">
+                API
+            </router-link>
+        
+            <router-link :to="langLink('en')" 
+                class="ods-header__slideout-container-lang">
+                EN
+            </router-link>
+
+            <router-link :to="langLink('fr')" 
+                class="ods-header__slideout-container-lang">
+                FR
+            </router-link>
+
+            <router-link :to="langLink('es')" 
+                class="ods-header__slideout-container-lang">
+                ES
+            </router-link>
+
+            <router-link :to="langLink('de')" 
+                class="ods-header__slideout-container-lang">
+                DE
+            </router-link>
+
+            <router-link :to="langLink('nl')" 
+                class="ods-header__slideout-container-lang">
+                NL
+            </router-link>
+
+        </div>
+    
     </div>
+
 </template>
 
 <script>
-
 export default {
-    name: 'app_header__slideout',
-    props: ['content', 'slideOut', 'lang'],
+    name: 'app__header__slideout',
+    props: ['content', 'lang', 'slideOut'],
     methods: {
-        closeSlideOut() {
-            this.$emit('close_slide_out');
-        },
         langLink: function (lang) {
             var data = { params: { lang: lang } };
             return data;
+        },
+        toggle_slide_out: function () {
+            this.$emit('event_toggle_slide_out_child');
         }
-    },
-    mounted: function () {
-        $(window).resize(() => {
-            if ( this.slideOut && $(window).width() > 980 ) {
-                this.closeSlideOut();
-            }
-        });
     },
     watch: {
         '$route': function () {
-            this.closeSlideOut();
+            if (this.slideOut) this.toggle_slide_out();
         }
     }
 }
 </script>
 
 <style lang='less'>
+@import "../../assets/less/variables";
+@import "../../assets/less/components";
+
+.ods-header__slideout--active {
+    left: 0!important;
+    bottom: 0;
+}
+
+.ods-header__slideout {
+    top: 99.5px;
+    left: -300px;
+    width: 300px;
+    background-color: @blue-light;
+    z-index: 49;
+    transition: 0.5s;
+    padding-top: 15px;
+    position: absolute;
+    overflow-y: scroll;
+    height: 100vh;
+    @media (min-width: @desktop-width) {
+        display: none;
+    }
+}
+
+.ods-header__slideout-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 190px 0;
+}
+
+.ods-header__slideout-container-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 15px 0;
+    margin: 0 auto;
+    &:active,
+    &:focus,
+    &hover {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.ods-header__slideout-container-lang {
+    &:extend(.default-font);
+    &:extend(.default-button-lang);
+    text-decoration: none;
+    margin: 15px auto;
+}
+
+// Button lang active
+.router-link-active > .ods-lang--active {
+    color: @blue-dark!important;
+    background-color: white!important;
+}
 
 </style>

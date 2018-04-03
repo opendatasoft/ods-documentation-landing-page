@@ -1,36 +1,60 @@
 <template>
 
-    <a class="ods-link-documentation"
-        id="index-href-platform"
-        href="">
-        <div class="ods-container__box ods-container__box-index">
+    <router-link :to="content.url[lang]"
+        class="ods-link-documentation"
+        id="index-href-platform">
+
+        <div class="ods-container__box"
+            :class="sizeBox">
+            
             <div class="ods-container__box-icon">
-                <img class="ods-container__box-icon-img"
-                    src="../../assets/img/ODS_picto_faq.svg"
+                
+                <img :class="sizeIcon"
+                    :src="img"
                     alt="OpenDataSoft Documentation"/>
+
             </div>
             
             <div class="ods-container__box-desc">
+                
                 <h2 class="ods-container__box-desc-h2"
                     id="index-title-platform">
-                    <!-- Platform -->
+                    {{ content.title[lang] }}
                 </h2>
+
                 <p class="ods-container__box-desc-p"
-                    id="index-desc-platform">
-                    <!-- Discover what OpenDataSoft's solution can do for you,
-                    how to publish your data, design dashboards, beautiful
-                    visualisations and much more -->
+                    id="index-desc-platform"
+                    v-if="page === 'home'">
+                    {{ content.desc[lang] }}
                 </p>
+                <p class="ods-container__box-desc-p"
+                    id="index-desc-platform"
+                    v-else>
+                    <span v-html=content.desc[lang]></span>
+                </p>
+
             </div>
+
         </div>
-    </a>
+
+    </router-link>
     
 </template>
 
 <script>
 export default {
     name: 'boxes',
-    props: ['lang', 'content', 'img']
+    props: ['lang', 'content', 'img', 'page'],
+    computed: {
+        sizeBox: function () {
+            if (this.page === 'home') return 'ods-container__box-index';
+            else return 'ods-container__box-apis';
+        },
+        sizeIcon: function () {
+            if (this.page === 'home') return 'ods-container__box-icon-img';
+            else return 'ods-container__box-icon-img-apis';
+        }
+    }
 }
 </script>
 
@@ -129,8 +153,8 @@ export default {
 }
 
 .ods-container__box-icon-img-apis {
-    height: 60px;
     margin: 0 20px;
+    height: 60px;
 }
 
 .ods-container__box-desc {

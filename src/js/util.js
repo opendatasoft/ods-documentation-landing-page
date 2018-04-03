@@ -22,6 +22,8 @@ export function setMetas(metas) {
         title = metas.title + ' | ';
     }
 
+    console.log(metas.lang);
+
     document.head.getElementsByTagName('title')[0].textContent = title + languages.basePageTitle[metas.lang];
     document.head.querySelector('[name="description"]').setAttribute('content', metas.description);
 

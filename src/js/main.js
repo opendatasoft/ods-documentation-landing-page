@@ -35,7 +35,7 @@ router.beforeEach(function (to, from, next) {
 
 /* Set up vue */
 Vue.component('app__header', app__header);
-Vue.component('app__header_slideout', app__header__slideout);
+Vue.component('app__header__slideout', app__header__slideout);
 Vue.component('app__footer', app__footer);
 
 Vue.component('home', home);

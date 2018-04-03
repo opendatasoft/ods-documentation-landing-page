@@ -1,15 +1,68 @@
 export default {
-    /* Header */
+
     basePageTitle: {
-        en: 'OpenDataSoft Plus',
-        fr: 'OpenDataSoft Plus'
+        en: "OpenDataSoft Help Hub",
+        fr: "",
+        es: "",
+        de: "",
+        nl: ""
     },
-    homeLabel: {
-        en: 'Home',
-        fr: 'Accueil'
+
+    /* Header */
+    platform: {
+        en: "Platform",
+        fr: "",
+        es: "",
+        de: "",
+        nl: ""
     },
-    aboutLabel: {
-        en: 'About Plus',
-        fr: 'À propos de Plus'
+
+    discovery: {
+        en: "Discovery",
+        fr: "",
+        es: "",
+        de: "",
+        nl: ""
+    },
+
+    faq: {
+        en: "FAQ",
+        fr: "",
+        es: "",
+        de: "",
+        nl: ""
+    },
+
+    widgets: {
+        en: "Widgets",
+        fr: "",
+        es: "",
+        de: "",
+        nl: ""
+    },
+
+    tutorial: {
+        en: "Widgets Tutorial",
+        fr: "",
+        es: "",
+        de: "",
+        nl: ""
+    },
+
+    api: {
+        en: "API",
+        fr: "",
+        es: "",
+        de: "",
+        nl: ""
+    },
+
+    btn_menu: {
+        en: "Menu",
+        fr: "",
+        es: "",
+        de: "",
+        nl: ""
     }
-}
+
+};

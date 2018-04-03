@@ -1,12 +1,51 @@
 <template>
 
-    <div class="ods-container">
+    <div class="ods-container"
+         :class="{ 'ods-container--active' : globalState.slideOut }">
         
         <boxes
             :lang="globalState.lang"
-            :content="content_home"
-            :img="platform">
+            :content="content_home.platform"
+            :img="img.platform"
+            :page="page">
         </boxes>
+
+        <boxes
+            :lang="globalState.lang"
+            :content="content_home.discovery"
+            :img="img.discovery"
+            :page="page">
+        </boxes>
+
+        <boxes
+            :lang="globalState.lang"
+            :content="content_home.faq"
+            :img="img.faq"
+            :page="page">
+        </boxes>
+
+        <boxes
+            :lang="globalState.lang"
+            :content="content_home.widgets"
+            :img="img.widgets"
+            :page="page">
+        </boxes>
+
+        <boxes
+            :lang="globalState.lang"
+            :content="content_home.tutorial"
+            :img="img.tutorial"
+            :page="page">
+        </boxes>
+
+        <boxes
+            :lang="globalState.lang"
+            :content="content_home.api"
+            :img="img.api"
+            :page="page">
+        </boxes>
+
+        
         
     </div>
 
@@ -14,13 +53,28 @@
 
 <script>
 import { setMetas } from '../../js/util';
-import { mapGetters } from 'vuex'
+import { mapGetters } from 'vuex';
+
+import platform from '../../assets/img/ODS_picto_platform.svg';
+import discovery from '../../assets/img/ODS_picto_discovery.svg';
+import faq from '../../assets/img/ODS_picto_faq.svg';
+import widgets from '../../assets/img/ODS_picto_widget.svg';
+import tutorial from '../../assets/img/ODS_picto_tuto.svg';
+import api from '../../assets/img/ODS_picto_api.svg';
 
 export default {
     name: 'home',
+    props: ['slideOut'],
     data: function() {
         return {
-            platform: '../../assets/img/ODS_picto_faq.svg'
+            img : {
+                platform: platform,
+                discovery: discovery,
+                faq: faq,
+                widgets: widgets,
+                tutorial: tutorial,
+                api: api
+            }
         }
     },
     computed: {
@@ -28,7 +82,10 @@ export default {
             'globalState',
             'metas',
             'content_home'
-        ])
+        ]),
+        page: function() {
+            return this.$route.name;
+        }
     },
     methods: {
         setHomeMetas: function () {
@@ -72,6 +129,10 @@ export default {
         padding: 42px 40px 0 40px;
         margin-bottom: 70px;
     }
+}
+
+.ods-container--active {
+    overflow-y: hidden;
 }
 
 </style>

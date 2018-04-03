@@ -4,15 +4,18 @@
         <app__header
             :content="content_app"
             :lang="globalState.lang"
-            :isOpen="slideOut"
-            @open_slide_out_app="openSlideOut"
-            @close_slide_out_app="closeSlideOut">
+            :slideOut="globalState.slideOut"
+            @event_toggle_slide_out="toggleSlideOut">
         </app__header>
         <div class="ods-wrapper">
-            <router-view @event_set_lang="setLang">
+            <router-view 
+                @event_set_lang="setLang"
+                :slideOut="globalState.slideOut">
             </router-view>
         </div>
-        <app__footer></app__footer>
+        <app__footer
+            :slideOut="globalState.slideOut">
+        </app__footer>
     </div>
 
 </template>
@@ -22,11 +25,6 @@ import { mapGetters } from 'vuex';
 
 export default {
     name: 'app',
-    data : function() {
-        return {
-            slideOut : false
-        }
-    },
     computed: {
         ...mapGetters([
             'globalState',
@@ -35,29 +33,24 @@ export default {
     },
     methods: {
         /* SlideOut mobile */
-    //    openSlideOut() {
-    //         this.slideOut = true;
-    //     },
-    //     closeSlideOut() {
-    //         this.slideOut = false;
-    //     },
-    //     setLang(value) {
-    //         this.$store.dispatch('set_lang', value);
-    //         document.documentElement.setAttribute('lang', value);
-    //         //- Resources for footer
-    //         this.$store.dispatch('load_resources_footer');
-    //     }
+       toggleSlideOut() {
+            this.$store.dispatch('toggle_slide_out');
+        },
+        setLang(value) {
+            this.$store.dispatch('set_lang', value);
+            document.documentElement.setAttribute('lang', value);
+        }
     },
     created: function() {
-        // if (['en', 'fr'].indexOf(this.$route.params.lang) >= 0) {
-        //     //- Dispatch load content trad in the store
-        //     this.$store.dispatch('load_store_content');
-        //     this.setLang(this.$route.params.lang);
-        // } else {
-        //     this.setLang('en');
-        //     //- Rewrite correct url lang
-        //     this.$router.push( { name: 'page-not-found', params: { lang : 'en' } } );
-        // }
+        if (['en', 'fr', 'es', 'de', 'nl'].indexOf(this.$route.params.lang) >= 0) {
+            //- Dispatch load content trad in the store
+            this.$store.dispatch('load_store_content');
+            this.setLang(this.$route.params.lang);
+        } else {
+            this.setLang('en');
+            //- Rewrite correct url lang
+            this.$router.push( { name: 'page-not-found', params: { lang : 'en' } } );
+        }
     }
 }
 </script>
