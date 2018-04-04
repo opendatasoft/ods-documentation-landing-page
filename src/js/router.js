@@ -37,5 +37,6 @@ export default new VueRouter({
             path: '*',
             redirect: '/en/404'
         }
-    ]
+    ],
+    linkActiveClass: "active"
 });

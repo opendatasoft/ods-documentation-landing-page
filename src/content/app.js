@@ -2,66 +2,66 @@ export default {
 
     basePageTitle: {
         en: "OpenDataSoft Help Hub",
-        fr: "",
-        es: "",
-        de: "",
-        nl: ""
+        fr: "OpenDataSoft Help Hub",
+        es: "OpenDataSoft Help Hub",
+        de: "OpenDataSoft Help Hub",
+        nl: "OpenDataSoft Help Hub"
     },
 
     /* Header */
     platform: {
         en: "Platform",
-        fr: "",
-        es: "",
-        de: "",
+        fr: "Plateforme",
+        es: "Estrado",
+        de: "Spreekgestoelte",
         nl: ""
     },
 
     discovery: {
         en: "Discovery",
-        fr: "",
-        es: "",
-        de: "",
-        nl: ""
+        fr: "Discovery",
+        es: "Discovery",
+        de: "Discovery",
+        nl: "Discovery"
     },
 
     faq: {
         en: "FAQ",
-        fr: "",
-        es: "",
-        de: "",
-        nl: ""
+        fr: "FAQ",
+        es: "FAQ",
+        de: "FAQ",
+        nl: "FAQ"
     },
 
     widgets: {
         en: "Widgets",
-        fr: "",
-        es: "",
-        de: "",
-        nl: ""
+        fr: "Widgets",
+        es: "Widgets",
+        de: "Widgets",
+        nl: "Widgets"
     },
 
     tutorial: {
         en: "Widgets Tutorial",
-        fr: "",
-        es: "",
-        de: "",
+        fr: "Tutoriel Widgets",
+        es: "Tutorial de Widgets",
+        de: "Widgets-Tutorial",
         nl: ""
     },
 
     api: {
         en: "API",
-        fr: "",
-        es: "",
-        de: "",
-        nl: ""
+        fr: "API",
+        es: "API",
+        de: "API",
+        nl: "API"
     },
 
     btn_menu: {
         en: "Menu",
-        fr: "",
-        es: "",
-        de: "",
+        fr: "Menu",
+        es: "Menú",
+        de: "Menü",
         nl: ""
     }
 

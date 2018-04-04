@@ -20,6 +20,8 @@ import apis from '../vue/apis/apis.vue';
 
 import boxes from '../vue/elements/boxes.vue';
 import spinner from '../vue/elements/spinner.vue';
+import langs from '../vue/elements/langs.vue';
+import navigation from '../vue/elements/navigation.vue';
 
 import pageNotFound from '../vue/page-not-found/page-not-found.vue';
 
@@ -44,6 +46,8 @@ Vue.component('apis', apis);
 
 Vue.component('boxes', boxes);
 Vue.component('spinner', spinner);
+Vue.component('langs', langs);
+Vue.component('navigation', navigation);
 
 Vue.component('page-not-found', pageNotFound);
 

@@ -1,4 +1,4 @@
-import languages from '../content/app';
+import content from '../content/app';
 
 function getCurrentURL() {
     return window.location.protocol + '//' + window.location.host + window.location.pathname;
@@ -22,9 +22,7 @@ export function setMetas(metas) {
         title = metas.title + ' | ';
     }
 
-    console.log(metas.lang);
-
-    document.head.getElementsByTagName('title')[0].textContent = title + languages.basePageTitle[metas.lang];
+    document.head.getElementsByTagName('title')[0].textContent = title + content.basePageTitle[metas.lang];
     document.head.querySelector('[name="description"]').setAttribute('content', metas.description);
 
     /* Open Graph */

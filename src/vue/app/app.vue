@@ -1,21 +1,18 @@
 <template>
 
     <div>
-        <app__header
-            :content="content_app"
-            :lang="globalState.lang"
-            :slideOut="globalState.slideOut"
-            @event_toggle_slide_out="toggleSlideOut">
-        </app__header>
+        
+        <app__header></app__header>
+        
         <div class="ods-wrapper">
-            <router-view 
-                @event_set_lang="setLang"
-                :slideOut="globalState.slideOut">
+            
+            <router-view @event_set_lang="setLang">
             </router-view>
+
         </div>
-        <app__footer
-            :slideOut="globalState.slideOut">
-        </app__footer>
+        
+        <app__footer></app__footer>
+
     </div>
 
 </template>
@@ -32,10 +29,6 @@ export default {
         ])
     },
     methods: {
-        /* SlideOut mobile */
-       toggleSlideOut() {
-            this.$store.dispatch('toggle_slide_out');
-        },
         setLang(value) {
             this.$store.dispatch('set_lang', value);
             document.documentElement.setAttribute('lang', value);

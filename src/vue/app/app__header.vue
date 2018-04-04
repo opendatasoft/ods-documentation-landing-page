@@ -1,77 +1,45 @@
 <template>
     
     <header class="ods-header"
-        :class="{ 'ods-header--active' : slideOut }">
+        :class="{ 'ods-header--active' : globalState.slideOut }">
         
         <div class="ods-header__brand">
+            
             <div class="ods-header__content-menu-toggle">
+            
                 <button type="button"
                         class="ods-header__menu-toggle"
                         id="nav-button"
-                        :class="{ 'ods-header__menu-toggle--active' : slideOut }"
+                        :class="{ 'ods-header__menu-toggle--active' : globalState.slideOut }"
                         @click="toggleSlideOut()">
-                    Menu
+                    {{ content_app.btn_menu[globalState.lang] }}
                 </button>
+
             </div>
+
             <div class="ods-header__content-logo">
+            
                 <router-link :to="{ name: 'home' }">
+            
                     <img class="ods-header__logo"
                         src="../../assets/img/ODS_logo_header.svg"
                         alt="OpenDataSoft Documentation">
+
                 </router-link>
+
             </div>
-        </div>
-        
-        <div class="ods-header__nav">
-            <div class="ods-header__nav-item">
-                <a class="ods-header__nav-item-link"
-                    id="header-platform"
-                    href="https://docs.opendatasoft.com/en/">
-                    Platform
-                </a>
-            </div>
-            <div class="ods-header__nav-item">
-                <a class="ods-header__nav-item-link"
-                    id="header-discovery"
-                    href="https://discovery.opendatasoft.com/pages/home/">
-                    Discovery
-                </a>
-            </div>
-            <div class="ods-header__nav-item">
-                <a class="ods-header__nav-item-link"
-                    id="header-faq"
-                    href="https://docs.opendatasoft.com/en/faq.html">
-                    FAQ
-                </a>
-            </div>
-            <div class="ods-header__nav-item">
-                <a class="ods-header__nav-item-link"
-                    id="header-widgets"
-                    href="https://opendatasoft.github.io/ods-widgets/docs/#/api">
-                    Widgets
-                </a>
-            </div>
-            <div class="ods-header__nav-item">
-                <a class="ods-header__nav-item-link"
-                    id="header-tutorial"
-                    href="https://opendatasoft.github.io/ods-widgets/docs/#/tutorial">
-                    Widgets Tutorial
-                </a>
-            </div>
-            <div class="ods-header__nav-item">
-                <a class="ods-header__nav-item-link"
-                    id="header-api"
-                    href="/apis.html">
-                    API
-                </a>
-            </div>
+
         </div>
 
+        <navigation class="ods-header__nav"
+            :lang="globalState.lang"
+            :content="content_app">
+        </navigation>
+
         <app__header__slideout
-            :content="content"
-            :lang="lang"
-            :slideOut="slideOut"
-            @event_toggle_slide_out_child="toggleSlideOut">
+            :content="content_app"
+            :lang="globalState.lang"
+            :slideOut="globalState.slideOut">
         </app__header__slideout>
 
     </header>
@@ -79,12 +47,24 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 export default {
     name: 'app__header',
-    props: ['content', 'lang', 'slideOut'],
+    computed: {
+        ...mapGetters([
+            'globalState',
+            'content_app'
+        ])
+    },
     methods: {
         toggleSlideOut() {
-            this.$emit('event_toggle_slide_out');
+            this.$store.dispatch('toggle_slide_out');
+        }
+    },
+    watch: {
+        '$route': function () {
+            if (this.globalState.slideOut) this.toggleSlideOut();
         }
     }
 }
@@ -176,54 +156,10 @@ export default {
     }
 }
 
-// Only in desktop
 .ods-header__nav {
-    top: 100px;
-    left: -300px;
-    width: 300px;
-    background-color: @blue-light;
-    transition: 0.5s;
-    padding-left: 100px;
-    position: static;
-    width: 100%;
-    flex-direction: row;
-    border: none;
-    display: flex;
     @media (max-width: @mobile-width) {
-        display: none;
+        display: none!important;
     }
-}
-
-.ods-header__nav-item {
-    text-align: center;
-    margin: auto 20px;
-    transition: 0.5s;
-    &:first-child {
-        margin-left: -1px;
-    }
-    &:last-child {
-        margin-right: 0px;
-    }
-}
-
-.ods-header__nav-item-link {
-    color: white;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 18px;
-    padding: 5px 0;
-    border-bottom: 2px solid transparent;
-    &:active,
-    &:focus,
-    &hover {
-        color: white;
-        text-decoration: none;
-        border-bottom: 2px solid white;
-    }
-}
-
-.ods-header__nav-item-link--active {
-    border-bottom: 2px solid white;
 }
 
 </style>

@@ -36,7 +36,6 @@ export default {
         }
     },
     beforeRouteEnter (to, from, next) {
-        
         if (from.name === 'resourceDetails') {
             next((vm) => {
                 vm.setPageNotFoundMetas();

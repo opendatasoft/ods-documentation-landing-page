@@ -1,54 +1,29 @@
 <template>
 
     <footer class="ods-footer"
-        :class="{ 'ods-footer--active' : slideOut }">
+        :class="{ 'ods-footer--active' : globalState.slideOut }">
         
         <img class="ods-footer__logo"
              src="../../assets/img/ODS_logo_footer.svg"
              alt="OpenDataSoft Documentation">
-        
-        <div class="ods-footer__nav-lang">
-            
-            <router-link :to="langLink('en')"
-                class="ods-footer__nav-lang-item">
-                EN
-            </router-link>
 
-            <router-link :to="langLink('fr')"
-                class="ods-footer__nav-lang-item">
-                FR
-            </router-link>
-
-            <router-link :to="langLink('es')"
-                class="ods-footer__nav-lang-item">
-                ES
-            </router-link>
-
-            <router-link :to="langLink('de')"
-                class="ods-footer__nav-lang-item">
-                DE
-            </router-link>
-
-            <router-link :to="langLink('nl')"
-                class="ods-footer__nav-lang-item">
-                NL
-            </router-link>
-
-        </div>
+        <langs class="ods-footer__lang"
+            :lang="globalState.lang">
+        </langs>
         
     </footer>
 
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 export default {
     name: 'app__footer',
-    props: ['content', 'lang', 'slideOut'],
-    methods: {
-        langLink: function (lang) {
-            var data = { params: { lang: lang } };
-            return data;
-        }
+    computed: {
+        ...mapGetters([
+            'globalState'
+        ])
     }
 }
 </script>
@@ -77,31 +52,10 @@ export default {
     height: 40px;
 }
 
-.ods-footer__nav-lang {
-    position: absolute;
-    right: 20px;
-    top: 15px;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 0 10px;
+.ods-footer__lang {
     @media (max-width: @mobile-width) {
         display: none;
     }
-    @media (min-width: @desktop-width) {
-        display: flex;
-    }
-}
-
-.ods-footer__nav-lang-item {
-    &:extend(.default-font);
-    &:extend(.default-button-lang);
-    text-decoration: none;
-}
-
-// Button lang active
-.router-link-active > .ods-lang--active {
-    color: @blue-dark!important;
-    background-color: white!important;
 }
 
 </style>
