@@ -2,6 +2,12 @@
 
     <div class="ods-container"
         :class="{ 'ods-container--active' : globalState.slideOut }">
+
+        <p class="ods-container__description">
+            
+            {{ content_apis.descTop[globalState.lang] }}
+            
+        </p>
         
         <boxes_link
             :lang="globalState.lang"
@@ -80,6 +86,12 @@
             </boxes>
                 
         </boxes_link>
+            
+        <p class="ods-container__description">
+            
+            {{ content_apis.descTop[globalState.lang] }}
+        
+        </p>
         
     </div>
 
@@ -157,6 +169,23 @@ export default {
 
 .ods-container--active {
     overflow-y: hidden;
+}
+
+.ods-container__description {
+    margin: 0;
+    color: @blue-dark;
+    &:first-child {
+        margin-bottom: 40px;
+    }
+    @media (max-width: @mobile-width) {
+        text-align: center;
+        &:last-child {
+            margin-bottom: 40px;
+        }
+    }
+    @media (min-width: @desktop-width) {
+        
+    }
 }
 
 </style>

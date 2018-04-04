@@ -80,6 +80,7 @@ export default {
     top: 0;
     left: 0;
     z-index: 50;
+    background-color: @blue-medium;
     @media (min-width: @desktop-width) {
         display: flex;
         flex-direction: row;
@@ -95,7 +96,6 @@ export default {
 .ods-header__brand {
     display: flex;
     height: 99px;
-    background-color: @blue-light;
     @media (max-width: @mobile-width) {
         width: 100%;
     }

@@ -48,7 +48,6 @@ export default {
 @import "../../assets/less/components";
 
 .ods-nav {
-    background-color: @blue-light;
     transition: 0.5s;
     border: none;
     display: flex;
