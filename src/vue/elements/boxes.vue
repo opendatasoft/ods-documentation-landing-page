@@ -1,43 +1,38 @@
 <template>
 
-    <router-link :to="content.url[lang]"
-        class="ods-link-documentation"
-        id="index-href-platform">
-
-        <div class="ods-container__box"
-            :class="sizeBox">
+    <div class="ods-container__box"
+        :class="sizeBox">
+        
+        <div class="ods-container__box-icon">
             
-            <div class="ods-container__box-icon">
-                
-                <img :class="sizeIcon"
-                    :src="img"
-                    alt="OpenDataSoft Documentation"/>
+            <img :class="sizeIcon"
+                :src="img"
+                alt="OpenDataSoft Documentation"/>
 
-            </div>
+        </div>
+        
+        <div class="ods-container__box-desc">
             
-            <div class="ods-container__box-desc">
-                
-                <h2 class="ods-container__box-desc-h2"
-                    id="index-title-platform">
-                    {{ content.title[lang] }}
-                </h2>
+            <h2 class="ods-container__box-desc-h2"
+                id="index-title-platform">
+                {{ content.title[lang] }}
+            </h2>
 
-                <p class="ods-container__box-desc-p"
-                    id="index-desc-platform"
-                    v-if="page === 'home'">
-                    {{ content.desc[lang] }}
-                </p>
-                <p class="ods-container__box-desc-p"
-                    id="index-desc-platform"
-                    v-else>
-                    <span v-html=content.desc[lang]></span>
-                </p>
-
-            </div>
+            <p class="ods-container__box-desc-p"
+                id="index-desc-platform"
+                v-if="page === 'home'">
+                {{ content.desc[lang] }}
+            </p>
+            <p class="ods-container__box-desc-p"
+                id="index-desc-platform"
+                v-else>
+                <span v-html=content.desc[lang]></span>
+            </p>
 
         </div>
 
-    </router-link>
+    </div>
+
     
 </template>
 
@@ -61,10 +56,6 @@ export default {
 <style lang='less'>
 @import "../../assets/less/variables";
 @import "../../assets/less/components";
-
-.ods-link-documentation {
-    text-decoration: none;
-}
 
 .ods-container__desc-top {
     @media (max-width: @box-max-width) {

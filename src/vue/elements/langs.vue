@@ -70,10 +70,13 @@ export default {
 }
 
 .ods-lang__item {
-    text-decoration: none;
     color: white;
     padding: 7px;
     border-radius: 4px;
+    &:hover {
+        color: @blue-dark;
+        background-color: white;
+    }
     @media (max-width: @mobile-width) {
         margin: 20px auto;
         &:first-child {

@@ -56,6 +56,10 @@ body {
     &:extend(.default-font);
 }
 
+a {
+    text-decoration: none;
+}
+
 .ods-wrapper {
     height: auto;
     @media (max-width: @mobile-width) {

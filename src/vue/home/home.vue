@@ -3,50 +3,84 @@
     <div class="ods-container"
          :class="{ 'ods-container--active' : globalState.slideOut }">
         
-        <boxes
+         <boxes_link
             :lang="globalState.lang"
-            :content="content_home.platform"
-            :img="img.platform"
-            :page="page">
-        </boxes>
+            :content="content_home.platform">
+            
+            <boxes
+                :lang="globalState.lang"
+                :content="content_home.platform"
+                :img="img.platform"
+                :page="page">
+            </boxes>
+            
+        </boxes_link>
 
-        <boxes
+        <boxes_link
             :lang="globalState.lang"
-            :content="content_home.discovery"
-            :img="img.discovery"
-            :page="page">
-        </boxes>
+            :content="content_home.discovery">
 
-        <boxes
+            <boxes
+                :lang="globalState.lang"
+                :content="content_home.discovery"
+                :img="img.discovery"
+                :page="page">
+            </boxes>
+
+        </boxes_link>
+
+        <boxes_link
             :lang="globalState.lang"
-            :content="content_home.faq"
-            :img="img.faq"
-            :page="page">
-        </boxes>
+            :content="content_home.faq">
 
-        <boxes
+            <boxes
+                :lang="globalState.lang"
+                :content="content_home.faq"
+                :img="img.faq"
+                :page="page">
+            </boxes>
+
+        </boxes_link>
+
+        <boxes_link
             :lang="globalState.lang"
-            :content="content_home.widgets"
-            :img="img.widgets"
-            :page="page">
-        </boxes>
+            :content="content_home.widgets">
 
-        <boxes
+            <boxes
+                :lang="globalState.lang"
+                :content="content_home.widgets"
+                :img="img.widgets"
+                :page="page">
+            </boxes>
+
+        </boxes_link>
+
+        <boxes_link
             :lang="globalState.lang"
-            :content="content_home.tutorial"
-            :img="img.tutorial"
-            :page="page">
-        </boxes>
+            :content="content_home.tutorial">
 
-        <boxes
+            <boxes
+                :lang="globalState.lang"
+                :content="content_home.tutorial"
+                :img="img.tutorial"
+                :page="page">
+            </boxes>
+
+        </boxes_link>
+
+        <boxes_link
             :lang="globalState.lang"
-            :content="content_home.api"
-            :img="img.api"
-            :page="page">
-        </boxes>
+            :content="content_home.api">
 
-        
-        
+            <boxes
+                :lang="globalState.lang"
+                :content="content_home.api"
+                :img="img.api"
+                :page="page">
+            </boxes>
+
+        </boxes_link>
+
     </div>
 
 </template>

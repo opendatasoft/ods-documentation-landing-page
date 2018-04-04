@@ -3,47 +3,83 @@
     <div class="ods-container"
         :class="{ 'ods-container--active' : globalState.slideOut }">
         
-        <boxes
+        <boxes_link
             :lang="globalState.lang"
-            :content="content_apis.searchv1"
-            :img="img.search"
-            :page="page">
-        </boxes>
+            :content="content_apis.searchv1">
+            
+            <boxes
+                :lang="globalState.lang"
+                :content="content_apis.searchv1"
+                :img="img.search"
+                :page="page">
+            </boxes>
+            
+        </boxes_link>
 
-        <boxes
+        <boxes_link
             :lang="globalState.lang"
-            :content="content_apis.searchv2"
-            :img="img.search"
-            :page="page">
-        </boxes>
+            :content="content_apis.searchv2">
 
-        <boxes
-            :lang="globalState.lang"
-            :content="content_apis.csw"
-            :img="img.search"
-            :page="page">
-        </boxes>
+            <boxes
+                :lang="globalState.lang"
+                :content="content_apis.searchv2"
+                :img="img.search"
+                :page="page">
+            </boxes>
 
-        <boxes
-            :lang="globalState.lang"
-            :content="content_apis.wfs"
-            :img="img.search"
-            :page="page">
-        </boxes>
+        </boxes_link>
 
-        <boxes
+        <boxes_link
             :lang="globalState.lang"
-            :content="content_apis.odata"
-            :img="img.search"
-            :page="page">
-        </boxes>
+            :content="content_apis.csw">
 
-        <boxes
+            <boxes
+                :lang="globalState.lang"
+                :content="content_apis.csw"
+                :img="img.search"
+                :page="page">
+            </boxes>
+            
+        </boxes_link>
+
+        <boxes_link
             :lang="globalState.lang"
-            :content="content_apis.tpf"
-            :img="img.search"
-            :page="page">
-        </boxes>
+            :content="content_apis.wfs">
+
+            <boxes
+                :lang="globalState.lang"
+                :content="content_apis.wfs"
+                :img="img.search"
+                :page="page">
+            </boxes>
+            
+        </boxes_link>
+
+        <boxes_link
+            :lang="globalState.lang"
+            :content="content_apis.odata">
+
+            <boxes
+                :lang="globalState.lang"
+                :content="content_apis.odata"
+                :img="img.search"
+                :page="page">
+            </boxes>
+            
+        </boxes_link>
+
+        <boxes_link
+            :lang="globalState.lang"
+            :content="content_apis.tpf">
+
+            <boxes
+                :lang="globalState.lang"
+                :content="content_apis.tpf"
+                :img="img.search"
+                :page="page">
+            </boxes>
+                
+        </boxes_link>
         
     </div>
 

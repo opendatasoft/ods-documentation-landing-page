@@ -2,32 +2,32 @@
 
     <div class="ods-nav">
         
-        <router-link :to="navigation('https://docs.opendatasoft.com/en/')"
+        <a href="https://docs.opendatasoft.com/en/"
             class="ods-nav__link">
             {{ content.platform[lang] }}
-        </router-link>
+        </a>
 
-        <router-link :to="navigation('https://discovery.opendatasoft.com/pages/home/')"
+        <a href="https://discovery.opendatasoft.com/pages/home/"
             class="ods-nav__link">
             {{ content.discovery[lang] }}
-        </router-link>
+        </a>
 
-        <router-link :to="navigation('https://docs.opendatasoft.com/en/faq.html')"
+        <a href="https://docs.opendatasoft.com/en/faq.html"
             class="ods-nav__link">
             {{ content.faq[lang] }}
-        </router-link>
+        </a>
 
-        <router-link :to="navigation('https://opendatasoft.github.io/ods-widgets/docs/#/api')"
+        <a href="https://opendatasoft.github.io/ods-widgets/docs/#/api"
             class="ods-nav__link">
             {{ content.widgets[lang] }}
-        </router-link>
+        </a>
 
-        <router-link :to="navigation('https://opendatasoft.github.io/ods-widgets/docs/#/tutorial')"
+        <a href="https://opendatasoft.github.io/ods-widgets/docs/#/tutorial"
             class="ods-nav__link">
             {{ content.tutorial[lang] }}
-        </router-link>
+        </a>
 
-        <router-link :to="navigation('apis')"
+        <router-link :to="{ name : 'apis'}"
             class="ods-nav__link">
             {{ content.api[lang] }}
         </router-link>
@@ -39,18 +39,7 @@
 <script>
 export default {
     name: 'navigation',
-    props: ['lang', 'content'],
-    methods: {
-        navigation: function (URL) {
-            // if (URL.includes('https') || URL.includes('http')) {
-            //     window.open(URL, '_blank');
-            // } else {
-            //     var data = { name: URL };
-            //     return data;
-            // }
-            return URL;
-        }
-    }
+    props: ['lang', 'content']
 }
 </script>
 
@@ -77,9 +66,7 @@ export default {
 
 .ods-nav__link {
     color: white;
-    text-decoration: none;
     border-bottom: 2px solid transparent;
-    transition: 0.5s;
     padding: 5px 0;
     &:active,
     &:focus,

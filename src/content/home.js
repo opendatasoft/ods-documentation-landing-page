@@ -171,11 +171,11 @@ export default {
             nl: ""
         },
         url: {
-            en: "https://example.com/en",
-            fr: "https://example.com/fr",
-            es: "",
-            de: "",
-            nl: ""
+            en: "apis",
+            fr: "apis",
+            es: "apis",
+            de: "apis",
+            nl: "apis"
         }
 
     }

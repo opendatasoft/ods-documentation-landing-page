@@ -19,6 +19,7 @@ import home from '../vue/home/home.vue';
 import apis from '../vue/apis/apis.vue';
 
 import boxes from '../vue/elements/boxes.vue';
+import boxes_link from '../vue/elements/boxes_link.vue';
 import spinner from '../vue/elements/spinner.vue';
 import langs from '../vue/elements/langs.vue';
 import navigation from '../vue/elements/navigation.vue';
@@ -45,6 +46,7 @@ Vue.component('home', home);
 Vue.component('apis', apis);
 
 Vue.component('boxes', boxes);
+Vue.component('boxes_link', boxes_link);
 Vue.component('spinner', spinner);
 Vue.component('langs', langs);
 Vue.component('navigation', navigation);

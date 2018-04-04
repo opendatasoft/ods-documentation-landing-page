@@ -56,7 +56,7 @@ export default {
             nl: ""
         },
         url: {
-            en: "",
+            en: "https://www.example.com/en/",
             fr: "",
             es: "",
             de: "",
