@@ -47,6 +47,7 @@ export default {
         },
         sizeIcon: function () {
             if (this.page === 'home') return 'ods-container__box-icon-img';
+            else if (this.img.indexOf('CSW') >= 0 || this.img.indexOf('WFS') >= 0) return 'ods-container__box-icon-img-small';
             else return 'ods-container__box-icon-img-apis';
         }
     }
@@ -146,6 +147,11 @@ export default {
 .ods-container__box-icon-img-apis {
     margin: 0 20px;
     height: 60px;
+}
+
+.ods-container__box-icon-img-small {
+    margin: 0 20px;
+    height: 27px;
 }
 
 .ods-container__box-desc {

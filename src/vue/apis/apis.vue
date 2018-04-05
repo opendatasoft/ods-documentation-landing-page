@@ -41,7 +41,7 @@
             <boxes
                 :lang="globalState.lang"
                 :content="content_apis.csw"
-                :img="img.search"
+                :img="img.csw"
                 :page="page">
             </boxes>
             
@@ -54,7 +54,7 @@
             <boxes
                 :lang="globalState.lang"
                 :content="content_apis.wfs"
-                :img="img.search"
+                :img="img.wfs"
                 :page="page">
             </boxes>
             
@@ -67,7 +67,7 @@
             <boxes
                 :lang="globalState.lang"
                 :content="content_apis.odata"
-                :img="img.search"
+                :img="img.odata"
                 :page="page">
             </boxes>
             
@@ -101,6 +101,10 @@ import { setMetas } from '../../js/util';
 import { mapGetters } from 'vuex';
 
 import search from '../../assets/img/ODS_logo_api_search.svg';
+import csw from '../../assets/img/ODS_logo_CSW.svg';
+import wcs from '../../assets/img/ODS_logo_WCS.svg';
+import wfs from '../../assets/img/ODS_logo_WFS.svg';
+import odata from '../../assets/img/ODS_logo_odata.svg';
 
 export default {
     name: 'home',
@@ -109,6 +113,10 @@ export default {
         return {
             img : {
                 search: search,
+                csw: csw,
+                wcs: wcs,
+                wfs: wfs,
+                odata: odata
             }
         }
     },
@@ -167,19 +175,20 @@ export default {
 }
 
 .ods-container__description {
-    margin: 0;
     color: @blue-dark;
     &:first-child {
         margin-bottom: 40px;
     }
     @media (max-width: @mobile-width) {
+        margin: 0 15px;
         text-align: center;
         &:last-child {
             margin-bottom: 40px;
         }
     }
     @media (min-width: @desktop-width) {
-        
+        text-align: initial;
+        margin: 0 5px;
     }
 }
 
