@@ -28,8 +28,8 @@ export default {
     props: ['lang', 'content'],
     computed: {
         URL : function () {
-            if (this.content.url[this.lang].includes('https') ||
-                this.content.url[this.lang].includes('http')) return true;
+            if (this.content.url[this.lang].indexOf('https') > -1 ||
+                this.content.url[this.lang].indexOf('http') > -1) return true;
             else return false;
         }
     }

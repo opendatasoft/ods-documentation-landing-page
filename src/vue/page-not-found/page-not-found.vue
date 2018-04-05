@@ -36,16 +36,16 @@ export default {
         }
     },
     beforeRouteEnter (to, from, next) {
-        if (from.name === 'resourceDetails') {
+        // if (from.name === 'resourceDetails') {
+            // next((vm) => {
+            //     vm.setPageNotFoundMetas();
+            //     history.replaceState(null, null, from.fullPath);
+            // });
+        // } else {
             next((vm) => {
                 vm.setPageNotFoundMetas();
-                history.replaceState(null, null, from.fullPath);
             });
-        } else {
-            next((vm) => {
-                vm.setPageNotFoundMetas();
-            });
-        }
+        // }
     },
     beforeRouteUpdate (to, from, next) {
         this.$emit('event_set_lang', to.params.lang);

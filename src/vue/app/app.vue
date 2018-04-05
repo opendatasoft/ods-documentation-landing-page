@@ -4,7 +4,8 @@
         
         <app__header></app__header>
         
-        <div class="ods-wrapper">
+        <div class="ods-wrapper"
+            :class="{ 'ods-wrapper--active' : globalState.slideOut }">
             
             <router-view @event_set_lang="setLang">
             </router-view>
@@ -70,6 +71,11 @@ a {
         width: 870px;
         margin: 100px auto 0 auto;
     }
+}
+
+.ods-wrapper--active {
+    height: 77vh;
+    overflow-y: hidden;
 }
 
 </style>

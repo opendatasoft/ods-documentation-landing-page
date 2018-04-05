@@ -1,7 +1,6 @@
 <template>
 
-    <div class="ods-container"
-        :class="{ 'ods-container--active' : globalState.slideOut }">
+    <div class="ods-container">
 
         <p class="ods-container__description">
             
@@ -165,10 +164,6 @@ export default {
         padding: 42px 40px 0 40px;
         margin-bottom: 70px;
     }
-}
-
-.ods-container--active {
-    overflow-y: hidden;
 }
 
 .ods-container__description {
