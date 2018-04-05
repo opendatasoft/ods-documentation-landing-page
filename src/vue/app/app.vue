@@ -61,6 +61,13 @@ a {
     text-decoration: none;
 }
 
+//- IE 10 / 11
+@media all and (-ms-high-contrast: active), (-ms-high-contrast:none) {
+    img {
+        border: none;
+    }
+}
+
 .ods-wrapper {
     height: auto;
     @media (max-width: @mobile-width) {

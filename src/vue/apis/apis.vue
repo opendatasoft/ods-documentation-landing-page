@@ -80,7 +80,7 @@
             <boxes
                 :lang="globalState.lang"
                 :content="content_apis.tpf"
-                :img="img.search"
+                :img="img.tpf"
                 :page="page">
             </boxes>
                 
@@ -105,6 +105,7 @@ import csw from '../../assets/img/ODS_logo_CSW.svg';
 import wcs from '../../assets/img/ODS_logo_WCS.svg';
 import wfs from '../../assets/img/ODS_logo_WFS.svg';
 import odata from '../../assets/img/ODS_logo_odata.svg';
+import tpf from '../../assets/img/ODS_logo_TPF.svg';
 
 export default {
     name: 'home',
@@ -116,7 +117,8 @@ export default {
                 csw: csw,
                 wcs: wcs,
                 wfs: wfs,
-                odata: odata
+                odata: odata,
+                tpf: tpf
             }
         }
     },
@@ -176,15 +178,13 @@ export default {
 
 .ods-container__description {
     color: @blue-dark;
-    &:first-child {
+    &:first-child,
+    &:last-child {
         margin-bottom: 40px;
     }
     @media (max-width: @mobile-width) {
         margin: 0 15px;
         text-align: center;
-        &:last-child {
-            margin-bottom: 40px;
-        }
     }
     @media (min-width: @desktop-width) {
         text-align: initial;

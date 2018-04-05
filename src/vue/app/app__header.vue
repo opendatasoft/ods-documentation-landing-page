@@ -133,7 +133,7 @@ export default {
 }
 
 .ods-header__menu-toggle--active {
-    background-color: @blue-medium!important;
+    background-color: @blue-light!important;
     color: white!important;
 }
 

@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 var minify = {};
@@ -30,17 +31,10 @@ module.exports = {
             },
             {
                 test: /\.vue$/,
-                loader: 'vue-loader'
-            },
-            {
-                test: /\.less$/,
-                use: [{
-                    loader: "style-loader"
-                }, {
-                    loader: "css-loader"
-                }, {
-                    loader: "less-loader"
-                }]
+                loader: 'vue-loader',
+                options: {
+                    extractCSS: true
+                }
             },
             {
                 test: /\.js$/,
@@ -60,7 +54,8 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/index.ejs', // Load a custom template (ejs by default see the FAQ for details),
             minify: minify
-        })
+        }),
+        new ExtractTextWebpackPlugin('[name].[contenthash].css')
     ],
     resolve: {
         alias: {

@@ -48,6 +48,14 @@ export default {
 @import "../../assets/less/variables";
 @import "../../assets/less/components";
 
+//- IE 10 / 11
+// @media all and (-ms-high-contrast: active), (-ms-high-contrast:none) {
+    
+    // *::-ms-backdrop, {
+        
+    // }
+// }
+
 .ods-lang {
     padding: 0;
     display: flex;
@@ -85,6 +93,17 @@ export default {
     }
     @media (min-width: @desktop-width) {
         margin: auto 20px;
+    }
+}
+
+//- IE 10 / 11
+@media all and (-ms-high-contrast: active), (-ms-high-contrast:none) {
+    .ods-lang {
+        height: auto;
+        margin-bottom: 20px;
+    }
+    *::-ms-backdrop, .ods-lang {
+        margin-bottom: 15px;
     }
 }
 

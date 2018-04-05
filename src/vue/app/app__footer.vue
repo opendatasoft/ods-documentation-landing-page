@@ -54,7 +54,7 @@ export default {
 
 .ods-footer__lang {
     @media (max-width: @mobile-width) {
-        display: none;
+        display: none!important;
     }
 }
 

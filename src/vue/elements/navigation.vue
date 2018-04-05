@@ -63,6 +63,18 @@ export default {
     }
 }
 
+//- IE 10 / 11
+@media all and (-ms-high-contrast: active), (-ms-high-contrast:none) {
+    .ods-nav {
+        margin: 0 0 0 130px;
+        padding-top: 35px;
+    }
+    *::-ms-backdrop, .ods-nav { 
+        margin: 0 0 0 170px;
+        padding-top: 0;
+    }
+}
+
 .ods-nav__link {
     color: white;
     border-bottom: 2px solid transparent;
@@ -85,6 +97,14 @@ export default {
         &:last-child {
             margin-right: 0;
         }
+    }
+}
+
+//- IE 10 / 11
+@media all and (-ms-high-contrast: active), (-ms-high-contrast:none) {
+    *::-ms-backdrop, .ods-nav__link {
+        padding: 5px 0;
+        height: 25px;
     }
 }
 
