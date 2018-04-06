@@ -2,21 +2,21 @@ export default {
 
     metas: {
         title: {
-            en: "Platform",
+            en: "APIs",
             fr: "",
             es: "",
             de: "",
             nl: ""
         },
         description: {
-            en: "Platform",
+            en: "",
             fr: "",
             es: "",
             de: "",
             nl: ""
         },
         image: {
-            en: "Platform",
+            en: "",
             fr: "",
             es: "",
             de: "",
