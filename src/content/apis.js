@@ -56,7 +56,7 @@ export default {
             nl: ""
         },
         url: {
-            en: "https://www.example.com/en/",
+            en: "https://help.opendatasoft.com/api/ods-search-v1/",
             fr: "",
             es: "",
             de: "",
@@ -80,7 +80,7 @@ export default {
             nl: ""
         },
         url: {
-            en: "",
+            en: "https://help.opendatasoft.com/api/ods-search-v2/",
             fr: "",
             es: "",
             de: "",
@@ -104,7 +104,7 @@ export default {
             nl: ""
         },
         url: {
-            en: "",
+            en: "https://help.opendatasoft.com/api/csw/",
             fr: "",
             es: "",
             de: "",
@@ -128,7 +128,7 @@ export default {
             nl: ""
         },
         url: {
-            en: "",
+            en: "https://help.opendatasoft.com/api/wfs/",
             fr: "",
             es: "",
             de: "",
@@ -152,7 +152,7 @@ export default {
             nl: ""
         },
         url: {
-            en: "",
+            en: "https://help.opendatasoft.com/api/odata/",
             fr: "",
             es: "",
             de: "",
@@ -176,7 +176,7 @@ export default {
             nl: ""
         },
         url: {
-            en: "",
+            en: "https://help.opendatasoft.com/api/tpf/",
             fr: "",
             es: "",
             de: "",

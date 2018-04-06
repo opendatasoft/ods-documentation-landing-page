@@ -41,8 +41,8 @@ export default {
             nl: ""
         },
         url: {
-            en: "https://example.com/en",
-            fr: "https://example.com/fr",
+            en: "https://help.opendatasoft.com/platform/",
+            fr: "",
             es: "",
             de: "",
             nl: ""
@@ -67,8 +67,8 @@ export default {
             nl: ""
         },
         url: {
-            en: "https://example.com/en",
-            fr: "https://example.com/fr",
+            en: "https://help.opendatasoft.com/discovery/",
+            fr: "",
             es: "",
             de: "",
             nl: ""
@@ -93,8 +93,8 @@ export default {
             nl: ""
         },
         url: {
-            en: "https://example.com/en",
-            fr: "https://example.com/fr",
+            en: "https://help.opendatasoft.com/faq/",
+            fr: "",
             es: "",
             de: "",
             nl: ""
@@ -119,8 +119,8 @@ export default {
             nl: ""
         },
         url: {
-            en: "https://example.com/en",
-            fr: "https://example.com/fr",
+            en: "https://help.opendatasoft.com/widgets/",
+            fr: "",
             es: "",
             de: "",
             nl: ""
@@ -145,8 +145,8 @@ export default {
             nl: ""
         },
         url: {
-            en: "https://example.com/en",
-            fr: "https://example.com/fr",
+            en: "https://help.opendatasoft.com/tutorials/",
+            fr: "",
             es: "",
             de: "",
             nl: ""
