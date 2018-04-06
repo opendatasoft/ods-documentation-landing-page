@@ -41,7 +41,8 @@ export default {
             this.$store.dispatch('load_store_content');
             this.setLang(this.$route.params.lang);
         } else {
-            this.setLang('en');
+            this.$store.dispatch('load_store_content');
+            // this.setLang('en');
             //- Rewrite correct url lang
             this.$router.push( { name: 'page-not-found', params: { lang : 'en' } } );
         }

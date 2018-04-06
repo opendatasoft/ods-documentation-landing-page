@@ -97,7 +97,6 @@ import api from '../../assets/img/ODS_picto_api.svg';
 
 export default {
     name: 'home',
-    props: ['slideOut'],
     data: function() {
         return {
             img : {
