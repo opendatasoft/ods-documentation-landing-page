@@ -48,14 +48,6 @@ export default {
 @import "../../assets/less/variables";
 @import "../../assets/less/components";
 
-//- IE 10 / 11
-// @media all and (-ms-high-contrast: active), (-ms-high-contrast:none) {
-    
-    // *::-ms-backdrop, {
-        
-    // }
-// }
-
 .ods-lang {
     padding: 0;
     display: flex;

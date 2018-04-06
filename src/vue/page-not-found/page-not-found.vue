@@ -35,17 +35,10 @@ export default {
             });
         }
     },
-    beforeRouteEnter (to, from, next) {
-        // if (from.name === 'resourceDetails') {
-            // next((vm) => {
-            //     vm.setPageNotFoundMetas();
-            //     history.replaceState(null, null, from.fullPath);
-            // });
-        // } else {
-            next((vm) => {
-                vm.setPageNotFoundMetas();
-            });
-        // }
+    beforeRouteEnter (to, from, next) { 
+        next((vm) => {
+            vm.setPageNotFoundMetas();
+        });
     },
     beforeRouteUpdate (to, from, next) {
         this.$emit('event_set_lang', to.params.lang);
@@ -53,3 +46,35 @@ export default {
     }
 }
 </script>
+
+<style lang='less'>
+@import "../../assets/less/variables";
+@import "../../assets/less/components";
+
+.page-not-found__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.page-not-found__404 {
+    font-size: 100px;
+}
+
+.page-not-found__text {
+    font-size: 25px;
+    margin-bottom: 80px;
+}
+
+.page-not-found__get-back-link {
+    background-color: @blue-medium;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-weight: 500;
+    margin: 0;
+}
+
+</style>
