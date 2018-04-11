@@ -98,7 +98,6 @@
 
 <script>
 import { setMetas } from '../../js/util';
-import { mapGetters } from 'vuex';
 
 import search from '../../assets/img/ODS_logo_api_search.svg';
 import csw from '../../assets/img/ODS_logo_CSW.svg';
@@ -123,11 +122,6 @@ export default {
         }
     },
     computed: {
-        ...mapGetters([
-            'globalState',
-            'metas',
-            'content_apis'
-        ]),
         page: function() {
             return this.$route.name;
         }

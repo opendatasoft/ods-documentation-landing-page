@@ -86,7 +86,6 @@
 
 <script>
 import { setMetas } from '../../js/util';
-import { mapGetters } from 'vuex';
 
 import platform from '../../assets/img/ODS_picto_platform.svg';
 import discovery from '../../assets/img/ODS_picto_discovery.svg';
@@ -110,11 +109,6 @@ export default {
         }
     },
     computed: {
-        ...mapGetters([
-            'globalState',
-            'metas',
-            'content_home'
-        ]),
         page: function() {
             return this.$route.name;
         }

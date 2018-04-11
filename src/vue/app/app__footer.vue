@@ -16,14 +16,10 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
-
 export default {
     name: 'app__footer',
     computed: {
-        ...mapGetters([
-            'globalState'
-        ])
+
     }
 }
 </script>

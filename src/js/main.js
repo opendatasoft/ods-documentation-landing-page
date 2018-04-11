@@ -1,10 +1,7 @@
 import 'es6-promise/auto';
 
 import Vue from 'vue';
-import Vuex from 'vuex';
 import router from './router.js';
-
-import VuexStore from './store-app';
 
 import init_filter from './filters';
 
@@ -24,10 +21,6 @@ import langs from '../vue/elements/langs.vue';
 import navigation from '../vue/elements/navigation.vue';
 
 import pageNotFound from '../vue/page-not-found/page-not-found.vue';
-
-/* Set up vuex */
-Vue.use(Vuex);
-const store = new Vuex.Store(VuexStore);
 
 // Scroll to top on route change
 router.beforeEach(function (to, from, next) {
@@ -57,6 +50,5 @@ init_filter();
 new Vue({
     router: router,
     el: '#app',
-    store,
     render: h => h(app)
 });

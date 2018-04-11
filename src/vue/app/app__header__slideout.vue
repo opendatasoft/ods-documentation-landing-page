@@ -19,7 +19,11 @@
 <script>
 export default {
     name: 'app__header__slideout',
-    props: ['content', 'lang', 'slideOut']
+    props: {
+        content: Object,
+        lang: String,
+        slideOut: Boolean
+    }
 }
 </script>
 

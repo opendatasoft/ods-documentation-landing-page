@@ -14,16 +14,11 @@
 
 <script>
 import { setMetas } from '../../js/util';
-import { mapGetters } from 'vuex'
 
 export default {
     name: 'page-not-found',
     computed: {
-        ...mapGetters([
-            'globalState',
-            'metas',
-            'content_page_not_found'
-        ])
+
     },
     methods: {
         setPageNotFoundMetas: function () {

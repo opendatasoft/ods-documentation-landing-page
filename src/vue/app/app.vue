@@ -19,29 +19,24 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
-
 export default {
     name: 'app',
     computed: {
-        ...mapGetters([
-            'globalState',
-            'content_app'
-        ])
+
     },
     methods: {
         setLang(value) {
-            this.$store.dispatch('set_lang', value);
+            // this.$store.dispatch('set_lang', value);
             document.documentElement.setAttribute('lang', value);
         }
     },
     created: function() {
         if (['en', 'fr', 'es', 'de', 'nl'].indexOf(this.$route.params.lang) >= 0) {
             //- Dispatch load content trad in the store
-            this.$store.dispatch('load_store_content');
+            // this.$store.dispatch('load_store_content');
             this.setLang(this.$route.params.lang);
         } else {
-            this.$store.dispatch('load_store_content');
+            // this.$store.dispatch('load_store_content');
             // this.setLang('en');
             //- Rewrite correct url lang
             this.$router.push( { name: 'page-not-found', params: { lang : 'en' } } );

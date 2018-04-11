@@ -33,7 +33,7 @@ module.exports = {
                 test: /\.vue$/,
                 loader: 'vue-loader',
                 options: {
-                    extractCSS: true
+                    extractCSS: process.env.NODE_ENV === 'production'
                 }
             },
             {
@@ -52,7 +52,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.ejs', // Load a custom template (ejs by default see the FAQ for details),
+            template: './src/index.html',
             minify: minify
         }),
         new ExtractTextWebpackPlugin('[name].[contenthash].css')
@@ -60,7 +60,6 @@ module.exports = {
     resolve: {
         alias: {
             'vue$': 'vue/dist/vue.esm.js'
-            // vuex: 'vue/dist/index.esm.js'
         }
     },
     devServer: {
@@ -73,17 +72,16 @@ module.exports = {
     devtool: '#eval-source-map'
 };
 
-/*
-if (process.env.NODE_ENV === 'development') {
-    module.exports.plugins = (module.exports.plugins || []).concat([
-            new BundleAnalyzerPlugin()
-        ]);
-}*/
+if (process.env.NODE_ANALYZE === 'true') {
+    module.exports.plugins.push(
+        new BundleAnalyzerPlugin()
+    );
+}
 
 if (process.env.NODE_ENV === 'production') {
     module.exports.devtool = '#source-map';
     // http://vue-loader.vuejs.org/en/workflow/production.html
-    module.exports.plugins = (module.exports.plugins || []).concat([
+    module.exports.plugins = module.exports.plugins.concat([
         new webpack.DefinePlugin({
             'process.env': {
                 NODE_ENV: '"production"'
@@ -101,3 +99,4 @@ if (process.env.NODE_ENV === 'production') {
         new CleanWebpackPlugin(['dist']),
     ]);
 }
+

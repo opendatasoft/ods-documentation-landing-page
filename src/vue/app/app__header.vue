@@ -47,19 +47,14 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
-
 export default {
     name: 'app__header',
     computed: {
-        ...mapGetters([
-            'globalState',
-            'content_app'
-        ])
+
     },
     methods: {
         toggleSlideOut() {
-            this.$store.dispatch('toggle_slide_out');
+            // this.$store.dispatch('toggle_slide_out');
         }
     },
     watch: {
@@ -80,7 +75,7 @@ export default {
     top: 0;
     left: 0;
     z-index: 50;
-    background-color: @blue-medium;
+    background-color: @blue-light;
     @media (min-width: @desktop-width) {
         display: flex;
         flex-direction: row;
@@ -133,7 +128,7 @@ export default {
 }
 
 .ods-header__menu-toggle--active {
-    background-color: @blue-light!important;
+    background-color: @blue-medium!important;
     color: white!important;
 }
 
