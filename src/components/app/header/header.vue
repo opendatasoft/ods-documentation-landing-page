@@ -1,7 +1,7 @@
 <template>
     
     <header class="ods-header"
-        :class="{ 'ods-header--active' : globalState.slideOut }">
+        :class="{ 'ods-header--active' : slideOut }">
         
         <div class="ods-header__brand">
             
@@ -10,9 +10,9 @@
                 <button type="button"
                         class="ods-header__menu-toggle"
                         id="nav-button"
-                        :class="{ 'ods-header__menu-toggle--active' : globalState.slideOut }"
-                        @click="toggleSlideOut()">
-                    {{ content_app.btn_menu[globalState.lang] }}
+                        :class="{ 'ods-header__menu-toggle--active' : slideOut }"
+                        @click="emitToggleSlideOut()">
+                    {{ trad[lang] }}
                 </button>
 
             </div>
@@ -22,7 +22,7 @@
                 <router-link :to="{ name: 'home' }">
             
                     <img class="ods-header__logo"
-                        src="../../assets/img/ODS_logo_header.svg"
+                        src="../../../assets/img/ODS_logo_header.svg"
                         alt="OpenDataSoft Documentation">
 
                 </router-link>
@@ -32,42 +32,56 @@
         </div>
 
         <navigation class="ods-header__nav"
-            :lang="globalState.lang"
-            :content="content_app">
+            :lang="lang">
         </navigation>
 
-        <app__header__slideout
-            :content="content_app"
-            :lang="globalState.lang"
-            :slideOut="globalState.slideOut">
-        </app__header__slideout>
+        <slideOut :slideOut="slideOut"
+            :lang="lang">
+        </slideOut>
 
     </header>
 
 </template>
 
 <script>
-export default {
-    name: 'app__header',
-    computed: {
+//- Traductions
+import tradApp from '../../../traductions/app';
 
+//- Components
+import slideOut from './slideout.vue';
+import navigation from '../../elements/navigation.vue';
+
+export default {
+    name: 'Header',
+    components: {
+        'slideOut': slideOut,
+        'navigation': navigation
+    },
+    data: function () {
+        return {
+            trad: tradApp.btn_menu
+        }
+    },
+    props: {
+        slideOut: Boolean,
+        lang: String
     },
     methods: {
-        toggleSlideOut() {
-            // this.$store.dispatch('toggle_slide_out');
+        emitToggleSlideOut() {
+            this.$emit('event_toggle_slide_out');
         }
     },
     watch: {
         '$route': function () {
-            if (this.globalState.slideOut) this.toggleSlideOut();
+            if (this.slideOut) this.emitToggleSlideOut();
         }
     }
 }
 </script>
 
 <style lang='less'>
-@import "../../assets/less/variables";
-@import "../../assets/less/components";
+@import "../../../assets/less/variables";
+@import "../../../assets/less/components";
 
 .ods-header {
     width: 100%;

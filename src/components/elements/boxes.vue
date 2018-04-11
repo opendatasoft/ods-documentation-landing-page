@@ -15,18 +15,18 @@
             
             <h2 class="ods-container__box-desc-h2"
                 id="index-title-platform">
-                {{ content.title[lang] }}
+                {{ trad.title[lang] }}
             </h2>
 
             <p class="ods-container__box-desc-p"
                 id="index-desc-platform"
                 v-if="page === 'home'">
-                {{ content.desc[lang] }}
+                {{ trad.desc[lang] }}
             </p>
             <p class="ods-container__box-desc-p"
                 id="index-desc-platform"
                 v-else>
-                <span v-html=content.desc[lang]></span>
+                <span v-html=trad.desc[lang]></span>
             </p>
 
         </div>
@@ -38,7 +38,12 @@
 <script>
 export default {
     name: 'boxes',
-    props: ['lang', 'content', 'img', 'page'],
+    props: {
+        lang: String,
+        trad: Object,
+        img: String,
+        page: String
+    },
     computed: {
         sizeBox: function () {
             if (this.page === 'home') return 'ods-container__box-index';

@@ -1,4 +1,4 @@
-import content from '../content/app';
+import content from '../traductions/app';
 
 function getCurrentURL() {
     return window.location.protocol + '//' + window.location.host + window.location.pathname;

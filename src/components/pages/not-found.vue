@@ -1,32 +1,46 @@
 <template>
+    
     <div class="page-not-found__wrapper">
+ 
         <div class="page-not-found__404">
             404
         </div>
+
         <div class="page-not-found__text">
-            {{ content_page_not_found.message404[globalState.lang] }}
+            {{ trad.message404[lang] }}
         </div>
+
         <router-link to="/" class="page-not-found__get-back-link">
-            {{ content_page_not_found.backHome[globalState.lang] }}
+            {{ trad.backHome[lang] }}
         </router-link>
+
     </div>
+    
 </template>
 
 <script>
 import { setMetas } from '../../js/util';
 
-export default {
-    name: 'page-not-found',
-    computed: {
+//- Traductions
+import trad404 from '../../traductions/not-found';
 
+export default {
+    name: 'not-found',
+    data: function () {
+        return {
+            trad: trad404
+        }
+    },
+    props: {
+        lang: String
     },
     methods: {
         setPageNotFoundMetas: function () {
             setMetas({
-                title:         this.metas.page_not_found.title[this.globalState.lang],
-                description:   this.metas.page_not_found.description[this.globalState.lang],
+                title:         this.trad.metas.title[this.lang],
+                description:   this.trad.metas.description[this.lang],
                 image:         '',
-                lang:          this.globalState.lang
+                lang:          this.lang
             });
         }
     },
@@ -37,6 +51,7 @@ export default {
     },
     beforeRouteUpdate (to, from, next) {
         this.$emit('event_set_lang', to.params.lang);
+        this.setPageNotFoundMetas();
         next();
     }
 }

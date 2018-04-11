@@ -4,8 +4,7 @@
         :class="{ 'ods-header__slideout--active' : slideOut }">
 
         <navigation
-            :lang="lang"
-            :content="content">
+            :lang="lang">
         </navigation>
 
         <langs 
@@ -17,10 +16,16 @@
 </template>
 
 <script>
+import navigation from '../../elements/navigation.vue';
+import langs from '../../elements/langs.vue';
+
 export default {
-    name: 'app__header__slideout',
+    name: 'slideout',
+    components: {
+        'navigation': navigation,
+        'langs': langs
+    },
     props: {
-        content: Object,
         lang: String,
         slideOut: Boolean
     }
@@ -28,8 +33,8 @@ export default {
 </script>
 
 <style lang='less'>
-@import "../../assets/less/variables";
-@import "../../assets/less/components";
+@import "../../../assets/less/variables";
+@import "../../../assets/less/components";
 
 .ods-header__slideout {
     top: 99.5px;

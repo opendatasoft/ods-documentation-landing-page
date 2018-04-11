@@ -1,14 +1,13 @@
 <template>
 
     <footer class="ods-footer"
-        :class="{ 'ods-footer--active' : globalState.slideOut }">
+        :class="{ 'ods-footer--active' : slideOut }">
         
         <img class="ods-footer__logo"
              src="../../assets/img/ODS_logo_footer.svg"
              alt="OpenDataSoft Documentation">
 
-        <langs class="ods-footer__lang"
-            :lang="globalState.lang">
+        <langs class="ods-footer__lang">
         </langs>
         
     </footer>
@@ -16,10 +15,15 @@
 </template>
 
 <script>
-export default {
-    name: 'app__footer',
-    computed: {
+import langs from '../elements/langs.vue';
 
+export default {
+    name: 'Footer',
+    components: {
+        'langs': langs
+    },
+    props: {
+        slideOut: Boolean
     }
 }
 </script>

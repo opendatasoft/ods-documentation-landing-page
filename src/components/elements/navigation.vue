@@ -4,32 +4,32 @@
         
         <a href="https://docs.opendatasoft.com/en/"
             class="ods-nav__link">
-            {{ content.platform[lang] }}
+            {{ trad.platform[lang] }}
         </a>
 
         <a href="https://discovery.opendatasoft.com/pages/home/"
             class="ods-nav__link">
-            {{ content.discovery[lang] }}
+            {{ trad.discovery[lang] }}
         </a>
 
         <a href="https://docs.opendatasoft.com/en/faq.html"
             class="ods-nav__link">
-            {{ content.faq[lang] }}
+            {{ trad.faq[lang] }}
         </a>
 
         <a href="https://opendatasoft.github.io/ods-widgets/docs/#/api"
             class="ods-nav__link">
-            {{ content.widgets[lang] }}
+            {{ trad.widgets[lang] }}
         </a>
 
         <a href="https://opendatasoft.github.io/ods-widgets/docs/#/tutorial"
             class="ods-nav__link">
-            {{ content.tutorial[lang] }}
+            {{ trad.tutorial[lang] }}
         </a>
 
         <router-link :to="{ name : 'apis'}"
             class="ods-nav__link">
-            {{ content.api[lang] }}
+            {{ trad.api[lang] }}
         </router-link>
 
     </div>
@@ -37,9 +37,19 @@
 </template>
 
 <script>
+//- Traductions
+import tradApp from '../../traductions/app';
+
 export default {
     name: 'navigation',
-    props: ['lang', 'content']
+    data: function() {
+        return {
+            trad: tradApp
+        }
+    },
+    props: {
+        lang: String
+    }
 }
 </script>
 

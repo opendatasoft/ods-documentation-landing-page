@@ -2,44 +2,59 @@
 
     <div>
         
-        <app__header></app__header>
+        <Header :slideOut="slideOut"
+            :lang="this.$root.lang.state.lang"
+            @event_toggle_slide_out="toggleSlideOut">
+        </Header>
         
         <div class="ods-wrapper"
-            :class="{ 'ods-wrapper--active' : globalState.slideOut }">
+            :class="{ 'ods-wrapper--active' : slideOut }">
             
-            <router-view @event_set_lang="setLang">
+            <router-view :lang="this.$root.lang.state.lang"
+                @event_set_lang="setLang">
             </router-view>
 
         </div>
         
-        <app__footer></app__footer>
+        <Footer :slideOut="slideOut">
+        </Footer>
 
     </div>
 
 </template>
 
 <script>
+//- Components
+import header from './header/header.vue';
+import footer from './footer.vue';
+
 export default {
     name: 'app',
-    computed: {
-
+    components: {
+        'Header': header,
+        'Footer': footer
+    },
+    data: function() {
+        return {
+            slideOut: false
+        }
     },
     methods: {
         setLang(value) {
-            // this.$store.dispatch('set_lang', value);
+            this.$root.lang.setState(value);
             document.documentElement.setAttribute('lang', value);
+        },
+        toggleSlideOut() {
+            this.slideOut = !this.slideOut;
         }
     },
     created: function() {
         if (['en', 'fr', 'es', 'de', 'nl'].indexOf(this.$route.params.lang) >= 0) {
-            //- Dispatch load content trad in the store
-            // this.$store.dispatch('load_store_content');
             this.setLang(this.$route.params.lang);
         } else {
-            // this.$store.dispatch('load_store_content');
-            // this.setLang('en');
+            this.setLang('en');
             //- Rewrite correct url lang
-            this.$router.push( { name: 'page-not-found', params: { lang : 'en' } } );
+            this.$router.push( { name: 'notFound', params: { lang : 'en' } } );
         }
     }
 }

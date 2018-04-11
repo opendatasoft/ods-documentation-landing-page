@@ -34,7 +34,6 @@
 <script>
 export default {
     name: 'langs',
-    props: ['lang'], 
     methods: {
         langLink: function (lang) {
             var data = { params: { lang: lang } };

@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
-import home from '../vue/home/home.vue';
-import apis from '../vue/apis/apis.vue';
-import pageNotFound from '../vue/page-not-found/page-not-found.vue';
+import home from '../components/pages/home.vue';
+import apis from '../components/pages/apis.vue';
+import notFound from '../components/pages/not-found.vue';
 
 Vue.use(VueRouter);
 
@@ -30,8 +30,8 @@ export default new VueRouter({
         },
         {
             path: '/:lang/404',
-            name: 'page-not-found',
-            component: pageNotFound
+            name: 'notFound',
+            component: notFound
         },
         {
             path: '*',

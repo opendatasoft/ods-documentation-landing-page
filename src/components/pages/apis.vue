@@ -4,91 +4,85 @@
 
         <p class="ods-container__description">
             
-            {{ content_apis.descTop[globalState.lang] }}
+            {{ trad.descTop[lang] }}
             
         </p>
         
-        <boxes_link
-            :lang="globalState.lang"
-            :content="content_apis.searchv1">
+        <boxesLink
+            :lang="lang"
+            :trad="trad.searchv1">
             
-            <boxes
-                :lang="globalState.lang"
-                :content="content_apis.searchv1"
+            <boxes :lang="lang"
+                :trad="trad.searchv1"
                 :img="img.search"
                 :page="page">
             </boxes>
             
-        </boxes_link>
+        </boxesLink>
 
-        <boxes_link
-            :lang="globalState.lang"
-            :content="content_apis.searchv2">
+        <boxesLink
+            :lang="lang"
+            :trad="trad.searchv2">
 
-            <boxes
-                :lang="globalState.lang"
-                :content="content_apis.searchv2"
+            <boxes :lang="lang"
+                :trad="trad.searchv2"
                 :img="img.search"
                 :page="page">
             </boxes>
 
-        </boxes_link>
+        </boxesLink>
 
-        <boxes_link
-            :lang="globalState.lang"
-            :content="content_apis.csw">
+        <boxesLink
+            :lang="lang"
+            :trad="trad.csw">
 
-            <boxes
-                :lang="globalState.lang"
-                :content="content_apis.csw"
+            <boxes :lang="lang"
+                :trad="trad.csw"
                 :img="img.csw"
                 :page="page">
             </boxes>
             
-        </boxes_link>
+        </boxesLink>
 
-        <boxes_link
-            :lang="globalState.lang"
-            :content="content_apis.wfs">
+        <boxesLink
+            :lang="lang"
+            :trad="trad.wfs">
 
-            <boxes
-                :lang="globalState.lang"
-                :content="content_apis.wfs"
+            <boxes :lang="lang"
+                :trad="trad.wfs"
                 :img="img.wfs"
                 :page="page">
             </boxes>
             
-        </boxes_link>
+        </boxesLink>
 
-        <boxes_link
-            :lang="globalState.lang"
-            :content="content_apis.odata">
+        <boxesLink
+            :lang="lang"
+            :trad="trad.odata">
 
-            <boxes
-                :lang="globalState.lang"
-                :content="content_apis.odata"
+            <boxes :lang="lang"
+                :trad="trad.odata"
                 :img="img.odata"
                 :page="page">
             </boxes>
             
-        </boxes_link>
+        </boxesLink>
 
-        <boxes_link
-            :lang="globalState.lang"
-            :content="content_apis.tpf">
+        <boxesLink
+            :lang="lang"
+            :trad="trad.tpf">
 
-            <boxes
-                :lang="globalState.lang"
-                :content="content_apis.tpf"
+            <boxes :lang="lang"
+                :trad="trad.tpf"
                 :img="img.tpf"
                 :page="page">
             </boxes>
                 
-        </boxes_link>
+        </boxesLink>
             
         <p class="ods-container__description">
             
-            {{ content_apis.descTop[globalState.lang] }}
+            {{ trad.descTop[lang] }}
         
         </p>
         
@@ -99,6 +93,14 @@
 <script>
 import { setMetas } from '../../js/util';
 
+//- Traductions
+import tradApi from '../../traductions/apis';
+
+//- Components
+import boxes from '../elements/boxes.vue';
+import boxesLink from '../elements/boxes-link.vue';
+
+//- Images
 import search from '../../assets/img/ODS_logo_api_search.svg';
 import csw from '../../assets/img/ODS_logo_CSW.svg';
 import wcs from '../../assets/img/ODS_logo_WCS.svg';
@@ -107,11 +109,15 @@ import odata from '../../assets/img/ODS_logo_odata.svg';
 import tpf from '../../assets/img/ODS_logo_TPF.svg';
 
 export default {
-    name: 'home',
-    props: ['slideOut'],
+    name: 'apis',
+    components: {
+        'boxes': boxes,
+        'boxesLink': boxesLink
+    },
     data: function() {
         return {
-            img : {
+            trad: tradApi,
+            img: {
                 search: search,
                 csw: csw,
                 wcs: wcs,
@@ -121,6 +127,9 @@ export default {
             }
         }
     },
+    props: {
+        lang: String
+    },
     computed: {
         page: function() {
             return this.$route.name;
@@ -129,10 +138,10 @@ export default {
     methods: {
         setHomeMetas: function () {
             setMetas({
-                title:          this.metas.apis.title[this.globalState.lang],
-                description:    this.metas.apis.description[this.globalState.lang],
-                image:          this.metas.apis.image[this.globalState.lang],
-                lang:           this.globalState.lang
+                title:          this.trad.metas.title[this.lang],
+                description:    this.trad.metas.description[this.lang],
+                image:          this.trad.metas.image[this.lang],
+                lang:           this.lang
             });
         }
     },

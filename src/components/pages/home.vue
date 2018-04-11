@@ -2,83 +2,71 @@
 
     <div class="ods-container">
         
-         <boxes_link
-            :lang="globalState.lang"
-            :content="content_home.platform">
+         <boxesLink :trad="trad.platform"
+            :lang="lang">
             
-            <boxes
-                :lang="globalState.lang"
-                :content="content_home.platform"
+            <boxes :lang="lang"
+                :trad="trad.platform"
                 :img="img.platform"
                 :page="page">
             </boxes>
             
-        </boxes_link>
+        </boxesLink>
 
-        <boxes_link
-            :lang="globalState.lang"
-            :content="content_home.discovery">
+        <boxesLink :trad="trad.discovery"
+            :lang="lang">
 
-            <boxes
-                :lang="globalState.lang"
-                :content="content_home.discovery"
+            <boxes :lang="lang"
+                :trad="trad.discovery"
                 :img="img.discovery"
                 :page="page">
             </boxes>
 
-        </boxes_link>
+        </boxesLink>
 
-        <boxes_link
-            :lang="globalState.lang"
-            :content="content_home.faq">
+        <boxesLink :trad="trad.faq"
+            :lang="lang">
 
-            <boxes
-                :lang="globalState.lang"
-                :content="content_home.faq"
+            <boxes :lang="lang"
+                :trad="trad.faq"
                 :img="img.faq"
                 :page="page">
             </boxes>
 
-        </boxes_link>
+        </boxesLink>
 
-        <boxes_link
-            :lang="globalState.lang"
-            :content="content_home.widgets">
+        <boxesLink :trad="trad.widgets"
+            :lang="lang">
 
-            <boxes
-                :lang="globalState.lang"
-                :content="content_home.widgets"
+            <boxes :lang="lang"
+                :trad="trad.widgets"
                 :img="img.widgets"
                 :page="page">
             </boxes>
 
-        </boxes_link>
+        </boxesLink>
 
-        <boxes_link
-            :lang="globalState.lang"
-            :content="content_home.tutorial">
+        <boxesLink :trad="trad.tutorial"
+            :lang="lang">
 
-            <boxes
-                :lang="globalState.lang"
-                :content="content_home.tutorial"
+            <boxes :lang="lang"
+                :trad="trad.tutorial"
                 :img="img.tutorial"
                 :page="page">
             </boxes>
 
-        </boxes_link>
+        </boxesLink>
 
-        <boxes_link
-            :lang="globalState.lang"
-            :content="content_home.api">
+        <boxesLink :trad="trad.api"
+            :lang="lang">
 
-            <boxes
-                :lang="globalState.lang"
-                :content="content_home.api"
+            <boxes :lang="lang"
+                :trad="trad.api"
                 :img="img.api"
                 :page="page">
             </boxes>
 
-        </boxes_link>
+        </boxesLink>
 
     </div>
 
@@ -87,6 +75,14 @@
 <script>
 import { setMetas } from '../../js/util';
 
+//- Traductions
+import tradHome from '../../traductions/home';
+
+//- Components
+import boxes from '../elements/boxes.vue';
+import boxesLink from '../elements/boxes-link.vue';
+
+//- Images
 import platform from '../../assets/img/ODS_picto_platform.svg';
 import discovery from '../../assets/img/ODS_picto_discovery.svg';
 import faq from '../../assets/img/ODS_picto_faq.svg';
@@ -96,8 +92,13 @@ import api from '../../assets/img/ODS_picto_api.svg';
 
 export default {
     name: 'home',
+    components: {
+        'boxes': boxes,
+        'boxesLink': boxesLink
+    },
     data: function() {
         return {
+            trad: tradHome,
             img : {
                 platform: platform,
                 discovery: discovery,
@@ -108,6 +109,9 @@ export default {
             }
         }
     },
+    props: {
+        lang: String
+    },
     computed: {
         page: function() {
             return this.$route.name;
@@ -116,10 +120,10 @@ export default {
     methods: {
         setHomeMetas: function () {
             setMetas({
-                title:          this.metas.home.title[this.globalState.lang],
-                description:    this.metas.home.description[this.globalState.lang],
-                image:          this.metas.home.image[this.globalState.lang],
-                lang:           this.globalState.lang
+                title:          this.trad.metas.title[this.lang],
+                description:    this.trad.metas.description[this.lang],
+                image:          this.trad.metas.image[this.lang],
+                lang:           this.lang
             });
         }
     },
