@@ -8,7 +8,8 @@
             <boxes :lang="lang"
                 :trad="trad.platform"
                 :img="img.platform"
-                :page="page">
+                :sizeBox="classSizeBox"
+                :sizeIcon="classSizeIcon">
             </boxes>
             
         </boxesLink>
@@ -19,7 +20,8 @@
             <boxes :lang="lang"
                 :trad="trad.discovery"
                 :img="img.discovery"
-                :page="page">
+                :sizeBox="classSizeBox"
+                :sizeIcon="classSizeIcon">
             </boxes>
 
         </boxesLink>
@@ -30,7 +32,8 @@
             <boxes :lang="lang"
                 :trad="trad.faq"
                 :img="img.faq"
-                :page="page">
+                :sizeBox="classSizeBox"
+                :sizeIcon="classSizeIcon">
             </boxes>
 
         </boxesLink>
@@ -41,7 +44,8 @@
             <boxes :lang="lang"
                 :trad="trad.widgets"
                 :img="img.widgets"
-                :page="page">
+                :sizeBox="classSizeBox"
+                :sizeIcon="classSizeIcon">
             </boxes>
 
         </boxesLink>
@@ -52,7 +56,8 @@
             <boxes :lang="lang"
                 :trad="trad.tutorial"
                 :img="img.tutorial"
-                :page="page">
+                :sizeBox="classSizeBox"
+                :sizeIcon="classSizeIcon">
             </boxes>
 
         </boxesLink>
@@ -63,7 +68,8 @@
             <boxes :lang="lang"
                 :trad="trad.api"
                 :img="img.api"
-                :page="page">
+                :sizeBox="classSizeBox"
+                :sizeIcon="classSizeIcon">
             </boxes>
 
         </boxesLink>
@@ -99,23 +105,20 @@ export default {
     data: function() {
         return {
             trad: tradHome,
-            img : {
+            img: {
                 platform: platform,
                 discovery: discovery,
                 faq: faq,
                 widgets: widgets,
                 tutorial: tutorial,
                 api: api
-            }
+            },
+            classSizeBox: 'ods-container__box-index',
+            classSizeIcon: 'ods-container__box-icon-img'
         }
     },
     props: {
         lang: String
-    },
-    computed: {
-        page: function() {
-            return this.$route.name;
-        }
     },
     methods: {
         setHomeMetas: function () {

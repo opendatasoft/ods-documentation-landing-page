@@ -15,7 +15,8 @@
             <boxes :lang="lang"
                 :trad="trad.searchv1"
                 :img="img.search"
-                :page="page">
+                :sizeBox="classSizeBox"
+                :sizeIcon="classSizeIcon">
             </boxes>
             
         </boxesLink>
@@ -27,7 +28,8 @@
             <boxes :lang="lang"
                 :trad="trad.searchv2"
                 :img="img.search"
-                :page="page">
+                :sizeBox="classSizeBox"
+                :sizeIcon="classSizeIcon">
             </boxes>
 
         </boxesLink>
@@ -39,7 +41,8 @@
             <boxes :lang="lang"
                 :trad="trad.csw"
                 :img="img.csw"
-                :page="page">
+                :sizeBox="classSizeBox"
+                :sizeIcon="classSizeIconSmall">
             </boxes>
             
         </boxesLink>
@@ -51,7 +54,8 @@
             <boxes :lang="lang"
                 :trad="trad.wfs"
                 :img="img.wfs"
-                :page="page">
+                :sizeBox="classSizeBox"
+                :sizeIcon="classSizeIconSmall">
             </boxes>
             
         </boxesLink>
@@ -63,7 +67,8 @@
             <boxes :lang="lang"
                 :trad="trad.odata"
                 :img="img.odata"
-                :page="page">
+                :sizeBox="classSizeBox"
+                :sizeIcon="classSizeIcon">
             </boxes>
             
         </boxesLink>
@@ -75,7 +80,8 @@
             <boxes :lang="lang"
                 :trad="trad.tpf"
                 :img="img.tpf"
-                :page="page">
+                :sizeBox="classSizeBox"
+                :sizeIcon="classSizeIconMedium">
             </boxes>
                 
         </boxesLink>
@@ -124,16 +130,15 @@ export default {
                 wfs: wfs,
                 odata: odata,
                 tpf: tpf
-            }
+            },
+            classSizeBox: 'ods-container__box-apis',
+            classSizeIcon: 'ods-container__box-icon-img-apis',
+            classSizeIconSmall: 'ods-container__box-icon-img-small',
+            classSizeIconMedium: 'ods-container__box-icon-img-medium'
         }
     },
     props: {
         lang: String
-    },
-    computed: {
-        page: function() {
-            return this.$route.name;
-        }
     },
     methods: {
         setHomeMetas: function () {

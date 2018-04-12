@@ -20,13 +20,7 @@
 
             <p class="ods-container__box-desc-p"
                 id="index-desc-platform"
-                v-if="page === 'home'">
-                {{ trad.desc[lang] }}
-            </p>
-            <p class="ods-container__box-desc-p"
-                id="index-desc-platform"
-                v-else>
-                <span v-html=trad.desc[lang]></span>
+                v-html=trad.desc[lang]>
             </p>
 
         </div>
@@ -42,20 +36,8 @@ export default {
         lang: String,
         trad: Object,
         img: String,
-        page: String
-    },
-    computed: {
-        sizeBox: function () {
-            if (this.page === 'home') return 'ods-container__box-index';
-            else return 'ods-container__box-apis';
-        },
-        sizeIcon: function () {
-            if (this.page === 'home') return 'ods-container__box-icon-img';
-            else if (this.img.indexOf('CSW') >= 0 ||
-                this.img.indexOf('WFS') >= 0) return 'ods-container__box-icon-img-small';
-            else if (this.img.indexOf('TPF') >= 0) return 'ods-container__box-icon-img-medium';
-            else return 'ods-container__box-icon-img-apis';
-        }
+        sizeBox: String,
+        sizeIcon: String
     }
 }
 </script>
