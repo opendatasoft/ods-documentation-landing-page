@@ -1,37 +1,57 @@
 <template>
 
-    <div class="ods-container__box"
-        :class="sizeBox">
-        
-        <div class="ods-container__box-icon">
+    <component :is="componentId"
+        v-bind="attributId">
+
+        <div class="ods-container__box"
+            :class="sizeBox">
             
-            <img :class="sizeIcon"
-                :src="img"
-                alt="OpenDataSoft Documentation"/>
+            <div class="ods-container__box-icon">
+                
+                <img :class="sizeIcon"
+                    :src="img"
+                    alt="OpenDataSoft Documentation"/>
+
+            </div>
+            
+            <div class="ods-container__box-desc">
+                
+                <h2 class="ods-container__box-desc-h2"
+                    id="index-title-platform">
+                    {{ trad.title[lang] }}
+                </h2>
+
+                <p class="ods-container__box-desc-p"
+                    id="index-desc-platform"
+                    v-html=trad.desc[lang]>
+                </p>
+
+            </div>
 
         </div>
-        
-        <div class="ods-container__box-desc">
-            
-            <h2 class="ods-container__box-desc-h2"
-                id="index-title-platform">
-                {{ trad.title[lang] }}
-            </h2>
 
-            <p class="ods-container__box-desc-p"
-                id="index-desc-platform"
-                v-html=trad.desc[lang]>
-            </p>
-
-        </div>
-
-    </div>
+    </component>
 
 </template>
 
 <script>
 export default {
     name: 'boxes',
+    data: function () {
+        if (this.trad.url[this.lang].indexOf('https') > -1 ||
+            this.trad.url[this.lang].indexOf('http') > -1) {
+            return {
+                componentId: 'a',
+                attributId: { href : this.trad.url[this.lang] }
+            }
+        }
+        else {
+            return {
+                    componentId: 'router-link',
+                    attributId: { to : this.trad.url[this.lang] }
+                }
+        }
+    },
     props: {
         lang: String,
         trad: Object,

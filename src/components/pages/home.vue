@@ -1,78 +1,48 @@
 <template>
 
     <div class="ods-container">
-        
-         <boxesLink :trad="trad.platform"
-            :lang="lang">
             
-            <boxes :lang="lang"
-                :trad="trad.platform"
-                :img="img.platform"
-                :sizeBox="classSizeBox"
-                :sizeIcon="classSizeIcon">
-            </boxes>
-            
-        </boxesLink>
+        <boxes :lang="lang"
+            :trad="trad.platform"
+            :img="img.platform"
+            :sizeBox="classSizeBox"
+            :sizeIcon="classSizeIcon">
+        </boxes>
 
-        <boxesLink :trad="trad.discovery"
-            :lang="lang">
+        <boxes :lang="lang"
+            :trad="trad.discovery"
+            :img="img.discovery"
+            :sizeBox="classSizeBox"
+            :sizeIcon="classSizeIcon">
+        </boxes>
 
-            <boxes :lang="lang"
-                :trad="trad.discovery"
-                :img="img.discovery"
-                :sizeBox="classSizeBox"
-                :sizeIcon="classSizeIcon">
-            </boxes>
+        <boxes :lang="lang"
+            :trad="trad.faq"
+            :img="img.faq"
+            :sizeBox="classSizeBox"
+            :sizeIcon="classSizeIcon">
+        </boxes>
 
-        </boxesLink>
+        <boxes :lang="lang"
+            :trad="trad.widgets"
+            :img="img.widgets"
+            :sizeBox="classSizeBox"
+            :sizeIcon="classSizeIcon">
+        </boxes>
 
-        <boxesLink :trad="trad.faq"
-            :lang="lang">
+        <boxes :lang="lang"
+            :trad="trad.tutorial"
+            :img="img.tutorial"
+            :sizeBox="classSizeBox"
+            :sizeIcon="classSizeIcon">
+        </boxes>
 
-            <boxes :lang="lang"
-                :trad="trad.faq"
-                :img="img.faq"
-                :sizeBox="classSizeBox"
-                :sizeIcon="classSizeIcon">
-            </boxes>
-
-        </boxesLink>
-
-        <boxesLink :trad="trad.widgets"
-            :lang="lang">
-
-            <boxes :lang="lang"
-                :trad="trad.widgets"
-                :img="img.widgets"
-                :sizeBox="classSizeBox"
-                :sizeIcon="classSizeIcon">
-            </boxes>
-
-        </boxesLink>
-
-        <boxesLink :trad="trad.tutorial"
-            :lang="lang">
-
-            <boxes :lang="lang"
-                :trad="trad.tutorial"
-                :img="img.tutorial"
-                :sizeBox="classSizeBox"
-                :sizeIcon="classSizeIcon">
-            </boxes>
-
-        </boxesLink>
-
-        <boxesLink :trad="trad.api"
-            :lang="lang">
-
-            <boxes :lang="lang"
-                :trad="trad.api"
-                :img="img.api"
-                :sizeBox="classSizeBox"
-                :sizeIcon="classSizeIcon">
-            </boxes>
-
-        </boxesLink>
+        <boxes :lang="lang"
+            :trad="trad.api"
+            :img="img.api"
+            :sizeBox="classSizeBox"
+            :sizeIcon="classSizeIcon">
+        </boxes>
 
     </div>
 
@@ -86,7 +56,6 @@ import tradHome from '../../traductions/home';
 
 //- Components
 import boxes from '../elements/boxes.vue';
-import boxesLink from '../elements/boxes-link.vue';
 
 //- Images
 import platform from '../../assets/img/ODS_picto_platform.svg';
@@ -99,8 +68,7 @@ import api from '../../assets/img/ODS_picto_api.svg';
 export default {
     name: 'home',
     components: {
-        'boxes': boxes,
-        'boxesLink': boxesLink
+        'boxes': boxes
     },
     data: function() {
         return {

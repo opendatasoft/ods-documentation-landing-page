@@ -7,85 +7,49 @@
             {{ trad.descTop[lang] }}
             
         </p>
+         
+        <boxes :lang="lang"
+            :trad="trad.searchv1"
+            :img="img.search"
+            :sizeBox="classSizeBox"
+            :sizeIcon="classSizeIcon">
+        </boxes>
         
-        <boxesLink
-            :lang="lang"
-            :trad="trad.searchv1">
-            
-            <boxes :lang="lang"
-                :trad="trad.searchv1"
-                :img="img.search"
-                :sizeBox="classSizeBox"
-                :sizeIcon="classSizeIcon">
-            </boxes>
-            
-        </boxesLink>
+        <boxes :lang="lang"
+            :trad="trad.searchv2"
+            :img="img.search"
+            :sizeBox="classSizeBox"
+            :sizeIcon="classSizeIcon">
+        </boxes>
 
-        <boxesLink
-            :lang="lang"
-            :trad="trad.searchv2">
+        <boxes :lang="lang"
+            :trad="trad.csw"
+            :img="img.csw"
+            :sizeBox="classSizeBox"
+            :sizeIcon="classSizeIconSmall">
+        </boxes>
 
-            <boxes :lang="lang"
-                :trad="trad.searchv2"
-                :img="img.search"
-                :sizeBox="classSizeBox"
-                :sizeIcon="classSizeIcon">
-            </boxes>
+        <boxes :lang="lang"
+            :trad="trad.wfs"
+            :img="img.wfs"
+            :sizeBox="classSizeBox"
+            :sizeIcon="classSizeIconSmall">
+        </boxes>
 
-        </boxesLink>
+        <boxes :lang="lang"
+            :trad="trad.odata"
+            :img="img.odata"
+            :sizeBox="classSizeBox"
+            :sizeIcon="classSizeIcon">
+        </boxes>
 
-        <boxesLink
-            :lang="lang"
-            :trad="trad.csw">
-
-            <boxes :lang="lang"
-                :trad="trad.csw"
-                :img="img.csw"
-                :sizeBox="classSizeBox"
-                :sizeIcon="classSizeIconSmall">
-            </boxes>
-            
-        </boxesLink>
-
-        <boxesLink
-            :lang="lang"
-            :trad="trad.wfs">
-
-            <boxes :lang="lang"
-                :trad="trad.wfs"
-                :img="img.wfs"
-                :sizeBox="classSizeBox"
-                :sizeIcon="classSizeIconSmall">
-            </boxes>
-            
-        </boxesLink>
-
-        <boxesLink
-            :lang="lang"
-            :trad="trad.odata">
-
-            <boxes :lang="lang"
-                :trad="trad.odata"
-                :img="img.odata"
-                :sizeBox="classSizeBox"
-                :sizeIcon="classSizeIcon">
-            </boxes>
-            
-        </boxesLink>
-
-        <boxesLink
-            :lang="lang"
-            :trad="trad.tpf">
-
-            <boxes :lang="lang"
-                :trad="trad.tpf"
-                :img="img.tpf"
-                :sizeBox="classSizeBox"
-                :sizeIcon="classSizeIconMedium">
-            </boxes>
+        <boxes :lang="lang"
+            :trad="trad.tpf"
+            :img="img.tpf"
+            :sizeBox="classSizeBox"
+            :sizeIcon="classSizeIconMedium">
+        </boxes>
                 
-        </boxesLink>
-            
         <p class="ods-container__description">
             
             {{ trad.descTop[lang] }}
@@ -104,7 +68,6 @@ import tradApi from '../../traductions/apis';
 
 //- Components
 import boxes from '../elements/boxes.vue';
-import boxesLink from '../elements/boxes-link.vue';
 
 //- Images
 import search from '../../assets/img/ODS_logo_api_search.svg';
@@ -117,8 +80,7 @@ import tpf from '../../assets/img/ODS_logo_TPF.svg';
 export default {
     name: 'apis',
     components: {
-        'boxes': boxes,
-        'boxesLink': boxesLink
+        'boxes': boxes
     },
     data: function() {
         return {
