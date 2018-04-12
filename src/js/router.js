@@ -26,8 +26,8 @@ export default new VueRouter({
             component: home
         },
         {
-            path: '/:lang/apis',
-            name: 'apis',
+            path: '/:lang/api',
+            name: 'api',
             component: apis
         },
         {

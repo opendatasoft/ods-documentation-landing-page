@@ -2,32 +2,32 @@
 
     <div class="ods-nav">
         
-        <a href="https://docs.opendatasoft.com/en/"
+        <a href="https://help.opendatasoft.com/platform/"
             class="ods-nav__link">
             {{ trad.platform[lang] }}
         </a>
 
-        <a href="https://discovery.opendatasoft.com/pages/home/"
+        <a href="https://help.opendatasoft.com/discovery/"
             class="ods-nav__link">
             {{ trad.discovery[lang] }}
         </a>
 
-        <a href="https://docs.opendatasoft.com/en/faq.html"
+        <a href="https://help.opendatasoft.com/faq/"
             class="ods-nav__link">
             {{ trad.faq[lang] }}
         </a>
 
-        <a href="https://opendatasoft.github.io/ods-widgets/docs/#/api"
+        <a href="https://help.opendatasoft.com/widgets"
             class="ods-nav__link">
             {{ trad.widgets[lang] }}
         </a>
 
-        <a href="https://opendatasoft.github.io/ods-widgets/docs/#/tutorial"
+        <a href="https://help.opendatasoft.com/tutorials/"
             class="ods-nav__link">
             {{ trad.tutorial[lang] }}
         </a>
 
-        <router-link :to="{ name : 'apis'}"
+        <router-link :to="{ name : 'api'}"
             class="ods-nav__link">
             {{ trad.api[lang] }}
         </router-link>

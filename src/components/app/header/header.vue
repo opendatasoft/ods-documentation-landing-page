@@ -106,7 +106,7 @@ export default {
 
 .ods-header__brand {
     display: flex;
-    height: 99px;
+    height: 100px;
     @media (max-width: @mobile-width) {
         width: 100%;
     }
