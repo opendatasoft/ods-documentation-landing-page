@@ -4,12 +4,11 @@
         :class="{ 'ods-header__slideout--active' : slideOut }">
 
         <navigation
-            :lang="lang">
+            :lang="lang"
+            :trad="trad">
         </navigation>
 
-        <langs 
-            :lang="lang">
-        </langs>
+        <langs></langs>
 
     </div>
 
@@ -27,7 +26,8 @@ export default {
     },
     props: {
         lang: String,
-        slideOut: Boolean
+        slideOut: Boolean,
+        trad: Object
     }
 }
 </script>

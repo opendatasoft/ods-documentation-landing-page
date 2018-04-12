@@ -37,18 +37,11 @@
 </template>
 
 <script>
-//- Traductions
-import tradApp from '../../traductions/app';
-
 export default {
     name: 'navigation',
-    data: function() {
-        return {
-            trad: tradApp
-        }
-    },
     props: {
-        lang: String
+        lang: String,
+        trad: Object
     }
 }
 </script>

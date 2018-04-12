@@ -12,7 +12,7 @@
                         id="nav-button"
                         :class="{ 'ods-header__menu-toggle--active' : slideOut }"
                         @click="emitToggleSlideOut()">
-                    {{ trad[lang] }}
+                    {{ trad.btn_menu[lang] }}
                 </button>
 
             </div>
@@ -32,11 +32,13 @@
         </div>
 
         <navigation class="ods-header__nav"
-            :lang="lang">
+            :lang="lang"
+            :trad="trad">
         </navigation>
 
         <slideOut :slideOut="slideOut"
-            :lang="lang">
+            :lang="lang"
+            :trad="trad">
         </slideOut>
 
     </header>
@@ -59,7 +61,7 @@ export default {
     },
     data: function () {
         return {
-            trad: tradApp.btn_menu
+            trad: tradApp
         }
     },
     props: {
