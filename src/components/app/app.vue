@@ -51,9 +51,9 @@ export default {
     created: function() {
         if (['en', 'fr', 'es', 'de', 'nl'].indexOf(this.$route.params.lang) >= 0) {
             this.setLang(this.$route.params.lang);
+            this.$router.push( { params: { lang : this.$route.params.lang } } );
         } else {
             this.setLang('en');
-            //- Rewrite correct url lang
             this.$router.push( { name: 'notFound', params: { lang : 'en' } } );
         }
     }

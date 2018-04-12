@@ -5,6 +5,8 @@ import home from '../components/pages/home.vue';
 import apis from '../components/pages/apis.vue';
 import notFound from '../components/pages/not-found.vue';
 
+import { navigatorLang } from './util';
+
 Vue.use(VueRouter);
 
 export default new VueRouter({
@@ -12,7 +14,7 @@ export default new VueRouter({
     routes: [
         {
             path: '/',
-            redirect: '/en/home'
+            redirect: '/' + navigatorLang() + '/home'
         },
         {
             path: '/:lang',

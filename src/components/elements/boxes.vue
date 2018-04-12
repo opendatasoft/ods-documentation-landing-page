@@ -1,6 +1,7 @@
 <template>
 
-    <component :is="componentId"
+    <component class="ods-container__link"
+        :is="componentId"
         v-bind="attributId">
 
         <div class="ods-container__box"
@@ -65,6 +66,10 @@ export default {
 <style lang='less'>
 @import "../../assets/less/variables";
 @import "../../assets/less/components";
+
+.ods-container__link {
+    display: block;
+}
 
 .ods-container__box {
     &:extend(.default-box);

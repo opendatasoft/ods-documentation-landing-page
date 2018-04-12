@@ -82,8 +82,6 @@ export default {
     color: white;
     border-bottom: 2px solid transparent;
     padding: 5px 0;
-    &:active,
-    &:focus,
     &:hover {
         border-bottom: 2px solid white;
     }

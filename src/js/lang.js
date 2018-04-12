@@ -1,7 +1,7 @@
 var store =  {
     debug: true,
     state: {
-        lang: 'en'
+        lang: ''
     },
     setState (value) {
         this.state.lang = value;
