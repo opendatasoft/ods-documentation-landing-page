@@ -3,14 +3,14 @@
     <div>
         
         <Header :slideOut="slideOut"
-            :lang="this.$root.lang.state.lang"
+            :lang="this.$root.store.state.lang"
             @event_toggle_slide_out="toggleSlideOut">
         </Header>
         
         <div class="ods-wrapper"
             :class="{ 'ods-wrapper--active' : slideOut }">
             
-            <router-view :lang="this.$root.lang.state.lang"
+            <router-view :lang="this.$root.store.state.lang"
                 @event_set_lang="setLang">
             </router-view>
 
@@ -41,7 +41,7 @@ export default {
     },
     methods: {
         setLang(value) {
-            this.$root.lang.setState(value);
+            this.$root.store.setLang(value);
             document.documentElement.setAttribute('lang', value);
         },
         toggleSlideOut() {

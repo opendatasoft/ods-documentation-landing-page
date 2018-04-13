@@ -4,7 +4,7 @@ import Vue from 'vue';
 import router from './router.js';
 
 import initFilter from './filters';
-import lang from './lang';
+import store from './store';
 
 import app from './components/app/app.vue';
 
@@ -30,7 +30,7 @@ new Vue({
     router: router,
     el: '#app',
     data: {
-        lang: lang
+        store: store
     },
     render: h => h(app)
 });

@@ -12,43 +12,37 @@
             :trad="trad.searchv1"
             :img="img.search"
             :sizeBox="classSizeBox"
-            :sizeIcon="classSizeIcon">
-        </boxes>
+            :sizeIcon="classSizeIcon"/>
         
         <boxes :lang="lang"
             :trad="trad.searchv2"
             :img="img.search"
             :sizeBox="classSizeBox"
-            :sizeIcon="classSizeIcon">
-        </boxes>
+            :sizeIcon="classSizeIcon"/>
 
         <boxes :lang="lang"
             :trad="trad.csw"
             :img="img.csw"
             :sizeBox="classSizeBox"
-            :sizeIcon="classSizeIconSmall">
-        </boxes>
+            :sizeIcon="classSizeIconSmall"/>
 
         <boxes :lang="lang"
             :trad="trad.wfs"
             :img="img.wfs"
             :sizeBox="classSizeBox"
-            :sizeIcon="classSizeIconSmall">
-        </boxes>
+            :sizeIcon="classSizeIconSmall"/>
 
         <boxes :lang="lang"
             :trad="trad.odata"
             :img="img.odata"
             :sizeBox="classSizeBox"
-            :sizeIcon="classSizeIcon">
-        </boxes>
+            :sizeIcon="classSizeIcon"/>
 
         <boxes :lang="lang"
             :trad="trad.tpf"
             :img="img.tpf"
             :sizeBox="classSizeBox"
-            :sizeIcon="classSizeIconMedium">
-        </boxes>
+            :sizeIcon="classSizeIconMedium"/>
                 
         <p class="ods-container__description">
             
@@ -61,10 +55,10 @@
 </template>
 
 <script>
-import { setMetas } from '../../js/util';
+import { setMetas } from '../../utils';
 
 //- Traductions
-import tradApi from '../../traductions/apis';
+import tradApis from '../../traductions/apis';
 
 //- Components
 import boxes from '../elements/boxes.vue';
@@ -84,7 +78,7 @@ export default {
     },
     data: function() {
         return {
-            trad: tradApi,
+            trad: tradApis,
             img: {
                 search: search,
                 csw: csw,

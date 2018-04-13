@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import { setMetas } from '../../js/util';
+import { setMetas } from '../../utils';
 
 //- Traductions
 import trad404 from '../../traductions/not-found';

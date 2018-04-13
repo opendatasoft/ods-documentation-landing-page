@@ -1,9 +1,8 @@
 const store =  {
-    debug: true,
     state: {
-        lang: ''
+        lang: 'en'
     },
-    setState (value) {
+    setLang (value) {
         this.state.lang = value;
     }
 };

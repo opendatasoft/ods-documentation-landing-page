@@ -6,52 +6,47 @@
             :trad="trad.platform"
             :img="img.platform"
             :sizeBox="classSizeBox"
-            :sizeIcon="classSizeIcon">
-        </boxes>
+            :sizeIcon="classSizeIcon"/>
 
         <boxes :lang="lang"
             :trad="trad.discovery"
             :img="img.discovery"
             :sizeBox="classSizeBox"
-            :sizeIcon="classSizeIcon">
-        </boxes>
+            :sizeIcon="classSizeIcon"/>
 
         <boxes :lang="lang"
             :trad="trad.faq"
             :img="img.faq"
             :sizeBox="classSizeBox"
-            :sizeIcon="classSizeIcon">
-        </boxes>
+            :sizeIcon="classSizeIcon"/>
 
         <boxes :lang="lang"
             :trad="trad.widgets"
             :img="img.widgets"
             :sizeBox="classSizeBox"
-            :sizeIcon="classSizeIcon">
-        </boxes>
+            :sizeIcon="classSizeIcon"/>
 
         <boxes :lang="lang"
             :trad="trad.tutorial"
             :img="img.tutorial"
             :sizeBox="classSizeBox"
-            :sizeIcon="classSizeIcon">
-        </boxes>
+            :sizeIcon="classSizeIcon"/>
 
         <boxes :lang="lang"
             :trad="trad.apis"
             :img="img.api"
             :sizeBox="classSizeBox"
-            :sizeIcon="classSizeIcon">
-        </boxes>
+            :sizeIcon="classSizeIcon"/>
 
-        <p class="ods-container__support" v-html="trad.descBottom[lang]"></p>
+        <p class="ods-container__support"
+            v-html="trad.descBottom[lang]"></p>
 
     </div>
 
 </template>
 
 <script>
-import { setMetas } from '../../js/util';
+import { setMetas } from '../../utils';
 
 //- Traductions
 import tradHome from '../../traductions/home';
