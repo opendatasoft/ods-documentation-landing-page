@@ -27,9 +27,9 @@ This is finality of documentation harmonisation with OpenDataSoft's identity.
 ## :rocket: Launch application
 
 ```shell
-npm install
+yarn install
 
-npm run build
+yarn run build
 
-npm run dev
+yarn start
 ```
