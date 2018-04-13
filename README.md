@@ -21,7 +21,6 @@ This is finality of documentation harmonisation with OpenDataSoft's identity.
 
 * VueJS : https://vuejs.org/v2/guide/
 * Vue-Router : https://router.vuejs.org/en/
-* VueX : https://vuex.vuejs.org/en/
 * Webpack : https://webpack.js.org/concepts/
 
 ## :rocket: Launch application
