@@ -5,6 +5,7 @@
   "author": "Johan Singainy-Moutiapin <johan.singainy-moutiapin@opendatasoft.com>",
   "private": false,
   "scripts": {
+    "start": "yarn run dev",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot --host 0.0.0.0",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
     "analyze": "cross-env NODE_ENV=production NODE_ANALYZE=true webpack --progress --hide-modules"
