@@ -37,16 +37,16 @@ export default {
 @import "../../../assets/less/components";
 
 .ods-header__slideout {
-    top: 99.5px;
+    top: 101px;
     left: -300px;
     width: 300px;
+    height: 100vh;
     background-color: @blue-light;
     z-index: 49;
     transition: 0.5s;
     padding-top: 15px;
     position: absolute;
     overflow-y: scroll;
-    height: 100vh;
     @media (min-width: @desktop-width) {
         display: none;
     }

@@ -44,7 +44,7 @@ export default {
 }
 
 .ods-footer--active {
-    border-top: 1px solid lighten(@grey-border, 30%);
+    border-top: 1px solid white;
 }
 
 .ods-footer__logo {

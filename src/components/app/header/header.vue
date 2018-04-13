@@ -100,7 +100,7 @@ export default {
 }
 
 .ods-header--active {
-    border-bottom: 1px solid lighten(@grey-border, 30%);
+    border-bottom: 1px solid white;
 }
 
 

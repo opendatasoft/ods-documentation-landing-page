@@ -86,7 +86,7 @@ export default {
         border-bottom: 2px solid white;
     }
     @media (max-width: @mobile-width) {
-        margin: 20px auto;
+        margin: 15px auto;
         width: auto;
     }
     @media (min-width: @desktop-width) {

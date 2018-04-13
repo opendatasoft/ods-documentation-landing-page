@@ -77,7 +77,8 @@ export default {
         background-color: white;
     }
     @media (max-width: @mobile-width) {
-        margin: 20px auto;
+        margin: 15px auto;
+        line-height: 25px;
         &:first-child {
             margin-top: 20px;
         }
