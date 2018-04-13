@@ -38,11 +38,13 @@
         </boxes>
 
         <boxes :lang="lang"
-            :trad="trad.api"
+            :trad="trad.apis"
             :img="img.api"
             :sizeBox="classSizeBox"
             :sizeIcon="classSizeIcon">
         </boxes>
+
+        <p class="ods-container__support" v-html="trad.descBottom[lang]"></p>
 
     </div>
 
@@ -130,6 +132,10 @@ export default {
         padding: 42px 40px 0 40px;
         margin-bottom: 70px;
     }
+}
+
+.ods-container__support {
+    margin: 0 0 30px 0;
 }
 
 </style>

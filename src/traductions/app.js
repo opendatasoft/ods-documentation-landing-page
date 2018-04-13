@@ -49,12 +49,12 @@ export default {
         nl: ""
     },
 
-    api: {
-        en: "API",
-        fr: "API",
-        es: "API",
-        de: "API",
-        nl: "API"
+    apis: {
+        en: "APIs",
+        fr: "APIs",
+        es: "APIs",
+        de: "APIs",
+        nl: "APIs"
     },
 
     btn_menu: {

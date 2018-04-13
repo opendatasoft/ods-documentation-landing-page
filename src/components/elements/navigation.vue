@@ -1,7 +1,12 @@
 <template>
 
     <div class="ods-nav">
-        
+
+        <router-link :to="{ name : 'home'}"
+            class="ods-nav__link">
+            Help Hub
+        </router-link>
+
         <a href="https://help.opendatasoft.com/platform/"
             class="ods-nav__link">
             {{ trad.platform[lang] }}
@@ -27,9 +32,9 @@
             {{ trad.tutorial[lang] }}
         </a>
 
-        <router-link :to="{ name : 'api'}"
+        <router-link :to="{ name : 'apis'}"
             class="ods-nav__link">
-            {{ trad.api[lang] }}
+            {{ trad.apis[lang] }}
         </router-link>
 
     </div>

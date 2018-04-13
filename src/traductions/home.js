@@ -1,5 +1,13 @@
 export default {
 
+    descBottom: {
+        en: "Can't find what you're looking for? You can send a mail to <a href='mailto: support@opendatasoft.com'>support@opendatasoft.com</a>",
+        fr: "",
+        es: "",
+        de: "",
+        nl: ""
+    },
+
     metas: {
         title: {
             en: "Home",
@@ -154,7 +162,7 @@ export default {
 
     },
 
-    api: {
+    apis: {
 
         title: {
             en: "APIs",
@@ -171,11 +179,11 @@ export default {
             nl: ""
         },
         url: {
-            en: "api",
-            fr: "api",
-            es: "api",
-            de: "api",
-            nl: "api"
+            en: "apis",
+            fr: "apis",
+            es: "apis",
+            de: "apis",
+            nl: "apis"
         }
 
     }

@@ -21,9 +21,14 @@
             
                 <router-link :to="{ name: 'home' }">
             
-                    <img class="ods-header__logo"
-                        src="../../../assets/img/ODS_logo_header.svg"
+                    <img v-if="this.$route.name === 'home'"
+                        class="ods-header__logo"
+                        src="../../../assets/img/ODS_logo_help_hub_blanc.svg"
                         alt="OpenDataSoft Documentation">
+                    <img v-else
+                        class="ods-header__logo"
+                        src="../../../assets/img/ODS_logo_api_blanc.svg"
+                        alt="OpenDataSoft Documentation"> 
 
                 </router-link>
 
