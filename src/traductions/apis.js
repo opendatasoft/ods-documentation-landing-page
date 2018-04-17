@@ -169,11 +169,11 @@ export default {
             nl: "TPF"
         },
         desc: {
-            en: "Triple Pattern Fragments Beta Version",
-            fr: "Triple Pattern Fragments Version Beta",
-            es: "Triple Pattern Fragments Versión Beta",
-            de: "Triple Pattern Fragments (Betaversion)",
-            nl: "Triple Pattern Fragments Beta Version"
+            en: "Triple Pattern Fragments<br>Beta Version",
+            fr: "Triple Pattern Fragments<br>Version Beta",
+            es: "Triple Pattern Fragments<br>Versión Beta",
+            de: "Triple Pattern Fragments<br>Betaversion",
+            nl: "Triple Pattern Fragments<br>Beta Version"
         },
         url: {
             en: "https://help.opendatasoft.com/api/tpf/",
