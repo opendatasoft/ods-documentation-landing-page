@@ -24,11 +24,11 @@ export default {
             nl: "Welkom op de help hub van OpenDataSoft- de gecentraliseerde helpsite voor alle producten vanOpenDataSoft"
         },
         image: {
-            en: "Platform",
-            fr: "Platform",
-            es: "Platform",
-            de: "Platform",
-            nl: "Platform"
+            en: "Image URL",
+            fr: "Image URL",
+            es: "Image URL",
+            de: "Image URL",
+            nl: "Image URL"
         }
     },
 
