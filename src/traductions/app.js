@@ -12,9 +12,9 @@ export default {
     platform: {
         en: "Platform",
         fr: "Plateforme",
-        es: "Estrado",
-        de: "Spreekgestoelte",
-        nl: ""
+        es: "Plataforma",
+        de: "Plattform",
+        nl: "Platform"
     },
 
     discovery: {
@@ -42,11 +42,11 @@ export default {
     },
 
     tutorial: {
-        en: "Widgets Tutorial",
-        fr: "Tutoriel Widgets",
-        es: "Tutorial de Widgets",
-        de: "Widgets-Tutorial",
-        nl: ""
+        en: "Widgets tutorials",
+        fr: "Tutoriels des widgets ",
+        es: "Tutoriales de los Widgets",
+        de: "WidgetsTutorials",
+        nl: "Widgetstutorials"
     },
 
     apis: {
@@ -62,7 +62,7 @@ export default {
         fr: "Menu",
         es: "Menú",
         de: "Menü",
-        nl: ""
+        nl: "Menu"
     }
 
 };
