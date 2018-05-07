@@ -1,11 +1,11 @@
 export default {
 
     descBottom: {
-        en: "Can't find what you're looking for? You can send a mail to ",
-        fr: "Vous ne trouvez pas ce que vous cherchez ? Vous pouvez envoyer un email à ",
-        es: "¿No encuentras lo que buscas? Puedes enviar un email a ",
-        de: "Sie finden nicht, wonach Sie suchen? Senden Sie eine E-Mail an ",
-        nl: "Kunt u niet vinden waarnaar u op zoek bent? U kunt een e-mail sturen naar "
+        en: "Can't find what you're looking for? You can send a mail to <a href='mailto: support@opendatasoft.com' target='_top' > support@opendatasoft.com </a>",
+        fr: "Vous ne trouvez pas ce que vous cherchez ? Vous pouvez envoyer un email à <a href='mailto: support@opendatasoft.com' target='_top' > support@opendatasoft.com </a>",
+        es: "¿No encuentras lo que buscas? Puedes enviar un email a <a href='mailto: support@opendatasoft.com' target='_top' > support@opendatasoft.com </a>",
+        de: "Sie finden nicht, wonach Sie suchen? Senden Sie eine E-Mail an <a href='mailto: support@opendatasoft.com' target='_top' > support@opendatasoft.com </a>",
+        nl: "Kunt u niet vinden waarnaar u op zoek bent? U kunt een e-mail sturen naar <a href='mailto: support@opendatasoft.com' target='_top' > support@opendatasoft.com </a>"
     },
 
     metas: {

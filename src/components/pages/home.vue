@@ -38,8 +38,9 @@
             :sizeBox="classSizeBox"
             :sizeIcon="classSizeIcon"/>
 
-        <p class="ods-container__support"
-            v-html="trad.descBottom[lang]"></p>
+        <div class="ods-container__support">
+            <p v-html="trad.descBottom[lang]"></p>
+        </div>
 
     </div>
 
@@ -130,7 +131,13 @@ export default {
 }
 
 .ods-container__support {
-    margin: 0 0 30px 0;
+    @media (max-width: @mobile-width) {
+        text-align: center;
+        margin: 0 10px 30px 10px;
+    }
+    @media (min-width: @desktop-width) {
+        margin: 0 0 30px 0;
+    }
 }
 
 </style>
