@@ -19,15 +19,15 @@
 
             <div class="ods-header__content-logo">
             
-                <router-link :to="{ name: 'home' }">
+                <router-link :to="{ name: 'home', params: { lang: lang }}">
             
-                    <img v-if="this.$route.name === 'home'"
+                    <img v-if="this.$route.name === 'apis'"
                         class="ods-header__logo"
-                        src="../../../assets/img/ODS_logo_help_hub_blanc.svg"
+                        src="../../../assets/img/ODS_logo_api_blanc.svg"
                         alt="OpenDataSoft Documentation">
                     <img v-else
                         class="ods-header__logo"
-                        src="../../../assets/img/ODS_logo_api_blanc.svg"
+                        src="../../../assets/img/ODS_logo_help_hub_blanc.svg"
                         alt="OpenDataSoft Documentation"> 
 
                 </router-link>

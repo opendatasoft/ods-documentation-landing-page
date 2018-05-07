@@ -2,7 +2,7 @@
 
     <div class="ods-nav">
 
-        <router-link :to="{ name : 'home'}"
+        <router-link :to="{ name : 'home', params: { lang: lang }}"
             class="ods-nav__link">
             Help Hub
         </router-link>
@@ -32,7 +32,7 @@
             {{ trad.tutorial[lang] }}
         </a>
 
-        <router-link :to="{ name : 'apis'}"
+        <router-link :to="{ name : 'apis', params: { lang: lang }}"
             class="ods-nav__link">
             {{ trad.apis[lang] }}
         </router-link>

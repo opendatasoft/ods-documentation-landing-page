@@ -42,6 +42,7 @@ export default {
     methods: {
         setLang(value) {
             this.$root.store.setLang(value);
+            sessionStorage.setItem('lang', value);
             document.documentElement.setAttribute('lang', value);
         },
         toggleSlideOut() {
@@ -52,9 +53,17 @@ export default {
         if (['en', 'fr', 'es', 'de', 'nl'].indexOf(this.$route.params.lang) >= 0) {
             this.setLang(this.$route.params.lang);
             this.$router.push( { params: { lang : this.$route.params.lang } } );
+        } else if ( ['en', 'fr', 'es', 'de', 'nl'].indexOf(this.$route.params.lang) === -1) { 
+            if (sessionStorage.getItem('lang')) {
+                this.setLang(sessionStorage.getItem('lang'));
+                this.$router.push( { name: 'notFound' } );
+            } else {
+                this.setLang('en');
+                this.$router.push( { name: 'notFound' } );
+            }
         } else {
             this.setLang('en');
-            this.$router.push( { name: 'notFound', params: { lang : 'en' } } );
+            this.$router.push( { name: 'home', params: { lang: 'en' }} );
         }
     }
 }

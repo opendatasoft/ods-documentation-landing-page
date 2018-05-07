@@ -5,8 +5,6 @@ import home from './components/pages/home.vue';
 import apis from './components/pages/apis.vue';
 import notFound from './components/pages/not-found.vue';
 
-import { navigatorLang } from './utils';
-
 Vue.use(VueRouter);
 
 export default new VueRouter({
@@ -14,7 +12,7 @@ export default new VueRouter({
     routes: [
         {
             path: '/',
-            redirect: '/' + navigatorLang() + '/home'
+            redirect: '/en/home'
         },
         {
             path: '/:lang',
@@ -31,13 +29,9 @@ export default new VueRouter({
             component: apis
         },
         {
-            path: '/:lang/404',
+            path: '/:lang/*',
             name: 'notFound',
             component: notFound
-        },
-        {
-            path: '*',
-            redirect: '/en/404'
         }
     ],
     linkActiveClass: "active"

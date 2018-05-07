@@ -33,10 +33,10 @@ export function setMetas(metas) {
 
 }
 
-export function navigatorLang() {
-    const language = (navigator.languages && navigator.languages[0]) || // Chrome / Firefox
-        navigator.language ||   // All browsers
-        navigator.userLanguage; // IE <= 10
-    if (['en', 'fr', 'es', 'de', 'nl'].indexOf(language) >= 0) return language;
-    else return 'en';
-}
+// export function navigatorLang() {
+//     const language = (navigator.languages && navigator.languages[0]) || // Chrome / Firefox
+//         navigator.language ||   // All browsers
+//         navigator.userLanguage; // IE <= 10
+//     if (['en', 'fr', 'es', 'de', 'nl'].indexOf(language) >= 0) return language;
+//     else return 'en';
+// }

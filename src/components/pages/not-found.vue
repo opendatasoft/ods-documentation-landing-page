@@ -10,7 +10,8 @@
             {{ trad.message404[lang] }}
         </div>
 
-        <router-link to="/" class="page-not-found__get-back-link">
+        <router-link :to="{ name: 'home', params: { lang: lang }}"
+            class="page-not-found__get-back-link">
             {{ trad.backHome[lang] }}
         </router-link>
 
@@ -39,12 +40,11 @@ export default {
             setMetas({
                 title:         this.trad.metas.title[this.lang],
                 description:   this.trad.metas.description[this.lang],
-                image:         '',
                 lang:          this.lang
             });
         }
     },
-    beforeRouteEnter (to, from, next) { 
+    beforeRouteEnter (to, from, next) {
         next((vm) => {
             vm.setPageNotFoundMetas();
         });
