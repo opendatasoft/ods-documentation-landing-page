@@ -3,7 +3,6 @@ import 'es6-promise/auto';
 import Vue from 'vue';
 import router from './router.js';
 
-import initFilter from './filters';
 import store from './store';
 
 import app from './components/app/app.vue';
@@ -22,9 +21,6 @@ router.beforeEach(function (to, from, next) {
 Vue.component('home', home);
 Vue.component('apis', apis);
 Vue.component('notFound', notFound);
-
-//- Filter
-initFilter();
 
 new Vue({
     router: router,
