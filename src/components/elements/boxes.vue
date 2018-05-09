@@ -1,6 +1,7 @@
 <template>
 
     <component class="ods-container__link"
+        :class="sizeBox"
         :is="componentId"
         v-bind="attributId">
 
@@ -65,7 +66,20 @@ export default {
 @import "../../assets/less/components";
 
 .ods-container__link {
-    display: block;
+    @media (max-width: @box-max-width) {
+        display: block;
+        margin: 0 auto 40px auto;
+        width: 90%;
+    }
+    @media (min-width: @box-max-width) and (max-width: @mobile-width) {
+        display: block;
+        margin: 0 auto 40px auto;
+        width: 350px;
+    }
+    @media (min-width: @desktop-width) {
+        width: 350px;
+        margin: 0 0 40px 0;
+    }
 }
 
 .ods-container__box {
@@ -89,27 +103,11 @@ export default {
 }
 
 .ods-container__box-index {
-    @media (max-width: @box-max-width) {
-        height: 200px;
-    }
-    @media (min-width: @box-max-width) and (max-width: @mobile-width) {
-        height: 180px;
-    }
-    @media (min-width: @desktop-width) {
-        height: 150px;
-    }
+    min-height: 150px;
 }
 
 .ods-container__box-apis {
-    @media (max-width: @box-max-width) {
-        height: 120px;
-    }
-    @media (min-width: @box-max-width) and (max-width: @mobile-width) {
-        height: 110px;
-    }
-    @media (min-width: @desktop-width) {
-        height: 80px;
-    }
+    min-height: 80px;
 }
 
 .ods-container__box-icon {
