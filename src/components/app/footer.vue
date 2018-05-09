@@ -1,7 +1,7 @@
 <template>
 
     <footer class="ods-footer"
-        :class="{ 'ods-footer--active' : slideOut }">
+        :class="{ 'ods-footer--active' : isSlideOut }">
         
         <img class="ods-footer__logo"
              src="../../assets/img/ODS_logo_footer.svg"
@@ -23,7 +23,7 @@ export default {
         'langs': langs
     },
     props: {
-        slideOut: Boolean
+        isSlideOut: Boolean
     }
 }
 </script>

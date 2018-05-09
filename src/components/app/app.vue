@@ -3,19 +3,19 @@
     <div>
         
         <Header :lang="this.$root.$data.lang"
-            :slideOut="slideOut"
+            :isSlideOut="isSlideOut"
             @event_toggle_slide_out="toggleSlideOut">
         </Header>
         
         <div class="ods-wrapper"
-            :class="{ 'ods-wrapper--active' : slideOut }">
+            :class="{ 'ods-wrapper--active' : isSlideOut }">
             
             <router-view :lang="this.$root.$data.lang">
             </router-view>
 
         </div>
         
-        <Footer :slideOut="slideOut">
+        <Footer :isSlideOut="isSlideOut">
         </Footer>
 
     </div>
@@ -37,7 +37,7 @@ export default {
     },
     data: function() {
         return {
-            slideOut: false
+            isSlideOut: false
         }
     },
     created() {
@@ -47,7 +47,7 @@ export default {
     },
     methods: {
         toggleSlideOut() {
-            this.slideOut = !this.slideOut;
+            this.isSlideOut = !this.isSlideOut;
         }
     },
     watch: {

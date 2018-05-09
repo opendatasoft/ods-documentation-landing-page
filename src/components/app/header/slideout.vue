@@ -1,7 +1,7 @@
 <template>
     
     <div class="ods-header__slideout"
-        :class="{ 'ods-header__slideout--active' : slideOut }">
+        :class="{ 'ods-header__slideout--active' : isSlideOut }">
 
         <navigation :lang="lang"
             :trad="trad">
@@ -25,7 +25,7 @@ export default {
     },
     props: {
         lang: String,
-        slideOut: Boolean,
+        isSlideOut: Boolean,
         trad: Object
     }
 }

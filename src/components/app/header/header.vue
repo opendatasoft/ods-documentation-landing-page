@@ -1,7 +1,7 @@
 <template>
     
     <header class="ods-header"
-        :class="{ 'ods-header--active' : slideOut }">
+        :class="{ 'ods-header--active' : isSlideOut }">
         
         <div class="ods-header__brand">
             
@@ -10,7 +10,7 @@
                 <button type="button"
                         class="ods-header__menu-toggle"
                         id="nav-button"
-                        :class="{ 'ods-header__menu-toggle--active' : slideOut }"
+                        :class="{ 'ods-header__menu-toggle--active' : isSlideOut }"
                         @click="emitToggleSlideOut()">
                     {{ trad.btn_menu[lang] }}
                 </button>
@@ -42,7 +42,7 @@
         </navigation>
 
         <slideOut :lang="lang"
-            :slideOut="slideOut"
+            :isSlideOut="isSlideOut"
             :trad="trad">
         </slideOut>
 
@@ -71,7 +71,7 @@ export default {
     },
     props: {
         lang: String,
-        slideOut: Boolean
+        isSlideOut: Boolean
     },
     methods: {
         emitToggleSlideOut() {
@@ -80,7 +80,7 @@ export default {
     },
     watch: {
         '$route': function () {
-            if (this.slideOut) this.emitToggleSlideOut();
+            if (this.isSlideOut) this.emitToggleSlideOut();
         }
     }
 }
