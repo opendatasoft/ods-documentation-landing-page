@@ -39,18 +39,15 @@
 export default {
     name: 'boxes',
     data: function () {
-        if (this.trad.url[this.lang].indexOf('https') > -1 ||
-            this.trad.url[this.lang].indexOf('http') > -1) {
-            return {
-                componentId: 'a',
-                attributId: { href : this.trad.url[this.lang] }
-            }
-        }
-        else {
-            return {
-                    componentId: 'router-link',
-                    attributId: { to : this.trad.url[this.lang] }
-                }
+        return {
+            componentId: this.trad.url[this.lang].indexOf('https') > -1 ||
+                this.trad.url[this.lang].indexOf('http') > -1 ?
+                'a' :
+                'router-link',
+            attributId: this.trad.url[this.lang].indexOf('https') > -1 ||
+                this.trad.url[this.lang].indexOf('http') > -1 ?
+                { href : this.trad.url[this.lang] } :
+                { to : this.trad.url[this.lang] }
         }
     },
     props: {

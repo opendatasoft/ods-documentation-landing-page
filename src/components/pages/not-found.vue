@@ -48,11 +48,6 @@ export default {
         next((vm) => {
             vm.setPageNotFoundMetas();
         });
-    },
-    beforeRouteUpdate (to, from, next) {
-        this.$emit('event_set_lang', to.params.lang);
-        this.setPageNotFoundMetas();
-        next();
     }
 }
 </script>

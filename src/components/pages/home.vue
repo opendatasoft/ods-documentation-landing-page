@@ -100,11 +100,6 @@ export default {
         next(vm => {
             vm.setHomeMetas();
         });
-    },
-    beforeRouteUpdate (to, from, next) {
-        this.$emit('event_set_lang', to.params.lang);
-        this.setHomeMetas();
-        next();
     }
 }
 </script>

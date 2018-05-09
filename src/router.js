@@ -7,6 +7,8 @@ import notFound from './components/pages/not-found.vue';
 
 Vue.use(VueRouter);
 
+const localizedURL = path => `/:lang(fr|en|es|de|nl)/${path}`
+
 export default new VueRouter({
     mode: 'history',
     routes: [
@@ -15,21 +17,26 @@ export default new VueRouter({
             redirect: '/en/home'
         },
         {
-            path: '/:lang',
+            path: localizedURL(''),
             redirect: '/:lang/home'
         },
         {
-            path: '/:lang/home',
+            path: localizedURL('home'),
             name: 'home',
             component: home
         },
         {
-            path: '/:lang/apis',
+            path: localizedURL('apis'),
             name: 'apis',
             component: apis
         },
         {
-            path: '/:lang/*',
+            path: localizedURL('*'),
+            name: 'localizedNotFound',
+            component: notFound
+        },
+        {
+            path: '*',
             name: 'notFound',
             component: notFound
         }

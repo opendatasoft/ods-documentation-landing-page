@@ -3,8 +3,7 @@
     <div class="ods-header__slideout"
         :class="{ 'ods-header__slideout--active' : slideOut }">
 
-        <navigation
-            :lang="lang"
+        <navigation :lang="lang"
             :trad="trad">
         </navigation>
 

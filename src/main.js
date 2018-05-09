@@ -3,8 +3,6 @@ import 'es6-promise/auto';
 import Vue from 'vue';
 import router from './router.js';
 
-import store from './store';
-
 import app from './components/app/app.vue';
 
 import home from './components/pages/home.vue';
@@ -23,10 +21,10 @@ Vue.component('apis', apis);
 Vue.component('notFound', notFound);
 
 new Vue({
+    data: {
+        lang: 'en'
+    },
     router: router,
     el: '#app',
-    data: {
-        store: store
-    },
     render: h => h(app)
 });

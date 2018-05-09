@@ -36,7 +36,10 @@ export default {
     name: 'langs',
     methods: {
         langLink: function (lang) {
-            var data = { params: { lang: lang } };
+            var data = { params: { lang } };
+            if (!('lang' in this.$route.params)) {
+                data.name = 'home';
+            }
             return data;
         }
     }

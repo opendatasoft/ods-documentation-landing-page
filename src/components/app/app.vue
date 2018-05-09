@@ -2,16 +2,15 @@
 
     <div>
         
-        <Header :slideOut="slideOut"
-            :lang="this.$root.store.state.lang"
+        <Header :lang="this.$root.$data.lang"
+            :slideOut="slideOut"
             @event_toggle_slide_out="toggleSlideOut">
         </Header>
         
         <div class="ods-wrapper"
             :class="{ 'ods-wrapper--active' : slideOut }">
             
-            <router-view :lang="this.$root.store.state.lang"
-                @event_set_lang="setLang">
+            <router-view :lang="this.$root.$data.lang">
             </router-view>
 
         </div>
@@ -28,6 +27,8 @@
 import header from './header/header.vue';
 import footer from './footer.vue';
 
+const appLang = ['en', 'fr', 'es', 'de', 'nl'];
+
 export default {
     name: 'app',
     components: {
@@ -39,31 +40,21 @@ export default {
             slideOut: false
         }
     },
+    created() {
+        if (appLang.indexOf(this.$route.params.lang) > -1) {
+            this.$root.$data.lang = this.$route.params.lang;
+        }
+    },
     methods: {
-        setLang(value) {
-            this.$root.store.setLang(value);
-            sessionStorage.setItem('lang', value);
-            document.documentElement.setAttribute('lang', value);
-        },
         toggleSlideOut() {
             this.slideOut = !this.slideOut;
         }
     },
-    created: function() {
-        if (['en', 'fr', 'es', 'de', 'nl'].indexOf(this.$route.params.lang) >= 0) {
-            this.setLang(this.$route.params.lang);
-            this.$router.push( { params: { lang : this.$route.params.lang } } );
-        } else if ( ['en', 'fr', 'es', 'de', 'nl'].indexOf(this.$route.params.lang) === -1) { 
-            if (sessionStorage.getItem('lang')) {
-                this.setLang(sessionStorage.getItem('lang'));
-                this.$router.push( { name: 'notFound' } );
-            } else {
-                this.setLang('en');
-                this.$router.push( { name: 'notFound' } );
+    watch: {
+        '$route': function() {
+            if (this.$route.params.lang !== this.$root.$data.lang) {
+                this.$root.$data.lang = this.$route.params.lang;
             }
-        } else {
-            this.setLang('en');
-            this.$router.push( { name: 'home', params: { lang: 'en' }} );
         }
     }
 }

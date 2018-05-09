@@ -41,8 +41,8 @@
             :trad="trad">
         </navigation>
 
-        <slideOut :slideOut="slideOut"
-            :lang="lang"
+        <slideOut :lang="lang"
+            :slideOut="slideOut"
             :trad="trad">
         </slideOut>
 
@@ -70,8 +70,8 @@ export default {
         }
     },
     props: {
-        slideOut: Boolean,
-        lang: String
+        lang: String,
+        slideOut: Boolean
     },
     methods: {
         emitToggleSlideOut() {
