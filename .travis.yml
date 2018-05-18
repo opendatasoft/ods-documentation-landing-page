@@ -19,6 +19,6 @@ after_success:
   - chmod 600 .travis.deploy
   - 'test $TRAVIS_BRANCH == "develop" && rsync -avz -e "ssh -i .travis.deploy -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --delete -P ./dist/ "$DEPLOY_USER"@"$DEPLOY_IP":"$DEPLOY_BETA_PATH" --exclude=widgets'
   - 'test $TRAVIS_BRANCH == "master" && rsync -avz -e "ssh -i .travis.deploy -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --delete -P ./dist/ "$DEPLOY_USER"@"$DEPLOY_IP":"$DEPLOY_PROD_PATH" --exclude=widgets'
-# notifications:
-#   slack:
-#     secure: t9rCkpP1s3kCdoM3DhcBSOjYK7iQgWzhAO2Dq44Tns3Lf1T+P0EAKuAI1ARjhdiskhkKxzIzsOrEJOVy/DIvnWfh1Q0ZrRAkx4aGbgJpIaJEULcFf5/cAlpR01fLf1wjqTb8JQOpIr01c7fpYjVu6OFEujpAxzAH2Y/nHorOYWM7itISnEhay41M8XBpQmsGMZF3GWn8KMGZSI7W+kl71FwW3/LWxDLY4NO1vPXttJAKqGtnGEJsDKzhD03nw8oGfBPK8HhCUKikzWr76BndEPmeh5k0+LGIpRn4gKb5Y9eglvtSAt6jdj4ljaW4NcRkBzNxFGgxCdU4FbMH7h778j67LgoQ8xVSkZoqBhup1tIOmScayiptCKgO1d1a1CEaxFFqvvLFFJ60IS5AOjMApmupwNaJZxrySJvJPUZsf0EbemRdqynGST1zcZkTCOPjjuFjqrTEY9umklQG1qSQ0RgfjKg8cDdFLTzHvC8Vki9rYqhGjdFW/sTwcHX9FZxy6goSQJQQaJtcMOelQJQOrLvZYzL4SDOGFLmMyMFmdtJjHnqDQgLjbseU7GRztW2IW4wZcE9vi9oBo5fiCaGe8PWsV020P26AiRsZ0n9LNCVRQLjL+/fX3ckj81iE7FEEUdWI4n4BTNcu5+Uc93h0RgnTj99iVMwBv/3AkToCsEQ=
+notifications:
+  slack:
+    secure: t9rCkpP1s3kCdoM3DhcBSOjYK7iQgWzhAO2Dq44Tns3Lf1T+P0EAKuAI1ARjhdiskhkKxzIzsOrEJOVy/DIvnWfh1Q0ZrRAkx4aGbgJpIaJEULcFf5/cAlpR01fLf1wjqTb8JQOpIr01c7fpYjVu6OFEujpAxzAH2Y/nHorOYWM7itISnEhay41M8XBpQmsGMZF3GWn8KMGZSI7W+kl71FwW3/LWxDLY4NO1vPXttJAKqGtnGEJsDKzhD03nw8oGfBPK8HhCUKikzWr76BndEPmeh5k0+LGIpRn4gKb5Y9eglvtSAt6jdj4ljaW4NcRkBzNxFGgxCdU4FbMH7h778j67LgoQ8xVSkZoqBhup1tIOmScayiptCKgO1d1a1CEaxFFqvvLFFJ60IS5AOjMApmupwNaJZxrySJvJPUZsf0EbemRdqynGST1zcZkTCOPjjuFjqrTEY9umklQG1qSQ0RgfjKg8cDdFLTzHvC8Vki9rYqhGjdFW/sTwcHX9FZxy6goSQJQQaJtcMOelQJQOrLvZYzL4SDOGFLmMyMFmdtJjHnqDQgLjbseU7GRztW2IW4wZcE9vi9oBo5fiCaGe8PWsV020P26AiRsZ0n9LNCVRQLjL+/fX3ckj81iE7FEEUdWI4n4BTNcu5+Uc93h0RgnTj99iVMwBv/3AkToCsEQ=
