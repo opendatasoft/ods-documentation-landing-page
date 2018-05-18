@@ -6,6 +6,7 @@ const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 var minify = {};
+const pathAssets = 'assets/';
 
 if (process.env.NODE_ENV === 'production') {
     minify = {
@@ -19,7 +20,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, './dist'),
         publicPath: '/',
-        filename: '[name].[hash].js'
+        filename: pathAssets + '[name].[hash].js'
     },
     module: {
         rules: [
@@ -45,7 +46,7 @@ module.exports = {
                 test: /\.(png|jpg|gif|svg|ico)$/,
                 loader: 'file-loader',
                 options: {
-                    name: '[name].[hash].[ext]'
+                    name: pathAssets + '[name].[hash].[ext]'
                 }
             }
         ]
@@ -55,7 +56,7 @@ module.exports = {
             template: './src/index.html',
             minify: minify
         }),
-        new ExtractTextWebpackPlugin('[name].[contenthash].css')
+        new ExtractTextWebpackPlugin(pathAssets +  '[name].[contenthash].css')
     ],
     resolve: {
         alias: {
