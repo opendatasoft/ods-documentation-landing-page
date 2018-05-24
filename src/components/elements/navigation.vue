@@ -22,7 +22,7 @@
             {{ trad.faq[lang] }}
         </a>
 
-        <a href="https://help.opendatasoft.com/widgets"
+        <a href="https://help.opendatasoft.com/widgets/"
             class="ods-nav__link">
             {{ trad.widgets[lang] }}
         </a>
