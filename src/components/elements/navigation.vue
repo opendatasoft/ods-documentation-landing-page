@@ -7,7 +7,7 @@
             Help Hub
         </router-link>
 
-        <a href="https://help.opendatasoft.com/platform/"
+        <a :href="`https://help.opendatasoft.com/platform/${lang}/`"
             class="ods-nav__link">
             {{ trad.platform[lang] }}
         </a>
@@ -17,7 +17,7 @@
             {{ trad.discovery[lang] }}
         </a>
 
-        <a href="https://help.opendatasoft.com/faq/"
+        <a :href="`https://help.opendatasoft.com/faq/${lang}/`"
             class="ods-nav__link">
             {{ trad.faq[lang] }}
         </a>

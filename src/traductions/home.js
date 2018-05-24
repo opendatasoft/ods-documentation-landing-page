@@ -49,7 +49,7 @@ export default {
             nl: "Ontdek wat de oplossingen van OpenDataSoftvoor u kunnen doen: hoe u data kunt publiceren, dashboards kunt ontwerpen, mooie weergaves en nog veel meer."
         },
         url: {
-            en: "https://help.opendatasoft.com/platform/",
+            en: "https://help.opendatasoft.com/platform/en/",
             fr: "https://help.opendatasoft.com/platform/fr/",
             es: "https://help.opendatasoft.com/platform/es/",
             de: "https://help.opendatasoft.com/platform/de/",
@@ -101,7 +101,7 @@ export default {
             nl: "Hier vindt u antwoorden op uw vragen over bestandsformaten, ondersteunde browsers en metadata of gewoon de betekenis van een woord"
         },
         url: {
-            en: "https://help.opendatasoft.com/faq/",
+            en: "https://help.opendatasoft.com/faq/en/",
             fr: "https://help.opendatasoft.com/faq/fr/",
             es: "https://help.opendatasoft.com/faq/es/",
             de: "https://help.opendatasoft.com/faq/de/",
