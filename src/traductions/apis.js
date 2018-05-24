@@ -56,11 +56,11 @@ export default {
             nl: "OpenDataSoft's search API<br>Version 1"
         },
         url: {
-            en: "https://help.opendatasoft.com/api/ods-search-v1/",
-            fr: "https://help.opendatasoft.com/api/ods-search-v1/",
-            es: "https://help.opendatasoft.com/api/ods-search-v1/",
-            de: "https://help.opendatasoft.com/api/ods-search-v1/",
-            nl: "https://help.opendatasoft.com/api/ods-search-v1/"
+            en: "https://help.opendatasoft.com/apis/ods-search-v1/",
+            fr: "https://help.opendatasoft.com/apis/ods-search-v1/",
+            es: "https://help.opendatasoft.com/apis/ods-search-v1/",
+            de: "https://help.opendatasoft.com/apis/ods-search-v1/",
+            nl: "https://help.opendatasoft.com/apis/ods-search-v1/"
         }
     },
 
@@ -80,11 +80,11 @@ export default {
             nl: "OpenDataSoft's search API<br>Version 2"
         },
         url: {
-            en: "https://help.opendatasoft.com/api/ods-search-v2/",
-            fr: "https://help.opendatasoft.com/api/ods-search-v2/",
-            es: "https://help.opendatasoft.com/api/ods-search-v2/",
-            de: "https://help.opendatasoft.com/api/ods-search-v2/",
-            nl: "https://help.opendatasoft.com/api/ods-search-v2/"
+            en: "https://help.opendatasoft.com/apis/ods-search-v2/",
+            fr: "https://help.opendatasoft.com/apis/ods-search-v2/",
+            es: "https://help.opendatasoft.com/apis/ods-search-v2/",
+            de: "https://help.opendatasoft.com/apis/ods-search-v2/",
+            nl: "https://help.opendatasoft.com/apis/ods-search-v2/"
         }
     },
 
@@ -104,11 +104,11 @@ export default {
             nl: "Catalog Service for the Web<br>Version 2.0.2"
         },
         url: {
-            en: "https://help.opendatasoft.com/api/csw/",
-            fr: "https://help.opendatasoft.com/api/csw/",
-            es: "https://help.opendatasoft.com/api/csw/",
-            de: "https://help.opendatasoft.com/api/csw/",
-            nl: "https://help.opendatasoft.com/api/csw/"
+            en: "https://help.opendatasoft.com/apis/csw/",
+            fr: "https://help.opendatasoft.com/apis/csw/",
+            es: "https://help.opendatasoft.com/apis/csw/",
+            de: "https://help.opendatasoft.com/apis/csw/",
+            nl: "https://help.opendatasoft.com/apis/csw/"
         }
     },
 
@@ -128,11 +128,11 @@ export default {
             nl: "Web Feature Service<br>Version 1.1.0"
         },
         url: {
-            en: "https://help.opendatasoft.com/api/wfs/",
-            fr: "https://help.opendatasoft.com/api/wfs/",
-            es: "https://help.opendatasoft.com/api/wfs/",
-            de: "https://help.opendatasoft.com/api/wfs/",
-            nl: "https://help.opendatasoft.com/api/wfs/"
+            en: "https://help.opendatasoft.com/apis/wfs/",
+            fr: "https://help.opendatasoft.com/apis/wfs/",
+            es: "https://help.opendatasoft.com/apis/wfs/",
+            de: "https://help.opendatasoft.com/apis/wfs/",
+            nl: "https://help.opendatasoft.com/apis/wfs/"
         }
     },
 
@@ -152,11 +152,11 @@ export default {
             nl: "Excel integration<br>Version 3.0 and 4.0"
         },
         url: {
-            en: "https://help.opendatasoft.com/api/odata/",
-            fr: "https://help.opendatasoft.com/api/odata/",
-            es: "https://help.opendatasoft.com/api/odata/",
-            de: "https://help.opendatasoft.com/api/odata/",
-            nl: "https://help.opendatasoft.com/api/odata/"
+            en: "https://help.opendatasoft.com/apis/odata/",
+            fr: "https://help.opendatasoft.com/apis/odata/",
+            es: "https://help.opendatasoft.com/apis/odata/",
+            de: "https://help.opendatasoft.com/apis/odata/",
+            nl: "https://help.opendatasoft.com/apis/odata/"
         }
     },
 
@@ -176,11 +176,11 @@ export default {
             nl: "Triple Pattern Fragments<br>Beta Version"
         },
         url: {
-            en: "https://help.opendatasoft.com/api/tpf/",
-            fr: "https://help.opendatasoft.com/api/tpf/",
-            es: "https://help.opendatasoft.com/api/tpf/",
-            de: "https://help.opendatasoft.com/api/tpf/",
-            nl: "https://help.opendatasoft.com/api/tpf/"
+            en: "https://help.opendatasoft.com/apis/tpf/",
+            fr: "https://help.opendatasoft.com/apis/tpf/",
+            es: "https://help.opendatasoft.com/apis/tpf/",
+            de: "https://help.opendatasoft.com/apis/tpf/",
+            nl: "https://help.opendatasoft.com/apis/tpf/"
         }
     }
 
