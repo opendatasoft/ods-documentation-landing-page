@@ -49,7 +49,7 @@ export default {
             nl: "Ontdek wat de oplossingen van OpenDataSoftvoor u kunnen doen: hoe u data kunt publiceren, dashboards kunt ontwerpen, mooie weergaves en nog veel meer."
         },
         url: {
-            en: "https://help.opendatasoft.com/platform/en/",
+            en: "/platform/en/",
             fr: "https://help.opendatasoft.com/platform/fr/",
             es: "https://help.opendatasoft.com/platform/es/",
             de: "https://help.opendatasoft.com/platform/de/",
