@@ -49,7 +49,7 @@ export default {
             nl: "Ontdek wat de oplossingen van OpenDataSoftvoor u kunnen doen: hoe u data kunt publiceren, dashboards kunt ontwerpen, mooie weergaves en nog veel meer."
         },
         url: {
-            en: "/platform/en/",
+            en: "https://help.opendatasoft.com/platform/en/",
             fr: "https://help.opendatasoft.com/platform/fr/",
             es: "https://help.opendatasoft.com/platform/es/",
             de: "https://help.opendatasoft.com/platform/de/",
@@ -153,11 +153,11 @@ export default {
             nl: "Een stap voor stap opleiding om de widgets van OpenDataSoft te ontdekken, van het integreren van een kaart tot uw eigen interactief dashboard"
         },
         url: {
-            en: "https://help.opendatasoft.com/tutorials/",
-            fr: "https://help.opendatasoft.com/tutorials/",
-            es: "https://help.opendatasoft.com/tutorials/",
-            de: "https://help.opendatasoft.com/tutorials/",
-            nl: "https://help.opendatasoft.com/tutorials/"
+            en: "tutorials",
+            fr: "tutorials",
+            es: "tutorials",
+            de: "tutorials",
+            nl: "tutorials"
         }
 
     },
