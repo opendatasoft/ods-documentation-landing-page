@@ -41,12 +41,10 @@ export default {
     name: 'boxes',
     data: function () {
         return {
-            attributId: this.trad.url[this.lang].indexOf('https') > -1 ||
-                this.trad.url[this.lang].indexOf('http') > -1 ?
+            attributId: this.isHref ?
                 'a' :
                 'router-link',
-            hrefLink: this.trad.url[this.lang].indexOf('https') > -1 ||
-                this.trad.url[this.lang].indexOf('http') > -1 ?
+            hrefLink: this.isHref ?
                 { href : this.trad.url[this.lang] } :
                 { to : this.trad.url[this.lang] }
         }
@@ -56,7 +54,8 @@ export default {
         trad: Object,
         img: String,
         sizeBox: String,
-        sizeIcon: String
+        sizeIcon: String,
+        isHref: Boolean
     }
 }
 </script>

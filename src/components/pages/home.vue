@@ -6,37 +6,43 @@
             :trad="trad.platform"
             :img="img.platform"
             :sizeBox="classSizeBox"
-            :sizeIcon="classSizeIcon"/>
+            :sizeIcon="classSizeIcon"
+            :isHref="true"/>
 
         <boxes :lang="lang"
             :trad="trad.discovery"
             :img="img.discovery"
             :sizeBox="classSizeBox"
-            :sizeIcon="classSizeIcon"/>
+            :sizeIcon="classSizeIcon"
+            :isHref="true"/>
 
         <boxes :lang="lang"
             :trad="trad.faq"
             :img="img.faq"
             :sizeBox="classSizeBox"
-            :sizeIcon="classSizeIcon"/>
+            :sizeIcon="classSizeIcon"
+            :isHref="true"/>
 
         <boxes :lang="lang"
             :trad="trad.widgets"
             :img="img.widgets"
             :sizeBox="classSizeBox"
-            :sizeIcon="classSizeIcon"/>
+            :sizeIcon="classSizeIcon"
+            :isHref="true"/>
 
         <boxes :lang="lang"
             :trad="trad.tutorial"
             :img="img.tutorial"
             :sizeBox="classSizeBox"
-            :sizeIcon="classSizeIcon"/>
+            :sizeIcon="classSizeIcon"
+            :isHref="false"/>
 
         <boxes :lang="lang"
             :trad="trad.apis"
             :img="img.api"
             :sizeBox="classSizeBox"
-            :sizeIcon="classSizeIcon"/>
+            :sizeIcon="classSizeIcon"
+            :isHref="false"/>
 
         <div class="ods-container__support">
             <p v-html="trad.descBottom[lang]"></p>

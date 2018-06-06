@@ -6,7 +6,8 @@
             :trad="trad.widgets"
             :img="img.widgets"
             :sizeBox="classSizeBox"
-            :sizeIcon="classSizeIcon"/>
+            :sizeIcon="classSizeIcon"
+            :isHref="true"/>
         
     </div>
 

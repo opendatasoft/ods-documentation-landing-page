@@ -56,11 +56,11 @@ export default {
             nl: "OpenDataSoft's search API<br>Version 1"
         },
         url: {
-            en: "https://help.opendatasoft.com/apis/ods-search-v1/",
-            fr: "https://help.opendatasoft.com/apis/ods-search-v1/",
-            es: "https://help.opendatasoft.com/apis/ods-search-v1/",
-            de: "https://help.opendatasoft.com/apis/ods-search-v1/",
-            nl: "https://help.opendatasoft.com/apis/ods-search-v1/"
+            en: "/apis/ods-search-v1/",
+            fr: "/apis/ods-search-v1/",
+            es: "/apis/ods-search-v1/",
+            de: "/apis/ods-search-v1/",
+            nl: "/apis/ods-search-v1/"
         }
     },
 
@@ -80,11 +80,11 @@ export default {
             nl: "OpenDataSoft's search API<br>Version 2"
         },
         url: {
-            en: "https://help.opendatasoft.com/apis/ods-search-v2/",
-            fr: "https://help.opendatasoft.com/apis/ods-search-v2/",
-            es: "https://help.opendatasoft.com/apis/ods-search-v2/",
-            de: "https://help.opendatasoft.com/apis/ods-search-v2/",
-            nl: "https://help.opendatasoft.com/apis/ods-search-v2/"
+            en: "/apis/ods-search-v2/",
+            fr: "/apis/ods-search-v2/",
+            es: "/apis/ods-search-v2/",
+            de: "/apis/ods-search-v2/",
+            nl: "/apis/ods-search-v2/"
         }
     },
 
@@ -104,11 +104,11 @@ export default {
             nl: "Catalog Service for the Web<br>Version 2.0.2"
         },
         url: {
-            en: "https://help.opendatasoft.com/apis/csw/",
-            fr: "https://help.opendatasoft.com/apis/csw/",
-            es: "https://help.opendatasoft.com/apis/csw/",
-            de: "https://help.opendatasoft.com/apis/csw/",
-            nl: "https://help.opendatasoft.com/apis/csw/"
+            en: "/apis/csw/",
+            fr: "/apis/csw/",
+            es: "/apis/csw/",
+            de: "/apis/csw/",
+            nl: "/apis/csw/"
         }
     },
 
@@ -128,11 +128,11 @@ export default {
             nl: "Web Feature Service<br>Version 1.1.0"
         },
         url: {
-            en: "https://help.opendatasoft.com/apis/wfs/",
-            fr: "https://help.opendatasoft.com/apis/wfs/",
-            es: "https://help.opendatasoft.com/apis/wfs/",
-            de: "https://help.opendatasoft.com/apis/wfs/",
-            nl: "https://help.opendatasoft.com/apis/wfs/"
+            en: "/apis/wfs/",
+            fr: "/apis/wfs/",
+            es: "/apis/wfs/",
+            de: "/apis/wfs/",
+            nl: "/apis/wfs/"
         }
     },
 
@@ -152,11 +152,11 @@ export default {
             nl: "Excel integration<br>Version 3.0 and 4.0"
         },
         url: {
-            en: "https://help.opendatasoft.com/apis/odata/",
-            fr: "https://help.opendatasoft.com/apis/odata/",
-            es: "https://help.opendatasoft.com/apis/odata/",
-            de: "https://help.opendatasoft.com/apis/odata/",
-            nl: "https://help.opendatasoft.com/apis/odata/"
+            en: "/apis/odata/",
+            fr: "/apis/odata/",
+            es: "/apis/odata/",
+            de: "/apis/odata/",
+            nl: "/apis/odata/"
         }
     },
 
@@ -176,11 +176,11 @@ export default {
             nl: "Triple Pattern Fragments<br>Beta Version"
         },
         url: {
-            en: "https://help.opendatasoft.com/apis/tpf/",
-            fr: "https://help.opendatasoft.com/apis/tpf/",
-            es: "https://help.opendatasoft.com/apis/tpf/",
-            de: "https://help.opendatasoft.com/apis/tpf/",
-            nl: "https://help.opendatasoft.com/apis/tpf/"
+            en: "/apis/tpf/",
+            fr: "/apis/tpf/",
+            es: "/apis/tpf/",
+            de: "/apis/tpf/",
+            nl: "/apis/tpf/"
         }
     }
 

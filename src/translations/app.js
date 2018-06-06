@@ -42,11 +42,11 @@ export default {
     },
 
     tutorial: {
-        en: "Widgets tutorials",
-        fr: "Tutoriels des widgets ",
-        es: "Tutoriales de los Widgets",
-        de: "WidgetsTutorials",
-        nl: "Widgetstutorials"
+        en: "Tutorials",
+        fr: "Tutoriels",
+        es: "Tutoriales",
+        de: "Tutorials",
+        nl: "Tutorials"
     },
 
     apis: {

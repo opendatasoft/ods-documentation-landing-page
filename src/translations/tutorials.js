@@ -2,18 +2,18 @@ export default {
 
     metas: {
         title: {
-            en: "Home",
-            fr: "Accueil",
-            es: "Inicio",
-            de: "Startseite",
-            nl: "Home"
+            en: "Tutorial",
+            fr: "Tutoriel",
+            es: "Tutoriales",
+            de: "Tutorial",
+            nl: "Tutorial"
         },
-        description: {
-            en: "Welcome to OpenDataSoft's help hub - the centralized help site for all OpenDataSoft's products ",
-            fr: "Bienvenu au centre d'aide OpenDataSoft - le site qui centralise l'aide pour tous les produits OpenDataSoft",
-            es: "Bienvenido a la central de ayuda deOpenDataSoft, el sitio de ayuda centralizado para todos los productos deOpenDataSoft",
-            de: "Willkommen im Hilfebereich von OpenDataSoft - der zentralen Hilfeseite für alle Produkte von OpenDataSoft",
-            nl: "Welkom op de help hub van OpenDataSoft- de gecentraliseerde helpsite voor alle producten vanOpenDataSoft"
+        desc: {
+            en: "Step by step guided trainings to discover OpenDataSoft's widgets from integrating a map to your own interactive dashboard",
+            fr: "Des formations guidées pas à pas pour découvrir les widgets d'OpenDataSoft depuis l'intégration d'une carte à votre propre tableau de bord interactif",
+            es: "Cursos guiados paso a paso para descubrir los widgets de OpenDataSoft: desde la integración de un mapa hasta sus propios paneles interactivos.",
+            de: "Detaillierte Schulungen, bei denen die Widgets von OpenDataSoft vorgestellt werden: von der Einbindung einer Karte bis zur Gestaltung Ihres eigenen interaktiven Dashboards",
+            nl: "Een stap voor stap opleiding om de widgets van OpenDataSoft te ontdekken, van het integreren van een kaart tot uw eigen interactief dashboard"
         },
         image: {
             en: "Image URL",
@@ -40,11 +40,11 @@ export default {
             nl: "Ontdek de widgets-bibliotheek van OpenDataSoft, een selectie van web components om rijke en interactieve pagina's op te bouwen om data te bekijken."
         },
         url: {
-            en: "https://help.opendatasoft.com/apis/ods-search-v2/",
-            fr: "https://help.opendatasoft.com/apis/ods-search-v2/",
-            es: "https://help.opendatasoft.com/apis/ods-search-v2/",
-            de: "https://help.opendatasoft.com/apis/ods-search-v2/",
-            nl: "https://help.opendatasoft.com/apis/ods-search-v2/"
+            en: "/tutorial/widgets/",
+            fr: "/tutorial/widgets/",
+            es: "/tutorial/widgets/",
+            de: "/tutorial/widgets/",
+            nl: "/tutorial/widgets/"
         }
     }
 

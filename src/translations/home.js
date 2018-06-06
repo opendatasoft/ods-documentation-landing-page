@@ -49,11 +49,11 @@ export default {
             nl: "Ontdek wat de oplossingen van OpenDataSoftvoor u kunnen doen: hoe u data kunt publiceren, dashboards kunt ontwerpen, mooie weergaves en nog veel meer."
         },
         url: {
-            en: "https://help.opendatasoft.com/platform/en/",
-            fr: "https://help.opendatasoft.com/platform/fr/",
-            es: "https://help.opendatasoft.com/platform/es/",
-            de: "https://help.opendatasoft.com/platform/de/",
-            nl: "https://help.opendatasoft.com/platform/nl/"
+            en: "/platform/en/",
+            fr: "/platform/fr/",
+            es: "/platform/es/",
+            de: "/platform/de/",
+            nl: "/platform/nl/"
         }
 
     },
@@ -75,11 +75,11 @@ export default {
             nl: "Een uitgelezen selectie van demonstraties en use cases met live voorbeelden, code excerpts en tips om uw portaal om te toveren tot een powerhouse!"
         },
         url: {
-            en: "https://help.opendatasoft.com/discovery/",
-            fr: "https://help.opendatasoft.com/discovery/",
-            es: "https://help.opendatasoft.com/discovery/",
-            de: "https://help.opendatasoft.com/discovery/",
-            nl: "https://help.opendatasoft.com/discovery/"
+            en: "/discovery/",
+            fr: "/discovery/",
+            es: "/discovery/",
+            de: "/discovery/",
+            nl: "/discovery/"
         }
 
     },
@@ -101,11 +101,11 @@ export default {
             nl: "Hier vindt u antwoorden op uw vragen over bestandsformaten, ondersteunde browsers en metadata of gewoon de betekenis van een woord"
         },
         url: {
-            en: "https://help.opendatasoft.com/faq/en/",
-            fr: "https://help.opendatasoft.com/faq/fr/",
-            es: "https://help.opendatasoft.com/faq/es/",
-            de: "https://help.opendatasoft.com/faq/de/",
-            nl: "https://help.opendatasoft.com/faq/nl/"
+            en: "/faq/en/",
+            fr: "/faq/fr/",
+            es: "/faq/es/",
+            de: "/faq/de/",
+            nl: "/faq/nl/"
         }
 
     },
@@ -127,11 +127,11 @@ export default {
             nl: "Ontdek de widgets-bibliotheek van OpenDataSoft, een selectie van web components om rijke en interactieve pagina's op te bouwen om data te bekijken."
         },
         url: {
-            en: "https://help.opendatasoft.com/widgets/",
-            fr: "https://help.opendatasoft.com/widgets/",
-            es: "https://help.opendatasoft.com/widgets/",
-            de: "https://help.opendatasoft.com/widgets/",
-            nl: "https://help.opendatasoft.com/widgets/"
+            en: "/widgets/",
+            fr: "/widgets/",
+            es: "/widgets/",
+            de: "/widgets/",
+            nl: "/widgets/"
         }
 
     },

@@ -7,30 +7,30 @@
             Help Hub
         </router-link>
 
-        <a :href="`https://help.opendatasoft.com/platform/${lang}/`"
+        <a :href="`/platform/${lang}/`"
             class="ods-nav__link">
             {{ trad.platform[lang] }}
         </a>
 
-        <a href="https://help.opendatasoft.com/discovery/"
+        <a href="/discovery/"
             class="ods-nav__link">
             {{ trad.discovery[lang] }}
         </a>
 
-        <a :href="`https://help.opendatasoft.com/faq/${lang}/`"
+        <a :href="`/faq/${lang}/`"
             class="ods-nav__link">
             {{ trad.faq[lang] }}
         </a>
 
-        <a href="https://help.opendatasoft.com/widgets/"
+        <a href="/widgets/"
             class="ods-nav__link">
             {{ trad.widgets[lang] }}
         </a>
 
-        <a href="https://help.opendatasoft.com/tutorials/"
+        <router-link :to="{ name : 'tutorials', params: { lang: lang }}"
             class="ods-nav__link">
             {{ trad.tutorial[lang] }}
-        </a>
+        </router-link>
 
         <router-link :to="{ name : 'apis', params: { lang: lang }}"
             class="ods-nav__link">
