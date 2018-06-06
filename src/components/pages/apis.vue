@@ -58,7 +58,7 @@
 import { setMetas } from '../../utils';
 
 //- Traductions
-import tradApis from '../../traductions/apis';
+import tradApis from '../../translations/apis';
 
 //- Components
 import boxes from '../elements/boxes.vue';
@@ -96,19 +96,14 @@ export default {
     props: {
         lang: String
     },
-    methods: {
-        setHomeMetas: function () {
-            setMetas({
-                title:          this.trad.metas.title[this.lang],
-                description:    this.trad.metas.description[this.lang],
-                image:          this.trad.metas.image[this.lang],
-                lang:           this.lang
-            });
-        }
-    },
     beforeRouteEnter (to, from, next) {
         next(vm => {
-            vm.setHomeMetas();
+            setMetas({
+                title:          vm.trad.metas.title[vm.lang],
+                description:    vm.trad.metas.description[vm.lang],
+                image:          vm.trad.metas.image[vm.lang],
+                lang:           vm.lang
+            });
         });
     }
 }

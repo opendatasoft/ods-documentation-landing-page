@@ -52,7 +52,7 @@
 
 <script>
 //- Traductions
-import tradApp from '../../../traductions/app';
+import tradApp from '../../../translations/app';
 
 //- Components
 import slideOut from './slideout.vue';

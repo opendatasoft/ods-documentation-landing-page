@@ -2,8 +2,8 @@
 
     <component class="ods-container__link"
         :class="sizeBox"
-        :is="componentId"
-        v-bind="attributId">
+        :is="attributId"
+        v-bind="hrefLink">
 
         <div class="ods-container__box"
             :class="sizeBox">
@@ -41,11 +41,11 @@ export default {
     name: 'boxes',
     data: function () {
         return {
-            componentId: this.trad.url[this.lang].indexOf('https') > -1 ||
+            attributId: this.trad.url[this.lang].indexOf('https') > -1 ||
                 this.trad.url[this.lang].indexOf('http') > -1 ?
                 'a' :
                 'router-link',
-            attributId: this.trad.url[this.lang].indexOf('https') > -1 ||
+            hrefLink: this.trad.url[this.lang].indexOf('https') > -1 ||
                 this.trad.url[this.lang].indexOf('http') > -1 ?
                 { href : this.trad.url[this.lang] } :
                 { to : this.trad.url[this.lang] }
