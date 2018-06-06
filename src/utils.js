@@ -1,4 +1,4 @@
-import content from './traductions/app';
+import content from './translations/app';
 
 function getCurrentURL() {
     return window.location.protocol + '//' + window.location.host + window.location.pathname;
@@ -32,11 +32,3 @@ export function setMetas(metas) {
     document.head.querySelector('[property="og:image"]').setAttribute('content', metas.image);
 
 }
-
-// export function navigatorLang() {
-//     const language = (navigator.languages && navigator.languages[0]) || // Chrome / Firefox
-//         navigator.language ||   // All browsers
-//         navigator.userLanguage; // IE <= 10
-//     if (['en', 'fr', 'es', 'de', 'nl'].indexOf(language) >= 0) return language;
-//     else return 'en';
-// }
