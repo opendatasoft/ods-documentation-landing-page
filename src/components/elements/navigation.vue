@@ -22,15 +22,15 @@
             {{ trad.faq[lang] }}
         </a>
 
-        <a href="/widgets/"
+        <a href="/widgets/#/api/"
             class="ods-nav__link">
             {{ trad.widgets[lang] }}
         </a>
 
-        <router-link :to="{ name : 'tutorials', params: { lang: lang }}"
+        <a href="/widgets/#/tutorial/"
             class="ods-nav__link">
-            {{ trad.tutorial[lang] }}
-        </router-link>
+            {{ trad.widgets[lang] }}
+        </a>
 
         <router-link :to="{ name : 'apis', params: { lang: lang }}"
             class="ods-nav__link">

@@ -35,7 +35,7 @@
             :img="img.tutorial"
             :sizeBox="classSizeBox"
             :sizeIcon="classSizeIcon"
-            :isHref="false"/>
+            :isHref="true"/>
 
         <boxes :lang="lang"
             :trad="trad.apis"

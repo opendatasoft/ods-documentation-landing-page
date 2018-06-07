@@ -127,11 +127,11 @@ export default {
             nl: "Ontdek de widgets-bibliotheek van OpenDataSoft, een selectie van web components om rijke en interactieve pagina's op te bouwen om data te bekijken."
         },
         url: {
-            en: "/widgets/",
-            fr: "/widgets/",
-            es: "/widgets/",
-            de: "/widgets/",
-            nl: "/widgets/"
+            en: "/widgets/#/api/",
+            fr: "/widgets/#/api/",
+            es: "/widgets/#/api/",
+            de: "/widgets/#/api/",
+            nl: "/widgets/#/api/"
         }
 
     },
@@ -153,11 +153,11 @@ export default {
             nl: "Een stap voor stap opleiding om de widgets van OpenDataSoft te ontdekken, van het integreren van een kaart tot uw eigen interactief dashboard"
         },
         url: {
-            en: "tutorials",
-            fr: "tutorials",
-            es: "tutorials",
-            de: "tutorials",
-            nl: "tutorials"
+            en: "/widgets/#/tutorial/",
+            fr: "/widgets/#/tutorial/",
+            es: "/widgets/#/tutorial/",
+            de: "/widgets/#/tutorial/",
+            nl: "/widgets/#/tutorial/"
         }
 
     },
