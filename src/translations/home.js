@@ -101,11 +101,11 @@ export default {
             nl: "Hier vindt u antwoorden op uw vragen over bestandsformaten, ondersteunde browsers en metadata of gewoon de betekenis van een woord"
         },
         url: {
-            en: "/faq/en/",
-            fr: "/faq/fr/",
-            es: "/faq/es/",
-            de: "/faq/de/",
-            nl: "/faq/nl/"
+            en: "/faq-glossary/en/",
+            fr: "/faq-glossary/fr/",
+            es: "/faq-glossary/es/",
+            de: "/faq-glossary/de/",
+            nl: "/faq-glossary/nl/"
         }
 
     },
