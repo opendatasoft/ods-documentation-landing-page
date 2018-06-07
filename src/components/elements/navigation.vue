@@ -17,7 +17,7 @@
             {{ trad.discovery[lang] }}
         </a>
 
-        <a :href="`/faq/${lang}/`"
+        <a :href="`/faq-glossary/${lang}/`"
             class="ods-nav__link">
             {{ trad.faq[lang] }}
         </a>
