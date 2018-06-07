@@ -40,11 +40,11 @@ export default {
             nl: "Ontdek de widgets-bibliotheek van OpenDataSoft, een selectie van web components om rijke en interactieve pagina's op te bouwen om data te bekijken."
         },
         url: {
-            en: "/tutorial/widgets/",
-            fr: "/tutorial/widgets/",
-            es: "/tutorial/widgets/",
-            de: "/tutorial/widgets/",
-            nl: "/tutorial/widgets/"
+            en: "/tutorials/widgets/",
+            fr: "/tutorials/widgets/",
+            es: "/tutorials/widgets/",
+            de: "/tutorials/widgets/",
+            nl: "/tutorials/widgets/"
         }
     }
 
