@@ -7,7 +7,6 @@ import app from './components/app/app.vue';
 
 import home from './components/pages/home.vue';
 import apis from './components/pages/apis.vue';
-import tutorials from './components/pages/tutorials.vue';
 import notFound from './components/pages/not-found.vue';
 
 // Scroll to top on route change
@@ -19,7 +18,6 @@ router.beforeEach(function (to, from, next) {
 /* Set up vue */
 Vue.component('home', home);
 Vue.component('apis', apis);
-Vue.component('tutorials', tutorials);
 Vue.component('notFound', notFound);
 
 new Vue({
