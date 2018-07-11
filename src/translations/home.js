@@ -136,32 +136,6 @@ export default {
 
     },
 
-    tutorial: {
-
-        title: {
-            en: "Widgets Tutorial",
-            fr: "Tutoriel Widgets",
-            es: "Tutoriales de los Widgets",
-            de: "WidgetsTutorial",
-            nl: "WidgetsTutorial"
-        },
-        desc: {
-            en: "Step by step guided trainings to discover OpenDataSoft's widgets from integrating a map to your own interactive dashboard",
-            fr: "Des formations guidées pas à pas pour découvrir les widgets d'OpenDataSoft depuis l'intégration d'une carte à votre propre tableau de bord interactif",
-            es: "Cursos guiados paso a paso para descubrir los widgets de OpenDataSoft: desde la integración de un mapa hasta sus propios paneles interactivos.",
-            de: "Detaillierte Schulungen, bei denen die Widgets von OpenDataSoft vorgestellt werden: von der Einbindung einer Karte bis zur Gestaltung Ihres eigenen interaktiven Dashboards",
-            nl: "Een stap voor stap opleiding om de widgets van OpenDataSoft te ontdekken, van het integreren van een kaart tot uw eigen interactief dashboard"
-        },
-        url: {
-            en: "/widgets/#/tutorial/",
-            fr: "/widgets/#/tutorial/",
-            es: "/widgets/#/tutorial/",
-            de: "/widgets/#/tutorial/",
-            nl: "/widgets/#/tutorial/"
-        }
-
-    },
-
     apis: {
 
         title: {

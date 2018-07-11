@@ -31,13 +31,6 @@
             :isHref="true"/>
 
         <boxes :lang="lang"
-            :trad="trad.tutorial"
-            :img="img.tutorial"
-            :sizeBox="classSizeBox"
-            :sizeIcon="classSizeIcon"
-            :isHref="true"/>
-
-        <boxes :lang="lang"
             :trad="trad.apis"
             :img="img.api"
             :sizeBox="classSizeBox"

@@ -27,11 +27,6 @@
             {{ trad.widgets[lang] }}
         </a>
 
-        <a href="/widgets/#/tutorial/"
-            class="ods-nav__link">
-            {{ trad.tutorial[lang] }}
-        </a>
-
         <router-link :to="{ name : 'apis', params: { lang: lang }}"
             class="ods-nav__link">
             {{ trad.apis[lang] }}

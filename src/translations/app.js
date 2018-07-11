@@ -41,14 +41,6 @@ export default {
         nl: "Widgets"
     },
 
-    tutorial: {
-        en: "Widgets tutorials",
-        fr: "Tutoriels des widgets",
-        es: "Tutoriales de los Widgets",
-        de: "WidgetsTutorials",
-        nl: "Widgetstutorials"
-    },
-
     apis: {
         en: "APIs",
         fr: "APIs",
