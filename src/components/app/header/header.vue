@@ -118,7 +118,7 @@ export default {
     }
     @media (min-width: @desktop-width) {
         width: auto;
-        padding-left: 41px;
+        padding-left: 40px;
     }
 }
 
