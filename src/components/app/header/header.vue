@@ -19,7 +19,8 @@
 
             <div class="ods-header__content-logo">
             
-                <router-link :to="{ name: 'home', params: { lang: lang }}">
+                <router-link :to="{ name: 'home', params: { lang: lang }}"
+                    class="ods-header__content-logo-link">
             
                     <img v-if="this.$route.name === 'apis'"
                         class="ods-header__logo"
@@ -162,8 +163,12 @@ export default {
     }
 }
 
+.ods-header__content-logo-link {
+    margin: auto 0;
+}
+
 .ods-header__logo {
-    margin: 10px 0;
+    margin: 0;
     @media (max-width: @mobile-width) {
         height: 70px;
     }
