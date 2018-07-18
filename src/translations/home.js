@@ -75,11 +75,11 @@ export default {
             nl: "Een uitgelezen selectie van demonstraties en use cases met live voorbeelden, code excerpts en tips om uw portaal om te toveren tot een powerhouse!"
         },
         url: {
-            en: "/discovery/",
-            fr: "/discovery/",
-            es: "/discovery/",
-            de: "/discovery/",
-            nl: "/discovery/"
+            en: "https://discovery.opendatasoft.com",
+            fr: "https://discovery.opendatasoft.com",
+            es: "https://discovery.opendatasoft.com",
+            de: "https://discovery.opendatasoft.com",
+            nl: "https://discovery.opendatasoft.com"
         }
 
     },

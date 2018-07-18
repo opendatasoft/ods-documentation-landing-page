@@ -12,7 +12,7 @@
             {{ trad.platform[lang] }}
         </a>
 
-        <a href="/discovery/"
+        <a href="https://discovery.opendatasoft.com/"
             class="ods-nav__link">
             {{ trad.discovery[lang] }}
         </a>
