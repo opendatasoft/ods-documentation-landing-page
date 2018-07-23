@@ -5,7 +5,7 @@
         
         <img class="ods-footer__logo"
              src="../../assets/img/ODS_logo_footer.svg"
-             alt="OpenDataSoft Documentation">
+             alt="OpenDataSoft logo">
 
         <langs class="ods-footer__lang">
         </langs>

@@ -12,7 +12,7 @@
                 
                 <img :class="sizeIcon"
                     :src="img"
-                    alt="OpenDataSoft Documentation"/>
+                    :alt="'OpenDataSoft ' + trad.title[lang] + ' Documentation'"/>
 
             </div>
             

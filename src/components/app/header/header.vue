@@ -25,11 +25,11 @@
                     <img v-if="this.$route.name === 'apis'"
                         class="ods-header__logo"
                         src="../../../assets/img/ODS_logo_api_blanc.svg"
-                        alt="OpenDataSoft Documentation">
+                        alt="OpenDataSoft APIs Documentation Logo">
                     <img v-else
                         class="ods-header__logo"
                         src="../../../assets/img/ODS_logo_help_hub_blanc.svg"
-                        alt="OpenDataSoft Documentation"> 
+                        alt="OpenDataSoft HelpHub Documentation Logo"> 
 
                 </router-link>
 
