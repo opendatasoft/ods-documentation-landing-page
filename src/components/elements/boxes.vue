@@ -102,7 +102,7 @@ export default {
 }
 
 .ods-container__box-index {
-    min-height: 150px;
+    min-height: 155px;
 }
 
 .ods-container__box-apis {
@@ -182,7 +182,7 @@ export default {
 
 .ods-container__box-desc {
     width: auto;
-    margin: auto 0;
+    margin: 0;
 }
 
 //- IE 10 / 11
