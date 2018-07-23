@@ -25,19 +25,19 @@ export default {
     },
 
     descTop: {
-        en: "Our APIs reference, with endpoints, parameters you can use and consoles to run interactive queries",
-        fr: "Nos références d'API, avec les points terminaux, les paramètres que vous pouvez utiliser et les consoles pour exécuter des requêtes interactives",
-        es: "Nuestras referencia de API, con extremos, parámetros que se pueden utilizar y consolas para ejecutar consultas interactivas",
-        de: "Unsere API-Referenzen mit Endpunkten, Parametern, die Sie verwenden können, und Konsolen zum Ausführen interaktiver Abfragen",
-        nl: "Onze API-referenties met eindpunten, parameters die u kunt gebruiken en consoles om interactieve onderzoeken te voeren"
+        en: "Our APIs reference, with endpoints, parameters you can use and consoles to run interactive queries.",
+        fr: "Nos références d'API, avec les points terminaux, les paramètres que vous pouvez utiliser et les consoles pour exécuter des requêtes interactives.",
+        es: "Nuestras referencia de API, con extremos, parámetros que se pueden utilizar y consolas para ejecutar consultas interactivas.",
+        de: "Unsere API-Referenzen mit Endpunkten, Parametern, die Sie verwenden können, und Konsolen zum Ausführen interaktiver Abfragen.",
+        nl: "Onze API-referenties met eindpunten, parameters die u kunt gebruiken en consoles om interactieve onderzoeken te voeren."
     },
 
     descBottom: {
-        en: "Use these APIs to access datasets on your OpenDataSoft portal or on third party websites or integrations",
-        fr: "Utilisez ces API pour accéder aux ensembles de données sur votre portail OpenDataSoft ou sur des sites Web tiers ou des intégrations",
+        en: "Use these APIs to access datasets on your OpenDataSoft portal or on third party websites or integrations.",
+        fr: "Utilisez ces API pour accéder aux ensembles de données sur votre portail OpenDataSoft ou sur des sites Web tiers ou des intégrations.",
         es: "Utilice estas API para acceder a conjuntos de datos en el portal de OpenDataSoft o en sitios web o integraciones de terceros.",
-        de: "Verwenden Sie diese APIs, um auf die Datensätze Ihres OpenDataSoft-Portals oder auf Websites und Integrationen von Drittanbietern zuzugreifen",
-        nl: "Gebruik deze API's om toegang te krijgen tot datasets op uw OpenDataSoft-portaal of op websites van derden of integraties"
+        de: "Verwenden Sie diese APIs, um auf die Datensätze Ihres OpenDataSoft-Portals oder auf Websites und Integrationen von Drittanbietern zuzugreifen.",
+        nl: "Gebruik deze API's om toegang te krijgen tot datasets op uw OpenDataSoft-portaal of op websites van derden of integraties."
     },
 
     searchv1: {

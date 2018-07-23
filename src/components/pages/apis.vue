@@ -52,7 +52,7 @@
                 
         <p class="ods-container__description">
             
-            {{ trad.descTop[lang] }}
+            {{ trad.descBottom[lang] }}
         
         </p>
         

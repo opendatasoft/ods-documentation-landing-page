@@ -1,11 +1,11 @@
 export default {
 
     descBottom: {
-        en: "Can't find what you're looking for? You can send a mail to <a href='mailto: support@opendatasoft.com' target='_top' > support@opendatasoft.com </a>",
-        fr: "Vous ne trouvez pas ce que vous cherchez ? Vous pouvez envoyer un email à <a href='mailto: support@opendatasoft.com' target='_top' > support@opendatasoft.com </a>",
-        es: "¿No encuentras lo que buscas? Puedes enviar un email a <a href='mailto: support@opendatasoft.com' target='_top' > support@opendatasoft.com </a>",
-        de: "Sie finden nicht, wonach Sie suchen? Senden Sie eine E-Mail an <a href='mailto: support@opendatasoft.com' target='_top' > support@opendatasoft.com </a>",
-        nl: "Kunt u niet vinden waarnaar u op zoek bent? U kunt een e-mail sturen naar <a href='mailto: support@opendatasoft.com' target='_top' > support@opendatasoft.com </a>"
+        en: "Can't find what you're looking for? You can send a mail to <a href='mailto: support@opendatasoft.com' target='_top' > support@opendatasoft.com</a>.",
+        fr: "Vous ne trouvez pas ce que vous cherchez ? Vous pouvez envoyer un email à <a href='mailto: support@opendatasoft.com' target='_top' > support@opendatasoft.com</a>.",
+        es: "¿No encuentras lo que buscas? Puedes enviar un email a <a href='mailto: support@opendatasoft.com' target='_top' > support@opendatasoft.com</a>.",
+        de: "Sie finden nicht, wonach Sie suchen? Senden Sie eine E-Mail an <a href='mailto: support@opendatasoft.com' target='_top' > support@opendatasoft.com</a>.",
+        nl: "Kunt u niet vinden waarnaar u op zoek bent? U kunt een e-mail sturen naar <a href='mailto: support@opendatasoft.com' target='_top' > support@opendatasoft.com</a>."
     },
 
     metas: {
@@ -17,11 +17,11 @@ export default {
             nl: "Home"
         },
         description: {
-            en: "Welcome to OpenDataSoft's help hub - the centralized help site for all OpenDataSoft's products ",
-            fr: "Bienvenu au centre d'aide OpenDataSoft - le site qui centralise l'aide pour tous les produits OpenDataSoft",
-            es: "Bienvenido a la central de ayuda deOpenDataSoft, el sitio de ayuda centralizado para todos los productos deOpenDataSoft",
-            de: "Willkommen im Hilfebereich von OpenDataSoft - der zentralen Hilfeseite für alle Produkte von OpenDataSoft",
-            nl: "Welkom op de help hub van OpenDataSoft- de gecentraliseerde helpsite voor alle producten vanOpenDataSoft"
+            en: "Welcome to OpenDataSoft's help hub - the centralized help site for all OpenDataSoft's products.",
+            fr: "Bienvenu au centre d'aide OpenDataSoft - le site qui centralise l'aide pour tous les produits OpenDataSoft.",
+            es: "Bienvenido a la central de ayuda deOpenDataSoft, el sitio de ayuda centralizado para todos los productos deOpenDataSoft.",
+            de: "Willkommen im Hilfebereich von OpenDataSoft - der zentralen Hilfeseite für alle Produkte von OpenDataSoft.",
+            nl: "Welkom op de help hub van OpenDataSoft- de gecentraliseerde helpsite voor alle producten vanOpenDataSoft."
         },
         image: {
             en: "Image URL",
@@ -69,8 +69,8 @@ export default {
         },
         desc: {
             en: "A curated selection of demonstrations and use cases with live examples, code excerpts and tips to turn your portal into a powerhouse!",
-            fr: "Une sélection de démonstrations et de cas d'utilisation avec des exemples en direct, des extraits de code et des conseils pour rendre votre portail ultra-dynamique!",
-            es: "Una selección exclusiva de demostraciones y casos de uso con ejemplos en vivo, fragmentos de código y consejos para convertir su portal en un centro neurálgico de comunicación.",
+            fr: "Une sélection de démonstrations et de cas d'utilisation avec des exemples en direct, des extraits de code et des conseils pour rendre votre portail ultra-dynamique !",
+            es: "Una selección exclusiva de demostraciones y casos de uso con ejemplos en vivo, fragmentos de código y consejos para convertir su portal en un centro neurálgico de comunicación !",
             de: "Eine hilfreiche Auswahl an Demonstrationen und Anwendungsfällen mit konkreten Beispielen, Code-Auszügen und Tipps, um das Beste aus Ihrem Portal herauszuholen!",
             nl: "Een uitgelezen selectie van demonstraties en use cases met live voorbeelden, code excerpts en tips om uw portaal om te toveren tot een powerhouse!"
         },
@@ -94,11 +94,11 @@ export default {
             nl: "FAQ/Lexicon"
         },
         desc: {
-            en: "Here you will find answers to your questions about file formats, supported browsers or metadata or simply a word meaning ",
-            fr: "Vous trouverez ici des réponses à vos questions sur les formats de fichiers, les navigateurs pris en charge ou les métadonnées ou simplement une signification de mot",
-            es: "Aquí encontrará las respuestas a sus preguntas sobre formatos de archivos, navegadores admitidos o metadatos, o también qué significa una palabra.",
-            de: "Hier finden Sie Antworten auf Ihre Fragen zu Dateiformaten, unterstützten Browsern oder Metadaten oder die Erklärung einzelner Begriffe",
-            nl: "Hier vindt u antwoorden op uw vragen over bestandsformaten, ondersteunde browsers en metadata of gewoon de betekenis van een woord"
+            en: "Here you will find answers to your questions about file formats, supported browsers, metadata or simply a word meaning.",
+            fr: "Vous trouverez ici des réponses à vos questions sur les formats de fichiers, les navigateurs pris en charge, les métadonnées ou simplement une signification de mot.",
+            es: "Aquí encontrará las respuestas a sus preguntas sobre formatos de archivos, navegadores admitidos, metadatos, o también qué significa una palabra.",
+            de: "Hier finden Sie Antworten auf Ihre Fragen zu Dateiformaten, unterstützten Browsern, Metadaten oder die Erklärung einzelner Begriffe.",
+            nl: "Hier vindt u antwoorden op uw vragen over bestandsformaten, ondersteunde browsers en metadata of gewoon de betekenis van een woord."
         },
         url: {
             en: "/faq-glossary/en/",
@@ -146,11 +146,11 @@ export default {
             nl: "APIs"
         },
         desc: {
-            en: "Our API references, with endpoints, parameters you can use and consoles to run interactive queries",
-            fr: "Nos références d'API, avec les points terminaux, les paramètres que vous pouvez utiliser et les consoles pour exécuter des requêtes interactives",
-            es: "Nuestra referencia de API, con extremos, parámetros que se pueden utilizar y consolas para ejecutar consultas interactivas",
-            de: "Unsere API-Referenzen mit Endpunkten, Parametern, die Sie verwenden können, und Konsolen zum Ausführen interaktiver Abfragen",
-            nl: "Onze API-referenties met eindpunten, parameters die u kunt gebruiken en consoles om interactieve onderzoeken te voeren"
+            en: "Our API references, with endpoints, parameters you can use and consoles to run interactive queries.",
+            fr: "Nos références d'API, avec les points terminaux, les paramètres que vous pouvez utiliser et les consoles pour exécuter des requêtes interactives.",
+            es: "Nuestra referencia de API, con extremos, parámetros que se pueden utilizar y consolas para ejecutar consultas interactivas.",
+            de: "Unsere API-Referenzen mit Endpunkten, Parametern, die Sie verwenden können, und Konsolen zum Ausführen interaktiver Abfragen.",
+            nl: "Onze API-referenties met eindpunten, parameters die u kunt gebruiken en consoles om interactieve onderzoeken te voeren."
         },
         url: {
             en: "apis",
