@@ -50,11 +50,11 @@ export default {
     },
 
     btn_menu: {
-        en: "Menu",
-        fr: "Menu",
-        es: "Menú",
-        de: "Menü",
-        nl: "Menu"
+        en: "Help Hub",
+        fr: "Help Hub",
+        es: "Help Hub",
+        de: "Help Hub",
+        nl: "Help Hub"
     }
 
 };

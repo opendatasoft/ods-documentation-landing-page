@@ -4,7 +4,22 @@
         :class="{ 'ods-header--active' : isSlideOut }">
         
         <div class="ods-header__brand">
+
+            <div class="ods-header__content-block"></div>
+
+            <div class="ods-header__content-logo">
             
+                <img v-if="this.$route.name === 'apis'"
+                    class="ods-header__logo"
+                    src="../../../assets/img/ODS_logo_api_blanc.svg"
+                    alt="OpenDataSoft APIs Documentation Logo">
+                <img v-else
+                    class="ods-header__logo"
+                    src="../../../assets/img/ODS_logo_help_hub_blanc.svg"
+                    alt="OpenDataSoft HelpHub Documentation Logo"> 
+
+            </div>
+
             <div class="ods-header__content-menu-toggle">
             
                 <button type="button"
@@ -14,24 +29,6 @@
                         @click="emitToggleSlideOut()">
                     {{ trad.btn_menu[lang] }}
                 </button>
-
-            </div>
-
-            <div class="ods-header__content-logo">
-            
-                <router-link :to="{ name: 'home', params: { lang: lang }}"
-                    class="ods-header__content-logo-link">
-            
-                    <img v-if="this.$route.name === 'apis'"
-                        class="ods-header__logo"
-                        src="../../../assets/img/ODS_logo_api_blanc.svg"
-                        alt="OpenDataSoft APIs Documentation Logo">
-                    <img v-else
-                        class="ods-header__logo"
-                        src="../../../assets/img/ODS_logo_help_hub_blanc.svg"
-                        alt="OpenDataSoft HelpHub Documentation Logo"> 
-
-                </router-link>
 
             </div>
 
@@ -115,10 +112,23 @@ export default {
     height: 100px;
     @media (max-width: @mobile-width) {
         width: 100%;
+        justify-content: space-evenly;
     }
     @media (min-width: @desktop-width) {
         width: auto;
         padding-left: 40px;
+    }
+}
+
+.ods-header__content-block {
+    min-width: 23%;
+
+    @media (max-width: 321px) {
+        min-width: 20%;    
+    }
+
+    @media (min-width: @desktop-width) {
+        display: none;
     }
 }
 
@@ -133,7 +143,6 @@ export default {
 }
 
 .ods-header__content-logo {
-    width: 50%;
     justify-content: center;
 }
 
@@ -154,21 +163,8 @@ export default {
     color: white!important;
 }
 
-.ods-header__home-link {
-    @media (max-width: @mobile-width) {
-        padding-top: 12px;
-    }
-    @media (min-width: @desktop-width) {
-        padding-top: 8px;
-    }
-}
-
-.ods-header__content-logo-link {
-    margin: auto 0;
-}
-
 .ods-header__logo {
-    margin: 0;
+    margin: auto 0;
     @media (max-width: @mobile-width) {
         height: 70px;
     }

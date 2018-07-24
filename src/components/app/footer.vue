@@ -7,7 +7,8 @@
              src="../../assets/img/ODS_logo_footer.svg"
              alt="OpenDataSoft logo">
 
-        <langs class="ods-footer__lang">
+        <langs class="ods-footer__lang"
+            :lang="lang">
         </langs>
         
     </footer>
@@ -23,7 +24,8 @@ export default {
         'langs': langs
     },
     props: {
-        isSlideOut: Boolean
+        isSlideOut: Boolean,
+        lang: String
     }
 }
 </script>

@@ -15,7 +15,8 @@
 
         </div>
         
-        <Footer :isSlideOut="isSlideOut">
+        <Footer :isSlideOut="isSlideOut"
+            :lang="this.$root.$data.lang">
         </Footer>
 
     </div>
@@ -84,6 +85,8 @@ a {
     @media (max-width: @mobile-width) {
         width: 100%;
         margin: 120px auto 0 auto;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
     }
     @media (min-width: @desktop-width) {
         width: 870px;

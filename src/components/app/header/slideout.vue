@@ -7,7 +7,7 @@
             :trad="trad">
         </navigation>
 
-        <langs></langs>
+        <langs :lang="lang"></langs>
 
     </div>
 
@@ -37,7 +37,7 @@ export default {
 
 .ods-header__slideout {
     top: 101px;
-    left: -300px;
+    right: -300px;
     width: 300px;
     height: 100vh;
     background-color: @blue-light;
@@ -46,13 +46,15 @@ export default {
     padding-top: 15px;
     position: absolute;
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    
     @media (min-width: @desktop-width) {
         display: none;
     }
 }
 
 .ods-header__slideout--active {
-    left: 0!important;
+    right: 0!important;
     bottom: 0;
 }
 

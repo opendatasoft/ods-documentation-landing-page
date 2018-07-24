@@ -3,27 +3,32 @@
     <div class="ods-lang">
             
         <router-link :to="langLink('en')"
-            class="ods-lang__item">
+            class="ods-lang__item"
+            :title='trad.langEN[lang]'>
             EN
         </router-link>
 
         <router-link :to="langLink('fr')"
-            class="ods-lang__item">
+            class="ods-lang__item"
+            :title='trad.langFR[lang]'>
             FR
         </router-link>
 
         <router-link :to="langLink('es')"
-            class="ods-lang__item">
+            class="ods-lang__item"
+            :title='trad.langES[lang]'>
             ES
         </router-link>
 
         <router-link :to="langLink('de')"
-            class="ods-lang__item">
+            class="ods-lang__item"
+            :title='trad.langDE[lang]'>
             DE
         </router-link>
 
         <router-link :to="langLink('nl')"
-            class="ods-lang__item">
+            class="ods-lang__item"
+            :title='trad.langNL[lang]'>
             NL
         </router-link>
 
@@ -32,8 +37,19 @@
 </template>
 
 <script>
+//- Traductions
+import tradLangs from '../../translations/language';
+
 export default {
     name: 'langs',
+    data: function () {
+        return {
+            trad: tradLangs
+        }
+    },
+    props: {
+        lang: String
+    },
     methods: {
         langLink: function (lang) {
             var data = { params: { lang } };
@@ -56,7 +72,7 @@ export default {
     @media (max-width: @mobile-width) {
         flex-direction: column;
         width: 300px;
-        margin: 0 0 200px 0;
+        margin: 0 0 220px 0;
         position: static;
         height: auto;
     }
@@ -75,6 +91,7 @@ export default {
     color: white;
     padding: 7px;
     border-radius: 4px;
+    font-weight: 500;
     &:hover {
         color: @blue-dark;
         background-color: white;
@@ -103,7 +120,7 @@ export default {
 }
 
 .ods-lang__item.active {
-    color: @blue-dark;
+    color: @blue-medium;
     background-color: white;
 }
 
