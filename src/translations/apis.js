@@ -26,7 +26,7 @@ export default {
 
     descTop: {
         en: "Our APIs reference, with endpoints, parameters you can use and consoles to run interactive queries.",
-        fr: "Nos références d'API, avec les points terminaux, les paramètres que vous pouvez utiliser et les consoles pour exécuter des requêtes interactives.",
+        fr: "Nos références d'API, avec les points d'entrées, les paramètres que vous pouvez utiliser et les consoles pour exécuter des requêtes interactives.",
         es: "Nuestras referencia de API, con extremos, parámetros que se pueden utilizar y consolas para ejecutar consultas interactivas.",
         de: "Unsere API-Referenzen mit Endpunkten, Parametern, die Sie verwenden können, und Konsolen zum Ausführen interaktiver Abfragen.",
         nl: "Onze API-referenties met eindpunten, parameters die u kunt gebruiken en consoles om interactieve onderzoeken te voeren."

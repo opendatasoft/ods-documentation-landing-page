@@ -95,7 +95,7 @@ export default {
         },
         desc: {
             en: "Here you will find answers to your questions about file formats, supported browsers, metadata or simply a word meaning.",
-            fr: "Vous trouverez ici des réponses à vos questions sur les formats de fichiers, les navigateurs pris en charge, les métadonnées ou simplement une signification de mot.",
+            fr: "Vous trouverez ici des réponses à vos questions sur les formats de fichiers, les navigateurs pris en charge, les métadonnées ou simplement la signification d'un mot.",
             es: "Aquí encontrará las respuestas a sus preguntas sobre formatos de archivos, navegadores admitidos, metadatos, o también qué significa una palabra.",
             de: "Hier finden Sie Antworten auf Ihre Fragen zu Dateiformaten, unterstützten Browsern, Metadaten oder die Erklärung einzelner Begriffe.",
             nl: "Hier vindt u antwoorden op uw vragen over bestandsformaten, ondersteunde browsers en metadata of gewoon de betekenis van een woord."
@@ -147,7 +147,7 @@ export default {
         },
         desc: {
             en: "Our API references, with endpoints, parameters you can use and consoles to run interactive queries.",
-            fr: "Nos références d'API, avec les points terminaux, les paramètres que vous pouvez utiliser et les consoles pour exécuter des requêtes interactives.",
+            fr: "Nos références d'API, avec les points d'entrées, les paramètres que vous pouvez utiliser et les consoles pour exécuter des requêtes interactives.",
             es: "Nuestra referencia de API, con extremos, parámetros que se pueden utilizar y consolas para ejecutar consultas interactivas.",
             de: "Unsere API-Referenzen mit Endpunkten, Parametern, die Sie verwenden können, und Konsolen zum Ausführen interaktiver Abfragen.",
             nl: "Onze API-referenties met eindpunten, parameters die u kunt gebruiken en consoles om interactieve onderzoeken te voeren."
