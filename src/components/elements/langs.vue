@@ -88,13 +88,14 @@ export default {
 }
 
 .ods-lang__item {
-    color: white;
+    color: @blue-medium;
+    background-color: white;
     padding: 7px;
     border-radius: 4px;
     font-weight: 500;
     &:hover {
-        color: @blue-dark;
-        background-color: white;
+        color:white;
+        background-color: @blue-medium;
     }
     @media (max-width: @mobile-width) {
         margin: 15px auto;
@@ -120,8 +121,8 @@ export default {
 }
 
 .ods-lang__item.active {
-    color: @blue-medium;
-    background-color: white;
+    background-color: @blue-medium;
+    color: white;
 }
 
 </style>
