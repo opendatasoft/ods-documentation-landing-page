@@ -7,6 +7,8 @@
             :trad="trad">
         </navigation>
 
+        <div class="ods-header__slideout-separator"></div>
+
         <langs :lang="lang"></langs>
 
     </div>
@@ -51,6 +53,11 @@ export default {
     @media (min-width: @desktop-width) {
         display: none;
     }
+}
+
+.ods-header__slideout-separator {
+    border-top: 1px solid white;
+    margin: 0 30px 15px 30px;
 }
 
 .ods-header__slideout--active {
