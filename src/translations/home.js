@@ -1,13 +1,5 @@
 export default {
 
-    descBottom: {
-        en: "Can't find what you're looking for? You can send a mail to <a href='mailto: support@opendatasoft.com' target='_top' > support@opendatasoft.com</a>.",
-        fr: "Vous ne trouvez pas ce que vous cherchez ? Vous pouvez envoyer un email à <a href='mailto: support@opendatasoft.com' target='_top' > support@opendatasoft.com</a>.",
-        es: "¿No encuentras lo que buscas? Puedes enviar un email a <a href='mailto: support@opendatasoft.com' target='_top' > support@opendatasoft.com</a>.",
-        de: "Sie finden nicht, wonach Sie suchen? Senden Sie eine E-Mail an <a href='mailto: support@opendatasoft.com' target='_top' > support@opendatasoft.com</a>.",
-        nl: "Kunt u niet vinden waarnaar u op zoek bent? U kunt een e-mail sturen naar <a href='mailto: support@opendatasoft.com' target='_top' > support@opendatasoft.com</a>."
-    },
-
     metas: {
         title: {
             en: "Home",
@@ -160,6 +152,30 @@ export default {
             nl: "apis"
         }
 
+    },
+
+    support: {
+        title: {
+            en: "Support",
+            fr: "Support",
+            es: "Asistencia",
+            de: "Support",
+            nl: "Ondersteuning"
+        },
+        desc: {
+            en: "<p>Can't find what you're looking for? You can send an email to our support. By clicking on this box your e-mail client will open. <i class='fas fa-external-link-alt'></i></p>",
+            fr: "<p>Vous ne trouvez pas ce que vous cherchez ? Vous pouvez envoyer un email à notre support. En cliquant sur cet encadré votre client e-mail s'ouvrira. <i class='fas fa-external-link-alt'></i></p>",
+            es: "<p>¿No encuentra lo que busca? Puede enviar un correo electrónico a nuestro soporte. Al hacer clic en esta casilla se abrirá su cliente de correo electrónico. <i class='fas fa-external-link-alt'></i></p>",
+            de: "<p>Sie finden nicht, was Sie suchen? Sie können eine E-Mail an unseren Support senden. Durch Anklicken dieses Feldes öffnet sich Ihr E-Mail-Client. <i class='fas fa-external-link-alt'></i></p>",
+            nl: "<p>Kunt u niet vinden wat u zoekt? U kunt een e-mail sturen naar onze support. Door op dit vakje te klikken zal uw e-mail client openen. <i class='fas fa-external-link-alt'></i></p>"
+        },
+        url: {
+            en: "mailto: support@opendatasoft.com",
+            fr: "mailto: support@opendatasoft.com",
+            es: "mailto: support@opendatasoft.com",
+            de: "mailto: support@opendatasoft.com",
+            nl: "mailto: support@opendatasoft.com"
+        }
     }
 
 };

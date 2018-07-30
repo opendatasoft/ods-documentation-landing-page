@@ -36,10 +36,13 @@
             :sizeBox="classSizeBox"
             :sizeIcon="classSizeIcon"
             :isHref="false"/>
-
-        <div class="ods-container__support">
-            <p v-html="trad.descBottom[lang]"></p>
-        </div>
+        
+        <boxes :lang="lang"
+            :trad="trad.support"
+            :img="img.support"
+            :sizeBox="classSizeBox"
+            :sizeIcon="classSizeIcon"
+            :isHref="true"/>
 
     </div>
 
@@ -61,6 +64,7 @@ import faq from '../../assets/img/ODS_picto_faq.svg';
 import widgets from '../../assets/img/ODS_picto_widget.svg';
 import tutorial from '../../assets/img/ODS_picto_tuto.svg';
 import api from '../../assets/img/ODS_picto_api.svg';
+import support from '../../assets/img/ODS_logo_support.svg';
 
 export default {
     name: 'home',
@@ -76,7 +80,8 @@ export default {
                 faq: faq,
                 widgets: widgets,
                 tutorial: tutorial,
-                api: api
+                api: api,
+                support: support
             },
             classSizeBox: 'ods-container__box-index',
             classSizeIcon: 'ods-container__box-icon-img'
