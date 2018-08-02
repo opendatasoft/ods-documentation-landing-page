@@ -48,6 +48,10 @@ module.exports = {
                 options: {
                     name: pathAssets + '[name].[hash].[ext]'
                 }
+            },
+            {
+                test: /\.css$/,
+                use: ["style-loader", "css-loader", "postcss-loader"]
             }
         ]
     },
