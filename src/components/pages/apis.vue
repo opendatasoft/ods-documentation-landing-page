@@ -120,20 +120,7 @@ export default {
 @import "../../assets/less/components";
 
 .ods-container {
-    display: flex;
-    height: auto;
-    @media (max-width: @mobile-width) {
-        flex-direction: column;
-        padding: 20px 0 0 0;
-        margin-bottom: 60px;
-    }
-    @media (min-width: @desktop-width) {
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        padding: 42px 40px 0 40px;
-        margin-bottom: 70px;
-    }
+    &:extend(.default-container);
 }
 
 .ods-container__description {

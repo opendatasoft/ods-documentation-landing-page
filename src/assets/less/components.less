@@ -18,7 +18,7 @@
     &:focus,
     &:hover {
         outline: none;
-        color: @blue-dark !important;
+        color: @blue-dark  !important;
         background-color: white !important;
     }
     @media (max-width: @mobile-width) {
@@ -26,6 +26,28 @@
     }
     @media (min-width: @desktop-width) {
         margin: auto 10px;
+    }
+}
+
+//- Container default
+.default-container {
+    display: flex;
+    height: auto;
+    @media (max-width: @mobile-width) {
+        flex-direction: column;
+        padding: 20px 0 0 0;
+        margin-bottom: 60px;
+    }
+    @media (min-width: @desktop-width) {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 42px 40px 0 40px;
+        margin-bottom: 70px;
+    }
+    @media all and (-ms-high-contrast: active),
+    (-ms-high-contrast:none) {
+        width: auto
     }
 }
 

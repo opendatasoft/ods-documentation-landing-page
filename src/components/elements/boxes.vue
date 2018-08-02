@@ -79,6 +79,9 @@ export default {
         width: 350px;
         margin: 0 0 40px 0;
     }
+    @media all and (-ms-high-contrast: active), (-ms-high-contrast:none) {
+        float: left;
+    }
 }
 
 .ods-container__box {
@@ -132,9 +135,10 @@ export default {
     .ods-container__box-icon-img {
         height: 90px;
         margin: auto 0;
+        width: auto;
     }
     *::-ms-backdrop, .ods-container__box-icon-img {
-        width: 100%;
+        width: auto;
     }
 }
 
@@ -146,11 +150,12 @@ export default {
 //- IE 10 / 11
 @media all and (-ms-high-contrast: active), (-ms-high-contrast:none) {
     .ods-container__box-icon-img-apis {
-        height: 100%;
+        height: 70px;
         margin: auto 20px;
+        width: auto;
     }
     *::-ms-backdrop, .ods-container__box-icon-img-apis {
-        width: 100%;
+        width: 70px;
     }
 }
 
@@ -164,6 +169,7 @@ export default {
     .ods-container__box-icon-img-small {
         margin: auto 20px;
         height: 35px;
+        width: auto;
     }
 }
 
@@ -177,6 +183,7 @@ export default {
     .ods-container__box-icon-img-medium {
         margin: auto 20px;
         height: 45px;
+        width: auto;
     }
 }
 
