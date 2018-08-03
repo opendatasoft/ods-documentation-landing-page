@@ -43,10 +43,14 @@ export default {
         return {
             attributId: this.isHref ?
                 'a' :
-                'router-link',
-            hrefLink: this.isHref ?
+                'router-link' 
+        }
+    },
+    computed: {
+        hrefLink: function () {
+            return this.isHref ?
                 { href : this.trad.url[this.lang] } :
-                { to : this.trad.url[this.lang] }
+                { to : this.trad.url[this.lang] };
         }
     },
     props: {
