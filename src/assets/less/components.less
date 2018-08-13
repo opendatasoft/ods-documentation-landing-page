@@ -1,0 +1,74 @@
+// Buttons style
+.default-button {
+    border: none;
+    background-color: white;
+    color: @blue-light;
+    padding: 5px 10px;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+// Buttons langs
+.default-button-lang {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: transparent;
+    &:focus,
+    &:hover {
+        outline: none;
+        color: @blue-dark  !important;
+        background-color: white !important;
+    }
+    @media (max-width: @mobile-width) {
+        margin: 10px;
+    }
+    @media (min-width: @desktop-width) {
+        margin: auto 10px;
+    }
+}
+
+//- Container default
+.default-container {
+    display: flex;
+    height: auto;
+    @media (max-width: @mobile-width) {
+        flex-direction: column;
+        padding: 20px 0 0 0;
+        margin-bottom: 60px;
+    }
+    @media (min-width: @desktop-width) {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 42px 40px 0 40px;
+        margin-bottom: 70px;
+    }
+    @media all and (-ms-high-contrast: active),
+    (-ms-high-contrast:none) {
+        width: auto
+    }
+}
+
+//- Box style
+.default-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border: 1px solid lighten(@grey-border, 35%);
+    background-color: @grey-bg;
+    border-radius: 8px;
+    transition: 0.5s;
+    -webkit-box-shadow: 4px 4px 12px -1px lighten(@grey-border, 33%);
+    -moz-box-shadow: 4px 4px 12px -1px lighten(@grey-border, 33%);
+    box-shadow: 4px 4px 12px -1px lighten(@grey-border, 33%);
+    @media (max-width: @mobile-width) {
+        padding: 20px 20px 20px 0;
+        margin: 0 auto;
+    }
+    @media (min-width: @desktop-width) {
+        padding: 30px 20px 30px 0;
+        margin: 0;
+    }
+}
