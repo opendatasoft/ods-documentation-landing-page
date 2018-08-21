@@ -3,9 +3,11 @@
     <footer class="ods-footer"
         :class="{ 'ods-footer--active' : isSlideOut }">
         
-        <img class="ods-footer__logo"
-             src="../../assets/img/ODS_logo_footer.svg"
-             alt="OpenDataSoft logo">
+        <a class="ods-footer__logo"
+            href="https://www.opendatasoft.com/">
+            <img src="../../assets/img/ODS_logo_footer.svg"
+                alt="OpenDataSoft logo">
+        </a>
 
         <langs class="ods-footer__lang"
             :lang="lang">
@@ -51,6 +53,10 @@ export default {
 
 .ods-footer__logo {
     margin: auto;
+    height: 40px;
+}
+
+.ods-footer__logo img {
     height: 40px;
 }
 
