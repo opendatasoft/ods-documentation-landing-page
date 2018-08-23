@@ -57,7 +57,7 @@ export default {
 
 .ods-header__slideout-separator {
     border-top: 1px solid white;
-    margin: 0 30px 15px 30px;
+    margin: 5px 30px;
 }
 
 .ods-header__slideout--active {

@@ -81,7 +81,7 @@ a {
 }
 
 .ods-wrapper {
-    height: auto;
+    height: 100%;
     @media (max-width: @mobile-width) {
         width: 100%;
         margin: 120px auto 0 auto;
@@ -93,8 +93,8 @@ a {
 }
 
 .ods-wrapper--active {
-    height: 77vh;
-    overflow-y: hidden;
+    overflow: hidden;
+    position:fixed;
 }
 
 </style>
