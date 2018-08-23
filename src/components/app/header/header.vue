@@ -9,6 +9,8 @@
 
             <div class="ods-header__content-logo">
             
+            <router-link to="home"
+                class="ods-header__link-logo">
                 <img v-if="this.$route.name === 'apis'"
                     class="ods-header__logo"
                     src="../../../assets/img/ODS_logo_api_blanc.svg"
@@ -16,7 +18,8 @@
                 <img v-else
                     class="ods-header__logo"
                     src="../../../assets/img/ODS_logo_help_hub_blanc.svg"
-                    alt="OpenDataSoft HelpHub Logo"> 
+                    alt="OpenDataSoft HelpHub Logo">
+            </router-link>
 
             </div>
 
@@ -142,6 +145,11 @@ export default {
     justify-content: space-around;
 }
 
+.ods-header__link-logo {
+    margin: auto 0;
+    height: 80px;
+}
+
 .ods-header__content-logo {
     justify-content: center;
 }
@@ -164,7 +172,6 @@ export default {
 }
 
 .ods-header__logo {
-    margin: auto 0;
     @media (max-width: @mobile-width) {
         height: 70px;
     }
