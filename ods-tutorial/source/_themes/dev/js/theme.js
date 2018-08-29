@@ -191,11 +191,6 @@ function ThemeNav() {
     };
 
     nav.hashChange = function (element) {
-        // this.linkScroll = true;
-        // this.win.one('hashchange', function () {
-        //     this.linkScroll = false;
-        // });
-
         var target = element[0].attributes.href.nodeValue;
 
         if (target === '#' || target.indexOf('.html') > -1) return null;
@@ -266,4 +261,62 @@ $('#help-hub-button').click(function() {
         window.cancelAnimationFrame = function (id) {
             clearTimeout(id);
         };
+}());
+/*
+ *
+ *  Action tutorials
+ *
+ */
+//- Switch show/hide img
+$(document).on("click", ".button-switch-img", function () {
+    var element = $(this).next();
+    if (element[0].className.indexOf('img-active') > 0) {
+        $(element[0]).removeClass('img-active')
+        $(this)[0].innerText = 'Show image';
+    } else {
+        $(element[0]).addClass('img-active');
+        $(this)[0].innerText = 'Hide image';
+    }
+});
+/*
+ *
+ *  Set up style for tutorials
+ *
+ */
+(function () {
+    // Generate style classes for number of step.
+    var blockStep = $('.block-step');
+
+    for (var i = 0; i < blockStep.length; i++) {
+        var resultSplit = $(blockStep[i])[0].innerText.split(' _');
+        var newData = "<div class='number-step'>" +
+                            "<p>" + resultSplit[0] + ".</p>" +
+                        "</div>" +
+                        "<div class='content-step'>" +
+                            "<p>" + resultSplit[1] + "</p>" +
+                        "</div>";
+        $(blockStep[i]).replaceWith('<div class="block-step">' +
+                                        newData +
+                                    '</div>');
+    }
+
+    //- Generate button for img hide
+    var imgHideElement = $('.img-hide');
+
+    for (var o = 0; o < imgHideElement.length; o++) {
+        $("<button class='button-switch-img'>Show image</button>").insertBefore($(imgHideElement[o]));
+    }
+
+    //- Generate style for header tutorial information
+    var headerInformationElement = $('.header-information-tutorial');
+
+    var dataSplit = $(headerInformationElement)[0].innerText.split(' - ');
+    dataSplit[1] = dataSplit[1].split('time:')[1];
+    var newElement = '<div class="header-information-tutorial">' +
+                        '<p>' +
+                            '<span class"header-information-tutorial-item">' + dataSplit[0] + '</span>' +
+                            '<span class="header-information-tutorial-item">' + dataSplit[1] + '</span>' +
+                        '</p>' +
+                    '</div>';
+    $(headerInformationElement).replaceWith(newElement);
 }());
