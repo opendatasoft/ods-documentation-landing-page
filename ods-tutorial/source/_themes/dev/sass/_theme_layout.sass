@@ -332,12 +332,12 @@ code,
 .wy-nav-content
   padding: $gutter $gutter * 2
   height: 100%
-  max-width: 60%
+  max-width: 70%
   margin: auto
 @media screen and (min-width: 930px) and (max-width: 1099px)
   .wy-nav-content
     padding: 1.618em 0
-    max-width: 80%
+    max-width: 70%
 
 .wy-body-mask
   position: fixed
@@ -427,3 +427,111 @@ footer
     display: none
   .wy-nav-content-wrap
     margin-left: 0
+
+//- Custom style for tutorial
+.section
+  padding: 0 0 30px 70px
+  h1
+    color: $blue-hover
+  p
+    padding: 30px 0
+    margin: 0
+  pre
+    font-size: 14px!important
+
+.header-information-tutorial
+  border-bottom: 1px solid $blue-hover
+  padding: 10px 0
+  margin: 20px 0 40px 0
+  p
+    color: $blue-hover
+    margin: 0
+    padding-bottom: 5px!important
+    font-weight: 500
+
+.header-information-tutorial-item
+  &:first-child
+    float: left
+  &:last-child
+    float: right
+    &::before
+      font-family: FontAwesome 
+      content: "\f017"
+
+.title-level-2,
+.title-level-3
+  color: $blue-hover
+  font-weight: bold
+
+.title-level-2
+  font-size: 24px
+  border-top: 1px solid #e4e4e4
+  padding: 60px 0 0 0!important
+  margin: 40px 0!important
+
+.title-level-2-first
+  padding: 0!important
+  margin: 40px 0!important
+  border: 0
+
+.title-level-3
+  font-size: 18px
+  padding: 0!important
+  margin: 40px 0!important
+
+.block-step
+  display: flex
+  flex-direction: row
+  padding: 0
+
+.number-step
+  margin: 0 0 0 -80px
+  p
+    width: 45px
+    color: $blue-hover
+    font-size: 35px
+    font-weight: bold
+
+.content-step
+  margin-left: 35px
+  p
+    margin: 0
+
+.button-switch-img
+  width: 100%
+  text-align: left
+  border: none
+  border-radius: 4px
+  color: $blue-hover
+  background-color: #e4e4e4
+  padding: 10px 15px
+  font-weight: 500
+  outline: none
+  transition: 0.5s ease
+  &::after
+    margin-left: 10px
+    font-family: FontAwesome
+    content: "\f0d7"
+
+.button-switch-img-active
+  padding: 25px 15px!important
+  border-radius: 4px 4px 0 0
+  &::after
+    margin-left: 10px
+    font-family: FontAwesome
+    content: "\f0d8"
+
+.img-hide
+  opacity: 0
+  height: 0!important
+  transition: 0.3s ease
+
+.img-active
+  opacity: 1
+  height: auto!important
+  background-color: #e4e4e4
+  padding: 10px
+
+.important,
+.highlight-html
+  margin: 10px 0!important

@@ -271,13 +271,14 @@ $('#help-hub-button').click(function() {
 //- Switch show/hide img
 $(document).on("click", ".button-switch-img", function () {
     var element = $(this).next();
-    console.log($(this));
     if (element[0].className.indexOf('img-active') > 0) {
         $(element[0]).removeClass('img-active')
         $(this)[0].innerText = 'Show image';
+        $(this).removeClass('button-switch-img-active');
     } else {
         $(element[0]).addClass('img-active');
         $(this)[0].innerText = 'Hide image';
+        $(this).addClass('button-switch-img-active');
     }
 });
 /*
@@ -286,20 +287,25 @@ $(document).on("click", ".button-switch-img", function () {
  *
  */
 (function () {
-    // Generate style classes for number of step.
+    //- Remove border-top at first title-level-2
+    $($('.title-level-2')[0]).addClass('title-level-2-first');
+
+    // .css('border-top', 'none');
+
+    //- Generate style classes for number of step.
     var blockStep = $('.block-step');
 
     for (var i = 0; i < blockStep.length; i++) {
         var resultSplit = $(blockStep[i])[0].innerText.split(' _');
-
         var newData = "<div class='number-step'>" +
                             "<p>" + resultSplit[0] + ".</p>" +
                         "</div>" +
                         "<div class='content-step'>" +
                             "<p>" + resultSplit[1] + "</p>" +
                         "</div>";
-
-        $(blockStep[i]).replaceWith('<div class="block-step">' + newData + '</div>');
+        $(blockStep[i]).replaceWith('<div class="block-step">' +
+                                        newData +
+                                    '</div>');
     }
 
     //- Generate button for img hide
@@ -313,7 +319,7 @@ $(document).on("click", ".button-switch-img", function () {
     var headerInformationElement = $('.header-information-tutorial');
 
     var dataSplit = $(headerInformationElement)[0].innerText.split(' - ');
-    dataSplit[1] = dataSplit[1].split('Estimated completion time:')[1];
+    dataSplit[1] = dataSplit[1].split('time:')[1];
     var newElement = '<div class="header-information-tutorial">' +
                         '<p>' +
                             '<span class"header-information-tutorial-item">' + dataSplit[0] + '</span>' +

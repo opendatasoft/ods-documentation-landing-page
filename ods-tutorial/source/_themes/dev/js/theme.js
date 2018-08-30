@@ -273,9 +273,11 @@ $(document).on("click", ".button-switch-img", function () {
     if (element[0].className.indexOf('img-active') > 0) {
         $(element[0]).removeClass('img-active')
         $(this)[0].innerText = 'Show image';
+        $(this).removeClass('button-switch-img-active');
     } else {
         $(element[0]).addClass('img-active');
         $(this)[0].innerText = 'Hide image';
+        $(this).addClass('button-switch-img-active');
     }
 });
 /*
@@ -284,7 +286,10 @@ $(document).on("click", ".button-switch-img", function () {
  *
  */
 (function () {
-    // Generate style classes for number of step.
+    //- Remove border-top at first title-level-2
+    $($('.title-level-2')[0]).addClass('title-level-2-first');
+
+    //- Generate style classes for number of step.
     var blockStep = $('.block-step');
 
     for (var i = 0; i < blockStep.length; i++) {
