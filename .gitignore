@@ -1,5 +1,8 @@
+ods-tutorial/build
 node_modules/
 dist/
+build/
+**/*.pyc
 *.log
 .DS_STORE
 .travis.deploy
