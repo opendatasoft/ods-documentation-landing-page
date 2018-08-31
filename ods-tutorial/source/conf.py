@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# OpenDataSoft Documentation documentation build configuration file, created by
+# OpenDataSoft Tutorials build configuration file, created by
 # sphinx-quickstart on Fri Aug 21 16:23:42 2015.
 #
 # This file is execfile()d with the current directory set to its
@@ -38,10 +38,10 @@ extensions = [
     'localizedimage',
 ]
 
-pdf_documents = [
-    ('index', u'opendatasoft-user-manual', u'OpenDataSoft documentation', u'OpenDataSoft'),
-]
-pdf_compressed = True
+# pdf_documents = [
+#     ('index', u'opendatasoft-user-manual', u'OpenDataSoft documentation', u'OpenDataSoft'),
+# ]
+# pdf_compressed = True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -60,7 +60,7 @@ master_doc = 'index'
 now = datetime.datetime.now()
 now = str(now.year)
 
-project = u'OpenDataSoft Documentation'
+project = u'OpenDataSoft Tutorials'
 copyright = now + u', OpenDataSoft'
 author = u'OpenDataSoft'
 
@@ -214,7 +214,7 @@ html_show_sphinx = False
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'OpenDataSoftDocumentationdoc'
+htmlhelp_basename = 'OpenDataSoftTutorials'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -236,7 +236,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'OpenDataSoftDocumentation.tex', u'OpenDataSoft Documentation Documentation',
+  (master_doc, 'OpenDataSoftTutorials.tex', u'OpenDataSoft Tutorials',
    u'OpenDataSoft', 'manual'),
 ]
 
@@ -266,7 +266,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'opendatasoftdocumentation', u'OpenDataSoft Documentation Documentation',
+    (master_doc, 'opendatasofttutorials', u'OpenDataSoft Tutorials',
      [author], 1)
 ]
 
@@ -280,8 +280,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'OpenDataSoftDocumentation', u'OpenDataSoft Documentation Documentation',
-   author, 'OpenDataSoftDocumentation', 'One line description of project.',
+  (master_doc, 'OpenDataSoftTutorials', u'OpenDataSoft Tutorials',
+   author, 'OpenDataSoftTutorials', 'One line description of project.',
    'Miscellaneous'),
 ]
 
