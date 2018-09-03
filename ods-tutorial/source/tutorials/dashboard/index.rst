@@ -5,9 +5,9 @@ How to build a dashboard (part 1: dataset visualizations)
 
 .. rst-class:: header-information-tutorial
     
-    Level: ★★☆☆ - time: 30 minutes
+    ★☆☆ Beginner - time: 30 minutes
 
-This tutorial will teach you how to create a dashboard using 3 visualizations from a dataset published on an OpenDataSoft portal.
+*This tutorial will teach you how to create a dashboard using 3 visualizations from a dataset published on an OpenDataSoft portal.*
 
 During this tutorial, you will learn:
 
@@ -16,10 +16,12 @@ During this tutorial, you will learn:
 - what is the difference between a widget and an iframe
 - how to use a widget in a content page created with OpenDataSoft
 
-Prerequisites:
+.. rst-class:: block-prerequisite-congratulation
 
-- In order to create a dashboard, you need to have access to the back office of an OpenDataSoft portal and the "Edit all pages" permission.
-- Pick a dataset from the portal, with which you want to work during the tutorial. Preferably, choose a dataset with a Table view, as well as a Map view and an Analyze view. If you do not want to pick your own dataset, you can follow the tutorial with the same dataset as the one used for the examples of the tutorial : link of the dataset. >> https://data.opendatasoft.com/explore/dataset/world-heritage-list%40public-us/ ?
+    Prerequisites:
+
+    - In order to create a dashboard, you need to have access to the back office of an OpenDataSoft portal and the "Edit all pages" permission.
+    - Pick a dataset from the portal, with which you want to work during the tutorial. Preferably, choose a dataset with a Table view, as well as a Map view and an Analyze view. If you do not want to pick your own dataset, you can follow the tutorial with the same dataset as the one used for the examples of the tutorial : link of the dataset. >> https://data.opendatasoft.com/explore/dataset/world-heritage-list%40public-us/ ?
 
 [screenshot result of the tutorial]
 
@@ -92,12 +94,10 @@ The <div> tags help formatting your page the right way, in order for all element
 
 .. code-block:: html
 
-	<div class="container-fluid">
-	    <div class="ods-box">
-
-        THIS IS WHERE YOU WILL PUT YOUR CODE
-
-      </div>
+    <div class="container-fluid">
+        <div class="ods-box">
+            THIS IS WHERE YOU WILL PUT YOUR CODE
+        </div>
 	</div>
 
 .. rst-class:: block-step
@@ -280,7 +280,8 @@ Complete your content page with a title
 
 [screenshot page with title]
 
+.. rst-class:: block-prerequisite-congratulation
 
-Congratulations! You have finished this tutorial and you now know how to create a simple dashboard with 3 dataset visualizations!
+    Congratulations! You have finished this tutorial and you now know how to create a simple dashboard with 3 dataset visualizations!
 
 If you want to go further with your dashboard, you can follow the second part of this tutorial: "How to build a dashboard (part 2: formatting the dashboard & linking the widgets)".
