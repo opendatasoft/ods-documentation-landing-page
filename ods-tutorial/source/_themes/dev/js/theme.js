@@ -293,7 +293,7 @@ $(document).on("click", ".button-switch-img", function () {
     var blockStep = $('.block-step');
 
     for (var i = 0; i < blockStep.length; i++) {
-        var resultSplit = $(blockStep[i])[0].innerText.split(' _');
+        var resultSplit = $(blockStep[i])[0].innerHTML.split(' +');
         var newData = "<div class='number-step'>" +
                             "<p>" + resultSplit[0] + ".</p>" +
                         "</div>" +
