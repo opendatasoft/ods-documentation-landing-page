@@ -510,15 +510,15 @@ footer
   padding: 10px 15px
   font-weight: 500
   outline: none
-  &::after
-    margin-left: 10px
+  &::before
+    margin-right: 10px
     font-family: FontAwesome
     content: "\f0d7"
 
 .button-switch-img-active
   border-radius: 4px 4px 0 0
-  &::after
-    margin-left: 10px
+  &::before
+    margin-right: 10px
     font-family: FontAwesome
     content: "\f0d8"
 
@@ -557,3 +557,32 @@ footer
   // background-color: #efefef
   background-color: transparentize($blue-hover, 0.8)
   border-radius: 1px
+
+.expand-collapse-items
+  margin: 30px 0 20px 0!important
+  cursor: pointer
+  font-weight: bold
+  text-align: right
+  width: 100%
+  display: none
+
+.expand-collapse-items-active
+  display: block
+
+.expand-all
+  color: transparentize($blue-light, 0.4)
+
+.collapse-all
+  color: $deep-blue
+
+.expand-all::before,
+.collapse-all::before
+  font-family: FontAwesome
+  color: transparentize($blue-light, 0.4)
+  margin-right: 10px
+
+.expand-all::before
+  content: "\f0d7"
+
+.collapse-all::before
+  content: "\f0d8"

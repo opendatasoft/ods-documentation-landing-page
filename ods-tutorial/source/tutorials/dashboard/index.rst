@@ -18,12 +18,20 @@ During this tutorial, you will learn:
 
 .. rst-class:: block-prerequisite-congratulation
 
-    Prerequisites:
+    **Prerequisites:**
 
     - In order to create a dashboard, you need to have access to the back office of an OpenDataSoft portal and the "Edit all pages" permission.
     - Pick a dataset from the portal, with which you want to work during the tutorial. Preferably, choose a dataset with a Table view, as well as a Map view and an Analyze view. If you do not want to pick your own dataset, you can follow the tutorial with the same dataset as the one used for the examples of the tutorial : link of the dataset. >> https://data.opendatasoft.com/explore/dataset/world-heritage-list%40public-us/ ?
 
 [screenshot result of the tutorial]
+
+.. rst-class:: expand-collapse-items expand-all expand-collapse-items-active
+
+    Show all images
+
+.. rst-class:: expand-collapse-items collapse-all
+
+    Hide all images
 
 .. rst-class:: title-level-2
 
