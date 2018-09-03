@@ -434,8 +434,9 @@ footer
   h1
     color: $blue-hover
   p
-    padding: 30px 0
+    padding: 15px 0
     margin: 0
+    line-height: 25px
   pre
     font-size: 14px!important
 
@@ -507,14 +508,12 @@ footer
   padding: 10px 15px
   font-weight: 500
   outline: none
-  transition: 0.5s ease
   &::after
     margin-left: 10px
     font-family: FontAwesome
     content: "\f0d7"
 
 .button-switch-img-active
-  padding: 25px 15px!important
   border-radius: 4px 4px 0 0
   &::after
     margin-left: 10px
@@ -524,14 +523,29 @@ footer
 .img-hide
   opacity: 0
   height: 0!important
-  transition: 0.3s ease
+  // transition: 0.5s ease
 
 .img-active
   opacity: 1
   height: auto!important
-  background-color: #e4e4e4
   padding: 10px
+  background-color: #e4e4e4
 
 .important,
 .highlight-html
   margin: 10px 0!important
+
+.admonition p:last-child
+  padding: 0
+
+.tutorial-keycap
+  background-color: #fafafa
+  border: 1px solid rgba(0,0,0,.2)
+  border-radius: 3px
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0,0,0,.2)
+  box-shadow: 0 2px 1px 0 rgba(0,0,0,.2)
+  padding: 0 6px
+  font-weight: 600
+  display: inline-block
+  text-align: center
+  font-style: normal

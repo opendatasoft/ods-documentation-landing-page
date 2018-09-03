@@ -1,6 +1,8 @@
 How to build a dashboard (part 1: dataset visualizations)
 =========================================================
 
+.. role:: tutorial-keycap(emphasis)
+
 .. rst-class:: header-information-tutorial
     
     Level: ★★☆☆ - time: 30 minutes
@@ -27,7 +29,7 @@ Prerequisites:
 
 .. rst-class:: block-step
 
-    1 _ Go the Back office, in the Pages section.
+    1 + Go the Back office, in the Pages section.
 
 .. rst-class:: img-hide
 
@@ -35,7 +37,7 @@ Prerequisites:
 
 .. rst-class:: block-step
     
-    2 _ Click on the + New page button, to create a new content page.
+    2 + Click on the :tutorial-keycap:`+` New page button, to create a new content page.
 
 .. rst-class:: img-hide
     
@@ -43,7 +45,7 @@ Prerequisites:
 
 .. rst-class:: block-step
 
-    3 _ By default, you land on the Properties tab. It contains several information about the page, some of which you need to fill up otherwise you will not be able to save the page. Enter a page URL suffix and a title. You can also add a description and tags.
+    3 + By default, you land on the Properties tab. It contains several information about the page, some of which you need to fill up otherwise you will not be able to save the page. Enter a page URL suffix and a title. You can also add a description and tags.
 
 .. rst-class:: img-hide
     
@@ -51,7 +53,7 @@ Prerequisites:
 
 .. rst-class:: block-step
 
-    4 _ Click the Save button to save your newly created content page.
+    4 + Click the :tutorial-keycap:`Save` button to save your newly created content page.
 
 .. rst-class:: img-hide
     
@@ -59,7 +61,7 @@ Prerequisites:
 
 .. rst-class:: block-step
     
-    5 _ Go to the Content tab.
+    5 + Go to the Content tab.
 
 .. rst-class:: img-hide
     
@@ -67,7 +69,7 @@ Prerequisites:
 
 .. rst-class:: block-step
 
-    6 _ Click on </> Edit in expert mode to access the HTML/CSS code of the page. A pop up will appear, click on "Yes, switch to expert mode" for confirmation matter.
+    6 + Click on :tutorial-keycap:`</>` Edit in expert mode to access the HTML/CSS code of the page. A pop up will appear, click on :tutorial-keycap:`Yes, switch to expert mode` for confirmation matter.
 
 .. rst-class:: img-hide
     
@@ -100,11 +102,11 @@ The <div> tags help formatting your page the right way, in order for all element
 
 .. rst-class:: block-step
     
-    7 _ Save your page.
+    7 + Save your page.
 
 .. rst-class:: block-step
     
-    8 _ Click on the Open page button to see the current result of your page.
+    8 + Click on the :tutorial-keycap:`Open page` button to see the current result of your page.
 
 .. rst-class:: title-level-2
 
@@ -121,15 +123,15 @@ The <div> tags help formatting your page the right way, in order for all element
 
 .. rst-class:: block-step
 
-    9 _ Go to the portal where the dataset you have chosen for the dataset is published. Make sure you are on your dataset's page of the portal, where you can see the different data visualizations available.
+    9 + Go to the portal where the dataset you have chosen for the dataset is published. Make sure you are on your dataset's page of the portal, where you can see the different data visualizations available.
 
 .. rst-class:: block-step
     
-    10 _ Let's start with the Table view. Click on the Table tab.
+    10 + Let's start with the Table view. Click on the Table tab.
 
 .. rst-class:: block-step
     
-    11 _ Scroll down the table. You should see 3 tabs: Share, Embed and Widget. Share displays the direct URL of the visualization. Embed displays the iframe code of the visualization. Widget displays the widget code of the visualizations. Each, whereas it is a URL or a code, are ready to be copied and pasted. For this tutorial, we will use the widget codes of the Table, Map and Analyze visualizations of our chosen dataset.
+    11 + Scroll down the table. You should see 3 tabs: Share, Embed and Widget. Share displays the direct URL of the visualization. Embed displays the iframe code of the visualization. Widget displays the widget code of the visualizations. Each, whereas it is a URL or a code, are ready to be copied and pasted. For this tutorial, we will use the widget codes of the Table, Map and Analyze visualizations of our chosen dataset.
 
 .. admonition:: Important
    :class: important
@@ -138,7 +140,7 @@ The <div> tags help formatting your page the right way, in order for all element
 
 .. rst-class:: block-step
     
-    12 _ Still in the Table tab of your dataset, where the widget code is displayed, click the COPY button to copy the widget code of the table visualization.
+    12 + Still in the Table tab of your dataset, where the widget code is displayed, click the COPY button to copy the widget code of the table visualization.
 
 .. rst-class:: title-level-3
 
@@ -146,11 +148,11 @@ The <div> tags help formatting your page the right way, in order for all element
 
 .. rst-class:: block-step
     
-    13 _ Go back to the back office, to continue to edit your OpenDataSoft content page.
+    13 + Go back to the back office, to continue to edit your OpenDataSoft content page.
 
 .. rst-class:: block-step
     
-    14 _ Paste your table visualization widget code at the right place, between the div class="ods-box" tag (see step 6). If you used the same dataset as in this tutorial, you should have the following code:
+    14 + Paste your table visualization widget code at the right place, between the ``<div class="ods-box">`` tag (see step 6). If you used the same dataset as in this tutorial, you should have the following code:
 
 .. code-block:: html
 
@@ -166,7 +168,7 @@ The <div> tags help formatting your page the right way, in order for all element
 
 .. rst-class:: block-step
     
-    15 _ Save your page and click the Open page button: there is now a table visualization in our page!
+    15 + :tutorial-keycap:`Save` your page and click the Open page button: there is now a table visualization in our page!
 
 [screenshot content page with table view embedded]
 
@@ -176,11 +178,11 @@ The <div> tags help formatting your page the right way, in order for all element
 
 .. rst-class:: block-step
     
-    16 _ Let's add a map to our page! Just like before, get the widget code of the Map view of your chosen dataset (see steps 9 to 12 in Get the widget code of a visualization, but applied to the Map tab).
+    16 + Let's add a map to our page! Just like before, get the widget code of the Map view of your chosen dataset (see steps 9 to 12 in Get the widget code of a visualization, but applied to the Map tab).
 
 .. rst-class:: block-step
 
-    17 _ Paste your map visualization widget code below the widget code of the table visualization (see Add a widget to your page). If you used the same dataset as in this tutorial, you should have the following code:
+    17 + Paste your map visualization widget code below the widget code of the table visualization (see Add a widget to your page). If you used the same dataset as in this tutorial, you should have the following code:
 
 .. code-block:: html
 
@@ -200,11 +202,11 @@ The <div> tags help formatting your page the right way, in order for all element
 
 .. rst-class:: block-step
 
-    18 _ Let's add one more thing: a chart! Get the widget code of the Analyze view of your chosen dataset.
+    18 + Let's add one more thing: a chart! Get the widget code of the Analyze view of your chosen dataset.
 
 .. rst-class:: block-step
 
-    19 _ Paste your analyze visualization widget code below the widget code of the map visualization. Your code should now look something like that:
+    19 + Paste your analyze visualization widget code below the widget code of the map visualization. Your code should now look something like that:
 
 .. code-block:: html
 
@@ -233,7 +235,7 @@ The <div> tags help formatting your page the right way, in order for all element
 
 .. rst-class:: block-step
     
-    20 _ Save your page and click the Open page button: this is what your page should look like by now!
+    20 + :tutorial-keycap:`Save` your page and click the Open page button: this is what your page should look like by now!
 
 [screenshot content page with 3 visualizations]
 
@@ -243,7 +245,7 @@ Complete your content page with a title
 
 .. rst-class:: block-step
     
-    21 _ In HTML, titles (called headers) are generally defined by h1 brackets. The h doesnt change, it stands for "header". The number (here 1) can be replaced by any number from 1 to 6, h1 being the highest level title and h6 the lowest. Above all visualization widget codes added to the page, and right below the div class="ods-box" tag, add a high level title to your content page.
+    21 + In HTML, titles (called headers) are generally defined by ``<h1>`` brackets. The h doesnt change, it stands for "header". The number (here 1) can be replaced by any number from 1 to 6, ``<h1>`` being the highest level title and ``<h6>`` the lowest. Above all visualization widget codes added to the page, and right below the ``<div class="ods-box">`` tag, add a high level title to your content page.
 
 .. code-block:: html
 
@@ -274,7 +276,7 @@ Complete your content page with a title
 
 .. rst-class:: block-step
     
-    22 _ Save your page and click the Open page button: our page now has a title!
+    22 + :tutorial-keycap:`Save` your page and click the Open page button: our page now has a title!
 
 [screenshot page with title]
 
