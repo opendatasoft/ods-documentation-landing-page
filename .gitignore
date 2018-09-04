@@ -6,3 +6,4 @@ build/
 *.log
 .DS_STORE
 .travis.deploy
+.sass-cache

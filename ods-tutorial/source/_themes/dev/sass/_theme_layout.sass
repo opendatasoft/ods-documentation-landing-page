@@ -317,8 +317,7 @@ body, h1, h2, h3, p, a
 code,
 .rst-content tt,
 .rst-content code
-  white-space: pre-wrap
-  word-break: break-all
+  word-break: normal
 
 .wy-nav-content-wrap
   margin-left: $nav-desktop-width
@@ -327,7 +326,7 @@ code,
   left: 0
   border-left: 1px solid transparentize($grey-medium, 0.6)
   a
-    word-break: break-all
+    word-break: normal
 
 .wy-nav-content
   padding: $gutter $gutter * 2
@@ -434,10 +433,13 @@ footer
   h1
     color: $blue-hover
   p
-    padding: 30px 0
+    padding: 15px 0
     margin: 0
+    line-height: 25px
   pre
     font-size: 14px!important
+  img
+    margin: 0!important
 
 .header-information-tutorial
   border-bottom: 1px solid $blue-hover
@@ -466,7 +468,7 @@ footer
 .title-level-2
   font-size: 24px
   border-top: 1px solid #e4e4e4
-  padding: 60px 0 0 0!important
+  padding: 55px 0 0 0!important
   margin: 40px 0!important
 
 .title-level-2-first
@@ -483,6 +485,7 @@ footer
   display: flex
   flex-direction: row
   padding: 0
+  margin: 10px 0
 
 .number-step
   margin: 0 0 0 -80px
@@ -502,36 +505,85 @@ footer
   text-align: left
   border: none
   border-radius: 4px
-  color: $blue-hover
+  color: transparentize($blue-light, 0.4)
   background-color: #e4e4e4
   padding: 10px 15px
   font-weight: 500
   outline: none
-  transition: 0.5s ease
-  &::after
-    margin-left: 10px
+  &::before
+    margin-right: 10px
     font-family: FontAwesome
     content: "\f0d7"
 
 .button-switch-img-active
-  padding: 25px 15px!important
   border-radius: 4px 4px 0 0
-  &::after
-    margin-left: 10px
+  color: $deep-blue
+  &::before
+    margin-right: 10px
     font-family: FontAwesome
     content: "\f0d8"
 
 .img-hide
   opacity: 0
   height: 0!important
-  transition: 0.3s ease
+  // transition: 0.5s ease
 
 .img-active
   opacity: 1
   height: auto!important
-  background-color: #e4e4e4
   padding: 10px
+  background-color: #e4e4e4
 
 .important,
 .highlight-html
   margin: 10px 0!important
+
+.admonition p:last-child
+  padding: 0
+
+.tutorial-keycap
+  background-color: #fafafa
+  border: 1px solid rgba(0,0,0,.2)
+  border-radius: 3px
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0,0,0,.2)
+  box-shadow: 0 2px 1px 0 rgba(0,0,0,.2)
+  padding: 0 6px
+  font-weight: 600
+  display: inline-block
+  text-align: center
+  font-style: normal
+
+.block-prerequisite-congratulation
+  padding: 15px!important
+  // background-color: #efefef
+  background-color: transparentize($blue-hover, 0.8)
+  border-radius: 1px
+
+.expand-collapse-items
+  margin: 15px 0 0 0!important
+  cursor: pointer
+  font-weight: bold
+  text-align: right
+  width: 100%
+  display: none
+
+.expand-collapse-item-active
+  display: block
+
+.expand-all
+  color: transparentize($blue-light, 0.4)
+
+.collapse-all
+  color: $deep-blue
+
+.expand-all::before,
+.collapse-all::before
+  font-family: FontAwesome
+  color: transparentize($blue-light, 0.4)
+  margin-right: 10px
+
+.expand-all::before
+  content: "\f0d7"
+
+.collapse-all::before
+  content: "\f0d8"
