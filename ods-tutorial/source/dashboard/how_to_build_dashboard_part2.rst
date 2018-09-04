@@ -1,6 +1,10 @@
 How to build a dashboard (part 2)
 =================================
 
+
+.. role:: tutorial-keycap(emphasis)
+
+
 .. rst-class:: header-information-tutorial
 
     ★★☆ Intermediate - time: 1 hour
@@ -15,10 +19,24 @@ During this tutorial, you will learn:
 - how to add other OpenDataSoft widgets
 - how to use CSS classes to format and organize your dashboard
 
-Prerequisites:
+.. rst-class:: block-prerequisite-congratulation
 
-- In order to create a dashboard, you need to have access to the back office of an OpenDataSoft portal and the "Edit all pages" permission.
-- You are highly recommended to follow the first part of this dashboard tutorial, :doc:`"How to build a dashboard (part 1)" <how_to_build_dashboard_part1>`, since this second part starts with what we ended with in the first part. The prerequisites of the first part also contain all information about the chosen example dataset.
+ **PREREQUISITES**
+
+ - In order to create a dashboard, you need to have access to the back office of an OpenDataSoft portal and the "Edit all pages" permission.
+ - You are highly recommended to follow the first part of this dashboard tutorial, :doc:`"How to build a dashboard (part 1)" <how_to_build_dashboard_part1>`, since this second part starts with what we ended with in the first part. The prerequisites of the first part also contain all information about the chosen example dataset.
+
+
+.. HIDE ALL / SHOW ALL:
+
+.. rst-class:: expand-collapse-items expand-all expand-collapse-item-active
+
+    Show all images
+
+.. rst-class:: expand-collapse-items collapse-all
+
+    Hide all images
+
 
 .. PART 1 - LINK WIDGETS:
 
@@ -32,7 +50,7 @@ It is because our widgets are not yet linked to one another. The secret to do th
 
 .. rst-class:: block-step
 
-    1 _ Let's find this context! Look at the HTML code of your page. For each widget we added, its code contains 2 main elements: an ``ods-dataset-context`` first, then an ``ods-map`` or ``ods-table`` or ``ods-chart`` depending on the widget. In the code below, we added comments just in order to help you see the different elements that we have.
+    1 + Let's find this context! Look at the HTML code of your page. For each widget we added, its code contains 2 main elements: an ``ods-dataset-context`` first, then an ``ods-map`` or ``ods-table`` or ``ods-chart`` depending on the widget. In the code below, we added comments just in order to help you see the different elements that we have.
 
 .. code-block:: html
 
@@ -79,7 +97,7 @@ As you can see, we have a context for each widget. First, it is not so useful in
 
 .. rst-class:: block-step
 
-    2 _ At the very beginning of your code, above the div tag with the container-fluid class, declare the unique context of your page. Just like for the widgets, use the tag ``ods-dataset-context`` (and don't forget the closing tag!). Look at the code below to understand how this tag works (once again, comments are used to add explainations to the code).
+    2 + At the very beginning of your code, above the div tag with the container-fluid class, declare the unique context of your page. Just like for the widgets, use the tag ``ods-dataset-context`` (and don't forget the closing tag!). Look at the code below to understand how this tag works (once again, comments are used to add explainations to the code).
 
 .. code-block:: html
 
@@ -99,7 +117,7 @@ As you can see, we have a context for each widget. First, it is not so useful in
 
 .. rst-class:: block-step
 
-    3 _ Delete the context of each widget. Don't forget that tags come in pairs: you must delete both the opening tag and closing tag for each widget. Your code should now look like this, with a unique context followed by the 3 widgets tags:
+    3 + Delete the context of each widget. Don't forget that tags come in pairs: you must delete both the opening tag and closing tag for each widget. Your code should now look like this, with a unique context followed by the 3 widgets tags:
 
 .. code-block:: html
 
@@ -133,7 +151,7 @@ As you can see, we have a context for each widget. First, it is not so useful in
 
 .. rst-class:: block-step
 
-    4 _ Save your page and click the Open page button. Now, if you draw a shape on the map, the map will be filtered according to that shape, but both the table and chart will be filtered as well according to that same filter. Our widgets are linked together!
+    4 + Save your page and click the :tutorial-keycap:`Open page` button. Now, if you draw a shape on the map, the map will be filtered according to that shape, but both the table and chart will be filtered as well according to that same filter. Our widgets are linked together!
 
 .. rst-class:: img-hide
 
@@ -148,7 +166,7 @@ As you can see, we have a context for each widget. First, it is not so useful in
 
 .. rst-class:: block-step
 
-    5 _ Now that our widgets are linked, why not add more widgets to make our dashboard even better? Let's start by adding a search bar. It would allow us to make a textual research on all the visualizations at the same time. Go to the OpenDataSoft widgets documentation to learn more about the widget we are goint to use, which is called `odsTextSearch <https://help.opendatasoft.com/widgets/#/api/ods-widgets.directive:odsTextSearch>`_.
+    5 + Now that our widgets are linked, why not add more widgets to make our dashboard even better? Let's start by adding a search bar. It would allow us to make a textual research on all the visualizations at the same time. Go to the OpenDataSoft widgets documentation to learn more about the widget we are goint to use, which is called `odsTextSearch <https://help.opendatasoft.com/widgets/#/api/ods-widgets.directive:odsTextSearch>`_.
 
 In the odsTextSearch widget documentation, you have several information:
 
@@ -165,7 +183,7 @@ In the odsTextSearch widget documentation, you have several information:
 
 .. rst-class:: block-step
 
-    6 _ Copy the odsTextSearch widget code.
+    6 + Copy the odsTextSearch widget code.
 
 .. code-block:: html
 
@@ -184,7 +202,7 @@ In the odsTextSearch widget documentation, you have several information:
 
 .. rst-class:: block-step
 
-    7 _ Paste the widget code in the code of your page, where you want it to be displayed. Let's put it under the title, above the first visualization widget.
+    7 + Paste the widget code in the code of your page, where you want it to be displayed. Let's put it under the title, above the first visualization widget.
 
 .. admonition:: Caution
    :class: caution
@@ -232,7 +250,7 @@ In the odsTextSearch widget documentation, you have several information:
 
 .. rst-class:: block-step
 
-    8 _ As it is now, the search bar cannot work. First, we need to determine which attributes we need, and fill their values up. For this widget, only the ``context`` attribute is mandatory. To keep things simple for this tutorial, let's delete all other attributes.
+    8 + As it is now, the search bar cannot work. First, we need to determine which attributes we need, and fill their values up. For this widget, only the ``context`` attribute is mandatory. To keep things simple for this tutorial, let's delete all other attributes.
 
 .. code-block:: html
 
@@ -245,7 +263,7 @@ In the odsTextSearch widget documentation, you have several information:
 
 .. rst-class:: block-step
 
-    9 _ At the beginning of this tutorial (see step 2), we created a unique context that can be used throughout our whole page. The name of our context is "worldheritagelistpublicus". It is that same context name that we must use to fill up the context attribute of our odsTextSearch widget.
+    9 + At the beginning of this tutorial (see step 2), we created a unique context that can be used throughout our whole page. The name of our context is "worldheritagelistpublicus". It is that same context name that we must use to fill up the context attribute of our odsTextSearch widget.
 
 .. code-block:: html
 
@@ -287,7 +305,7 @@ In the odsTextSearch widget documentation, you have several information:
 
 .. rst-class:: block-step
 
-    10 _ Save your page and click the Open page button. We now have a search bar in our dashboard!
+    10 + Save your page and click the :tutorial-keycap:`Open page` button. We now have a search bar in our dashboard!
 
 .. rst-class:: img-hide
 
@@ -295,7 +313,7 @@ In the odsTextSearch widget documentation, you have several information:
 
 .. rst-class:: block-step
 
-    11 _ Let's add another very useful element to our dashboard: filters! It would allow us to apply filters on our visualizations, just like when navigating a dataset. Go to the OpenDataSoft widgets documentation to learn more about the widget we are goint to use, which is called `odsFacets <https://help.opendatasoft.com/widgets/#/api/ods-widgets.directive:odsFacets>`_.
+    11 + Let's add another very useful element to our dashboard: filters! It would allow us to apply filters on our visualizations, just like when navigating a dataset. Go to the OpenDataSoft widgets documentation to learn more about the widget we are goint to use, which is called `odsFacets <https://help.opendatasoft.com/widgets/#/api/ods-widgets.directive:odsFacets>`_.
 
 .. admonition:: Important
    :class: important
@@ -308,7 +326,7 @@ In the odsTextSearch widget documentation, you have several information:
 
 .. rst-class:: block-step
 
-    12 _ Copy the odsFacets widget code.
+    12 + Copy the odsFacets widget code.
 
 .. code-block:: html
 
@@ -321,7 +339,7 @@ In the odsTextSearch widget documentation, you have several information:
 
 .. rst-class:: block-step
 
-    13 _ Paste the widget code in the code of your page, where you want it to be displayed. Let's put it under our search bar.
+    13 + Paste the widget code in the code of your page, where you want it to be displayed. Let's put it under our search bar.
 
 .. code-block:: html
 
@@ -361,7 +379,7 @@ In the odsTextSearch widget documentation, you have several information:
 
 .. rst-class:: block-step
 
-    14 _ Just like we did with the odsTextSearch widget, we need to fill up the attributes of the odsFacets widget. The latter only has one: the ``context`` attribute! Let's fill it up with the name of our page context, exactly as we did for the odsTextSearch widget!
+    14 + Just like we did with the odsTextSearch widget, we need to fill up the attributes of the odsFacets widget. The latter only has one: the ``context`` attribute! Let's fill it up with the name of our page context, exactly as we did for the odsTextSearch widget!
 
 .. code-block:: html
 
@@ -406,7 +424,7 @@ In the odsTextSearch widget documentation, you have several information:
 
 .. rst-class:: block-step
 
-    15 _ Save your page and click the Open page button. The filters of our dataset are now displayed in our dashboard!
+    15 + Save your page and click the :tutorial-keycap:`Open page` button. The filters of our dataset are now displayed in our dashboard!
 
 .. rst-class:: img-hide
 
@@ -414,7 +432,7 @@ In the odsTextSearch widget documentation, you have several information:
 
 .. rst-class:: block-step
 
-    16 _ Now, say we don't want to display all the filters of our dataset. In our UNESCO World Heritage example, let's say we only want to be able to filter by category and country. Copy the following piece of code (also available in the odsFacets widget documentation):
+    16 + Now, say we don't want to display all the filters of our dataset. In our UNESCO World Heritage example, let's say we only want to be able to filter by category and country. Copy the following piece of code (also available in the odsFacets widget documentation):
 
 .. code-block:: html
 
@@ -432,7 +450,7 @@ In the odsTextSearch widget documentation, you have several information:
 
 .. rst-class:: block-step
 
-    17 _ Paste it in replacement of the previous, simple odsFacets widget code we used earlier.
+    17 + Paste it in replacement of the previous, simple odsFacets widget code we used earlier.
 
 .. code-block:: html
 
@@ -477,7 +495,7 @@ In the odsTextSearch widget documentation, you have several information:
 
 .. rst-class:: block-step
 
-    18 _ Fill up the context attribute correctly, with the name of your page context.
+    18 + Fill up the context attribute correctly, with the name of your page context.
 
 .. code-block:: html
 
@@ -495,7 +513,7 @@ In the odsTextSearch widget documentation, you have several information:
 
 .. rst-class:: block-step
 
-    19 _ Let's now take a look at the rest of the odsFacets widget advanced code. The 2 ``h3`` tags indicate that we have added titles: these will be used to write the name of the filters we want to display, meaning "Category" and "Country". ``ods-facet name`` is the attribute which will indicate the technical identifier of the field on which the filter is based.
+    19 + Let's now take a look at the rest of the odsFacets widget advanced code. The 2 ``h3`` tags indicate that we have added titles: these will be used to write the name of the filters we want to display, meaning "Category" and "Country". ``ods-facet name`` is the attribute which will indicate the technical identifier of the field on which the filter is based.
 
 .. admonition:: Note
    :class: note
@@ -525,7 +543,7 @@ In the code below, comment were added just in order to help you see the differen
 
 .. rst-class:: block-step
 
-    20 _ Go to the Dataset schema section of the Information tab of your dataset.
+    20 + Go to the Dataset schema section of the Information tab of your dataset.
 
 .. rst-class:: img-hide
 
@@ -533,7 +551,7 @@ In the code below, comment were added just in order to help you see the differen
 
 .. rst-class:: block-step
 
-    21 _ Find the technical identifiers of the fields on which are based the filters you want to add to the dashboard. In our UNESCO World Heritage example dataset, we wanted to filter by category and country. Respectively, the technical identifiers of the fields we want to use as filters are ``category`` and ``states``.
+    21 + Find the technical identifiers of the fields on which are based the filters you want to add to the dashboard. In our UNESCO World Heritage example dataset, we wanted to filter by category and country. Respectively, the technical identifiers of the fields we want to use as filters are ``category`` and ``states``.
 
 .. rst-class:: img-hide
 
@@ -541,7 +559,7 @@ In the code below, comment were added just in order to help you see the differen
 
 .. rst-class:: block-step
 
-    22 _ Back to the code of your dashboard, fill up both the titles and the ``ods-facet name`` attributes.
+    22 + Back to the code of your dashboard, fill up both the titles and the ``ods-facet name`` attributes.
 
 .. code-block:: html
 
@@ -596,7 +614,7 @@ In the code below, comment were added just in order to help you see the differen
 
 .. rst-class:: block-step
 
-    23 _ Save your page and click the Open page button. Our 2 chosen filters are displayed on our dashboard!
+    23 + Save your page and click the :tutorial-keycap:`Open page` button. Our 2 chosen filters are displayed on our dashboard!
 
 .. rst-class:: img-hide
 
@@ -645,7 +663,7 @@ When your create a page and want to organize the elements that compose your page
 
 .. rst-class:: block-step
 
-    24 _ Let's reorganize our dashboard in rows and columns. For our example, we will put both the navigation part and the data visualization part in the same row. We will use 3 columns for the navigation elements, and the remaining 9 columns for our visualization elements. Since we wanted to put the map and chart visualizations one next to the other, we will create a row for these 2 : each using 6 columns.
+    24 + Let's reorganize our dashboard in rows and columns. For our example, we will put both the navigation part and the data visualization part in the same row. We will use 3 columns for the navigation elements, and the remaining 9 columns for our visualization elements. Since we wanted to put the map and chart visualizations one next to the other, we will create a row for these 2 : each using 6 columns.
 
 .. image:: images/dashboard__css-responsive-layout-2.png
 
@@ -699,7 +717,7 @@ In HTML code, this is what our dashboard will look like:
 
 .. rst-class:: block-step
 
-    25 _ Save your page and click the Open page button. What a cool dashboard we have created!
+    25 + Save your page and click the :tutorial-keycap:`Open page` button. What a cool dashboard we have created!
 
 .. rst-class:: img-hide
 
@@ -707,7 +725,7 @@ In HTML code, this is what our dashboard will look like:
 
 .. rst-class:: block-step
 
-    26 _ Maybe a little bit more space between the table and the 2 other visualizations would be better though. Let's add a ``br`` tag under the table widget, right before the row containing both the map widget and the chart widget. This tag signifies that we want to add an extra empty ligne at the place of the tag.
+    26 + Maybe a little bit more space between the table and the 2 other visualizations would be better though. Let's add a ``br`` tag under the table widget, right before the row containing both the map widget and the chart widget. This tag signifies that we want to add an extra empty ligne at the place of the tag.
 
 .. code-block:: html
 
@@ -774,6 +792,12 @@ In HTML code, this is what our dashboard will look like:
 
 .. rst-class:: block-step
 
-    27 _ Save again and click the Open page button to see the final result!
+    27 + Save again and click the Open page button to see the final result!
 
-Congratulations! You have finished this tutorial and you now know how to create a complete dashboard with linked widgets and how to format it with CSS classes!
+
+
+.. rst-class:: block-prerequisite-congratulation
+
+ **CONGRATULATIONS!**
+
+ You have finished this tutorial and you now know how to create a complete dashboard with linked widgets and how to format it with CSS classes!
