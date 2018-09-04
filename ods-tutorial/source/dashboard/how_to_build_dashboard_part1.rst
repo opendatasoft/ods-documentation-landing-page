@@ -3,7 +3,7 @@ How to build a dashboard (part 1)
 
 .. rst-class:: header-information-tutorial
 
-    ★☆☆ Beginners - time: 30 minutes
+    ★☆☆ Beginner - time: 30 minutes
 
 *This tutorial will teach you how to create a dashboard using 3 visualizations from a dataset published on an OpenDataSoft portal.*
 
@@ -35,7 +35,7 @@ Prerequisites:
 
 .. rst-class:: img-hide
 
-    .. image:: images/step1.png
+    .. image:: images/steps_d1/step1.png
 
 .. rst-class:: block-step
 
@@ -43,7 +43,7 @@ Prerequisites:
 
 .. rst-class:: img-hide
 
-    .. image:: images/step2.png
+    .. image:: images/steps_d1/step2.png
 
 .. rst-class:: block-step
 
@@ -51,7 +51,7 @@ Prerequisites:
 
 .. rst-class:: img-hide
 
-    .. image:: images/step3.png
+    .. image:: images/steps_d1/step3.png
 
 .. rst-class:: block-step
 
@@ -59,7 +59,7 @@ Prerequisites:
 
 .. rst-class:: img-hide
 
-    .. image:: images/step4.png
+    .. image:: images/steps_d1/step4.png
 
 .. rst-class:: block-step
 
@@ -67,7 +67,7 @@ Prerequisites:
 
 .. rst-class:: img-hide
 
-    .. image:: images/step5.png
+    .. image:: images/steps_d1/step5.png
 
 .. rst-class:: block-step
 
@@ -75,7 +75,7 @@ Prerequisites:
 
 .. rst-class:: img-hide
 
-    .. image:: images/step6.png
+    .. image:: images/steps_d1/step6.png
 
 In the HTML/CSS code area, you should see the following code:
 
@@ -102,13 +102,25 @@ The ``<div class="container-fluid">`` and ``<div class="ods-box" >`` tags help f
   </div>
  </div>
 
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d1/step6b.png
+
 .. rst-class:: block-step
 
     7 _ Save your page.
 
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d1/step7.png
+
 .. rst-class:: block-step
 
     8 _ Click on the Open page button to see the current result of your page.
+
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d1/step8.png
 
 
 .. PART 2 - ADD DATA VISUALIZATIONS:
@@ -132,9 +144,17 @@ The ``<div class="container-fluid">`` and ``<div class="ods-box" >`` tags help f
 
     9 _ Go to Data, where our dataset is published. Make sure you are on the dataset's page, where you can see the available data visualizations.
 
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d1/step10.png
+
 .. rst-class:: block-step
 
     10 _ Let's start with the Table view. Click on the Table tab.
+
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d1/step9.png
 
 .. rst-class:: block-step
 
@@ -158,6 +178,10 @@ The ``<div class="container-fluid">`` and ``<div class="ods-box" >`` tags help f
 
     13 _ Go back to the back office, to continue to edit your OpenDataSoft content page.
 
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d1/step13.png
+
 .. rst-class:: block-step
 
     14 _ Paste your table visualization widget code at the right place, between the ``ods-box`` tag (see step 6).
@@ -167,16 +191,24 @@ The ``<div class="container-fluid">`` and ``<div class="ods-box" >`` tags help f
  <div class="container-fluid">
    <div class="ods-box">
 
-     <ods-dataset-context context="worldheritagelistpublicus" worldheritagelistpublicus-dataset="world-heritage-list@public-us">
-       <ods-table context="worldheritagelistpublicus"></ods-table>
+     <ods-dataset-context context="worldheritagelistpublicus" worldheritagelistpublicus-dataset="world-heritage-list@public-us" worldheritagelistpublicus-parameters="{'disjunctive.states':true,'sort':'date_inscribed'}">
+       <ods-table context="worldheritagelistpublicus" sort="date_inscribed"></ods-table>
      </ods-dataset-context>
 
    </div>
  </div>
 
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d1/step14.png
+
 .. rst-class:: block-step
 
     15 _ Save your page and click the Open page button: there is now a table visualization in our page!
+
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d1/step15.png
 
 
 
@@ -197,16 +229,20 @@ The ``<div class="container-fluid">`` and ``<div class="ods-box" >`` tags help f
  <div class="container-fluid">
    <div class="ods-box">
 
-     <ods-dataset-context context="worldheritagelistpublicus" worldheritagelistpublicus-dataset="world-heritage-list@public-us">
-       <ods-table context="worldheritagelistpublicus"></ods-table>
+     <ods-dataset-context context="worldheritagelistpublicus" worldheritagelistpublicus-dataset="world-heritage-list@public-us" worldheritagelistpublicus-parameters="{'disjunctive.states':true,'sort':'date_inscribed'}">
+       <ods-table context="worldheritagelistpublicus" sort="date_inscribed"></ods-table>
      </ods-dataset-context>
 
-     <ods-dataset-context context="worldheritagelistpublicus" worldheritagelistpublicus-dataset="world-heritage-list@public-us">
+     <ods-dataset-context context="worldheritagelistpublicus" worldheritagelistpublicus-dataset="world-heritage-list@public-us" worldheritagelistpublicus-parameters="{'disjunctive.states':true,'sort':'date_inscribed'}">
        <ods-map context="worldheritagelistpublicus" scroll-wheel-zoom="false" location="2,18.46273,-0.44037" basemap="mapbox.streets"></ods-map>
      </ods-dataset-context>
 
    </div>
  </div>
+
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d1/step17.png
 
 .. rst-class:: block-step
 
@@ -229,10 +265,10 @@ The ``<div class="container-fluid">`` and ``<div class="ods-box" >`` tags help f
        <ods-map context="worldheritagelistpublicus" scroll-wheel-zoom="false" location="2,18.46273,-0.44037" basemap="mapbox.streets"></ods-map>
      </ods-dataset-context>
 
-     <ods-dataset-context context="worldheritagelistpublicus" worldheritagelistpublicus-dataset="world-heritage-list@public-us">
+     <ods-dataset-context context="worldheritagelistpublicus" worldheritagelistpublicus-dataset="world-heritage-list@public-us" worldheritagelistpublicus-parameters="{'disjunctive.states':true,'sort':'date_inscribed'}">
        <ods-chart align-month="true">
-         <ods-chart-query context="worldheritagelistpublicus" field-x="states_name_en" maxpoints="50">
-           <ods-chart-serie expression-y="area_hectares" chart-type="column" function-y="COUNT" color="#66c2a5" scientific-display="true">
+         <ods-chart-query context="worldheritagelistpublicus" field-x="region" maxpoints="50" stacked="normal" series-breakdown="category">
+           <ods-chart-serie expression-y="area_hectares" chart-type="column" function-y="COUNT" color="range-Accent" scientific-display="true">
            </ods-chart-serie>
          </ods-chart-query>
        </ods-chart>
@@ -241,9 +277,17 @@ The ``<div class="container-fluid">`` and ``<div class="ods-box" >`` tags help f
    </div>
  </div>
 
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d1/step19.png
+
 .. rst-class:: block-step
 
     20 _ Save your page and click the Open page button. We have now 3 visualizations on our page!
+
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d1/step20.png
 
 
 .. PART 3 - ADD A TITLE:
@@ -271,10 +315,10 @@ The ``<div class="container-fluid">`` and ``<div class="ods-box" >`` tags help f
        <ods-map context="worldheritagelistpublicus" scroll-wheel-zoom="false" location="2,18.46273,-0.44037" basemap="mapbox.streets"></ods-map>
      </ods-dataset-context>
 
-     <ods-dataset-context context="worldheritagelistpublicus" worldheritagelistpublicus-dataset="world-heritage-list@public-us">
+     <ods-dataset-context context="worldheritagelistpublicus" worldheritagelistpublicus-dataset="world-heritage-list@public-us" worldheritagelistpublicus-parameters="{'disjunctive.states':true,'sort':'date_inscribed'}">
        <ods-chart align-month="true">
-         <ods-chart-query context="worldheritagelistpublicus" field-x="states_name_en" maxpoints="50">
-           <ods-chart-serie expression-y="area_hectares" chart-type="column" function-y="COUNT" color="#66c2a5" scientific-display="true">
+         <ods-chart-query context="worldheritagelistpublicus" field-x="region" maxpoints="50" stacked="normal" series-breakdown="category">
+           <ods-chart-serie expression-y="area_hectares" chart-type="column" function-y="COUNT" color="range-Accent" scientific-display="true">
            </ods-chart-serie>
          </ods-chart-query>
        </ods-chart>
@@ -283,11 +327,19 @@ The ``<div class="container-fluid">`` and ``<div class="ods-box" >`` tags help f
    </div>
  </div>
 
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d1/step21.png
+
 .. rst-class:: block-step
 
-    22 _ Save your page and click the Open page button: our page now has a title!
+    22 _ Save your page and click the Open page button: our dashboard now has a title!
+
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d1/step22.png
 
 
 Congratulations! You have finished this tutorial and you now know how to create a simple dashboard with 3 dataset visualizations!
 
-If you want to go further with your dashboard, you can follow the second part of this tutorial: "How to build a dashboard (part 2)". It will teach you how to link your widgets together, how to add more advanced widgets but also how to organize and style your dashboard better.
+If you want to go further with your dashboard, you can follow the second part of this tutorial: :doc:`"How to build a dashboard (part 2)" <how_to_build_dashboard_part2>`. It will teach you how to link your widgets together, how to add more advanced widgets but also how to organize and style your dashboard better.

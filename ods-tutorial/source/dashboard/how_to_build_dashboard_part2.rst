@@ -18,7 +18,7 @@ During this tutorial, you will learn:
 Prerequisites:
 
 - In order to create a dashboard, you need to have access to the back office of an OpenDataSoft portal and the "Edit all pages" permission.
-- You are highly recommended to follow the first part of this dashboard tutorial, "How to build a dashboard (part 1)", since this second part starts with what we ended with in the first part. The prerequisites of the first part also contain all information about the chosen example dataset.
+- You are highly recommended to follow the first part of this dashboard tutorial, :doc:`"How to build a dashboard (part 1)" <how_to_build_dashboard_part1>`, since this second part starts with what we ended with in the first part. The prerequisites of the first part also contain all information about the chosen example dataset.
 
 .. PART 1 - LINK WIDGETS:
 
@@ -40,7 +40,7 @@ It is because our widgets are not yet linked to one another. The secret to do th
    <div class="ods-box">
 
      <!-- TITLE OF THE PAGE -->
-     <h1>UNESCO World Heritage Sites</h1>
+     <h1>UNESCO World Heritage</h1>
 
      <!-- TABLE WIDGET -->
      <!-- Context of the table -->
@@ -58,11 +58,11 @@ It is because our widgets are not yet linked to one another. The secret to do th
 
      <!-- CHART WIDGET -->
      <!-- Context of the chart -->
-     <ods-dataset-context context="worldheritagelistpublicus" worldheritagelistpublicus-dataset="world-heritage-list@public-us">
+     <ods-dataset-context context="worldheritagelistpublicus" worldheritagelistpublicus-dataset="world-heritage-list@public-us" worldheritagelistpublicus-parameters="{'disjunctive.states':true,'sort':'date_inscribed'}">
        <!-- Chart widget tags -->
        <ods-chart align-month="true">
-         <ods-chart-query context="worldheritagelistpublicus" field-x="states_name_en" maxpoints="50">
-           <ods-chart-serie expression-y="area_hectares" chart-type="column" function-y="COUNT" color="#66c2a5" scientific-display="true">
+         <ods-chart-query context="worldheritagelistpublicus" field-x="region" maxpoints="50" stacked="normal" series-breakdown="category">
+           <ods-chart-serie expression-y="area_hectares" chart-type="column" function-y="COUNT" color="range-Accent" scientific-display="true">
            </ods-chart-serie>
          </ods-chart-query>
        </ods-chart>
@@ -70,6 +70,10 @@ It is because our widgets are not yet linked to one another. The secret to do th
 
    </div>
  </div>
+
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d2/step1.png
 
 As you can see, we have a context for each widget. First, it is not so useful in our case, since all our widgets use the same data from the same dataset. Second, it prevents us to link our widgets together. We must have a unique context.
 
@@ -89,6 +93,9 @@ As you can see, we have a context for each widget. First, it is not so useful in
 
  </ods-dataset-context>
 
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d2/step2.png
 
 .. rst-class:: block-step
 
@@ -102,15 +109,15 @@ As you can see, we have a context for each widget. First, it is not so useful in
  <div class="container-fluid">
    <div class="ods-box">
 
-     <h1>UNESCO World Heritage Sites</h1>
+     <h1>UNESCO World Heritage</h1>
 
      <ods-table context="worldheritagelistpublicus"></ods-table>
 
      <ods-map context="worldheritagelistpublicus" scroll-wheel-zoom="false" location="2,18.46273,-0.44037" basemap="mapbox.streets"></ods-map>
 
      <ods-chart align-month="true">
-       <ods-chart-query context="worldheritagelistpublicus" field-x="states_name_en" maxpoints="50">
-         <ods-chart-serie expression-y="area_hectares" chart-type="column" function-y="COUNT" color="#66c2a5" scientific-display="true">
+       <ods-chart-query context="worldheritagelistpublicus" field-x="region" maxpoints="50" stacked="normal" series-breakdown="category">
+         <ods-chart-serie expression-y="area_hectares" chart-type="column" function-y="COUNT" color="range-Accent" scientific-display="true">
          </ods-chart-serie>
        </ods-chart-query>
      </ods-chart>
@@ -120,9 +127,17 @@ As you can see, we have a context for each widget. First, it is not so useful in
 
  </ods-dataset-context>
 
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d2/step3.png
+
 .. rst-class:: block-step
 
     4 _ Save your page and click the Open page button. Now, if you draw a shape on the map, the map will be filtered according to that shape, but both the table and chart will be filtered as well according to that same filter. Our widgets are linked together!
+
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d2/step4.png
 
 
 .. PART 2 - ADD MORE WIDGETS:
@@ -142,6 +157,12 @@ In the odsTextSearch widget documentation, you have several information:
    - a table with the attributes of the widget, which values you must fill up for the widget to work
    - example of both the final code and the final result
 
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d2/step5.png
+    .. image:: images/steps_d2/step5b.png
+    .. image:: images/steps_d2/step5c.png
+
 .. rst-class:: block-step
 
     6 _ Copy the odsTextSearch widget code.
@@ -156,6 +177,10 @@ In the odsTextSearch widget documentation, you have several information:
        context="{CatalogContext|DatasetContext|CatalogContext[]|DatasetContext[]}"
        autofocus="{string}">
  </ods-text-search>
+
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d2/step6.png
 
 .. rst-class:: block-step
 
@@ -174,7 +199,7 @@ In the odsTextSearch widget documentation, you have several information:
  <div class="container-fluid">
    <div class="ods-box">
 
-     <h1>UNESCO World Heritage Sites</h1>
+     <h1>UNESCO World Heritage</h1>
 
      <ods-text-search
      placeholder="{string}"
@@ -190,8 +215,8 @@ In the odsTextSearch widget documentation, you have several information:
    <ods-map context="worldheritagelistpublicus" scroll-wheel-zoom="false" location="2,18.46273,-0.44037" basemap="mapbox.streets"></ods-map>
 
    <ods-chart align-month="true">
-     <ods-chart-query context="worldheritagelistpublicus" field-x="states_name_en" maxpoints="50">
-       <ods-chart-serie expression-y="area_hectares" chart-type="column" function-y="COUNT" color="#66c2a5" scientific-display="true">
+     <ods-chart-query context="worldheritagelistpublicus" field-x="region" maxpoints="50" stacked="normal" series-breakdown="category">
+       <ods-chart-serie expression-y="area_hectares" chart-type="column" function-y="COUNT" color="range-Accent" scientific-display="true">
        </ods-chart-serie>
      </ods-chart-query>
    </ods-chart>
@@ -201,6 +226,10 @@ In the odsTextSearch widget documentation, you have several information:
 
  </ods-dataset-context>
 
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d2/step7.png
+
 .. rst-class:: block-step
 
     8 _ As it is now, the search bar cannot work. First, we need to determine which attributes we need, and fill their values up. For this widget, only the ``context`` attribute is mandatory. To keep things simple for this tutorial, let's delete all other attributes.
@@ -209,6 +238,10 @@ In the odsTextSearch widget documentation, you have several information:
 
  <ods-text-search context="{CatalogContext|DatasetContext|CatalogContext[]|DatasetContext[]}">
  </ods-text-search>
+
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d2/step8.png
 
 .. rst-class:: block-step
 
@@ -227,7 +260,7 @@ In the odsTextSearch widget documentation, you have several information:
  <div class="container-fluid">
    <div class="ods-box">
 
-     <h1>UNESCO World Heritage Sites</h1>
+     <h1>UNESCO World Heritage</h1>
 
      <ods-text-search context="worldheritagelistpublicus">
      </ods-text-search>
@@ -237,8 +270,8 @@ In the odsTextSearch widget documentation, you have several information:
      <ods-map context="worldheritagelistpublicus" scroll-wheel-zoom="false" location="2,18.46273,-0.44037" basemap="mapbox.streets"></ods-map>
 
      <ods-chart align-month="true">
-       <ods-chart-query context="worldheritagelistpublicus" field-x="states_name_en" maxpoints="50">
-         <ods-chart-serie expression-y="area_hectares" chart-type="column" function-y="COUNT" color="#66c2a5" scientific-display="true">
+       <ods-chart-query context="worldheritagelistpublicus" field-x="region" maxpoints="50" stacked="normal" series-breakdown="category">
+         <ods-chart-serie expression-y="area_hectares" chart-type="column" function-y="COUNT" color="range-Accent" scientific-display="true">
          </ods-chart-serie>
        </ods-chart-query>
      </ods-chart>
@@ -248,9 +281,17 @@ In the odsTextSearch widget documentation, you have several information:
 
  </ods-dataset-context>
 
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d2/step9.png
+
 .. rst-class:: block-step
 
     10 _ Save your page and click the Open page button. We now have a search bar in our dashboard!
+
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d2/step10.png
 
 .. rst-class:: block-step
 
@@ -261,6 +302,10 @@ In the odsTextSearch widget documentation, you have several information:
 
    The odsFacets widget allows to retrieve the filters already set for the dataset. It means that if you use this widget for a dashboard, but which related dataset does not have any defined filter, your widget won't be able to display anything.
 
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d2/step11.png
+
 .. rst-class:: block-step
 
     12 _ Copy the odsFacets widget code.
@@ -269,6 +314,10 @@ In the odsTextSearch widget documentation, you have several information:
 
  <ods-facets context="{DatasetContext}">
  </ods-facets>
+
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d2/step12.png
 
 .. rst-class:: block-step
 
@@ -282,12 +331,12 @@ In the odsTextSearch widget documentation, you have several information:
  <div class="container-fluid">
    <div class="ods-box">
 
-     <h1>UNESCO World Heritage Sites</h1>
+     <h1>UNESCO World Heritage</h1>
 
      <ods-text-search context="worldheritagelistpublicus">
      </ods-text-search>
 
-     <ods-facets context="worldheritagelistpublicus">
+     <ods-facets context="{DatasetContext}">
      </ods-facets>
 
      <ods-table context="worldheritagelistpublicus"></ods-table>
@@ -295,8 +344,8 @@ In the odsTextSearch widget documentation, you have several information:
      <ods-map context="worldheritagelistpublicus" scroll-wheel-zoom="false" location="2,18.46273,-0.44037" basemap="mapbox.streets"></ods-map>
 
      <ods-chart align-month="true">
-       <ods-chart-query context="worldheritagelistpublicus" field-x="states_name_en" maxpoints="50">
-         <ods-chart-serie expression-y="area_hectares" chart-type="column" function-y="COUNT" color="#66c2a5" scientific-display="true">
+       <ods-chart-query context="worldheritagelistpublicus" field-x="region" maxpoints="50" stacked="normal" series-breakdown="category">
+         <ods-chart-serie expression-y="area_hectares" chart-type="column" function-y="COUNT" color="range-Accent" scientific-display="true">
          </ods-chart-serie>
        </ods-chart-query>
      </ods-chart>
@@ -305,6 +354,10 @@ In the odsTextSearch widget documentation, you have several information:
  </div>
 
  </ods-dataset-context>
+
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d2/step13.png
 
 .. rst-class:: block-step
 
@@ -317,25 +370,27 @@ In the odsTextSearch widget documentation, you have several information:
 
 .. code-block:: html
 
- <ods-dataset-context context="worldheritageunescolist"
- worldheritageunescolist-dataset="world-heritage-unesco-list">
+ <ods-dataset-context context="worldheritagelistpublicus"
+ worldheritagelistpublicus-dataset="world-heritage-list@public-us">
 
  <div class="container-fluid">
    <div class="ods-box">
 
-     <h1>UNESCO World Heritage Sites</h1>
+     <h1>UNESCO World Heritage</h1>
 
-     <ods-text-search context="worldheritageunescolist"></ods-text-search>
+     <ods-text-search context="worldheritagelistpublicus">
+     </ods-text-search>
 
-     <ods-facets context="worldheritageunescolist"></ods-facets>
+     <ods-facets context="worldheritagelistpublicus">
+     </ods-facets>
 
-     <ods-table context="worldheritageunescolist"></ods-table>
+     <ods-table context="worldheritagelistpublicus"></ods-table>
 
-     <ods-map context="worldheritageunescolist" scroll-wheel-zoom="false" location="2,18.46273,-0.44037"></ods-map>
+     <ods-map context="worldheritagelistpublicus" scroll-wheel-zoom="false" location="2,18.46273,-0.44037" basemap="mapbox.streets"></ods-map>
 
      <ods-chart align-month="true">
-       <ods-chart-query context="worldheritageunescolist" field-x="date_inscribed" maxpoints="0" timescale="year">
-         <ods-chart-serie expression-y="area_hectares" chart-type="line" function-y="AVG" color="#4CDEF5" scientific-display="true">
+       <ods-chart-query context="worldheritagelistpublicus" field-x="region" maxpoints="50" stacked="normal" series-breakdown="category">
+         <ods-chart-serie expression-y="area_hectares" chart-type="column" function-y="COUNT" color="range-Accent" scientific-display="true">
          </ods-chart-serie>
        </ods-chart-query>
      </ods-chart>
@@ -345,9 +400,17 @@ In the odsTextSearch widget documentation, you have several information:
 
  </ods-dataset-context>
 
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d2/step14.png
+
 .. rst-class:: block-step
 
     15 _ Save your page and click the Open page button. The filters of our dataset are now displayed in our dashboard!
+
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d2/step15.png
 
 .. rst-class:: block-step
 
@@ -363,6 +426,10 @@ In the odsTextSearch widget documentation, you have several information:
     <ods-facet name="mysecondfield"></ods-facet>
  </ods-facets>
 
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d2/step16.png
+
 .. rst-class:: block-step
 
     17 _ Paste it in replacement of the previous, simple odsFacets widget code we used earlier.
@@ -375,7 +442,7 @@ In the odsTextSearch widget documentation, you have several information:
  <div class="container-fluid">
    <div class="ods-box">
 
-     <h1>UNESCO World Heritage Sites</h1>
+     <h1>UNESCO World Heritage</h1>
 
      <ods-text-search context="worldheritagelistpublicus">
      </ods-text-search>
@@ -393,8 +460,8 @@ In the odsTextSearch widget documentation, you have several information:
      <ods-map context="worldheritagelistpublicus" scroll-wheel-zoom="false" location="2,18.46273,-0.44037" basemap="mapbox.streets"></ods-map>
 
      <ods-chart align-month="true">
-       <ods-chart-query context="worldheritagelistpublicus" field-x="states_name_en" maxpoints="50">
-         <ods-chart-serie expression-y="area_hectares" chart-type="column" function-y="COUNT" color="#66c2a5" scientific-display="true">
+       <ods-chart-query context="worldheritagelistpublicus" field-x="region" maxpoints="50" stacked="normal" series-breakdown="category">
+         <ods-chart-serie expression-y="area_hectares" chart-type="column" function-y="COUNT" color="range-Accent" scientific-display="true">
          </ods-chart-serie>
        </ods-chart-query>
      </ods-chart>
@@ -403,6 +470,10 @@ In the odsTextSearch widget documentation, you have several information:
  </div>
 
  </ods-dataset-context>
+
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d2/step17.png
 
 .. rst-class:: block-step
 
@@ -417,6 +488,10 @@ In the odsTextSearch widget documentation, you have several information:
    <h3>Second field</h3>
    <ods-facet name="mysecondfield"></ods-facet>
  </ods-facets>
+
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d2/step18.png
 
 .. rst-class:: block-step
 
@@ -444,13 +519,25 @@ In the code below, comment were added just in order to help you see the differen
     <ods-facet name="mysecondfield"></ods-facet>
   </ods-facets>
 
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d2/step19.png
+
 .. rst-class:: block-step
 
     20 _ Go to the Dataset schema section of the Information tab of your dataset.
 
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d2/step20.png
+
 .. rst-class:: block-step
 
-    21 _ Find the technical identifiers of the fields on which are based the filters you want to add to the dashboard. In our UNESCO World Heritage example dataset, we wanted to filter by category and country. Respectively, the technical identifiers of the fields we want to use as filters are ``category`` and ``states_name_en``.
+    21 _ Find the technical identifiers of the fields on which are based the filters you want to add to the dashboard. In our UNESCO World Heritage example dataset, we wanted to filter by category and country. Respectively, the technical identifiers of the fields we want to use as filters are ``category`` and ``states``.
+
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d2/step21.png
 
 .. rst-class:: block-step
 
@@ -463,7 +550,7 @@ In the code below, comment were added just in order to help you see the differen
    <ods-facet name="category"></ods-facet>
 
    <h3>Country</h3>
-   <ods-facet name="states_name_en"></ods-facet>
+   <ods-facet name="states"></ods-facet>
  </ods-facets>
 
 .. code-block:: html
@@ -474,7 +561,7 @@ In the code below, comment were added just in order to help you see the differen
  <div class="container-fluid">
    <div class="ods-box">
 
-     <h1>UNESCO World Heritage Sites</h1>
+     <h1>UNESCO World Heritage</h1>
 
      <ods-text-search context="worldheritagelistpublicus">
      </ods-text-search>
@@ -484,7 +571,7 @@ In the code below, comment were added just in order to help you see the differen
        <ods-facet name="category"></ods-facet>
 
        <h3>Country</h3>
-       <ods-facet name="states_name_en"></ods-facet>
+       <ods-facet name="states"></ods-facet>
      </ods-facets>
 
      <ods-table context="worldheritagelistpublicus"></ods-table>
@@ -492,8 +579,8 @@ In the code below, comment were added just in order to help you see the differen
      <ods-map context="worldheritagelistpublicus" scroll-wheel-zoom="false" location="2,18.46273,-0.44037" basemap="mapbox.streets"></ods-map>
 
      <ods-chart align-month="true">
-       <ods-chart-query context="worldheritagelistpublicus" field-x="states_name_en" maxpoints="50">
-         <ods-chart-serie expression-y="area_hectares" chart-type="column" function-y="COUNT" color="#66c2a5" scientific-display="true">
+       <ods-chart-query context="worldheritagelistpublicus" field-x="region" maxpoints="50" stacked="normal" series-breakdown="category">
+         <ods-chart-serie expression-y="area_hectares" chart-type="column" function-y="COUNT" color="range-Accent" scientific-display="true">
          </ods-chart-serie>
        </ods-chart-query>
      </ods-chart>
@@ -503,9 +590,17 @@ In the code below, comment were added just in order to help you see the differen
 
  </ods-dataset-context>
 
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d2/step22.png
+
 .. rst-class:: block-step
 
     23 _ Save your page and click the Open page button. Our 2 chosen filters are displayed on our dashboard!
+
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d2/step23.png
 
 
 .. PART 2 - ORGANIZE IN ROWS AND COLUMNS:
@@ -598,15 +693,21 @@ In HTML code, this is what our dashboard will look like:
 
  </ods-dataset-context>
 
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d2/step24.png
+
 .. rst-class:: block-step
 
     25 _ Save your page and click the Open page button. What a cool dashboard we have created!
 
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d2/step25.png
+
 .. rst-class:: block-step
 
     26 _ Maybe a little bit more space between the table and the 2 other visualizations would be better though. Let's add a ``br`` tag under the table widget, right before the row containing both the map widget and the chart widget. This tag signifies that we want to add an extra empty ligne at the place of the tag.
-
-Here is the full, final HTML code of our page:
 
 .. code-block:: html
 
@@ -616,7 +717,7 @@ Here is the full, final HTML code of our page:
  <div class="container-fluid">
    <div class="ods-box">
 
-     <h1>UNESCO World Heritage Sites</h1>
+     <h1>UNESCO World Heritage</h1>
 
      <div class="row">
 
@@ -630,7 +731,7 @@ Here is the full, final HTML code of our page:
            <ods-facet name="category"></ods-facet>
 
            <h3>Country</h3>
-           <ods-facet name="states_name_en"></ods-facet>
+           <ods-facet name="states"></ods-facet>
          </ods-facets>
 
        </div>
@@ -643,29 +744,36 @@ Here is the full, final HTML code of our page:
 
          <div class="row">
 
-           <div class="col-xs-6"> <ods-map context="worldheritagelistpublicus" scroll-wheel-zoom="false" location="2,18.46273,-0.44037" basemap="mapbox.streets"></ods-map> </div>
+           <div class="col-xs-6">
+             <ods-map context="worldheritagelistpublicus" scroll-wheel-zoom="false" location="2,18.46273,-0.44037" basemap="mapbox.streets"></ods-map>
+           </div>
 
-           <div class="col-xs-6"> <ods-chart align-month="true">
-             <ods-chart-query context="worldheritagelistpublicus" field-x="states_name_en" maxpoints="50">
-               <ods-chart-serie expression-y="area_hectares" chart-type="column" function-y="COUNT" color="#66c2a5" scientific-display="true">
-               </ods-chart-serie>
-             </ods-chart-query>
-           </ods-chart> </div>
+           <div class="col-xs-6">
+             <ods-chart align-month="true">
+               <ods-chart-query context="worldheritagelistpublicus" field-x="region" maxpoints="50" stacked="normal" series-breakdown="category">
+                 <ods-chart-serie expression-y="area_hectares" chart-type="column" function-y="COUNT" color="range-Accent" scientific-display="true">
+                 </ods-chart-serie>
+               </ods-chart-query>
+             </ods-chart>
+           </div>
 
          </div>
 
        </div>
 
      </div>
-   </div>
 
+   </div>
  </div>
 
  </ods-dataset-context>
 
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d2/step26.png
+
 .. rst-class:: block-step
 
     27 _ Save again and click the Open page button to see the final result!
-
 
 Congratulations! You have finished this tutorial and you now know how to create a complete dashboard with linked widgets and how to format it with CSS classes!
