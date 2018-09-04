@@ -267,17 +267,66 @@ $('#help-hub-button').click(function() {
  *  Action tutorials
  *
  */
+var buttonExpand = $('.expand-all');
+var buttonCollapse = $('.collapse-all');
+var classToActivElement = 'expand-collapse-item-active';
+
+var imgElement = $('.img-hide');
+var buttonSwitchImg = '.button-switch-img';
+
+//- Function generique for open/hide images
+var toggleImg = function (elementImg, elementButton, isActive) {
+    $(elementImg).toggleClass('img-active')
+    $(elementButton).toggleClass('button-switch-img-active');
+    if (isActive) $(elementButton)[0].innerText = 'Show image';
+    else $(elementButton)[0].innerText = 'Hide image';
+}
+
+var expandAllImg = function (elementImg, elementButton) {
+    if (elementImg.className.indexOf('img-active') > 0) return null;
+    else {
+        toggleImg(elementImg, elementButton, false);
+    }
+}
+
+var collapseAllImg = function (elementImg, elementButton) {
+    if (elementImg.className.indexOf('img-active') > 0) {
+        toggleImg(elementImg, elementButton, true);
+    }
+}
+
+//- Show All Images
+$(buttonExpand).click(function () {
+    $(this).removeClass(classToActivElement);
+    $(buttonCollapse).addClass(classToActivElement);
+
+    for (var i = 0; i < $(buttonSwitchImg).length; i++) {
+        expandAllImg($(imgElement)[i], $($(buttonSwitchImg)[i]));
+    }
+});
+
+//- Hide All Images
+$(buttonCollapse).click(function () {
+    $(this).removeClass(classToActivElement);
+    $(buttonExpand).addClass(classToActivElement);
+
+    for (var i = 0; i < $(buttonSwitchImg).length; i++) {
+        collapseAllImg($(imgElement)[i], $($(buttonSwitchImg)[i]));
+    }
+});
+
 //- Switch show/hide img
-$(document).on("click", ".button-switch-img", function () {
+$(document).on('click', buttonSwitchImg, function () {
     var element = $(this).next();
     if (element[0].className.indexOf('img-active') > 0) {
-        $(element[0]).removeClass('img-active')
-        $(this)[0].innerText = 'Show image';
-        $(this).removeClass('button-switch-img-active');
+        toggleImg(element[0], this, true);
+        //- Priority to open image
+        if (buttonCollapse.length > 0) {
+            $(buttonExpand).addClass(classToActivElement);
+            $(buttonCollapse).removeClass(classToActivElement);
+        }
     } else {
-        $(element[0]).addClass('img-active');
-        $(this)[0].innerText = 'Hide image';
-        $(this).addClass('button-switch-img-active');
+        toggleImg(element[0], this, false);
     }
 });
 /*
@@ -294,12 +343,12 @@ $(document).on("click", ".button-switch-img", function () {
 
     for (var i = 0; i < blockStep.length; i++) {
         var resultSplit = $(blockStep[i])[0].innerHTML.split(' +');
-        var newData = "<div class='number-step'>" +
-                            "<p>" + resultSplit[0] + ".</p>" +
-                        "</div>" +
-                        "<div class='content-step'>" +
-                            "<p>" + resultSplit[1] + "</p>" +
-                        "</div>";
+        var newData = '<div class="number-step">' +
+                            '<p>' + resultSplit[0] + '.</p>' +
+                        '</div>' +
+                        '<div class="content-step">' +
+                            '<p>' + resultSplit[1] + '</p>' +
+                        '</div>';
         $(blockStep[i]).replaceWith('<div class="block-step">' +
                                         newData +
                                     '</div>');
@@ -309,7 +358,7 @@ $(document).on("click", ".button-switch-img", function () {
     var imgHideElement = $('.img-hide');
 
     for (var o = 0; o < imgHideElement.length; o++) {
-        $("<button class='button-switch-img'>Show image</button>").insertBefore($(imgHideElement[o]));
+        $('<button class="button-switch-img">Show image</button>').insertBefore($(imgHideElement[o]));
     }
 
     //- Generate style for header tutorial information

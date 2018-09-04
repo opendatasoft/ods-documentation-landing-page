@@ -25,7 +25,7 @@ During this tutorial, you will learn:
 
 [screenshot result of the tutorial]
 
-.. rst-class:: expand-collapse-items expand-all expand-collapse-items-active
+.. rst-class:: expand-collapse-items expand-all expand-collapse-item-active
 
     Show all images
 
