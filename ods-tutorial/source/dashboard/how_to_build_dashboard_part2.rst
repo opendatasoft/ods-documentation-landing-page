@@ -178,8 +178,6 @@ In the odsTextSearch widget documentation, you have several information:
 .. rst-class:: img-hide
 
     .. image:: images/steps_d2/step5.png
-    .. image:: images/steps_d2/step5b.png
-    .. image:: images/steps_d2/step5c.png
 
 .. rst-class:: block-step
 
@@ -305,7 +303,7 @@ In the odsTextSearch widget documentation, you have several information:
 
 .. rst-class:: block-step
 
-    10 + Save your page and click the :tutorial-keycap:`Open page` button. We now have a search bar in our dashboard!
+    10 + Save your page and click on :tutorial-keycap:`Preview`. We now have a search bar in our dashboard!
 
 .. rst-class:: img-hide
 
@@ -424,7 +422,7 @@ In the odsTextSearch widget documentation, you have several information:
 
 .. rst-class:: block-step
 
-    15 + Save your page and click the :tutorial-keycap:`Open page` button. The filters of our dataset are now displayed in our dashboard!
+    15 + Save your page and click on :tutorial-keycap:`Preview`. The filters of our dataset are now displayed in our dashboard!
 
 .. rst-class:: img-hide
 
@@ -614,7 +612,7 @@ In the code below, comment were added just in order to help you see the differen
 
 .. rst-class:: block-step
 
-    23 + Save your page and click the :tutorial-keycap:`Open page` button. Our 2 chosen filters are displayed on our dashboard!
+    23 + Save your page and click on :tutorial-keycap:`Preview`. Our 2 chosen filters are displayed on our dashboard!
 
 .. rst-class:: img-hide
 
@@ -717,7 +715,7 @@ In HTML code, this is what our dashboard will look like:
 
 .. rst-class:: block-step
 
-    25 + Save your page and click the :tutorial-keycap:`Open page` button. What a cool dashboard we have created!
+    25 + Save your page and click on :tutorial-keycap:`Preview`. What a cool dashboard we have created!
 
 .. rst-class:: img-hide
 
@@ -725,7 +723,7 @@ In HTML code, this is what our dashboard will look like:
 
 .. rst-class:: block-step
 
-    26 + Maybe a little bit more space between the table and the 2 other visualizations would be better though. Let's add a ``br`` tag under the table widget, right before the row containing both the map widget and the chart widget. This tag signifies that we want to add an extra empty ligne at the place of the tag.
+    26 + Maybe a little bit more space between the table and the 2 other visualizations would be better though. Let's add a ``br`` tag under the table widget, right before the row containing both the map widget and the chart widget. This tag signifies that we want to add an extra empty ligne at the place of the tag. It is also one of the HTML tags that does not come in a pair!
 
 .. code-block:: html
 

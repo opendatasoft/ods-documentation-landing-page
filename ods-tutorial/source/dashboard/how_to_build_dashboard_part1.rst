@@ -106,7 +106,7 @@ In the HTML/CSS code area, you should see the following code:
 .. admonition:: Important
    :class: important
 
-   In the HTML language, every element is represented by a tag. This tag is written between ``<`` and ``>`` and always comes in a pair, with an opening tag and a closing tag. E.g. ``<p></p>`` for paragraphs, ``<h1></h1>`` for first level title, ``<div></div>`` for a division/section, etc.
+   In the HTML language, every element is represented by a tag. This tag is written between ``<`` and ``>`` and almost always comes in a pair, with an opening tag and a closing tag. E.g. ``<p></p>`` for paragraphs, ``<h1></h1>`` for first level title, ``<div></div>`` for a division/section, etc.
 
 The ``<div class="container-fluid">`` and ``<div class="ods-box" >`` tags help formatting your page the right way, in order for all elements of your content page to be in a predefined frame with borders. All new elements that you will add in the future should be put inside these 2 tags.
 
@@ -134,7 +134,7 @@ The ``<div class="container-fluid">`` and ``<div class="ods-box" >`` tags help f
 
 .. rst-class:: block-step
 
-    8 + Click on the :tutorial-keycap:`Open page` button to see the current result of your page.
+    8 + Click on :tutorial-keycap:`Preview` to see the current result of your page. Click again on :tutorial-keycap:`Preview` to hide the preview window and go back to your code.
 
 .. rst-class:: img-hide
 
@@ -185,7 +185,9 @@ The ``<div class="container-fluid">`` and ``<div class="ods-box" >`` tags help f
 .. admonition:: Important
    :class: important
 
-   An iframe allows anyone to show OpenDataSoft content in an isolated frame, independent from the rest of the page. Iframes, as opposed to widgets, are indeed all-in-one, integrated, and secure, so they can be embedded outside the OpenDataSoft environment, at the cost of interaction and customization. Widgets are more customizable and interactive (i.e: several widgets on the same page can interact with each other), but can only work inside OpenDataSoft pages.
+   An iframe is a way to easily and safely integrate OpenDataSoft content in an isolated frame, independent from the rest of the page. If you want to integrate OpenDataSoft content outside the OpenDataSoft environment, iframes would be the best way to go, even though some interaction and customization work would probably be needed. Widgets could also be integrated into a page outside the OpenDataSoft environment, but know that heavy work would be required.
+
+   Since we are building a dashboard directly in an OpenDataSoft page, using OpenDataSoft widgets is the best option. In the OpenDataSoft environment, they are indeed easily customizable and very interactive with other widgets.
 
 .. rst-class:: block-step
 
@@ -230,7 +232,7 @@ The ``<div class="container-fluid">`` and ``<div class="ods-box" >`` tags help f
 
 .. rst-class:: block-step
 
-    15 + Save your page and click the :tutorial-keycap:`Open page` button: there is now a table visualization in our page!
+    15 + Save your page and click on :tutorial-keycap:`Preview`: there is now a table visualization in our page!
 
 .. rst-class:: img-hide
 
@@ -317,7 +319,7 @@ The ``<div class="container-fluid">`` and ``<div class="ods-box" >`` tags help f
 
 .. rst-class:: block-step
 
-    20 + Save your page and click the :tutorial-keycap:`Open page` button. We have now 3 visualizations on our page!
+    20 + Save your page and click on :tutorial-keycap:`Preview`. We have now 3 visualizations on our page!
 
 .. rst-class:: img-hide
 
@@ -367,11 +369,19 @@ The ``<div class="container-fluid">`` and ``<div class="ods-box" >`` tags help f
 
 .. rst-class:: block-step
 
-    22 + Save your page and click the :tutorial-keycap:`Open page` button: our dashboard now has a title!
+    22 + Save your page and click on :tutorial-keycap:`Preview`: our dashboard now has a title!
 
 .. rst-class:: img-hide
 
     .. image:: images/steps_d1/step22.png
+
+.. rst-class:: block-step
+
+    23 + Click on the :tutorial-keycap:`Open page` button to see the final result of your page in the portal.
+
+.. rst-class:: img-hide
+
+    .. image:: images/steps_d1/step23.png
 
 |
 
