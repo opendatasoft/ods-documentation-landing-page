@@ -274,60 +274,110 @@ var classToActivElement = 'expand-collapse-item-active';
 var imgElement = $('.img-hide');
 var buttonSwitchImg = '.button-switch-img';
 
-//- Function generique for open/hide images
-var toggleImg = function (elementImg, elementButton, isActive) {
-    $(elementImg).toggleClass('img-active')
-    $(elementButton).toggleClass('button-switch-img-active');
-    if (isActive) $(elementButton)[0].innerText = 'Show image';
-    else $(elementButton)[0].innerText = 'Hide image';
+//- Function to change status button img
+var toggleButton = function (elementButton, isActive) {
+    if (isActive) {
+        $(elementButton).removeClass('button-switch-img-active');
+        $(elementButton).text('Show image');
+    } else {
+        $(elementButton).addClass('button-switch-img-active');
+        $(elementButton).text('Hide image');
+    }
 }
-
-var expandAllImg = function (elementImg, elementButton) {
-    if (elementImg.className.indexOf('img-active') > 0) return null;
-    else {
-        toggleImg(elementImg, elementButton, false);
+//- Function to open/hide images
+//- Function if there is more than one image
+var toggleNextImg = function (firstImg, action) {
+    var nextImg = $(firstImg).next();
+    while ($(nextImg)[0].className.indexOf('img-hide') > -1) {
+        $(nextImg)[action]('img-active');
+        nextImg = $(nextImg).next();
+    }
+}
+var toggleImage = function (elementImg, isActive) {
+    if (isActive) {
+        $(elementImg).removeClass('img-active');
+        toggleNextImg(elementImg, 'removeClass');
+    } else {
+        $(elementImg).addClass('img-active');
+        toggleNextImg(elementImg, 'addClass');
+    }
+}
+//- Active All Buttons
+var activeAllButtons = function (elementButton) {
+    if (elementButton.className.indexOf('button-switch-img-active') == -1) {
+        toggleButton(elementButton, false);
+    }
+}
+//- Expand All Images
+var expandAllImg = function (elementImg) {
+    if (elementImg.className.indexOf('img-active') == -1) {
+        toggleImage(elementImg, false);
+    }
+}
+//- Desactive All Images
+var desactiveAllButtons = function (elementButton) {
+    if (elementButton.className.indexOf('button-switch-img-active') > -1) {
+        toggleButton(elementButton, true);
+    }
+}
+//- Collapse All Images
+var collapseAllImg = function (elementImg) {
+    if (elementImg.className.indexOf('img-active') > -1) {
+        toggleImage(elementImg, true);
     }
 }
 
-var collapseAllImg = function (elementImg, elementButton) {
-    if (elementImg.className.indexOf('img-active') > 0) {
-        toggleImg(elementImg, elementButton, true);
-    }
-}
-
-//- Show All Images
+//- Show All Images && Active All Buttons
 $(buttonExpand).click(function () {
     $(this).removeClass(classToActivElement);
     $(buttonCollapse).addClass(classToActivElement);
 
+    for (var i = 0; i < $(imgElement).length; i++) {
+        expandAllImg($(imgElement)[i]);
+    }
     for (var i = 0; i < $(buttonSwitchImg).length; i++) {
-        expandAllImg($(imgElement)[i], $($(buttonSwitchImg)[i]));
+        activeAllButtons($($(buttonSwitchImg)[i])[0]);
     }
 });
 
-//- Hide All Images
+//- Hide All Images && Desactive All Buttons
 $(buttonCollapse).click(function () {
     $(this).removeClass(classToActivElement);
     $(buttonExpand).addClass(classToActivElement);
 
+    for (var i = 0; i < $(imgElement).length; i++) {
+        collapseAllImg($(imgElement)[i]);
+    }
     for (var i = 0; i < $(buttonSwitchImg).length; i++) {
-        collapseAllImg($(imgElement)[i], $($(buttonSwitchImg)[i]));
+        desactiveAllButtons($($(buttonSwitchImg)[i])[0]);
     }
 });
+
+//- Priority to image opening
+//- Count images opened to change expand/collapse button status
+var countImages = function () {
+    var countButtonsActived = $('.button-switch-img-active').length;
+    var countTotalButtons = $('.button-switch-img').length;
+    if (countButtonsActived === countTotalButtons) {
+        $(buttonExpand).removeClass(classToActivElement);
+        $(buttonCollapse).addClass(classToActivElement);
+    } else if (countButtonsActived < countTotalButtons) {
+        $(buttonCollapse).removeClass(classToActivElement);
+        $(buttonExpand).addClass(classToActivElement);
+    }
+}
 
 //- Switch show/hide img
 $(document).on('click', buttonSwitchImg, function () {
     var element = $(this).next();
-    if (element[0].className.indexOf('img-active') > 0) {
-        toggleImg(element[0], this, true);
-        //- Priority to open image
-        if (buttonCollapse.length > 0) {
-            $(buttonExpand).addClass(classToActivElement);
-            $(buttonCollapse).removeClass(classToActivElement);
-        }
+    if (element[0].className.indexOf('img-active') > -1) {
+        toggleImage(element[0], true);
+        toggleButton(this, true);
     } else {
-        toggleImg(element[0], this, false);
+        toggleImage(element[0], false);
+        toggleButton(this, false);
     }
+    countImages();
 });
 /*
  *
@@ -358,7 +408,11 @@ $(document).on('click', buttonSwitchImg, function () {
     var imgHideElement = $('.img-hide');
 
     for (var o = 0; o < imgHideElement.length; o++) {
-        $('<button class="button-switch-img">Show image</button>').insertBefore($(imgHideElement[o]));
+        if ($($(imgHideElement[o]).prev())[0].classList.contains('img-hide')) {
+            continue;
+        } else {
+            $('<button class="button-switch-img">Show image</button>').insertBefore($(imgHideElement[o]));
+        }
     }
 
     //- Generate style for header tutorial information
