@@ -379,12 +379,35 @@ $(document).on('click', buttonSwitchImg, function () {
     }
     countImages();
 });
+
+//- Added / Removed button to scroll to the top
+$(document).scroll(function () {
+    var positionRef = $('.expand-collapse-items').offset().top;
+    var positionWindow = $(window).scrollTop();
+    var elementToTop = $('.tutorial-to-top');
+    var classActiveToTop = 'tutorial-to-top-active';
+    if (positionWindow > positionRef) {
+        elementToTop.addClass(classActiveToTop);
+    } else {
+        elementToTop.removeClass(classActiveToTop);
+    }
+});
+
+//- Function to scroll to top
+$(document).on('click', '.tutorial-to-top', function () {
+    $('html, body').animate({ scrollTop: 0 }, 'slow');
+    return false;
+});
+
 /*
  *
  *  Set up style for tutorials
  *
  */
 (function () {
+    //- Inject element to scroll to top
+    $('<div class="tutorial-to-top"></div>').insertAfter('.section');
+
     //- Remove border-top at first title-level-2
     $($('.title-level-2')[0]).addClass('title-level-2-first');
 

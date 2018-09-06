@@ -587,3 +587,24 @@ footer
 
 .collapse-all::before
   content: "\f0d8"
+
+.tutorial-to-top
+  display: none
+  position: fixed
+  bottom: 50px
+  right: 50px
+  height: 60px
+  width: 60px
+  border-radius: 4px
+  background-color: $blue-hover
+  font-family: FontAwesome
+  color: white
+  font-size: 25px
+  cursor: pointer
+  padding: 16px 20px
+  transition: 0.5s
+  &::before
+    content: "\f062"
+
+.tutorial-to-top-active
+  display: block
