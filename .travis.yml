@@ -5,8 +5,8 @@ env:
     - secure: "hY+6OzPKmFkn47q3ks5d+gJwX4mT8gWTetKls4cNMfvXILu3gdEuNp/oXxOVlgXkdO664LK788nPe7+s7Y/gIgdvxoiG/RH8wrP4w5ha1ciqXlpT4b1U3NHRfjicnFKGLAocBf1GenBgUnW+684LCCUg+XVP9Azm2L+55VcNAiS/clHKZu4L/5akGIFcZO0X53JRwqQXGbvRrbRVPiDQbasZfo8D43fdWj5GwSdrQZedHTfZEES1t5BZtcZV25F9i4u8LCJxmZhg+7qqh6riELw4SsMobLlGvdBETe/NoIjL3oCXPYJbbwFXGo6CccbmworkSNYa4mE8nLNIDvnKy1INxAh3XoTzOHjlCLw45GzQNCaBEcqkjk3QQJkq49ny2Z40Kvs6BjjdDDr9MHBzyaCHyN2Zl53Ok8YhlZNcvc9NCose+7AGGD2F0iiPtCxmDIDTE+FZHNuM4IH/k9eAhEDMbqdDDasUrbpjnDAXBNukyNPYISlPvjmeJeKTLuPUWsHFwQSY4lFZUeLE1SxX+pWFNsDSXEV97ZwysSXSuQU3zarWajXN1o0iPQ95g6N8P7ZAu1deTG17cw+9oyPBXj3qOLgO8UJPLvbUw5lLmCaiNP7hVtQYMm6yKTZSnV6eJcsNTLvkbkQ4FOCjgeH/NWlP4rGibczKy9xZivCnWvg="
     - DEPLOY_BETA_PATH_HELPHUB=/var/www/betahelp/
     - DEPLOY_PROD_PATH_HELPHUB=/var/www/help/
-    - DEPLOY_BETA_PATH_TUTORIAL=/var/www/betahelp/tutorial/
-    - DEPLOY_PROD_PATH_TUTORIAL=/var/www/help/tutorial/
+    - DEPLOY_BETA_PATH_TUTORIAL=/var/www/betahelp/tutorials/
+    - DEPLOY_PROD_PATH_TUTORIAL=/var/www/help/tutorials/
 python:
   - 2.7
 install:
