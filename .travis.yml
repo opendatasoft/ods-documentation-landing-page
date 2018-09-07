@@ -18,7 +18,8 @@ script:
 after_success:
   - openssl aes-256-cbc -K $encrypted_a900b4336b1e_key -iv $encrypted_a900b4336b1e_iv -in .travis.deploy.enc -out .travis.deploy -d
   - chmod 600 .travis.deploy
-  - ls -la
+  - ls -la ods-helphub/dist/
+  - ls -la ods-tutorial/build/
   # - ./scripts/deploy.sh
 notifications:
   slack:
