@@ -10,11 +10,11 @@ export default {
 
     /* Header */
     platform: {
-        en: "Platform",
-        fr: "Plateforme",
-        es: "Plataforma",
-        de: "Plattform",
-        nl: "Platform"
+        en: "User guide",
+        fr: "Guide utilisateur",
+        es: "Manual de usuario",
+        de: "Bedienungsanleitung",
+        nl: "Handleiding"
     },
 
     discovery: {
@@ -47,6 +47,14 @@ export default {
         es: "APIs",
         de: "APIs",
         nl: "APIs"
+    },
+
+    tutorials: {
+        en: "Tutorials",
+        fr: "Tutoriels",
+        es: "Tutoriales",
+        de: "Tutorials",
+        nl: "Tutorials"
     },
 
     btn_menu: {
