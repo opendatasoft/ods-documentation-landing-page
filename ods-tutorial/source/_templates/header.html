@@ -2,7 +2,7 @@
     <div class="ods__documentation-header">
 
         <div class="ods__documentation-header-logo">
-            <button type="button" id="nav-button" data-toggle="wy-nav-top"> Menu </button>
+            <button type="button" id="nav-button" data-toggle="wy-nav-top">{{ gettext('Menu') }}</button>
             <a class="ods__documentation-header-logo-link" href="{{ pathto(master_doc) }}">
                 <img src="{{ pathto('_static/' + logo, 1) }}" alt="OpenDataSoft Documentation Logo">
             </a>
@@ -14,7 +14,7 @@
                 <a href="/">Help Hub</a>
             </div>
             <div class="ods__documentation-header-nav-item">
-                <a href="/platform/en/">User guide</a>
+                <a href="/platform/en/">{{ gettext('User guide') }}</a>
             </div>
             <div class="ods__documentation-header-nav-item">
                 <a href="https://discovery.opendatasoft.com/">Discovery</a>
@@ -29,7 +29,7 @@
                 <a href="/en/apis/">APIs</a>
             </div>
             <div class="ods__documentation-header-nav-item ods__documentation-header-nav-item-active">
-                <a href="{{ pathto(master_doc) }}">Tutorials</a>
+                <a href="{{ pathto(master_doc) }}">{{ gettext('Tutorials') }}</a>
             </div>
         </div>
 
@@ -40,7 +40,7 @@
             <a href="/">Help Hub</a>
         </div>
         <div class="ods__documentation-help-hub-sidebar-item">
-            <a href="/platform/en/">User guide</a>
+            <a href="/platform/en/">{{ gettext('User guide') }}</a>
         </div>
         <div class="ods__documentation-help-hub-sidebar-item">
             <a href="https://discovery.opendatasoft.com/">Discovery</a>
@@ -55,7 +55,7 @@
             <a href="/en/apis/">APIs</a>
         </div>
         <div class="ods__documentation-help-hub-sidebar-item ods__documentation-header-nav-item-active">
-            <a href="{{ pathto(master_doc) }}">Tutorials</a>
+            <a href="{{ pathto(master_doc) }}">{{ gettext('Tutorials') }}</a>
         </div>
     </div>
 
