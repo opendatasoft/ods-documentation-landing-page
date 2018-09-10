@@ -36,6 +36,13 @@
             :sizeBox="classSizeBox"
             :sizeIcon="classSizeIcon"
             :isHref="false"/>
+
+        <boxes :lang="lang"
+            :trad="trad.tutorials"
+            :img="img.tutorial"
+            :sizeBox="classSizeBox"
+            :sizeIcon="classSizeIcon"
+            :isHref="true"/>
         
         <boxes :lang="lang"
             :trad="trad.support"
