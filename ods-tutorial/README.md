@@ -174,25 +174,27 @@ a blog post or a newsletter for example
 
 ### Custom titles
 
-```
 2nd level title :
 
+```
 .. rst-class:: title-level-2
 
     Creating content page
 
 ```
-```
+
 3rd level title :
 
+```
 .. rst-class:: title-level-3
 
     Creating content page
 
 ```
-```
+
 4th level title :
 
+```
 .. rst-class:: title-level-2
 
     Creating content page
@@ -212,7 +214,7 @@ a blog post or a newsletter for example
 
 ### The steps of the tutorial, i.e. the numbered elements
 
-:warning: For the steps of the tutorial, do not forget to separate the number and the text by an underscore "_".
+:warning: For the steps of the tutorial, do not forget to separate the number and the text by a plus "+".
 
 ```
 .. rst-class:: block-step
@@ -250,6 +252,12 @@ To insert an insert around the "Prerequisite" and "Congratulations" blocks.
     **Prerequisites:**
 
     - In order to create [...]
+
+```
+```
+.. rst-class:: block-prerequisite-congratulation
+
+    Congratulations! You have finished this [...]
 
 ```
 
