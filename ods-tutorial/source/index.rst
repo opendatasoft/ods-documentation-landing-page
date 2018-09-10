@@ -20,4 +20,4 @@ This documentation is OpenDataSoft's reference user manual.
 .. toctree::
    :maxdepth: 1
 
-   tutorials/dashboard/index
+   dashboard/index
