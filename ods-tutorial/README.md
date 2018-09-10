@@ -1,6 +1,6 @@
 # OpenDataSoft's documentation
 
-This repository contains documentation resources for OpenDataSoft platform, APIs and tools.
+This repository contains documentation resources for OpenDataSoft Tutorials.
 
 All content in written in english, translations are managed with transifex at https://www.transifex.com/opendatasoft/documentation-5/
 Please ask to join the group to contribute to the translation effort.
