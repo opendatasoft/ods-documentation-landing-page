@@ -72,11 +72,11 @@ msgstr ""
 
 #: ../../source/dashboard/index.rst:30
 msgid "Show all images"
-msgstr ""
+msgstr "Afficher toutes les images"
 
 #: ../../source/dashboard/index.rst:34
 msgid "Hide all images"
-msgstr ""
+msgstr "Masquer toutes les images"
 
 #: ../../source/dashboard/index.rst:38
 msgid "Create your content page"
