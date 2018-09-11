@@ -4,6 +4,6 @@ dist/
 build/
 **/*.pyc
 *.log
-.DS_STORE
+.DS_Store
 .travis.deploy
 .sass-cache
