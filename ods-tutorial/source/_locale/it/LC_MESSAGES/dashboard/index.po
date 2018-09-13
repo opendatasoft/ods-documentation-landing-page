@@ -1,0 +1,315 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Tutorials 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-10 15:56+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/dashboard/index.rst:2
+msgid "How to build a dashboard (part 1: dataset visualizations)"
+msgstr ""
+
+#: ../../source/dashboard/index.rst:8
+msgid "★☆☆ Beginner - time: 30 minutes"
+msgstr ""
+
+#: ../../source/dashboard/index.rst:10
+msgid ""
+"*This tutorial will teach you how to create a dashboard using 3 "
+"visualizations from a dataset published on an OpenDataSoft portal.*"
+msgstr ""
+
+#: ../../source/dashboard/index.rst:12
+msgid "During this tutorial, you will learn:"
+msgstr ""
+
+#: ../../source/dashboard/index.rst:14
+msgid "what a widget is"
+msgstr ""
+
+#: ../../source/dashboard/index.rst:15
+msgid "what an iframe is"
+msgstr ""
+
+#: ../../source/dashboard/index.rst:16
+msgid "what is the difference between a widget and an iframe"
+msgstr ""
+
+#: ../../source/dashboard/index.rst:17
+msgid "how to use a widget in a content page created with OpenDataSoft"
+msgstr ""
+
+#: ../../source/dashboard/index.rst:21
+msgid "**Prerequisites:**"
+msgstr ""
+
+#: ../../source/dashboard/index.rst:23
+msgid ""
+"In order to create a dashboard, you need to have access to the back office "
+"of an OpenDataSoft portal and the \"Edit all pages\" permission."
+msgstr ""
+
+#: ../../source/dashboard/index.rst:24
+msgid ""
+"Pick a dataset from the portal, with which you want to work during the "
+"tutorial. Preferably, choose a dataset with a Table view, as well as a Map "
+"view and an Analyze view. If you do not want to pick your own dataset, you "
+"can follow the tutorial with the same dataset as the one used for the "
+"examples of the tutorial : link of the dataset. >> "
+"https://data.opendatasoft.com/explore/dataset/world-heritage-list%40public-"
+"us/ ?"
+msgstr ""
+
+#: ../../source/dashboard/index.rst:26
+msgid "[screenshot result of the tutorial]"
+msgstr ""
+
+#: ../../source/dashboard/index.rst:30
+msgid "Show all images"
+msgstr ""
+
+#: ../../source/dashboard/index.rst:34
+msgid "Hide all images"
+msgstr ""
+
+#: ../../source/dashboard/index.rst:38
+msgid "Create your content page"
+msgstr ""
+
+#: ../../source/dashboard/index.rst:42
+msgid "1 + Go the Back office, in the Pages section."
+msgstr ""
+
+#: ../../source/dashboard/index.rst:50
+msgid ""
+"2 + Click on the :tutorial-keycap:`+` New page button, to create a new "
+"content page."
+msgstr ""
+
+#: ../../source/dashboard/index.rst:58
+msgid ""
+"3 + By default, you land on the Properties tab. It contains several "
+"information about the page, some of which you need to fill up otherwise you "
+"will not be able to save the page. Enter a page URL suffix and a title. You "
+"can also add a description and tags."
+msgstr ""
+
+#: ../../source/dashboard/index.rst:66
+msgid ""
+"4 + Click the :tutorial-keycap:`Save` button to save your newly created "
+"content page."
+msgstr ""
+
+#: ../../source/dashboard/index.rst:74
+msgid "5 + Go to the Content tab."
+msgstr ""
+
+#: ../../source/dashboard/index.rst:82
+msgid ""
+"6 + Click on :tutorial-keycap:`</>` Edit in expert mode to access the "
+"HTML/CSS code of the page. A pop up will appear, click on :tutorial-"
+"keycap:`Yes, switch to expert mode` for confirmation matter."
+msgstr ""
+
+#: ../../source/dashboard/index.rst:88
+msgid "In the HTML/CSS code area, you should see the following code:"
+msgstr ""
+
+#: ../../source/dashboard/index.rst:96 ../../source/dashboard/index.rst:127
+#: ../../source/dashboard/index.rst:144
+msgid "Important"
+msgstr ""
+
+#: ../../source/dashboard/index.rst:99
+msgid ""
+"In the HTML language, every element is represented by a tag. This tag is "
+"written between brackets and always comes in a pair, with an opening bracket"
+" and a closing bracket. E.g. <p></p> for paragraphs, <h1></h1> for first "
+"level title, <div></div> for a division/section, etc."
+msgstr ""
+
+#: ../../source/dashboard/index.rst:101
+msgid ""
+"The <div> tags help formatting your page the right way, in order for all "
+"elements of your content page to be in a predefined frame with borders. All "
+"new elements that you will add in the future should be put inside these 2 "
+"<div> tags."
+msgstr ""
+
+#: ../../source/dashboard/index.rst:113
+msgid "7 + Save your page."
+msgstr ""
+
+#: ../../source/dashboard/index.rst:117
+msgid ""
+"8 + Click on the :tutorial-keycap:`Open page` button to see the current "
+"result of your page."
+msgstr ""
+
+#: ../../source/dashboard/index.rst:121
+msgid "Put content in your page: data visualizations"
+msgstr ""
+
+#: ../../source/dashboard/index.rst:125
+msgid "Get the widget code of a visualization"
+msgstr ""
+
+#: ../../source/dashboard/index.rst:130
+msgid ""
+"A widget is a piece of code that allows anyone to integrate an interactive "
+"element directly on a webpage. In OpenDataSoft, there are several widgets "
+"which are all listed and explained in the widget documentation. Some of the "
+"most common OpenDataSoft widgets -those we will use in this tutorial- are "
+"the visualization widgets. Each data visualizations of a published dataset "
+"is indeed available as a widget, which code is displayed below the "
+"visualization, ready to be copied!"
+msgstr ""
+
+#: ../../source/dashboard/index.rst:134
+msgid ""
+"9 + Go to the portal where the dataset you have chosen for the dataset is "
+"published. Make sure you are on your dataset's page of the portal, where you"
+" can see the different data visualizations available."
+msgstr ""
+
+#: ../../source/dashboard/index.rst:138
+msgid "10 + Let's start with the Table view. Click on the Table tab."
+msgstr ""
+
+#: ../../source/dashboard/index.rst:142
+msgid ""
+"11 + Scroll down the table. You should see 3 tabs: Share, Embed and Widget. "
+"Share displays the direct URL of the visualization. Embed displays the "
+"iframe code of the visualization. Widget displays the widget code of the "
+"visualizations. Each, whereas it is a URL or a code, are ready to be copied "
+"and pasted. For this tutorial, we will use the widget codes of the Table, "
+"Map and Analyze visualizations of our chosen dataset."
+msgstr ""
+
+#: ../../source/dashboard/index.rst:147
+msgid ""
+"An iframe allows anyone to show OpenDataSoft content in an isolated frame, "
+"independent from the rest of the page. Iframes, as opposed to widgets, are "
+"indeed all-in-one, integrated, and secure, so they can be embedded outside "
+"the OpenDataSoft environment, at the cost of interaction and customization. "
+"Widgets are more customizable and interactive (i.e: several widgets on the "
+"same page can interact with each other), but can only work inside "
+"OpenDataSoft pages."
+msgstr ""
+
+#: ../../source/dashboard/index.rst:151
+msgid ""
+"12 + Still in the Table tab of your dataset, where the widget code is "
+"displayed, click the COPY button to copy the widget code of the table "
+"visualization."
+msgstr ""
+
+#: ../../source/dashboard/index.rst:155
+msgid "Add a visualization widget to your page"
+msgstr ""
+
+#: ../../source/dashboard/index.rst:159
+msgid ""
+"13 + Go back to the back office, to continue to edit your OpenDataSoft "
+"content page."
+msgstr ""
+
+#: ../../source/dashboard/index.rst:163
+msgid ""
+"14 + Paste your table visualization widget code at the right place, between "
+"the ``<div class=\"ods-box\">`` tag (see step 6). If you used the same "
+"dataset as in this tutorial, you should have the following code:"
+msgstr ""
+
+#: ../../source/dashboard/index.rst:179
+msgid ""
+"15 + :tutorial-keycap:`Save` your page and click the Open page button: there"
+" is now a table visualization in our page!"
+msgstr ""
+
+#: ../../source/dashboard/index.rst:181
+msgid "[screenshot content page with table view embedded]"
+msgstr ""
+
+#: ../../source/dashboard/index.rst:185
+msgid "Add more widgets to your page: map and chart"
+msgstr ""
+
+#: ../../source/dashboard/index.rst:189
+msgid ""
+"16 + Let's add a map to our page! Just like before, get the widget code of "
+"the Map view of your chosen dataset (see steps 9 to 12 in Get the widget "
+"code of a visualization, but applied to the Map tab)."
+msgstr ""
+
+#: ../../source/dashboard/index.rst:193
+msgid ""
+"17 + Paste your map visualization widget code below the widget code of the "
+"table visualization (see Add a widget to your page). If you used the same "
+"dataset as in this tutorial, you should have the following code:"
+msgstr ""
+
+#: ../../source/dashboard/index.rst:213
+msgid ""
+"18 + Let's add one more thing: a chart! Get the widget code of the Analyze "
+"view of your chosen dataset."
+msgstr ""
+
+#: ../../source/dashboard/index.rst:217
+msgid ""
+"19 + Paste your analyze visualization widget code below the widget code of "
+"the map visualization. Your code should now look something like that:"
+msgstr ""
+
+#: ../../source/dashboard/index.rst:246
+msgid ""
+"20 + :tutorial-keycap:`Save` your page and click the Open page button: this "
+"is what your page should look like by now!"
+msgstr ""
+
+#: ../../source/dashboard/index.rst:248
+msgid "[screenshot content page with 3 visualizations]"
+msgstr ""
+
+#: ../../source/dashboard/index.rst:252
+msgid "Complete your content page with a title"
+msgstr ""
+
+#: ../../source/dashboard/index.rst:256
+msgid ""
+"21 + In HTML, titles (called headers) are generally defined by ``<h1>`` "
+"brackets. The h doesnt change, it stands for \"header\". The number (here 1)"
+" can be replaced by any number from 1 to 6, ``<h1>`` being the highest level"
+" title and ``<h6>`` the lowest. Above all visualization widget codes added "
+"to the page, and right below the ``<div class=\"ods-box\">`` tag, add a high"
+" level title to your content page."
+msgstr ""
+
+#: ../../source/dashboard/index.rst:287
+msgid ""
+"22 + :tutorial-keycap:`Save` your page and click the Open page button: our "
+"page now has a title!"
+msgstr ""
+
+#: ../../source/dashboard/index.rst:289
+msgid "[screenshot page with title]"
+msgstr ""
+
+#: ../../source/dashboard/index.rst:293
+msgid ""
+"Congratulations! You have finished this tutorial and you now know how to "
+"create a simple dashboard with 3 dataset visualizations!"
+msgstr ""
+
+#: ../../source/dashboard/index.rst:295
+msgid ""
+"If you want to go further with your dashboard, you can follow the second "
+"part of this tutorial: \"How to build a dashboard (part 2: formatting the "
+"dashboard & linking the widgets)\"."
+msgstr ""
