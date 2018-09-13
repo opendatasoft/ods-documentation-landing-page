@@ -27,11 +27,11 @@ export default {
     platform: {
 
         title: {
-            en: "Platform",
-            fr: "Plateforme",
-            es: "Plataforma",
-            de: "Plattform",
-            nl: "Platform"
+            en: "User guide",
+            fr: "Guide utilisateur",
+            es: "Manual de usuario",
+            de: "Bedienungsanleitung",
+            nl: "Handleiding"
         },
         desc: {
             en: "Discover what OpenDataSoft's solution can do for you: how to publish data, design dashboards, beautiful visualisations, and much more.",
@@ -150,6 +150,32 @@ export default {
             es: "apis",
             de: "apis",
             nl: "apis"
+        }
+
+    },
+
+    tutorials: {
+
+        title: {
+            en: "Tutorials",
+            fr: "Tutoriels",
+            es: "Tutoriales",
+            de: "Tutorials",
+            nl: "Tutorials"
+        },
+        desc: {
+            en: "Discover what OpenDataSoft's solution can do for you: how to publish data, design dashboards, beautiful visualisations, and much more.",
+            fr: "Découvrez ce que la solution OpenDataSoft peut faire pour vous: comment publier des données, concevoir des tableaux de bord, de belles visualisations, et bien plus encore.",
+            es: "Descubra qué puede hacer por usted la solución deOpenDataSoft: cómo publicar datos, diseñar paneles, bonitas visualizaciones, etc.",
+            de: "Entdecken Sie, wie die Lösung von OpenDataSoft Ihnen helfen kann: erfahren Sie, wie man Daten veröffentlicht, Dashboards und tolle Visualisierungen gestaltet und vieles mehr.",
+            nl: "Ontdek wat de oplossingen van OpenDataSoftvoor u kunnen doen: hoe u data kunt publiceren, dashboards kunt ontwerpen, mooie weergaves en nog veel meer."
+        },
+        url: {
+            en: "/tutorials/en/",
+            fr: "/tutorials/fr/",
+            es: "/tutorials/es/",
+            de: "/tutorials/de/",
+            nl: "/tutorials/nl/"
         }
 
     },

@@ -32,6 +32,11 @@
             {{ trad.apis[lang] }}
         </router-link>
 
+        <a href="/tutorials/en/"
+            class="ods-nav__link">
+            {{ trad.tutorials[lang] }}
+        </a>
+
     </div>
     
 </template>

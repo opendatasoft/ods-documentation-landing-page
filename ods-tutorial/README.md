@@ -1,6 +1,6 @@
 # OpenDataSoft's documentation
 
-This repository contains documentation resources for OpenDataSoft platform, APIs and tools.
+This repository contains documentation resources for OpenDataSoft Tutorials.
 
 All content in written in english, translations are managed with transifex at https://www.transifex.com/opendatasoft/documentation-5/
 Please ask to join the group to contribute to the translation effort.
@@ -147,20 +147,138 @@ a blog post or a newsletter for example
 - When describing steps, use imperative. e.g. "Click on this button, then type in the title..."
 - When talking about OpenDataSoft as a company, use "us" or "OpenDataSoft"
 
-### Titles
+### Mandatory
+
+:warning: To be added on each tutorial, after the prerequisite part (The "Show All Image" / "Hide All Image" button).
+
+:warning: Unless there is no image.
+
+```
+.. rst-class:: expand-collapse-items expand-all expand-collapse-item-active
+
+    Show all images
+
+.. rst-class:: expand-collapse-items collapse-all
+
+    Hide all images
+
+```
+
+### Titles default
 
 ```
     1st level title
     ===============
 
-    2nd level title
-    ---------------
+```
 
-    3rd level title
-    ~~~~~~~~~~~~~~~
+### Custom titles
 
-    4th level title
-    ^^^^^^^^^^^^^^^
+2nd level title :
+
+```
+.. rst-class:: title-level-2
+
+    Creating content page
+
+```
+
+3rd level title :
+
+```
+.. rst-class:: title-level-3
+
+    Creating content page
+
+```
+
+4th level title :
+
+```
+.. rst-class:: title-level-2
+
+    Creating content page
+
+```
+
+### Complexity and time information
+
+:warning: For information on complexity and time, do not forget to separate the two elements (level and time) by a dash "-" and put the word "time" which will be replaced by a clock icon.
+
+```
+.. rst-class:: header-information-tutorial
+    
+    ★☆☆ Beginner - time: 30 minutes
+
+```
+
+### The steps of the tutorial, i.e. the numbered elements
+
+:warning: For the steps of the tutorial, do not forget to separate the number and the text by a plus "+".
+
+```
+.. rst-class:: block-step
+    
+    7 + Save your page.
+
+```
+
+### To insert one or more images at the end of a step
+
+```
+.. rst-class:: img-hide
+    
+    .. image:: images/step6.png
+
+```
+Or, 
+
+```
+.. rst-class:: img-hide
+    
+    .. image:: images/step6.png
+    .. image:: images/step7.png
+    .. image:: images/step8.png
+
+```
+
+### Prerequisites && Congratulations
+
+To insert an insert around the "Prerequisite" and "Congratulations" blocks.
+
+```
+.. rst-class:: block-prerequisite-congratulation
+
+    **Prerequisites:**
+
+    - In order to create [...]
+
+```
+```
+.. rst-class:: block-prerequisite-congratulation
+
+    Congratulations! You have finished this [...]
+
+```
+
+### Create a button style in the text
+
+:warning: Put this just below the title at the top of the page.
+
+```
+.. role:: tutorial-keycap(emphasis)
+
+```
+
+To put one or more words in keyboard key style.
+
+```
+:tutorial-keycap:`Save`
+
+Example:
+
+4 + Click the :tutorial-keycap:`Save` button to save your newly created content page.
+
 ```
 
 ### Links
