@@ -798,4 +798,4 @@ In HTML code, this is what our dashboard will look like:
 
  **CONGRATULATIONS!**
 
- You have finished this tutorial and you now know how to create a complete dashboard with linked widgets and how to format it with CSS classes!
+ You have finished this tutorial and you now know how to create a complete dashboard with linked widgets and how to format it with CSS classes! If you want to go further with these CSS classes and learn more about responsiveness, don't hesitate to `check our documentation about these topics <https://help.opendatasoft.com/platform/en/customizing_look_and_feel/07_designing_responsive_portal/responsive.html#responsive-page-layouts>`_!
