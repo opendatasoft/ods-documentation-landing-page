@@ -442,7 +442,7 @@ $(document).on('click', '.tutorial-to-top', function () {
     var headerInformationElement = $('.header-information-tutorial');
 
     var dataSplit = $(headerInformationElement)[0].innerText.split(' - ');
-    dataSplit[1] = dataSplit[1].split('time:')[1];
+    dataSplit[1] = dataSplit[1].split(':')[1];
     var newElement = '<div class="header-information-tutorial">' +
                         '<p>' +
                             '<span class"header-information-tutorial-item">' + dataSplit[0] + '</span>' +
