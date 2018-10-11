@@ -1,23 +1,30 @@
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Tutorials 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-13 21:34+0200\n"
+"POT-Creation-Date: 2018-09-13 21:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: traducteur_DE1 <datawords.translator.de1@gmail.com>, 2018\n"
+"Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:2
 msgid "How to build a dashboard (part 2)"
-msgstr ""
+msgstr "Ein Dashboard aufbauen (2. Teil)"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:10
 msgid "★★☆ Intermediate - time: 1 hour"
-msgstr ""
+msgstr "★★☆ Fortgeschrittene - Dauer: 1 Stunde"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:12
 msgid ""
@@ -25,32 +32,39 @@ msgid ""
 "visualizations to an organized, formatted dashboard with interactive widgets"
 " linked with one another!*"
 msgstr ""
+"*In diesem Tutorial erfahren Sie, wie Sie von einem einfachen Dashboard mit "
+"3 Visualisierungen zu einem organisierten, formatierten Dashboard mit "
+"interaktiven Widgets, die miteinander verbunden sind, übergehen können!*"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:16
 msgid "During this tutorial, you will learn:"
-msgstr ""
+msgstr "Dieses Tutorial vermittelt Ihnen Folgendes:"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:18
 msgid "how to link widgets together using a context"
-msgstr ""
+msgstr "Wie Sie Widgets mithilfe eines Kontexts miteinander verbinden"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:19
 msgid "how to add other OpenDataSoft widgets"
-msgstr ""
+msgstr "Wie Sie weitere OpenDataSoft-Widgets hinzufügen können"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:20
 msgid "how to use CSS classes to format and organize your dashboard"
 msgstr ""
+"Wie Sie CSS-Klassen verwenden, um Ihr Dashboard zu formatieren und zu "
+"organisieren"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:24
 msgid "**PREREQUISITES**"
-msgstr ""
+msgstr "**VORRAUSSETZUNGEN**"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:26
 msgid ""
 "In order to create a dashboard, you need to have access to the back office "
 "of an OpenDataSoft portal and the \"Edit all pages\" permission."
 msgstr ""
+"Um ein Dashboard zu erstellen, benötigen Sie Zugriff auf das Backoffice "
+"eines OpenDataSoft-Portals und die Berechtigung \"Alle Seiten bearbeiten\"."
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:27
 msgid ""
@@ -60,18 +74,23 @@ msgid ""
 "ended with in the first part. The prerequisites of the first part also "
 "contain all information about the chosen example dataset."
 msgstr ""
+"Wir empfehlen Ihnen dringend, den ersten Teil dieses Tutorials :doc:`\"Ein "
+"Dashboard aufbauen (1. Teil)\" <how_to_build_dashboard_part1>` zu beachten, "
+"da dieser zweite Teil an der Stelle weitermacht, wo wir mit dem ersten Teil "
+"aufgehört haben. Die Voraussetzungen des ersten Teils enthalten außerdem "
+"alle Informationen über den gewählten Beispieldatensatz."
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:34
 msgid "Show all images"
-msgstr ""
+msgstr "Alle Bilder anzeigen"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:38
 msgid "Hide all images"
-msgstr ""
+msgstr "Alle Bilder verbergen"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:45
 msgid "Link your widgets together"
-msgstr ""
+msgstr "Widgets miteinander verbinden"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:47
 msgid ""
@@ -83,6 +102,14 @@ msgid ""
 "displayed items of the map, but unfortunatly only the map reacts. Both the "
 "table and chart ignore our filter."
 msgstr ""
+"Am Ende des ersten Teils dieses Tutorials zum Erstellen eines Dashboards "
+"hatten wir ein einfaches Dashboard mit einem Titel und 3 Widgets (eine "
+"Tabellenansicht, eine Kartenansicht und ein Diagramm aus demselben "
+"Datensatz). In diesem vorherigen Teil haben wir festgestellt, dass der große"
+" Vorteil von Widgets darin besteht, dass sie miteinander interagieren "
+"können. Wenn wir jedoch eine Form auf der Karte zeichnen, werden die "
+"angezeigten Elemente der Karte gefiltert, wobei jedoch nur die Karte "
+"reagiert. Sowohl die Tabelle als auch das Diagramm ignorieren den Filter."
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:49
 msgid ""
@@ -94,6 +121,14 @@ msgid ""
 "on which dataset your widgets should work, the data from which dataset your "
 "widgets should use."
 msgstr ""
+"Das liegt daran, dass unsere Widgets noch nicht miteinander verbunden sind. "
+"Um dies zu erreichen, muss der gleiche Kontext für alle Widgets verwendet "
+"werden. Der Kontext ist der Knotenpunkt zwischen allen Elementen Ihrer "
+"Seite. Deshalb müssen alle Widgets, die miteinander interagieren sollen, den"
+" gleichen Kontext verwenden. Darüber hinaus ist der Kontext das Bindeglied "
+"zwischen Ihren Widgets und dem zugrunde liegenden Datensatz: Er bestimmt, "
+"auf Grundlage welchen Datensatzes Ihre Widgets funktionieren und welche "
+"Daten aus welchem Datensatz Ihre Widgets verwenden."
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:53
 msgid ""
@@ -103,6 +138,12 @@ msgid ""
 "depending on the widget. In the code below, we added comments just in order "
 "to help you see the different elements that we have."
 msgstr ""
+"1 + Dann sehen wir uns diesen Kontext einmal genauer an! Schauen Sie sich "
+"den HTML-Code Ihrer Seite an. Für jedes von uns hinzugefügte Widget enthält "
+"der Code zwei Hauptelemente: zunächst ``ods-dataset-context`` und dann "
+"``ods-map`` oder ``ods-table`` oder ``ods-chart``, je nach Widget. Im "
+"folgenden Code haben wir Kommentare hinzugefügt, damit Sie die verschiedenen"
+" Elemente sehen können."
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:96
 msgid ""
@@ -111,6 +152,11 @@ msgid ""
 "dataset. Second, it prevents us to link our widgets together. We must have a"
 " unique context."
 msgstr ""
+"Wie Sie sehen können, haben wir für jedes Widget einen eigenen Kontext. Das "
+"ist im vorliegenden Fall nicht besonders nützlich, da all unsere Widgets die"
+" gleichen Daten aus demselben Datensatz verwenden. Außerdem wird so "
+"verhindert, dass wir unsere Widgets miteinander verbinden können. Aus diesem"
+" Grund benötigen wir einen einzigen Kontext."
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:100
 msgid ""
@@ -120,6 +166,12 @@ msgid ""
 "closing tag!). Look at the code below to understand how this tag works (once"
 " again, comments are used to add explainations to the code)."
 msgstr ""
+" 2 + Geben Sie ganz zu Beginn Ihres Codes, oberhalb des div-Tags mit der "
+"Klasse container-fluid den spezifischen Kontext Ihrer Seite an. Verwenden "
+"Sie wie bei den Widgets das Tag ``ods-dataset-context`` (und vergessen Sie "
+"nicht das abschließende Tag!). Sehen Sie sich den folgenden Code an, um zu "
+"verstehen, wie dieses Tag funktioniert (wieder einmal werden Kommentare "
+"verwendet, um dem Code Erklärungen hinzuzufügen)."
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:120
 msgid ""
@@ -128,6 +180,10 @@ msgid ""
 "code should now look like this, with a unique context followed by the 3 "
 "widgets tags:"
 msgstr ""
+"3 + Löschen Sie den Kontext jedes Widgets. Vergessen Sie nicht, dass Tags "
+"aus zwei Teilen bestehen: Sie müssen sowohl das öffnende Tag als auch das "
+"schließende Tag für jedes Widget löschen. Ihr Code sollte nun so aussehen, "
+"mit einem einzigen Kontext, gefolgt von den 3 Widget-Tags:"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:154
 msgid ""
@@ -136,10 +192,15 @@ msgid ""
 "shape, but both the table and chart will be filtered as well according to "
 "that same filter. Our widgets are linked together!"
 msgstr ""
+"4 + Speichern Sie Ihre Seite und klicken Sie auf den Button :tutorial-"
+"keycap:`Seite öffnen`. Wenn Sie nun eine Form auf der Karte zeichnen, wird "
+"die Karte entsprechend dieser Form gefiltert, und die Tabelle als auch das "
+"Diagramm werden ebenfalls gefiltert. Unsere Widgets sind miteinander "
+"verknüpft!"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:165
 msgid "Add more OpenDataSoft widgets"
-msgstr ""
+msgstr "Weitere OpenDataSoft-Widgets hinzufügen"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:169
 msgid ""
@@ -151,33 +212,48 @@ msgid ""
 "<https://help.opendatasoft.com/widgets/#/api/ods-"
 "widgets.directive:odsTextSearch>`_."
 msgstr ""
+"5 + Jetzt, wo unsere Widgets miteinander verbunden sind, können wir weitere "
+"Widgets hinzufügen, um unser Dashboard noch besser zu machen. Beginnen wir "
+"mit dem Hinzufügen einer Suchleiste. Damit können wir eine Textsuche für "
+"alle Visualisierungen gleichzeitig durchführen. In der OpenDataSoft-"
+"Dokumentation finden Sie weitere Informationen über das von uns verwendete "
+"Widget mit der Bezeichnung `odsTextSearch "
+"<https://help.opendatasoft.com/widgets/#/api/ods-"
+"widgets.directive:odsTextSearch>`_"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:171
 msgid ""
 "In the odsTextSearch widget documentation, you have several information:"
 msgstr ""
+"In der Dokumentation des Widgets odsTextSearch finden Sie unterschiedliche "
+"Informationen:"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:173
 msgid "the description, to know what the widget can be used for"
 msgstr ""
+"eine Beschreibung, um zu erfahren, wofür das Widget verwendet werden kann"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:174
 msgid "the widget code, to copy and paste in the code of your page"
 msgstr ""
+"den Widget-Code, den Sie kopieren und in den Code Ihrer Seite einfügen "
+"können"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:175
 msgid ""
 "a table with the attributes of the widget, which values you must fill up for"
 " the widget to work"
 msgstr ""
+"eine Tabelle mit den Attributen des Widgets und welche Werte Sie ausfüllen "
+"müssen, damit das Widget funktioniert"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:176
 msgid "example of both the final code and the final result"
-msgstr ""
+msgstr "ein Beispiel für den endgültigen Code und das Endergebnis"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:184
 msgid "6 + Copy the odsTextSearch widget code."
-msgstr ""
+msgstr "6 + Kopieren Sie den odsTextSearch Widget-Code."
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:203
 msgid ""
@@ -185,10 +261,13 @@ msgid ""
 "displayed. Let's put it under the title, above the first visualization "
 "widget."
 msgstr ""
+"7 + Fügen Sie den Widget-Code an die Stelle des Codes Ihrer Seite ein, wo er"
+" angezeigt werden soll. Fügen wir ihn unter dem Titel ein, über dem ersten "
+"Visualisierungs-Widget."
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:205
 msgid "Caution"
-msgstr ""
+msgstr "Vorsicht"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:208
 msgid ""
@@ -196,6 +275,9 @@ msgid ""
 "completed yet, the platform will consider your widget as invalid and it will"
 " create an error."
 msgstr ""
+"Speichern Sie Ihre Seite noch nicht! Da die Attribute des Widgets noch nicht"
+" abgeschlossen sind, ist Ihr Widget für die Plattform ungültig und erzeugt "
+"einen Fehler."
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:251
 msgid ""
@@ -204,6 +286,10 @@ msgid ""
 "the ``context`` attribute is mandatory. To keep things simple for this "
 "tutorial, let's delete all other attributes."
 msgstr ""
+"8 + In diesem Zustand kann die Suchleiste nicht funktionieren. Zuerst müssen"
+" wir bestimmen, welche Attribute wir benötigen, und ihre Werte ausfüllen. "
+"Für dieses Widget ist nur das Attribut ``Kontext`` obligatorisch. Löschen "
+"wir zum Zwecke der Einfachheit dieses Tutorials die anderen Attribute."
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:264
 msgid ""
@@ -212,12 +298,19 @@ msgid ""
 "is \"worldheritagelistpublicus\". It is that same context name that we must "
 "use to fill up the context attribute of our odsTextSearch widget."
 msgstr ""
+"9 + Zu Beginn dieses Tutorials (siehe Schritt 2) haben wir einen einzigen "
+"Kontext erstellt, den wir auf unserer gesamten Seite verwenden können. Der "
+"Name unseres Kontexts lautet \"worldheritagelistpublicus\". Es handelt sich "
+"um denselben Kontextnamen, den wir verwenden müssen, um das Kontextattribut "
+"unseres odsTextSearch-Widgets auszufüllen."
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:306
 msgid ""
 "10 + Save your page and click on :tutorial-keycap:`Preview`. We now have a "
 "search bar in our dashboard!"
 msgstr ""
+"10 + Speichern Sie Ihre Seite und klicken Sie auf :tutorial-"
+"keycap:`Vorschau`. Unser Dashboard hat jetzt eine Suchleiste!"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:314
 msgid ""
@@ -228,10 +321,17 @@ msgid ""
 "<https://help.opendatasoft.com/widgets/#/api/ods-"
 "widgets.directive:odsFacets>`_."
 msgstr ""
+"11 + Fügen wir unserem Dashboard ein weiteres sehr nützliches Element hinzu:"
+" Filter! Auf diese Weise können wir Filter für unsere Visualisierungen "
+"anwenden, genau wie bei der Navigation in einem Datensatz. In der "
+"OpenDataSoft-Dokumentation finden Sie weitere Informationen über das von uns"
+" verwendete Widget mit der Bezeichnung `odsFacets "
+"<https://help.opendatasoft.com/widgets/#/api/ods-"
+"widgets.directive:odsFacets>`_."
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:316
 msgid "Important"
-msgstr ""
+msgstr "Wichtig"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:319
 msgid ""
@@ -240,16 +340,22 @@ msgid ""
 "related dataset does not have any defined filter, your widget won't be able "
 "to display anything."
 msgstr ""
+"Das Widget odsFacets ermöglicht es, die bereits für den Datensatz "
+"eingerichteten Filter abzurufen. Das bedeutet, dass Ihr Widget nichts "
+"anzeigen kann wenn Sie es für ein Dashboard verwenden, aber der zugehörige "
+"Datensatz keinen definierten Filter hat."
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:327
 msgid "12 + Copy the odsFacets widget code."
-msgstr ""
+msgstr "6 + Kopieren Sie den odsFacets Widget-Code."
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:340
 msgid ""
 "13 + Paste the widget code in the code of your page, where you want it to be"
 " displayed. Let's put it under our search bar."
 msgstr ""
+"13 + Fügen Sie den Widget-Code an die Stelle des Codes Ihrer Seite ein, wo "
+"er angezeigt werden soll. Fügen wir ihn unter die Suchleiste ein."
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:380
 msgid ""
@@ -258,12 +364,19 @@ msgid ""
 " attribute! Let's fill it up with the name of our page context, exactly as "
 "we did for the odsTextSearch widget!"
 msgstr ""
+"14 + Genau wie beim odsTextSearch-Widget müssen die Attribute des odsFacets-"
+"Widgets ausgefüllt werden. Letzteres hat nur eines: das Attribut "
+"``Kontext``! Füllen wir es mit dem Namen unseres Seitenkontexts aus, ebenso "
+"wie beim odsTextSearch-Widget!"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:425
 msgid ""
 "15 + Save your page and click on :tutorial-keycap:`Preview`. The filters of "
 "our dataset are now displayed in our dashboard!"
 msgstr ""
+"15 + Speichern Sie Ihre Seite und klicken Sie auf :tutorial-"
+"keycap:`Vorschau`. Die Filter unseres Datensatzes werden nun in unserem "
+"Dashboard angezeigt!"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:433
 msgid ""
@@ -272,18 +385,26 @@ msgid ""
 "filter by category and country. Copy the following piece of code (also "
 "available in the odsFacets widget documentation):"
 msgstr ""
+"16 + Nehmen wir jetzt einmal an, dass wir nicht alle Filter unseres "
+"Datensatzes anzeigen möchten. In unserem Beispiel der UNESCO-Weltkulturerbe "
+"wollen wir nur das Filtern nach Kategorie und Land ermöglichen. Kopieren Sie"
+" den folgenden Code (auch in der odsFacets Widget-Dokumentation verfügbar):"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:451
 msgid ""
 "17 + Paste it in replacement of the previous, simple odsFacets widget code "
 "we used earlier."
 msgstr ""
+"17 + Fügen Sie ihn als Ersatz für den vorherigen, einfachen odsFacets "
+"Widget-Code ein, den wir im Vorfeld verwendet haben."
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:496
 msgid ""
 "18 + Fill up the context attribute correctly, with the name of your page "
 "context."
 msgstr ""
+"18 + Füllen Sie das Kontext-Attribut korrekt mit dem Namen Ihres "
+"Seitenkontexts aus."
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:514
 msgid ""
@@ -294,10 +415,16 @@ msgid ""
 " indicate the technical identifier of the field on which the filter is "
 "based."
 msgstr ""
+"19 + Werfen wir jetzt einen Blick auf den Rest des erweiterten odsFacets "
+"Widget-Codes. Die beiden ``h3``-Tags weisen darauf hin, dass wir Titel "
+"hinzugefügt haben: sie werden verwendet, um den Namen der Filter zu "
+"schreiben, die wir anzeigen möchten, also \"Kategorie\" und \"Land\". Das "
+"Attribut ``ods-facet name`` gibt die technische Kennung des Feldes an, auf "
+"dem der Filter basiert."
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:516
 msgid "Note"
-msgstr ""
+msgstr "Hinweis"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:519
 msgid ""
@@ -308,18 +435,28 @@ msgid ""
 " know the type and the identifier of each field when using advanced widget "
 "parameters."
 msgstr ""
+"Um die technische Kennung zu erhalten, müssen Sie das Schema des Datensatzes"
+" kennen. Sie finden es in der Registerkarte Informationen des Datensatzes. "
+"Das Schema des Datensatzes bietet alle Informationen zu jedem Feld: Name "
+"(Beschriftung), Beschreibung, Kennung, Typ und ein Wertbeispiel. Es ist oft "
+"angebracht, den Typ und die Kennung jedes Feldes zu kennen, wenn Sie mit "
+"erweiterten Widget-Parametern arbeiten."
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:521
 msgid ""
 "In the code below, comment were added just in order to help you see the "
 "different elements that we have."
 msgstr ""
+"Im folgenden Code wurden Kommentare hinzugefügt, damit Sie die verschiedenen"
+" Elemente sehen, die uns vorliegen."
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:544
 msgid ""
 "20 + Go to the Dataset schema section of the Information tab of your "
 "dataset."
 msgstr ""
+"20 + Wechseln zum Datenschema-Bereich der Registerkarte Informationen des "
+"Datensatzes."
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:552
 msgid ""
@@ -329,22 +466,34 @@ msgid ""
 "the technical identifiers of the fields we want to use as filters are "
 "``category`` and ``states``."
 msgstr ""
+"21 + Suchen Sie die technischen Kennungen der Felder, auf denen die Filter "
+"basieren, die Sie dem Dashboard hinzufügen möchten. In unserem UNESCO-"
+"Welterbe-Beispieldatensatz wollten wir nach Kategorie und Land filtern. "
+"Entsprechend sind die technischen Kennungen der Felder, die wir als Filter "
+"verwenden möchten ``Kategorie`` und ``Länder``."
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:560
 msgid ""
 "22 + Back to the code of your dashboard, fill up both the titles and the "
 "``ods-facet name`` attributes."
 msgstr ""
+"22 + Zurück im Code Ihres Dashboards füllen Sie sowohl die Titel als auch "
+"die Attribute ``ods-facet name`` aus."
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:615
 msgid ""
 "23 + Save your page and click on :tutorial-keycap:`Preview`. Our 2 chosen "
 "filters are displayed on our dashboard!"
 msgstr ""
+"23 + Speichern Sie Ihre Seite und klicken Sie auf :tutorial-"
+"keycap:`Vorschau`. Unsere beiden ausgewählten Filter werden auf unserem "
+"Dashboard angezeigt!"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:626
 msgid "Format your dashboard: organize your widgets in rows and columns"
 msgstr ""
+"Formatieren Sie Ihr Dashboard: Organisieren Sie Ihre Widgets in Zeilen und "
+"Spalten"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:628
 msgid ""
@@ -352,22 +501,30 @@ msgid ""
 " some style and organize it differently. For now, we have simply piled up "
 "all our elements (both titles and widgets). Let's change that!"
 msgstr ""
+"Unser Dashboard sieht ganz nett aus, aber um es noch ansehnlicher zu "
+"gestalten, können wir ihm jetzt etwas Stil verleihen und es anders "
+"organisieren. Bisher haben wir einfach alle unsere Elemente (Titel und "
+"Widgets) aufgereiht. Das sollten wir jetzt ändern!"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:630
 msgid "We will organize our dashboard in 2 parts:"
-msgstr ""
+msgstr "Wir werden unser Dashboard in 2 Teile unterteilen:"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:632
 msgid ""
 "on the left, we will put our navigation elements (the search bar, and the "
 "filters underneath)"
 msgstr ""
+"auf der linken Seite bringen wir unsere Navigationselemente (die Suchleiste "
+"und die Filter darunter) an"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:633
 msgid ""
 "on the right, we will put our data visualizations (the table, and underneath"
 " the map and the chart one next to the other)"
 msgstr ""
+"auf der rechten Seite bringen wir unsere Datenvisualisierungen (die Tabelle "
+"und darunter die Karte und das Diagramm nebeneinander) an"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:637
 msgid ""
@@ -375,10 +532,14 @@ msgid ""
 "container. Inside this container, you can have as many rows as you want. "
 "Each one of these rows is split into 12 columns of the same size."
 msgstr ""
+"Wie können wir dieses Aussehen für unser Dashboard erreichen? Stellen Sie "
+"sich Ihre Seite als Container vor. Innerhalb dieses Containers können Sie "
+"beliebig viele Zeilen haben. Und jede dieser Zeilen ist in 12 gleich große "
+"Spalten unterteilt."
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:639
 msgid "In HTML code, this is what it looks like:"
-msgstr ""
+msgstr "Im HTML-Code sieht das Ganze so aus:"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:660
 msgid ""
@@ -386,6 +547,9 @@ msgid ""
 "page, you must put them in rows. For each element, you must decide how many "
 "columns you want to allocate to that element."
 msgstr ""
+"Wenn Sie eine Seite erstellen und deren Elemente organisieren möchten, "
+"müssen Sie sie in Zeilen einordnen.  Und für jedes Element müssen Sie "
+"bestimmen, wie viele Spalten Sie diesem Element zuordnen möchten."
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:664
 msgid ""
@@ -396,16 +560,25 @@ msgid ""
 "the map and chart visualizations one next to the other, we will create a row"
 " for these 2 : each using 6 columns."
 msgstr ""
+"24 + Jetzt können wir unser Dashboard in Zeilen und Spalten neu "
+"organisieren. In unserem Beispiel werden wir die Navigation und die "
+"Datenvisualisierung in der gleichen Zeile einordnen. Wir verwenden 3 Spalten"
+" für die Navigationselemente und die restlichen 9 Spalten für die "
+"Visualisierungselemente. Und da wir die Karten- und Diagrammvisualisierungen"
+" nebeneinander anbringen möchten, werden wir eine Zeile für diese beiden "
+"erstellen, wobei beide jeweils 6 Spalten nutzen."
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:668
 msgid "In HTML code, this is what our dashboard will look like:"
-msgstr ""
+msgstr "Im HTML-Code sieht unser Dashboard dann so aus:"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:718
 msgid ""
 "25 + Save your page and click on :tutorial-keycap:`Preview`. What a cool "
 "dashboard we have created!"
 msgstr ""
+"25 + Speichern Sie Ihre Seite und klicken Sie auf:tutorial-"
+"keycap:`Vorschau`. Unser Dashboard sieht wirklich schick aus!"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:726
 msgid ""
@@ -416,15 +589,23 @@ msgid ""
 " the place of the tag. It is also one of the HTML tags that does not come in"
 " a pair!"
 msgstr ""
+"26 + Vielleicht wäre es angemessen etwas mehr Platz zwischen der Tabelle und"
+" den beiden anderen Visualisierungen zu haben. Fügen wir ein ``br`` Tag "
+"unter dem Tabellen-Widget ein, direkt vor der Zeile, die das Karten- und das"
+" Diagramm-Widget enthält. Dieses Tag bedeutet, dass wir eine zusätzliche "
+"leere Zeile an der Stelle des Tags sehen möchten. Es handelt sich außerdem "
+"um eines der HTML-Tags, die nicht aus zwei Teilen bestehen."
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:793
 msgid ""
 "27 + Save again and click the Open page button to see the final result!"
 msgstr ""
+"27 + Speichern Sie erneut und klicken Sie auf den Button Seite öffnen, um "
+"das Endergebnis zu sehen!"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:799
 msgid "**CONGRATULATIONS!**"
-msgstr ""
+msgstr "**HERZLICHEN GLÜCKWUNSCH!**"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:801
 msgid ""
@@ -436,3 +617,9 @@ msgid ""
 "<https://help.opendatasoft.com/platform/en/customizing_look_and_feel/07_designing_responsive_portal/responsive.html"
 "#responsive-page-layouts>`_!"
 msgstr ""
+"Sie haben dieses Tutorial abgeschlossen und wissen jetzt, wie man ein "
+"komplettes Dashboard mit verknüpften Widgets erstellt und wie man es mit "
+"CSS-Klassen formatiert! Wenn Sie mehr über CSS-Klassen und Responsivität "
+"erfahren möchten, können Sie unsere Dokumentation zu diesen Themen lesen "
+"<https://help.opendatasoft.com/platform/en/customizing_look_and_feel/07_designing_responsive_portal/responsive.html"
+"#responsive-page-layouts>`_!"

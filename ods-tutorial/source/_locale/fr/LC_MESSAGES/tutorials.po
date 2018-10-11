@@ -1,19 +1,26 @@
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Tutorials 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-13 21:36+0200\n"
+"POT-Creation-Date: 2018-09-13 21:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: Trad_FR1 <datawords.translator.fr1@gmail.com>, 2018\n"
+"Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ../../source/tutorials.rst:2
 msgid "Welcome to the tutorials of OpenDataSoft!"
-msgstr ""
+msgstr "Bienvenue dans les tutoriels d'OpenDataSoft !"
 
 #: ../../source/tutorials.rst:4
 msgid ""
@@ -21,33 +28,38 @@ msgid ""
 "sequence of steps leading to the creation of a deliverable using the "
 "OpenDataSoft platform."
 msgstr ""
+"Cette documentation rassemble tous les tutoriels d'OpenDataSoft. Ces "
+"derniers correspondent à une séquence d'étapes menant à la création d'un "
+"élément à l'aide de la plateforme OpenDataSoft."
 
 #: ../../source/tutorials.rst:6
 msgid "At the beginning of each tutorial, you will find:"
-msgstr ""
+msgstr "Au début de chaque tutoriel, vous trouverez :"
 
 #: ../../source/tutorials.rst:8
 msgid ""
 "the description of the deliverable as well as the list of goals for the "
 "tutorial,"
 msgstr ""
+"la description de l'élément à créer, ainsi que la liste des objectifs "
+"associés au tutoriel ;"
 
 #: ../../source/tutorials.rst:9
 msgid "a difficulty level:"
-msgstr ""
+msgstr "un niveau de difficulté :"
 
 #: ../../source/tutorials.rst:11
 msgid "★☆☆ Beginners"
-msgstr ""
+msgstr "★☆☆ Débutant,"
 
 #: ../../source/tutorials.rst:12
 msgid "★★☆ Intermediate"
-msgstr ""
+msgstr "★★☆ Intermédiaire,"
 
 #: ../../source/tutorials.rst:13
 msgid "★★★ Expert"
-msgstr ""
+msgstr "★★★ Expert ;"
 
 #: ../../source/tutorials.rst:15
 msgid "an estimated time needed to complete the tutorial."
-msgstr ""
+msgstr "une estimation de durée pour la réalisation du tutoriel."

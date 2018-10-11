@@ -1,59 +1,73 @@
-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Tutorials 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-13 21:34+0200\n"
+"POT-Creation-Date: 2018-09-13 21:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Last-Translator: traducteur_DE1 <datawords.translator.de1@gmail.com>, 2018\n"
+"Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:2
 msgid "How to build a dashboard (part 1)"
-msgstr ""
+msgstr "Ein Dashboard aufbauen (1. Teil)"
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:10
 msgid "★☆☆ Beginner - time: 30 minutes"
-msgstr ""
+msgstr "★☆☆ Anfänger - Dauer: 30 Minuten"
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:12
 msgid ""
 "*This tutorial will teach you how to create a dashboard using 3 "
 "visualizations from a dataset published on an OpenDataSoft portal.*"
 msgstr ""
+"*In diesem Tutorial erfahren Sie, wie Sie ein Dashboard mit 3 "
+"Visualisierungen aus einem Datensatz erstellen, der auf einem OpenDataSoft-"
+"Portal veröffentlicht wurde*."
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:16
 msgid "During this tutorial, you will learn:"
-msgstr ""
+msgstr "Dieses Tutorial vermittelt Ihnen Folgendes:"
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:18
 msgid "what a widget is"
-msgstr ""
+msgstr "Was ein Widget ist"
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:19
 msgid "what an iframe is"
-msgstr ""
+msgstr "Was ein Iframe ist"
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:20
 msgid "what is the difference between a widget and an iframe"
-msgstr ""
+msgstr "Der Unterschied zwischen einem Widget und einem Iframe"
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:21
 msgid "how to use a widget in a content page created with OpenDataSoft"
 msgstr ""
+"Wie Sie ein Widget in einer mit OpenDataSoft erstellten Inhaltsseite "
+"verwenden"
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:26
 msgid "**PREREQUISITES**"
-msgstr ""
+msgstr "**VORRAUSSETZUNGEN**"
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:28
 msgid ""
 "In order to create a dashboard, you need to have access to the back office "
 "of an OpenDataSoft portal and the \"Edit all pages\" permission."
 msgstr ""
+"Um ein Dashboard zu erstellen, benötigen Sie Zugriff auf das Backoffice "
+"eines OpenDataSoft-Portals und die Berechtigung \"Alle Seiten bearbeiten\"."
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:29
 msgid ""
@@ -67,28 +81,40 @@ msgid ""
 " will also need to adapt your own page code for it to match your chosen "
 "dataset."
 msgstr ""
+"Wir empfehlen Ihnen, für dieses Tutorial den Datensatz \"World Heritage "
+"List\" (Liste der Weltkulturerbe) zu verwenden, der in unserem Datennetzwerk"
+" veröffentlicht wurde <https://data.opendatasoft.com/explore/dataset/world-"
+"heritage-list%40public-"
+"us/map/?location=2,18.46273,-0.44037&basemap=mapbox.streets>`_. Diesen "
+"Datensatz verwenden wir als Beispiel im gesamten Tutorial. Wenn Sie das "
+"Tutorial mit einem anderen Datensatz fortsetzen möchten, so sollte dieser "
+"über eine Tabellenansicht, eine Kartenansicht sowie eine Analyseansicht "
+"verfügen. Sie müssen außerdem Ihren eigenen Seitencode an den von Ihnen "
+"gewählten Datensatz anpassen."
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:36
 msgid "Show all images"
-msgstr ""
+msgstr "Alle Bilder anzeigen"
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:40
 msgid "Hide all images"
-msgstr ""
+msgstr "Alle Bilder verbergen"
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:47
 msgid "Create your content page"
-msgstr ""
+msgstr "Erstellen Sie Ihre Inhaltsseite"
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:52
 msgid "1 + Go the Back office, in the Pages section."
-msgstr ""
+msgstr "1 + Öffnen Sie den Seitenbereich des Backoffice."
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:60
 msgid ""
 "2 + Click on the :tutorial-keycap:`+ New page button`, to create a new "
 "content page."
 msgstr ""
+"2 + Klicken Sie auf den Button :tutorial-keycap:`+ Neue Seite`, um eine neue"
+" Inhaltsseite zu erstellen."
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:68
 msgid ""
@@ -97,16 +123,23 @@ msgid ""
 "will not be able to save the page. Enter a page URL suffix and a title. You "
 "can also add a description and tags."
 msgstr ""
+"3 + Standardmäßig gelangen Sie zur Registerkarte Eigenschaften. Diese "
+"enthält verschiedene Informationen über die Seite. Einige hiervon müssen "
+"ausgefüllt werden, da Sie die Seite sonst nicht speichern können. Geben Sie "
+"einen URL-Suffix sowie einen Titel der Seite an. Sie können auch eine "
+"Beschreibung und Tags hinzufügen."
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:76
 msgid ""
 "4 + Click the :tutorial-keycap:`Save` button to save your newly created "
 "content page."
 msgstr ""
+"4 + Klicken Sie auf den Button :tutorial-keycap:`Speichern`, um die neu "
+"erstellte Inhaltsseite zu speichern."
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:84
 msgid "5 + Go to the Content tab."
-msgstr ""
+msgstr "5 + Öffnen Sie die Registerkarte Inhalt."
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:92
 msgid ""
@@ -114,16 +147,20 @@ msgid ""
 "code of the page. A pop up will appear, click on :tutorial-keycap:`Yes, "
 "switch to expert mode` for confirmation matter."
 msgstr ""
+"6 + Klicken Sie auf :tutorial-keycap:`Im Expertenmodus bearbeiten`, um auf "
+"den HTML-/CSS-Code der Seite zuzugreifen. Es erscheint ein Popup-Fenster. "
+"Klicken Sie zur Bestätigung auf :tutorial-keycap:`Ja, in den Expertenmodus "
+"wechseln`."
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:98
 msgid "In the HTML/CSS code area, you should see the following code:"
-msgstr ""
+msgstr "Im Bereich des HTML-/CSS-Codes sollten Sie den folgenden Code sehen:"
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:106
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:156
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:185
 msgid "Important"
-msgstr ""
+msgstr "Wichtig"
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:109
 msgid ""
@@ -133,6 +170,11 @@ msgid ""
 "``<h1></h1>`` for first level title, ``<div></div>`` for a division/section,"
 " etc."
 msgstr ""
+"In der HTML-Sprache wird jedes Element durch ein Tag dargestellt. Dieses Tag"
+" wird zwischen den Zeichen ``<`` und ``>`` geschrieben und besteht meist aus"
+" zwei Teilen, einem einleitenden Tag und einem abschließenden Tag. Z. b. "
+"``<p></p>`` für Absätze, ``<h1></h1>`` für die Titelzeile, ``<div></div>`` "
+"für einen Abschnitt/Unterabschnitt usw."
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:111
 msgid ""
@@ -141,10 +183,15 @@ msgid ""
 "your content page to be in a predefined frame with borders. All new elements"
 " that you will add in the future should be put inside these 2 tags."
 msgstr ""
+"Die Tags ``<div class=\"container-fluid\">`` und ``<div class=\"ods-box\" "
+">`` helfen Ihnen, Ihre Seite richtig zu formatieren, damit sich alle "
+"Elemente Ihrer Inhaltsseite in einem vordefinierten Fenster mit Rändern "
+"befinden. Alle neuen Elemente, die Sie später hinzufügen, sollten zwischen "
+"diese 2 Tags eingefügt werden."
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:129
 msgid "7 + Save your page."
-msgstr ""
+msgstr "7 + Speichern Sie Ihre Seite."
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:137
 msgid ""
@@ -152,14 +199,17 @@ msgid ""
 "page. Click again on :tutorial-keycap:`Preview` to hide the preview window "
 "and go back to your code."
 msgstr ""
+"8 + Klicken Sie auf :tutorial-keycap:`Vorschau`, um die aktuelle Darstellung"
+" Ihrer Seite zu sehen. Klicken Sie erneut auf :tutorial-keycap:`Vorschau`, "
+"um das Vorschaufenster auszublenden und zum Code zurückzukehren."
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:148
 msgid "Put content in your page: data visualizations"
-msgstr ""
+msgstr "Versehen Sie Ihre Seite mit Inhalten: Datenvisualisierungen"
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:153
 msgid "Get the widget code of a visualization"
-msgstr ""
+msgstr "Rufen Sie den Widget-Code einer Visualisierung ab"
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:159
 msgid ""
@@ -172,16 +222,29 @@ msgid ""
 "indeed available as a widget, which code is displayed below the "
 "visualization, ready to be copied!"
 msgstr ""
+"Ein Widget ist ein Code, der es jedem ermöglicht, ein interaktives Element "
+"direkt auf einer Webseite zu integrieren. OpenDataSoft bietet "
+"unterschiedliche Widgets, die `in der Widget-Dokumentation aufgelistet und "
+"erläutert werden <https://help.opendatasoft.com/widgets/#/api/>`_. Einige "
+"der häufigsten OpenDataSoft-Widgets - die wir in diesem Tutorial verwenden -"
+" sind die Visualisierungs-Widgets. Jede Datenvisualisierung eines "
+"veröffentlichten Datensatzes ist als Widget verfügbar. Dessen Code wird "
+"unterhalb der Visualisierung angezeigt und kann kopiert werden."
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:163
 msgid ""
 "9 + Go to Data, where our dataset is published. Make sure you are on the "
 "dataset's page, where you can see the available data visualizations."
 msgstr ""
+"9 + Öffnen Sie den Datenbereich, wo unser Datensatz veröffentlicht wird. "
+"Stellen Sie sicher, dass Sie sich auf der Seite des Datensatzes befinden, "
+"auf der Sie die verfügbaren Datenvisualisierungen sehen können."
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:171
 msgid "10 + Let's start with the Table view. Click on the Table tab."
 msgstr ""
+"10 + Beginnen wir mit der Tabellenansicht. Klicken Sie auf die Registerkarte"
+" Tabelle."
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:179
 msgid ""
@@ -192,6 +255,13 @@ msgid ""
 "and pasted. For this tutorial, we will use the widget codes of the Table, "
 "Map and Analyze visualizations of our dataset."
 msgstr ""
+"11 + Scrollen Sie in der Tabelle nach unten. 3 Registerkarten sollten zu "
+"sehen sein: Teilen, Einbettung und Widget. Unter Teilen wird die direkte URL"
+" der Visualisierung angezeigt. Unter Einbettung wird der Iframe-Code der "
+"Visualisierung angezeigt. Unter Widget wird der Widget-Code der "
+"Visualisierungen angezeigt. Ob Code oder URL: jedes Element kann kopiert und"
+" dann eingefügt werden. Für dieses Tutorial verwenden wir die Widget-Codes "
+"der Tabellen-,Karten- und Analyse-Visualisierungen unseres Datensatzes."
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:188
 msgid ""
@@ -203,6 +273,13 @@ msgid ""
 " outside the OpenDataSoft environment, but know that heavy work would be "
 "required."
 msgstr ""
+"Ein Iframe bietet die Möglichkeit, OpenDataSoft-Inhalte einfach und sicher "
+"in einen isolierten Bereich zu integrieren, unabhängig vom Rest der Seite. "
+"Iframes eignen sich ideal, wenn Sie OpenDataSoft-Inhalte außerhalb der "
+"OpenDataSoft-Umgebung integrieren möchten, wobei wahrscheinlich einige "
+"Interaktions- und Anpassungsmaßnahmen erforderlich sind. Widgets können auch"
+" in eine Seite außerhalb der OpenDataSoft-Umgebung integriert werden, doch "
+"würde dies einen erheblichen Aufwand mit sich bringen."
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:190
 msgid ""
@@ -210,6 +287,9 @@ msgid ""
 "OpenDataSoft widgets is the best option. In the OpenDataSoft environment, "
 "they are indeed easily customizable and very interactive with other widgets."
 msgstr ""
+"Da wir ein Dashboard direkt auf einer OpenDataSoft-Seite erstellen, ist die "
+"Verwendung von OpenDataSoft-Widgets die beste Option. In der OpenDataSoft-"
+"Umgebung sind sie leicht anpassbar und sehr interaktiv mit anderen Widgets."
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:194
 msgid ""
@@ -217,66 +297,88 @@ msgid ""
 "displayed, click the COPY button to copy the widget code of the table "
 "visualization."
 msgstr ""
+"12 + Klicken Sie in der Registerkarte Tabelle unseres Datensatzes (wo der "
+"Widget-Code angezeigt wird) auf den Button KOPIEREN, um den Widget-Code der "
+"Tabellenvisualisierung zu kopieren."
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:203
 msgid "Add a visualization widget to your page"
-msgstr ""
+msgstr "Fügen Sie Ihrer Seite ein Visualisierungs-Widget hinzu"
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:207
 msgid ""
 "13 + Go back to the back office, to continue to edit your OpenDataSoft "
 "content page."
 msgstr ""
+"13 + Wechseln Sie erneut zum Backoffice, um Ihre OpenDataSoft-Inhaltsseite "
+"weiter zu bearbeiten."
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:215
 msgid ""
 "14 + Paste your table visualization widget code at the right place, between "
 "the ``ods-box`` tag (see step 6)."
 msgstr ""
+"14 + Fügen Sie Ihren Widget-Code der Tabellenvisualisierung  an der "
+"richtigen Stelle ein, d. h. zwischen den Tag ``ods-box`` (siehe 6. Schritt)."
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:235
 msgid ""
 "15 + Save your page and click on :tutorial-keycap:`Preview`: there is now a "
 "table visualization in our page!"
 msgstr ""
+"15 + Speichern Sie Ihre Seite und klicken Sie auf :tutorial-"
+"keycap:`Vorschau`: unsere Seite verfügt nun über eine "
+"Tabellenvisualisierung!"
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:245
 msgid "Add more widgets to your page: map and chart"
-msgstr ""
+msgstr "Fügen Sie Ihrer Seite weitere Widgets hinzu: Karte und Diagramm"
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:249
 msgid ""
 "16 + Let's add a map to our page! Just like before, get the widget code of "
 "the Map view of our dataset (see steps 9 to 12, but applied to the Map tab)."
 msgstr ""
+"16 + Fügen wir unserer Seite jetzt eine Karte hinzu! Rufen Sie wie eben den "
+"Widget-Code aus der Kartenansicht unseres Datensatzes ab (siehe Schritte 9 "
+"bis 12, jedoch unter Verwendung der Registerkarte Karte)."
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:257
 msgid ""
 "17 + Paste your map visualization widget code below the widget code of the "
 "table visualization (see Add a widget to your page)."
 msgstr ""
+"17 + Fügen Sie Ihren Widget-Code der Kartenvisualisierung unter dem Widget-"
+"Code der Tabellenvisualisierung ein (siehe \"Fügen Sie Ihrer Seite ein "
+"Widget hinzu\")."
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:281
 msgid ""
 "18 + Let's add one more thing: a chart! Get the widget code of the Analyze "
 "view of our dataset."
 msgstr ""
+"18 + Fügen wir noch etwas hinzu: ein Diagramm! Rufen Sie den Widget-Code aus"
+" der Analyseansicht unseres Datensatzes ab."
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:289
 msgid ""
 "19 + Paste your analyze visualization widget code below the widget code of "
 "the map visualization."
 msgstr ""
+"19 + Fügen Sie Ihren Widget-Code der Analysevisualisierung unter dem Widget-"
+"Code der Kartenvisualisierung ein."
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:322
 msgid ""
 "20 + Save your page and click on :tutorial-keycap:`Preview`. We have now 3 "
 "visualizations on our page!"
 msgstr ""
+"20 + Speichern Sie Ihre Seite und klicken Sie auf :tutorial-"
+"keycap:`Vorschau`: Wir haben jetzt 3 Visualisierungen auf unserer Seite!"
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:333
 msgid "Complete your content page with a title"
-msgstr ""
+msgstr "Fügen Sie Ihrer Inhaltsseite einen Titel hinzu"
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:337
 msgid ""
@@ -287,28 +389,41 @@ msgid ""
 "added to the page, and right below the ``ods-box`` tag, add a high level "
 "title to your content page."
 msgstr ""
+"21 + In HTML werden Titel (Header genannt) im Allgemeinen durch ``h1``-Tags "
+"definiert. Das h ist unveränderlich, es steht für \"header\". Die Zahl (hier"
+" 1) kann jedoch durch eine beliebige Zahl von 1 bis 6 ersetzt werden, wobei "
+"``h1`` die Hauptüberschrift und ``h6`` die letzte Zwischenüberschrift ist. "
+"Fügen Sie über allen der Seite hinzugefügten Widget-Codes der Visualisierung"
+" und direkt unter dem Tag ``ods-box`` eine Hauptüberschrift für Ihre "
+"Inhaltsseite hinzu."
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:372
 msgid ""
 "22 + Save your page and click on :tutorial-keycap:`Preview`: our dashboard "
 "now has a title!"
 msgstr ""
+"22 + Speichern Sie Ihre Seite und klicken Sie auf:tutorial-"
+"keycap:`Vorschau`: unser Dashboard hat jetzt einen Titel!"
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:380
 msgid ""
 "23 + Click on the :tutorial-keycap:`Open page` button to see the final "
 "result of your page in the portal."
 msgstr ""
+"23 + Klicken Sie auf den Button :tutorial-keycap:`Seite öffnen`, um das "
+"Endergebnis Ihrer Seite im Portal zu sehen. "
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:390
 msgid "**CONGRATULATIONS!**"
-msgstr ""
+msgstr "**HERZLICHEN GLÜCKWUNSCH!**"
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:392
 msgid ""
 "You have finished this tutorial and you now know how to create a simple "
 "dashboard with 3 dataset visualizations!"
 msgstr ""
+"Sie haben dieses Tutorial abgeschlossen und wissen jetzt, wie man ein "
+"einfaches Dashboard mit 3 Datensatz-Visualisierungen erstellt!"
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:394
 msgid ""
@@ -318,3 +433,8 @@ msgid ""
 "together, how to add more advanced widgets but also how to organize and "
 "style your dashboard better."
 msgstr ""
+"Wenn Sie Ihr Dashboard noch mehr anpassen möchten, können Sie sich den "
+"zweiten Teil dieses Tutorials ansehen: doc:`\"Ein Dashboard aufbauen (2. "
+"Teil)\" <how_to_build_dashboard_part2>`. Hier erfahren Sie, wie Sie Ihre "
+"Widgets miteinander verknüpfen, erweiterte Widgets hinzufügen und Ihr "
+"Dashboard besser organisieren und gestalten können."
