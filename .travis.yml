@@ -1,23 +1,24 @@
-language: node_js
+language: python
 env:
   global:
     - secure: "ZzBxIyqzwjEIKF+N6P7ZYFLbP50Cvcrmt75AE0qgfBICFTCooJWWbiKqHtFeeDosoW4vWTJMWg7dsqt2ccvI9aU5sO6kgJuhKY8kp15QEwTfqHotX24pKPSdX9K0v0LMl3ERZYftXq8wqwKTDkZ4NMKNvwG8AA7j5G+ljW0e0BGrVcjPw2YfzP9wT6IzAur6H6UrD4cauMcZNenZnpL9O5WheoYtAfZBuVJTgQOAmVmwQpSKdZNEtov9B1K042XAnEPSt6KgCmu746x5qqw0c6se4Ixz5mJO4yijD6N8u/YvFQCloWNFyVOYjUNYXa3UXzOyyEwBw/7B0ccxWu42tx3cBL/zVoUxY+hZhgywJx/PyShazMYPxGyNenU4BI+sae6FSetE4aiM3NkL2K8iv3vVnp0zGv2vXtJY8zealBNbP6wgAlQYntp49hw/3ExVdyyJn5d1hERJ0NzvYLZIsq0FnbxHL4vNx7XRT5PcVy9+bE1baH7PfnAZ/4E4cRL+DxKX5UW/ssucU/eQPlSiDgeRD/K2Jlsl6sfYcSB9LwSE6Gf151Fc5kZpr0wk7HIOauynm7VTdOTG8jem5tOredKx1jynytGlk2AzNqbstiGjGD3m9x1tvj1NsZYRgUggzd8C3riUh9rtehHqljQ5TJVlGRmoBd+P+NvEfk+Yx1Q="
     - secure: "hY+6OzPKmFkn47q3ks5d+gJwX4mT8gWTetKls4cNMfvXILu3gdEuNp/oXxOVlgXkdO664LK788nPe7+s7Y/gIgdvxoiG/RH8wrP4w5ha1ciqXlpT4b1U3NHRfjicnFKGLAocBf1GenBgUnW+684LCCUg+XVP9Azm2L+55VcNAiS/clHKZu4L/5akGIFcZO0X53JRwqQXGbvRrbRVPiDQbasZfo8D43fdWj5GwSdrQZedHTfZEES1t5BZtcZV25F9i4u8LCJxmZhg+7qqh6riELw4SsMobLlGvdBETe/NoIjL3oCXPYJbbwFXGo6CccbmworkSNYa4mE8nLNIDvnKy1INxAh3XoTzOHjlCLw45GzQNCaBEcqkjk3QQJkq49ny2Z40Kvs6BjjdDDr9MHBzyaCHyN2Zl53Ok8YhlZNcvc9NCose+7AGGD2F0iiPtCxmDIDTE+FZHNuM4IH/k9eAhEDMbqdDDasUrbpjnDAXBNukyNPYISlPvjmeJeKTLuPUWsHFwQSY4lFZUeLE1SxX+pWFNsDSXEV97ZwysSXSuQU3zarWajXN1o0iPQ95g6N8P7ZAu1deTG17cw+9oyPBXj3qOLgO8UJPLvbUw5lLmCaiNP7hVtQYMm6yKTZSnV6eJcsNTLvkbkQ4FOCjgeH/NWlP4rGibczKy9xZivCnWvg="
-    - DEPLOY_BETA_PATH=/var/www/betahelp/
-    - DEPLOY_PROD_PATH=/var/www/help/
-node_js:
-  - 8
-cache:
-  yarn: true
-  directories:
-    - "node_modules"
+    - DEPLOY_BETA_PATH_HELPHUB=/var/www/betahelp/
+    - DEPLOY_PROD_PATH_HELPHUB=/var/www/help/
+    - DEPLOY_BETA_PATH_TUTORIAL=/var/www/betahelp/tutorials/
+    - DEPLOY_PROD_PATH_TUTORIAL=/var/www/help/tutorials/
+python:
+  - 2.7
+install:
+  - pip install -r ods-tutorial/requirements.txt
+  - nvm install 8
 script:
-  - yarn run build
+  - ./scripts/ods-helphub/build.sh
+  - ./scripts/ods-tutorial/build.sh
 after_success:
   - openssl aes-256-cbc -K $encrypted_a900b4336b1e_key -iv $encrypted_a900b4336b1e_iv -in .travis.deploy.enc -out .travis.deploy -d
   - chmod 600 .travis.deploy
-  - 'test $TRAVIS_BRANCH == "develop" && rsync -avz -e "ssh -i .travis.deploy -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --delete -P ./dist/index.html ./dist/assets "$DEPLOY_USER"@"$DEPLOY_IP":"$DEPLOY_BETA_PATH"'
-  - 'test $TRAVIS_BRANCH == "master" && rsync -avz -e "ssh -i .travis.deploy -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" --delete -P ./dist/index.html ./dist/assets "$DEPLOY_USER"@"$DEPLOY_IP":"$DEPLOY_PROD_PATH"'
+  - ./scripts/deploy.sh
 notifications:
   slack:
     secure: t9rCkpP1s3kCdoM3DhcBSOjYK7iQgWzhAO2Dq44Tns3Lf1T+P0EAKuAI1ARjhdiskhkKxzIzsOrEJOVy/DIvnWfh1Q0ZrRAkx4aGbgJpIaJEULcFf5/cAlpR01fLf1wjqTb8JQOpIr01c7fpYjVu6OFEujpAxzAH2Y/nHorOYWM7itISnEhay41M8XBpQmsGMZF3GWn8KMGZSI7W+kl71FwW3/LWxDLY4NO1vPXttJAKqGtnGEJsDKzhD03nw8oGfBPK8HhCUKikzWr76BndEPmeh5k0+LGIpRn4gKb5Y9eglvtSAt6jdj4ljaW4NcRkBzNxFGgxCdU4FbMH7h778j67LgoQ8xVSkZoqBhup1tIOmScayiptCKgO1d1a1CEaxFFqvvLFFJ60IS5AOjMApmupwNaJZxrySJvJPUZsf0EbemRdqynGST1zcZkTCOPjjuFjqrTEY9umklQG1qSQ0RgfjKg8cDdFLTzHvC8Vki9rYqhGjdFW/sTwcHX9FZxy6goSQJQQaJtcMOelQJQOrLvZYzL4SDOGFLmMyMFmdtJjHnqDQgLjbseU7GRztW2IW4wZcE9vi9oBo5fiCaGe8PWsV020P26AiRsZ0n9LNCVRQLjL+/fX3ckj81iE7FEEUdWI4n4BTNcu5+Uc93h0RgnTj99iVMwBv/3AkToCsEQ=

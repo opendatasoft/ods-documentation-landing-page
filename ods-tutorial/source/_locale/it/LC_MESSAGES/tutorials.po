@@ -1,0 +1,59 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Tutorials 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-13 21:42+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language-Team: Italian (https://www.transifex.com/opendatasoft/teams/57849/it/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: it\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/tutorials.rst:2
+msgid "Welcome to the tutorials of OpenDataSoft!"
+msgstr ""
+
+#: ../../source/tutorials.rst:4
+msgid ""
+"This documentation contains all OpenDataSoft tutorials. They consist in a "
+"sequence of steps leading to the creation of a deliverable using the "
+"OpenDataSoft platform."
+msgstr ""
+
+#: ../../source/tutorials.rst:6
+msgid "At the beginning of each tutorial, you will find:"
+msgstr ""
+
+#: ../../source/tutorials.rst:8
+msgid ""
+"the description of the deliverable as well as the list of goals for the "
+"tutorial,"
+msgstr ""
+
+#: ../../source/tutorials.rst:9
+msgid "a difficulty level:"
+msgstr ""
+
+#: ../../source/tutorials.rst:11
+msgid "★☆☆ Beginners"
+msgstr ""
+
+#: ../../source/tutorials.rst:12
+msgid "★★☆ Intermediate"
+msgstr ""
+
+#: ../../source/tutorials.rst:13
+msgid "★★★ Expert"
+msgstr ""
+
+#: ../../source/tutorials.rst:15
+msgid "an estimated time needed to complete the tutorial."
+msgstr ""

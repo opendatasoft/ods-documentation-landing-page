@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2018, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Tutorials 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-13 21:42+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: traducteur_DE1 <datawords.translator.de1@gmail.com>, 2018\n"
+"Language-Team: German (https://www.transifex.com/opendatasoft/teams/57849/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/tutorials.rst:2
+msgid "Welcome to the tutorials of OpenDataSoft!"
+msgstr "Willkommen zu den Tutorials von OpenDataSoft!"
+
+#: ../../source/tutorials.rst:4
+msgid ""
+"This documentation contains all OpenDataSoft tutorials. They consist in a "
+"sequence of steps leading to the creation of a deliverable using the "
+"OpenDataSoft platform."
+msgstr ""
+"Diese Dokumentation enthält alle Tutorials von OpenDataSoft. Sie bestehen "
+"aus einer Reihe von Etappen zur Erreichung eines bestimmten Ergebnisses mit "
+"der OpenDataSoft-Plattform."
+
+#: ../../source/tutorials.rst:6
+msgid "At the beginning of each tutorial, you will find:"
+msgstr "Zu Beginn jedes Tutorials wartet Folgendes auf Sie:"
+
+#: ../../source/tutorials.rst:8
+msgid ""
+"the description of the deliverable as well as the list of goals for the "
+"tutorial,"
+msgstr ""
+"die Beschreibung des Ergebnisses sowie eine Auflistung der Ziele des "
+"Tutorials,"
+
+#: ../../source/tutorials.rst:9
+msgid "a difficulty level:"
+msgstr "einen Schwierigkeitsgrad:"
+
+#: ../../source/tutorials.rst:11
+msgid "★☆☆ Beginners"
+msgstr "★☆☆ Anfänger"
+
+#: ../../source/tutorials.rst:12
+msgid "★★☆ Intermediate"
+msgstr "★★☆ Fortgeschrittene"
+
+#: ../../source/tutorials.rst:13
+msgid "★★★ Expert"
+msgstr "★★★ Experten"
+
+#: ../../source/tutorials.rst:15
+msgid "an estimated time needed to complete the tutorial."
+msgstr ""
+"eine geschätzte Dauer, die benötigt wird, um das Tutorial abzuschließen."

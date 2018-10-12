@@ -1,0 +1,29 @@
+[main]
+host = https://www.transifex.com
+type = PO
+
+[documentation-5.sphinx]
+file_filter = source/_locale/<lang>/LC_MESSAGES/sphinx.po
+source_file = build/locale/sphinx.pot
+source_lang = en
+
+[documentation-5.404]
+file_filter = source/_locale/<lang>/LC_MESSAGES/404.po
+source_file = build/locale/404.pot
+source_lang = en
+
+[documentation-5.dashboard--how_to_build_dashboard_part1]
+file_filter = source/_locale/<lang>/LC_MESSAGES/dashboard/how_to_build_dashboard_part1.po
+source_file = build/locale/dashboard/how_to_build_dashboard_part1.pot
+source_lang = en
+
+[documentation-5.dashboard--how_to_build_dashboard_part2]
+file_filter = source/_locale/<lang>/LC_MESSAGES/dashboard/how_to_build_dashboard_part2.po
+source_file = build/locale/dashboard/how_to_build_dashboard_part2.pot
+source_lang = en
+
+[documentation-5.tutorials]
+file_filter = source/_locale/<lang>/LC_MESSAGES/tutorials.po
+source_file = build/locale/tutorials.pot
+source_lang = en
+
