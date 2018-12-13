@@ -436,7 +436,7 @@ You are free to choose the tab titles and to add your own tab contents. For this
 .. code-block:: html
 
  <ods-dataset-context context="worlduniversityranking"
- worlduniversityranking-dataset="shanghai-world-university-ranking@public-us">
+ worlduniversityranking-dataset="shanghai-world-university-ranking@public">
 
  <div class="container">
    <div class="ods-box" ng-init="tabselector = 'firsttab'">
@@ -482,7 +482,7 @@ You are free to choose the tab titles and to add your own tab contents. For this
                   basemap="mapbox.light">
          <ods-map-layer-group>
            <ods-map-layer context="worlduniversityranking"
-                          color-numeric-ranges="{'15':'#FFFFFF','50':'#C8CDE3','200':'#929BC8','400':'#5C69AD','1565':'#263892'}"
+                          color-numeric-ranges="{'15':'#FFFFFF','50':'#C8CDE3','200':'#929BC8','400':'#5C69AD','2500':'#263892'}"
                           color-undefined="#1B5AA5"
                           color-out-of-bounds="#1BA566"
                           color-numeric-range-min="1"
