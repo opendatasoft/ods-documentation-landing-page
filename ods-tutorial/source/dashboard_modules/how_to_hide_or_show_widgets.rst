@@ -9,9 +9,9 @@ How to make visualizations match filters
 
     ★★★ Advanced - time: 45 minutes
 
-*This tutorial will teach you how to create different widget options to match related filters. This can be useful especially with charts, since they can sometimes become useless once related filters are activated. This tutorial will be fully customizable and reusable in any dashboard or piece of content created with HTML/CSS on OpenDataSoft.*
+*This tutorial will teach you how to create different visualizations options to match related filters. This can be useful especially with charts, since they can sometimes become useless once related filters are activated. This tutorial will be fully customizable and reusable in any dashboard or piece of content created with HTML/CSS on OpenDataSoft.*
 
-.. image:: images/module1_final.png
+.. image:: images/module2_final.png
 
 During this tutorial, you will learn:
 
@@ -26,6 +26,7 @@ During this tutorial, you will learn:
 
  - In order to test this tutorial and/or integrate the hide/show configuration on widgets in an already existing page, you need to have access to the back office of an OpenDataSoft portal and be granted the "Edit all pages" permission.
  - Since this tutorial is labeled as "Advanced" in terms of difficulty level, we assume that you already know HTML and CSS well enough to recognize and understand their structures and how they work. Other more technical elements will however be explained in details.
+ - We highly recommend to follow the tutorial with the `Shanghai World University Ranking <https://data.opendatasoft.com/explore/dataset/shanghai-world-university-ranking%40public/>`_ dataset, used throughout the whole tutorial. If you however choose to follow the tutorial with another dataset, keep in mind that you will need to adapt each step.
 
 
 .. HIDE ALL / SHOW ALL:
@@ -45,10 +46,11 @@ During this tutorial, you will learn:
 
     Create the base
 
+In this tutorial, we will create a page comprised of a visualization and its related dataset filter, using the `Shanghai World University Ranking <https://data.opendatasoft.com/explore/dataset/shanghai-world-university-ranking%40public/>`_ dataset that can be found on our OpenDataSoft data network.
 
 .. rst-class:: block-step
 
-    1 + In this tutorial, we will create a page comprised of a visualization and its related dataset filter, using the `Shanghai World University Ranking <https://data.opendatasoft.com/explore/dataset/shanghai-world-university-ranking%40public-us/>`_ dataset that can be found on our OpenDataSoft data network. First, let's start with the visualization. Here, we chose to display a scatter plot chart representing the top 20 of the best universities in the ranking. For each university, the chart shows their average score.
+    1 + Let's start our page by adding the widget code of the visualization of our choice. Here, we chose to display a scatter plot chart representing the top 20 of the best universities in the ranking. For each university, the chart shows their average score.
 
 .. admonition:: Note
    :class: note
@@ -78,9 +80,12 @@ During this tutorial, you will learn:
 
 .. rst-class:: block-step
 
-    2 + Before going any further, make sure that everything is all cleaned up. Declare the unique context of your page, using the `odsDatasetContext <https://help.opendatasoft.com/widgets/#/api/ods-widgets.directive:odsDatasetContext>`_ widget (feel free the check the widget documentation for a reminder of how it should be configured!). Declaring the page context is always the proper way to build any kind of dashboard, not only because it cleans everything up, but also because it allows widgets to interact with one another.
+    2 + Before going any further, declare the unique context of your page, using the `odsDatasetContext <https://help.opendatasoft.com/widgets/#/api/ods-widgets.directive:odsDatasetContext>`_ widget. This will allow our widgets to interact with one another -and it always is the proper way to build a dashboard.
 
-Don't forget to delete the ``ods-dataset-context`` tag above the code of the chart widget, as well as to replace the current ``shanghaiworlduniversityrankingpublic`` context name by the new one.
+.. admonition:: Important
+   :class: important
+
+   Don't forget to delete the ``ods-dataset-context`` tag above the code of the chart widget. Also, replace the current context name (here, ``shanghaiworlduniversityrankingpublic``) by the new one (here, ``worlduniversityranking``).
 
 .. code-block:: html
 
@@ -108,7 +113,7 @@ Don't forget to delete the ``ods-dataset-context`` tag above the code of the cha
 
 .. rst-class:: block-step
 
-    3 + Now that we have a clean base, we can add a related dataset filter. Here, we will retrieve the Country filter that already is an existing facet on the dataset published on Data. Right under the chart visualization, retrieve the Country filter using the `odsFacets <https://help.opendatasoft.com/widgets/#/api/ods-widgets.directive:odsFacets>`_ widget (again, feel free the check the widget documentation for a reminder of how it should be configured!).
+    3 + Add a filter related to the chosen dataset, using the `odsFacets <https://help.opendatasoft.com/widgets/#/api/ods-widgets.directive:odsFacets>`_ widget. Here, we retrieve the Country filter that already is an existing facet on the dataset published on Data.
 
 .. code-block:: html
 
@@ -140,13 +145,13 @@ Don't forget to delete the ``ods-dataset-context`` tag above the code of the cha
 
 .. rst-class:: block-step
 
-    4 + Click on :tutorial-keycap:`Preview`. Everything works well... until you click on a filter option! Technically, it works, since the chart indeed updates according to the chosen filter option. However, the filtered chart becomes completely useless, because it only displays one only point.
+    4 + Click on :tutorial-keycap:`Preview`. Technically, everything works well: the chart indeed updates according to the chosen filter option. However, the filtered chart becomes completely useless, because it only displays one only point.
 
 .. rst-class:: img-hide
 
     SCREENSHOT
 
-We need a second option visualization, that will only be displayed in case the filter is used.
+We need a second option visualization, that will only be displayed in case the filter is used. This second option visualization will replace the default, unfiltered chart that becomes useless once filtered. Let's do this!
 
 
 
@@ -159,12 +164,12 @@ We need a second option visualization, that will only be displayed in case the f
 
 .. rst-class:: block-step
 
-    5 + Before diving into AngularJS directives and expressions, let's choose our 2nd option visualization: the one that will only be displayed if the filter is used, replacing the default visualization that became useless. Here, we chose to display a column chart representing the top 10 of the best universities in the ranking. For each university, the chart shows their average score. Keep in mind that this chart will only be displayed when the filter is used, meaning that the new 2nd option chart will always show the top 10 universities per chosen country. Put the code of that new chart right below the first chart, above the facet widget.
+    5 + Before diving into AngularJS directives and expressions, let's add the widget code of our 2nd option visualization, right below the first one. Here, we chose to display a column chart representing the top 10 of the best universities in the ranking. For each university, the chart shows their average score. Keep in mind that this chart will only be displayed when the filter is used, meaning that the new 2nd option chart will always show the top 10 universities per chosen country.
 
 .. admonition:: Important
    :class: important
 
-   Don't forget to clean the code and to replace the context name with the one we declared earlier (see step 3).
+   Don't forget to clean the code and to replace the context name with the one we declared earlier (see step 2).
 
 .. code-block:: html
 
@@ -203,7 +208,7 @@ We need a second option visualization, that will only be displayed in case the f
 
 .. rst-class:: block-step
 
-    6 + Now is the time to tackle AngularJS! Since the displaying of both charts will depend on an ``ng-if`` conditional expression, we will need to add an AngularJS directive to both charts: the default one (that should NOT be displayed if the filter is used) and the 2nd option chart (that should ONLY be displayed if the filter is used). Any AngularJS directive must be added into an HTML tag. Seeing our code, the best way to do in order to keep our code clean, is to add ``div`` tags. Wrap each chart between ``div`` tags.
+    6 + Now is the time to tackle AngularJS! We will need to add an AngularJS directive to both visualizations: the default one (that should NOT be displayed if the filter is used) and the 2nd option chart (that should ONLY be displayed if the filter is used). Since any AngularJS directive must be added into an HTML tag, and seeing our code, the best way to do in order to keep our code clean is to add ``div`` tags. Wrap each chart between ``div`` tags.
 
 .. code-block:: html
 
@@ -254,9 +259,9 @@ Let's take a look at the syntax of the expression we are going to use.
 
  ng-if="mycontext.parameters['refine.field_ID']"
 
-``ng-if`` is the AngularJS directive. It is always followed by ``=`` which indicates that what comes after is an expression. This expression will be evaluated by the directive, and it must always be written between ``"``.
+``ng-if`` is the AngularJS directive. It is always followed by an equals sign ``=`` which indicates that what comes after is an expression. This expression will be evaluated by the directive, and it must always be written between double quotes ``"``.
 
-``mycontext.parameters`` can be seen as an object which contains a list of context-related parameters that act as filters. The list of parameters must be written between ``[]``, and each separate parameter must be written between ``'``. For this tutorial, since it is the use of the ``Country`` filter that will determine which chart visualization option should be displayed, we need the ``mycontext.parameters`` object to use the filter parameter in our ``ng-if`` expression. ``mycontext`` must be replaced by the name of the page context.
+``mycontext.parameters`` can be seen as an object which contains a list of context-related parameters that act as filters. The list of parameters must be written between brackets ``[]``, and each separate parameter must be written between simple quotes``'``. For this tutorial, since it is the use of the ``Country`` filter that will determine which chart visualization option should be displayed, we need the ``mycontext.parameters`` object to use the filter parameter in our ``ng-if`` expression. ``mycontext`` must be replaced by the name of the page context.
 
 - ``refine`` indicates that we use a filter parameter.
 - ``.field_ID`` allows us to precise which specific filter we are going to use. ``field_ID`` must be replaced by the technical identifier of the field that is used as filter.
@@ -316,17 +321,17 @@ Basically, the ``ng-if`` syntax could be read as such: "If ``mycontext`` is filt
 
 .. rst-class:: block-step
 
-    10 + It's time to make the default chart disappear when the filter is used (and the 2nd option chart is displayed)! Basically, we want this expression to do the exact opposite of what the previous did. The good news is: there is a way to do so, that doesn't require the rewriting of a whole new expression. All we need is to reuse our previous expression, and add one single character at the beginning of it: ``!``.
+    10 + It's time to make the default chart disappear when the filter is used (and the 2nd option chart is displayed)! Basically, we want this expression to do the exact opposite of what the previous did. The good news is: there is a way to do so, that doesn't require the rewriting of a whole new expression. All we need is to reuse our previous expression, and add one single character at the beginning of it: an exclamation mark ``!``.
 
 .. code-block:: javascript
 
  ng-if="! mycontext.parameters['refine.field_ID']"
 
-``!``, placed at the beginning of an expression, reverses its behaviour. Basically, this expression could be read: "If ``mycontext`` is filtered with ``field_ID``, [DO NOT display the related HTML elements]".
+An exclamation mark ``!``, placed at the beginning of an expression, reverses its behaviour. Basically, this expression could be read: "If ``mycontext`` is filtered with ``field_ID``, [DO NOT display the related HTML elements]".
 
 .. rst-class:: block-step
 
-    11 + Add the ``ng-if`` directive into the ``div`` tag wrapping the first, default chart. Don't forget to replace ``mycontext`` and ``field_ID`` as in the previous expression.
+    11 + Add the ``ng-if`` directive into the ``div`` tag wrapping the first, default chart. Don't forget to replace ``mycontext`` and ``field_ID`` as in the previous expression (see step 8).
 
 .. admonition:: Note
    :class: note
@@ -391,12 +396,12 @@ Basically, the ``ng-if`` syntax could be read as such: "If ``mycontext`` is filt
 
 .. rst-class:: block-step
 
-    13 + At this point, the only thing left to do is to make our page prettier! We could start by organizing our HTML elements using Bootstap. For this tutorial, we are going to use a single row, that will be split in 2: the visualization will be on the left while the the filter will be displayed on the right. Considering the size of a visualization compared of that of a list of filters, we will use 9 columns for the visualization and 3 for the filters.
+    13 + At this point, the only thing left to do is to make the page prettier! Let's organize our HTML elements using Bootstap. For this tutorial, we are going to use a single row, that will be split in 2: the visualization will be on the left while the the filter will be displayed on the right. Considering the size of a visualization compared of that of a list of filters, we will use 9 columns for the visualization and 3 for the filters.
 
 .. admonition:: Important
    :class: important
 
-   If you are not familiar with Bootstrap and how it allows to organize a web page, check this tutorial (section "Format your dashboard: organize your widgets in rows and columns").
+   If you are not familiar with Bootstrap and how it allows to organize a web page, check our :doc:`"How to build a dashboard (part 2)" tutorial </dashboard/how_to_build_dashboard_part2>` (section "Format your dashboard: organize your widgets in rows and columns").
 
 .. code-block:: html
 
@@ -447,7 +452,7 @@ Basically, the ``ng-if`` syntax could be read as such: "If ``mycontext`` is filt
 
 .. rst-class:: block-step
 
-    14 + Eventually, let's add titles and textual indications, to make sure that everyone can understand how the page works, and what will happen when the filter is used.
+    14 + And finally, let's add titles and textual indications, to make sure that everyone understands how the page and its content work.
 
 .. code-block:: html
 
