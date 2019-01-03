@@ -56,12 +56,23 @@ During this tutorial, you will learn how to use 4 AngularJS directives:
 
    For this tutorial, we chose to put the tab titles in an ``<a>`` tag for accessibility reasons. That tag is also handy because it allows all titles to be displayed on the same line. If you feel comfortable enough with HTML/CSS, you can put your tab titles in another tag, but keep in mind that you will probably have to use more CSS to make them look like in this tutorial.
 
+.. admonition:: Note
+   :class: note
+
+   Depending on whether you try this tutorial on a new page or in an existing dashboard, you will perhaps see the ``<div class="container">`` and ``<div class="ods-box">`` tags: both are default tags that create the default frame of any OpenDataSoft page. If you want to keep this frame, make sure to add the code of the tutorial between these default tags.
+
 .. code-block:: html
 
- <div>
-   <a>1st tab title</a>
-   <a>2nd tab title</a>
-   <a>3rd tab title</a>
+ <div class="container-fluid">
+   <div class="ods-box">
+
+     <div>
+       <a>1st tab title</a>
+       <a>2nd tab title</a>
+       <a>3rd tab title</a>
+     </div>
+
+   </div>
  </div>
 
 .. rst-class:: img-hide
@@ -74,14 +85,26 @@ During this tutorial, you will learn how to use 4 AngularJS directives:
 
 .. code-block:: html
 
- <div>
-   Content of first tab
- </div>
- <div>
-   Content of second tab
- </div>
- <div>
-   Content of third tab
+ <div class="container-fluid">
+   <div class="ods-box">
+
+     <div>
+       <a>1st tab title</a>
+       <a>2nd tab title</a>
+       <a>3rd tab title</a>
+     </div>
+
+     <div>
+       Content of first tab
+     </div>
+     <div>
+       Content of second tab
+     </div>
+     <div>
+       Content of third tab
+     </div>
+
+   </div>
  </div>
 
 .. rst-class:: img-hide
@@ -109,7 +132,7 @@ During this tutorial, you will learn how to use 4 AngularJS directives:
 
  .tab {
     padding: 10px 20px; /* Gives some space to tab titles */
-    color: gray; /* Colors the text in grey */
+    color: gray; /* Colors the text in gray */
  }
 
 .. rst-class:: img-hide
@@ -122,10 +145,26 @@ During this tutorial, you will learn how to use 4 AngularJS directives:
 
 .. code-block:: html
 
- <div>
-   <a class="tab">1st tab title</a>
-   <a class="tab">2nd tab title</a>
-   <a class="tab">3rd tab title</a>
+ <div class="container-fluid">
+   <div class="ods-box">
+
+     <div>
+       <a class="tab">1st tab title</a>
+       <a class="tab">2nd tab title</a>
+       <a class="tab">3rd tab title</a>
+     </div>
+
+     <div>
+       Content of first tab
+     </div>
+     <div>
+       Content of second tab
+     </div>
+     <div>
+       Content of third tab
+     </div>
+
+   </div>
  </div>
 
 .. rst-class:: img-hide
@@ -138,15 +177,27 @@ During this tutorial, you will learn how to use 4 AngularJS directives:
 
 .. code-block:: html
 
- <div class="ods-box">
-   <div>
-     Content of first tab
-   </div>
-   <div>
-     Content of second tab
-   </div>
-   <div>
-     Content of third tab
+ <div class="container-fluid">
+   <div class="ods-box">
+
+     <div>
+       <a class="tab">1st tab title</a>
+       <a class="tab">2nd tab title</a>
+       <a class="tab">3rd tab title</a>
+     </div>
+
+     <div class="ods-box">
+       <div>
+         Content of first tab
+       </div>
+       <div>
+         Content of second tab
+       </div>
+       <div>
+         Content of third tab
+       </div>
+     </div>
+
    </div>
  </div>
 
@@ -181,13 +232,13 @@ First thing first: let's take a look at the syntax to understand how to use the 
 
  ng-click="myvariable = 'myvalue'"
 
-``ng-click`` is the AngularJS directive. It is always followed by ``=`` which indicates that what comes after is an expression. This expression will be evaluated by the directive, and it must always be written between ``"``.
+``ng-click`` is the AngularJS directive. It is always followed by an equals sign ``=`` which indicates that what comes after is an expression. This expression will be evaluated by the directive, and it must always be written between double quotes ``"``.
 
 In the expression, we will assign a value to a variable. At this point, neither the variable nor the value exist, we must create them.
 
 - The variable comes first. The variable is the link between all the AngularJS directives that will be used throughout this tutorial. Choose a name that is self-explanatory, to make sure that your code can be understood by someone else. In this tutorial, we will name the variable ``tabselector``.
-- Second comes a ``=`` which separates the variable from the value.
-- Third comes the value. It must always be written between ``'``. The value is the identifier of a tab. Each tab that is created must have its very own identifier. There again, make sure that the name of the value is self-explanatory. In this tutorial, we will have 3 values for the 3 tabs, and we will name them ``firsttab``, ``secondtab`` and ``thirdtab``.
+- Second comes an equals sign ``=`` which separates the variable from the value.
+- Third comes the value. It must always be written between single quotes ``'``. The value is the identifier of a tab. Each tab that is created must have its very own identifier. There again, make sure that the name of the value is self-explanatory. In this tutorial, we will have 3 values for the 3 tabs, and we will name them ``firsttab``, ``secondtab`` and ``thirdtab``.
 
 .. rst-class:: block-step
 
@@ -195,10 +246,28 @@ In the expression, we will assign a value to a variable. At this point, neither 
 
 .. code-block:: html
 
- <div>
-   <a class="tab" ng-click="tabselector = 'firsttab'">1st tab title</a>
-   <a class="tab" ng-click="tabselector = 'secondtab'">2nd tab title</a>
-   <a class="tab" ng-click="tabselector = 'thirdtab'">3rd tab title</a>
+ <div class="container-fluid">
+   <div class="ods-box">
+
+     <div>
+       <a class="tab" ng-click="tabselector = 'firsttab'">1st tab title</a>
+       <a class="tab" ng-click="tabselector = 'secondtab'">2nd tab title</a>
+       <a class="tab" ng-click="tabselector = 'thirdtab'">3rd tab title</a>
+     </div>
+
+     <div class="ods-box">
+       <div>
+         Content of first tab
+       </div>
+       <div>
+         Content of second tab
+       </div>
+       <div>
+         Content of third tab
+       </div>
+     </div>
+
+   </div>
  </div>
 
 .. rst-class:: img-hide
@@ -207,7 +276,7 @@ In the expression, we will assign a value to a variable. At this point, neither 
 
 .. rst-class:: block-step
 
-    10 + On to ``ng-if`` now! This directive is based on a condition: if the condition is verified, then its content is displayed. In our case, ``ng-if`` will allow us to display the right tab content when clicking on a tab title.
+    10 + On to ``ng-if`` now! The ``ng-if`` directive is a conditional expression that determines whether an HTML element should be displayed or not. In our case, ``ng-if`` will allow us to display the right tab content when clicking on a tab title.
 
 Let's take a look at the syntax to understand how to use the ``ng-if`` directive.
 
@@ -215,31 +284,43 @@ Let's take a look at the syntax to understand how to use the ``ng-if`` directive
 
  ng-if="myvariable == 'myvalue'"
 
-The structure of the ``ng-if`` directive is the same as for ``ng-click``. The name of the directive is followed by ``=`` and the expression that will be evaluated by the ``ng-if`` directive is written between ``"``.
+The structure of the ``ng-if`` directive is the same as for ``ng-click``. The name of the directive is followed by an equals sign ``=`` and the expression that will be evaluated by the ``ng-if`` directive is written between double quotes ``"``.
 
 But the syntax differs a little bit. In the expression,
 
 - The variable is the same we created in step 8.
-- Here is where the syntax differs: this time, the variable and value must be separated by ``==``. It indicates that we express a condition.
-- The value (written between ``'``) is the same we created in step 8.
+- Here is where the syntax differs: this time, the variable and value must be separated by 2 equals signs ``==``. It indicates that we express a condition.
+- The value (written between single quotes ``'``) is the same we created in step 8.
 
-Basically, the ``ng-if`` syntax could be read as such: "If ``myvariable`` equals ``myvalue``, [display the content of ``myvalue``]".
+Basically, the ``ng-if`` syntax could be read as such: "If ``myvariable`` equals ``myvalue``, [display the content of the HTML element corresponding to ``myvalue``]".
 
 .. rst-class:: block-step
 
-    11 + Add the ``ng-if`` variable in the HTML ``<div>`` tag of each tab content. Don't forget to put all 3 values to match the 3 tab contents. At this point, we have indicated AngularJS which tab content to display depending on which tab title is selected.
+    11 + Add the ``ng-if`` directive in the HTML ``<div>`` tag of each tab content. Don't forget to put all 3 values to match the 3 tab contents. At this point, we have indicated AngularJS which tab content to display depending on which tab title is selected.
 
 .. code-block:: html
 
- <div class="ods-box">
-   <div ng-if="tabselector == 'firsttab'">
-     Content of first tab
-   </div>
-   <div ng-if="tabselector == 'secondtab'">
-     Content of second tab
-   </div>
-   <div ng-if="tabselector == 'thirdtab'">
-     Content of third tab
+ <div class="container-fluid">
+   <div class="ods-box">
+
+     <div>
+       <a class="tab" ng-click="tabselector = 'firsttab'">1st tab title</a>
+       <a class="tab" ng-click="tabselector = 'secondtab'">2nd tab title</a>
+       <a class="tab" ng-click="tabselector = 'thirdtab'">3rd tab title</a>
+     </div>
+
+     <div class="ods-box">
+       <div ng-if="tabselector == 'firsttab'">
+         Content of first tab
+       </div>
+       <div ng-if="tabselector == 'secondtab'">
+         Content of second tab
+       </div>
+       <div ng-if="tabselector == 'thirdtab'">
+         Content of third tab
+       </div>
+     </div>
+
    </div>
  </div>
 
@@ -262,15 +343,20 @@ The syntax of the ``ng-init`` directive is exactly the same as for ``ng-click`` 
 In the expression:
 
 - The variable is the same we created in step 8 and have been using since.
-- The value (written between ``'``) is the identifier of the tab which content will be display by default.
+- The value (written between single quotes ``'``) is the identifier of the tab which content will be display by default.
 
 .. rst-class:: block-step
 
-    13 + Add the ``ng-init`` variable in an HTML tag that wraps the whole code of the tabs. For this tutorial, we are going to put ``ng-init`` in the default ``<div class="ods-box">`` tag that is by default in all OpenDataSoft page (right below ``<div class="container">`` - both tags being the default frame of any OpenDataSoft page). At this point, our tabs are fully functionable!
+    13 + Add the ``ng-init`` directive in an HTML tag that wraps the whole code of the tabs. For this tutorial, since we created a whole new page, our whole page code is already wrapped in 2 default frame tags: ``<div class="container-fluid">`` and ``<div class="ods-box">``. We will thus put ``ng-init`` in the default ``<div class="ods-box">`` tag. At this point, our tabs are fully functional!
+
+.. admonition:: Note
+   :class: note
+
+   If you did not create a whole new page for this tutorial and do not have these default frame tags, you could add regular ``<div>`` tag to wrap the tabs code, and add the ``ng-init`` directive in it.
 
 .. code-block:: html
 
- <div class="container">
+ <div class="container-fluid">
    <div class="ods-box" ng-init="tabselector = 'firsttab'">
 
      <div>
@@ -323,7 +409,7 @@ In the expression:
 
 .. rst-class:: block-step
 
-    16 + Go back to the HTML section of the page you are working on. We will now apply our CSS style using our fourth (and last!) AngularJS variable: ``ng-class``. This variable is used to apply a CSS style depending on an expression. In our case, ``ng-class`` will be used to apply a particular style to a tab title when it is selected.
+    16 + Go back to the HTML section of the page you are working on. We will now apply our CSS style using our fourth (and last!) AngularJS directive: ``ng-class``. This directive is a conditional expression that determines whether a CSS class will apply on an HTML element or not. In our case, ``ng-class`` will be used to apply a particular style to a tab title when it is selected.
 
 Let's take a look at the syntax to understand how to use the ``ng-class`` directive.
 
@@ -331,16 +417,16 @@ Let's take a look at the syntax to understand how to use the ``ng-class`` direct
 
  ng-class="{'mycssclass' : myvariable == 'myvalue'}"
 
-The structure of the ``ng-class`` directive is the same as for the other directives: the name of the directive is followed right after by ``=``, and the expression that will be evaluated by the directive is written between ``"``.
+The structure of the ``ng-class`` directive is the same as for the other directives: the name of the directive is followed right after by an equals sign ``=``, and the expression that will be evaluated by the directive is written between double quotes ``"``.
 
 But here is how the expression should be for this directive:
 
-- The expression must also be enclosed between ``{}``.
-- Inside the ``{}``, first comes the name of the CSS class that should be used. It must be writtent between ``'``.
-- Right after the name of the CSS class, there must be ``:``.
-- Then comes the variable/value part that is exactly like the ``ng-if`` expression (see step 10). We should find the name of the variable as well as the name of the value (written between ``'``). The variable and value must be separated by ``==``.
+- The expression must also be enclosed between curly brackets ``{}``.
+- Inside the curly brackets ``{}``, first comes the name of the CSS class that should be used. It must be written between single quotes ``'``.
+- Right after the name of the CSS class, there must be a colon ``:``.
+- Then comes the variable/value part that is exactly like the ``ng-if`` expression (see step 10). We should find the name of the variable as well as the name of the value (written between single quotes ``'``). The variable and value must be separated by 2 equals signs ``==``.
 
-Basically, the ``ng-class`` syntax could be read as such: "``mycssclass`` must be used for when ``myvariable`` equals ``myvalue``".
+Basically, the ``ng-class`` syntax could be read as such: "``mycssclass`` must be used when ``myvariable`` equals ``myvalue``".
 
 .. rst-class:: block-step
 
@@ -348,10 +434,28 @@ Basically, the ``ng-class`` syntax could be read as such: "``mycssclass`` must b
 
 .. code-block:: html
 
- <div>
-   <a class="tab" ng-click="tabselector = 'firsttab'" ng-class="{'activetab' : tabselector == 'firsttab'}">1st tab title</a>
-   <a class="tab" ng-click="tabselector = 'secondtab'" ng-class="{'activetab' : tabselector == 'secondtab'}">2nd tab title</a>
-   <a class="tab" ng-click="tabselector = 'thirdtab'" ng-class="{'activetab' : tabselector == 'thirdtab'}">3rd tab title</a>
+ <div class="container-fluid">
+   <div class="ods-box" ng-init="tabselector = 'firsttab'">
+
+     <div>
+       <a class="tab" ng-click="tabselector = 'firsttab'" ng-class="{'activetab' : tabselector == 'firsttab'}">1st tab title</a>
+       <a class="tab" ng-click="tabselector = 'secondtab'" ng-class="{'activetab' : tabselector == 'secondtab'}">2nd tab title</a>
+       <a class="tab" ng-click="tabselector = 'thirdtab'" ng-class="{'activetab' : tabselector == 'thirdtab'}">3rd tab title</a>
+     </div>
+
+     <div class="ods-box">
+       <div ng-if="tabselector == 'firsttab'">
+         Content of first tab
+       </div>
+       <div ng-if="tabselector == 'secondtab'">
+         Content of second tab
+       </div>
+       <div ng-if="tabselector == 'thirdtab'">
+         Content of third tab
+       </div>
+     </div>
+
+   </div>
  </div>
 
 .. rst-class:: img-hide
@@ -431,7 +535,7 @@ Basically, the ``ng-class`` syntax could be read as such: "``mycssclass`` must b
 
     20 + There we go! We have created our very own tabs! The only thing left to do is to replace every example text by real content.
 
-You are free to choose the tab titles and to add your own tab contents. For this tutorial, will complete the tabs using the `Shanghai World University Ranking <https://data.opendatasoft.com/explore/dataset/shanghai-world-university-ranking%40public-us/>`_ dataset. The first tab will contain the table visualization, the second tab will contain a map created with the Map Builder and the third tab will contain a chart visualization. Each tab title will of course indicate what the tab content is about, and they will be preceded by a `Font Awesome <https://fontawesome.com/>`_ icon (just to spice things up a bit!).
+You are free to choose the tab titles and to add your own tab contents. For this tutorial, we will complete the tabs using the `Shanghai World University Ranking <https://data.opendatasoft.com/explore/dataset/shanghai-world-university-ranking%40public>`_ dataset. The first tab will contain the table visualization, the second tab will contain a map created with the Map Builder and the third tab will contain a chart visualization. Each tab title will of course indicate what the tab content is about, and they will be preceded by a `Font Awesome <https://fontawesome.com/>`_ icon (just to spice things up a bit!).
 
 .. code-block:: html
 
