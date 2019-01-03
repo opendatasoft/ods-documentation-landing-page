@@ -77,7 +77,7 @@ During this tutorial, you will learn how to use 4 AngularJS directives:
 
 .. rst-class:: img-hide
 
-    SCREENSHOT
+    .. image:: images/steps_m1/step1.png
 
 .. rst-class:: block-step
 
@@ -109,7 +109,7 @@ During this tutorial, you will learn how to use 4 AngularJS directives:
 
 .. rst-class:: img-hide
 
-    SCREENSHOT
+    .. image:: images/steps_m1/step2.png
 
 .. rst-class:: block-step
 
@@ -117,7 +117,7 @@ During this tutorial, you will learn how to use 4 AngularJS directives:
 
 .. rst-class:: img-hide
 
-    SCREENSHOT
+    .. image:: images/steps_m1/step3.png
 
 .. rst-class:: block-step
 
@@ -137,7 +137,7 @@ During this tutorial, you will learn how to use 4 AngularJS directives:
 
 .. rst-class:: img-hide
 
-    SCREENSHOT
+    .. image:: images/steps_m1/step4.png
 
 .. rst-class:: block-step
 
@@ -169,7 +169,7 @@ During this tutorial, you will learn how to use 4 AngularJS directives:
 
 .. rst-class:: img-hide
 
-    SCREENSHOT
+    .. image:: images/steps_m1/step5.png
 
 .. rst-class:: block-step
 
@@ -203,7 +203,7 @@ During this tutorial, you will learn how to use 4 AngularJS directives:
 
 .. rst-class:: img-hide
 
-    SCREENSHOT
+    .. image:: images/steps_m1/step6.png
 
 .. rst-class:: block-step
 
@@ -211,7 +211,7 @@ During this tutorial, you will learn how to use 4 AngularJS directives:
 
 .. rst-class:: img-hide
 
-    SCREENSHOT
+    .. image:: images/steps_m1/step7.png
 
 
 
@@ -272,7 +272,7 @@ In the expression, we will assign a value to a variable. At this point, neither 
 
 .. rst-class:: img-hide
 
-    SCREENSHOT
+    .. image:: images/steps_m1/step9.png
 
 .. rst-class:: block-step
 
@@ -326,7 +326,7 @@ Basically, the ``ng-if`` syntax could be read as such: "If ``myvariable`` equals
 
 .. rst-class:: img-hide
 
-    SCREENSHOT
+    .. image:: images/steps_m1/step11.png
 
 .. rst-class:: block-step
 
@@ -382,19 +382,19 @@ In the expression:
 
 .. rst-class:: img-hide
 
-    SCREENSHOT
+    .. image:: images/steps_m1/step13.png
 
 .. rst-class:: block-step
 
-    14 + Although our tabs fully work by now, there is still something that is missing. Nothing indicates which tab is selected! Let's do this, starting with the creation of a "selected tab" style. Go to the CSS section of the page you are working on.
+    14 + Check the preview. Although our tabs fully work by now, there is still something that is missing. Nothing indicates which tab is selected! Let's do this, starting with the creation of a "selected tab" style.
 
 .. rst-class:: img-hide
 
-    SCREENSHOT
+    .. image:: images/steps_m1/step14.png
 
 .. rst-class:: block-step
 
-    15 + Create a distinct style which easily indicates which tab is selected. Here, we will call this CSS class ``activetab`` and play with both the text color and a bold border under the text.
+    15 + Go back to the CSS section of the page you are working on, to create a distinct style which easily indicates which tab is selected. Here, we will call this CSS class ``activetab`` and play with both the text color and a bold border under the text.
 
 .. code-block:: css
 
@@ -405,7 +405,7 @@ In the expression:
 
 .. rst-class:: img-hide
 
-    SCREENSHOT
+    .. image:: images/steps_m1/step15.png
 
 .. rst-class:: block-step
 
@@ -460,7 +460,7 @@ Basically, the ``ng-class`` syntax could be read as such: "``mycssclass`` must b
 
 .. rst-class:: img-hide
 
-    SCREENSHOT
+    .. image:: images/steps_m1/step17.png
 
 
 .. PART 2 - FINISHING TOUCHES:
@@ -489,7 +489,7 @@ Basically, the ``ng-class`` syntax could be read as such: "``mycssclass`` must b
 
 .. rst-class:: img-hide
 
-    SCREENSHOT
+    .. image:: images/steps_m1/step18.png
 
 .. rst-class:: block-step
 
@@ -529,7 +529,7 @@ Basically, the ``ng-class`` syntax could be read as such: "``mycssclass`` must b
 
 .. rst-class:: img-hide
 
-    SCREENSHOT
+    .. image:: images/steps_m1/step19.png
 
 .. rst-class:: block-step
 
@@ -639,9 +639,9 @@ You are free to choose the tab titles and to add your own tab contents. For this
 
 .. rst-class:: img-hide
 
-    SCREENSHOT
+    .. image:: images/steps_m1/step20.png
 
-
+|
 
 .. rst-class:: block-prerequisite-congratulation
 
