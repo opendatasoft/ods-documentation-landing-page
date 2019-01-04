@@ -50,7 +50,7 @@ In this tutorial, we will create a page comprised of a visualization and its rel
 
 .. rst-class:: block-step
 
-    1 + Let's start our page by adding the widget code of the visualization of our choice. Here, we chose to display a scatter plot chart representing the top 20 of the best universities in the ranking. For each university, the chart shows their average score.
+    1 + Let's start our page by adding the widget code of the visualization of our choice. Here, we chose to display a scatter plot chart representing the top 20 of the best countries in the ranking. For each country, the chart shows their average score.
 
 .. admonition:: Note
    :class: note
@@ -80,7 +80,7 @@ In this tutorial, we will create a page comprised of a visualization and its rel
 
 .. rst-class:: block-step
 
-    2 + Before going any further, declare the unique context of your page, using the `odsDatasetContext <https://help.opendatasoft.com/widgets/#/api/ods-widgets.directive:odsDatasetContext>`_ widget. This will allow our widgets to interact with one another -and it always is the proper way to build a dashboard.
+    2 + Before going any further, declare the unique context of your page, using the `odsDatasetContext <https://help.opendatasoft.com/widgets/#/api/ods-widgets.directive:odsDatasetContext>`_ widget. This will allow our widgets to interact with one another - and it always is the proper way to build a dashboard.
 
 .. admonition:: Important
    :class: important
@@ -145,13 +145,13 @@ In this tutorial, we will create a page comprised of a visualization and its rel
 
 .. rst-class:: block-step
 
-    4 + Click on :tutorial-keycap:`Preview`. Technically, everything works well: the chart indeed updates according to the chosen filter option. However, the filtered chart becomes completely useless, because it only displays one only point.
+    4 + Click on :tutorial-keycap:`Preview`. Technically, everything works well: the chart indeed updates according to the chosen filter option. However, the filtered chart becomes completely useless, because it only displays one single point.
 
 .. rst-class:: img-hide
 
     SCREENSHOT
 
-We need a second option visualization, that will only be displayed in case the filter is used. This second option visualization will replace the default, unfiltered chart that becomes useless once filtered. Let's do this!
+We need an alternative visualization, that will only be displayed if the filter is used. This alternative visualization will replace the default, unfiltered chart that becomes useless once filtered. Let's do this!
 
 
 
@@ -159,12 +159,12 @@ We need a second option visualization, that will only be displayed in case the f
 
 .. rst-class:: title-level-2
 
-    Add a 2nd option visualization, with AngularJS
+    Add an alternative visualization, with AngularJS
 
 
 .. rst-class:: block-step
 
-    5 + Before diving into AngularJS directives and expressions, let's add the widget code of our 2nd option visualization, right below the first one. Here, we chose to display a column chart representing the top 10 of the best universities in the ranking. For each university, the chart shows their average score. Keep in mind that this chart will only be displayed when the filter is used, meaning that the new 2nd option chart will always show the top 10 universities per chosen country.
+    5 + Before diving into AngularJS directives and expressions, let's add the widget code of our alternative visualization, right below the first one. Here, we chose to display a column chart representing the top 10 of the best universities in the ranking. For each university, the chart shows their average score. Keep in mind that this chart will only be displayed when the filter is used, meaning that the new 2nd option chart will always show the top 10 universities per chosen country.
 
 .. admonition:: Important
    :class: important
@@ -208,7 +208,7 @@ We need a second option visualization, that will only be displayed in case the f
 
 .. rst-class:: block-step
 
-    6 + Now is the time to tackle AngularJS! We will need to add an AngularJS directive to both visualizations: the default one (that should NOT be displayed if the filter is used) and the 2nd option chart (that should ONLY be displayed if the filter is used). Since any AngularJS directive must be added into an HTML tag, and seeing our code, the best way to do in order to keep our code clean is to add ``div`` tags. Wrap each chart between ``div`` tags.
+    6 + It is now time to tackle AngularJS! We will need to add an AngularJS directive to both visualizations: the default one (that should NOT be displayed if the filter is used) and the alternative chart (that should ONLY be displayed if the filter is used). Since any AngularJS directive must be added into an HTML tag, and seeing our code, the best way to do in order to keep our code clean is to add ``div`` tags. Wrap each chart between ``div`` tags.
 
 .. code-block:: html
 
@@ -251,7 +251,7 @@ We need a second option visualization, that will only be displayed in case the f
 
 .. rst-class:: block-step
 
-    7 + We now have a perfect place to write our AngularJS directives! Let's start with the 2nd option chart, the one that must only be displayed if the filter is used. To do so, we need to use the ``ng-if`` AngularJS directive. The ``ng-if`` directive is a conditional expression that determines whether an HTML element should be displayed or not.
+    7 + We now have a perfect place to write our AngularJS directives! Let's start with the alternative chart, the one that must only be displayed if the filter is used. To do so, we need to use the ``ng-if`` AngularJS directive. The ``ng-if`` directive is a conditional expression that determines whether an HTML element should be displayed or not.
 
 Let's take a look at the syntax of the expression we are going to use.
 
@@ -261,7 +261,7 @@ Let's take a look at the syntax of the expression we are going to use.
 
 ``ng-if`` is the AngularJS directive. It is always followed by an equals sign ``=`` which indicates that what comes after is an expression. This expression will be evaluated by the directive, and it must always be written between double quotes ``"``.
 
-``mycontext.parameters`` can be seen as an object which contains a list of context-related parameters that act as filters. The list of parameters must be written between brackets ``[]``, and each separate parameter must be written between simple quotes``'``. For this tutorial, since it is the use of the ``Country`` filter that will determine which chart visualization option should be displayed, we need the ``mycontext.parameters`` object to use the filter parameter in our ``ng-if`` expression. ``mycontext`` must be replaced by the name of the page context.
+``mycontext.parameters`` can be seen as an object which contains a list of context-related parameters that act as filters. The list of parameters must be written between brackets ``[]``, and each separate parameter must be written between single quotes``'``. For this tutorial, since it is the use of the ``Country`` filter that will determine which chart visualization option should be displayed, we need the ``mycontext.parameters`` object to use the filter parameter in our ``ng-if`` expression. ``mycontext`` must be replaced by the name of the page context.
 
 - ``refine`` indicates that we use a filter parameter.
 - ``.field_ID`` allows us to precise which specific filter we are going to use. ``field_ID`` must be replaced by the technical identifier of the field that is used as filter.
@@ -270,7 +270,7 @@ Basically, the ``ng-if`` syntax could be read as such: "If ``mycontext`` is filt
 
 .. rst-class:: block-step
 
-    8 + Add the ``ng-if`` directive into the ``div`` tag wrapping the 2nd option chart. Don't forget to replace ``mycontext`` by the name of page context (see step 2) and ``field_ID`` by the technical identifier of the dataset field that we use as filter (see step 3). In this tutorial, ``mycontext`` is replaced by ``worlduniversityranking`` and ``field_ID`` is replaced by ``country``.
+    8 + Add the ``ng-if`` directive into the ``div`` tag wrapping the alternative chart. Don't forget to replace ``mycontext`` with the name of page context (see step 2) and ``field_ID`` with the technical identifier of the dataset field that we use as filter (see step 3). In this tutorial, ``mycontext`` is replaced with ``worlduniversityranking`` and ``field_ID`` is replaced with ``country``.
 
 .. code-block:: html
 
@@ -281,21 +281,21 @@ Basically, the ``ng-if`` syntax could be read as such: "If ``mycontext`` is filt
     <div class="ods-box">
 
      <div>
-     <ods-chart align-month="true">
-        <ods-chart-query context="worlduniversityranking" field-x="country" maxpoints="20" sort="serie1-1">
-            <ods-chart-serie expression-y="total_score" chart-type="scatter" function-y="AVG" color="#FF515A" scientific-display="true">
-            </ods-chart-serie>
-        </ods-chart-query>
-     </ods-chart>
+       <ods-chart align-month="true">
+          <ods-chart-query context="worlduniversityranking" field-x="country" maxpoints="20" sort="serie1-1">
+              <ods-chart-serie expression-y="total_score" chart-type="scatter" function-y="AVG" color="#FF515A" scientific-display="true">
+              </ods-chart-serie>
+          </ods-chart-query>
+       </ods-chart>
      </div>
 
     <div ng-if="worlduniversityranking.parameters['refine.country']">
-    <ods-chart align-month="true">
+      <ods-chart align-month="true">
         <ods-chart-query context="worlduniversityranking" field-x="university_name" maxpoints="10" sort="serie1-1">
             <ods-chart-serie expression-y="total_score" chart-type="column" function-y="AVG" color="#FCD23B" scientific-display="true">
             </ods-chart-serie>
         </ods-chart-query>
-    </ods-chart>
+     </ods-chart>
     </div>
 
     <ods-facets context="worlduniversityranking">
@@ -313,7 +313,7 @@ Basically, the ``ng-if`` syntax could be read as such: "If ``mycontext`` is filt
 
 .. rst-class:: block-step
 
-    9 + Click on :tutorial-keycap:`Preview`: by default, our 2nd option chart is hidden. But when the filter is used, the chart appears!
+    9 + Click on :tutorial-keycap:`Preview`: by default, our alternative chart is hidden. But when the filter is used, it appears!
 
 .. rst-class:: img-hide
 
@@ -321,7 +321,7 @@ Basically, the ``ng-if`` syntax could be read as such: "If ``mycontext`` is filt
 
 .. rst-class:: block-step
 
-    10 + It's time to make the default chart disappear when the filter is used (and the 2nd option chart is displayed)! Basically, we want this expression to do the exact opposite of what the previous did. The good news is: there is a way to do so, that doesn't require the rewriting of a whole new expression. All we need is to reuse our previous expression, and add one single character at the beginning of it: an exclamation mark ``!``.
+    10 + It's time to make the default chart disappear when the filter is used (and the alternative chart is displayed)! Basically, we want this expression to do the exact opposite of what the previous did. The good news is: there is a way to do so, that doesn't require the rewriting of a whole new expression. All we need is to reuse our previous expression, and add one single character at the beginning of it: an exclamation mark ``!``.
 
 .. code-block:: javascript
 
@@ -347,21 +347,21 @@ An exclamation mark ``!``, placed at the beginning of an expression, reverses it
     <div class="ods-box">
 
      <div ng-if="! worlduniversityranking.parameters['refine.country']">
-     <ods-chart align-month="true">
-        <ods-chart-query context="worlduniversityranking" field-x="country" maxpoints="20" sort="serie1-1">
-            <ods-chart-serie expression-y="total_score" chart-type="scatter" function-y="AVG" color="#FF515A" scientific-display="true">
-            </ods-chart-serie>
-        </ods-chart-query>
-     </ods-chart>
+       <ods-chart align-month="true">
+          <ods-chart-query context="worlduniversityranking" field-x="country" maxpoints="20" sort="serie1-1">
+              <ods-chart-serie expression-y="total_score" chart-type="scatter" function-y="AVG" color="#FF515A" scientific-display="true">
+              </ods-chart-serie>
+          </ods-chart-query>
+       </ods-chart>
      </div>
 
     <div ng-if="worlduniversityranking.parameters['refine.country']">
-    <ods-chart align-month="true">
+      <ods-chart align-month="true">
         <ods-chart-query context="worlduniversityranking" field-x="university_name" maxpoints="10" sort="serie1-1">
             <ods-chart-serie expression-y="total_score" chart-type="column" function-y="AVG" color="#FCD23B" scientific-display="true">
             </ods-chart-serie>
         </ods-chart-query>
-    </ods-chart>
+      </ods-chart>
     </div>
 
     <ods-facets context="worlduniversityranking">
@@ -414,23 +414,23 @@ An exclamation mark ``!``, placed at the beginning of an expression, reverses it
     <div class="row">
 
       <div class="col-md-9">
-     <div ng-if="! worlduniversityranking.parameters['refine.country']">
-     <ods-chart align-month="true">
-        <ods-chart-query context="worlduniversityranking" field-x="country" maxpoints="20" sort="serie1-1">
-            <ods-chart-serie expression-y="total_score" chart-type="scatter" function-y="AVG" color="#FF515A" scientific-display="true">
-            </ods-chart-serie>
-        </ods-chart-query>
-     </ods-chart>
-     </div>
+        <div ng-if="! worlduniversityranking.parameters['refine.country']">
+          <ods-chart align-month="true">
+            <ods-chart-query context="worlduniversityranking" field-x="country" maxpoints="20" sort="serie1-1">
+              <ods-chart-serie expression-y="total_score" chart-type="scatter" function-y="AVG" color="#FF515A" scientific-display="true">
+              </ods-chart-serie>
+           </ods-chart-query>
+         </ods-chart>
+       </div>
 
-    <div ng-if="worlduniversityranking.parameters['refine.country']">
-    <ods-chart align-month="true">
-        <ods-chart-query context="worlduniversityranking" field-x="university_name" maxpoints="10" sort="serie1-1">
-            <ods-chart-serie expression-y="total_score" chart-type="column" function-y="AVG" color="#FCD23B" scientific-display="true">
-            </ods-chart-serie>
-        </ods-chart-query>
-    </ods-chart>
-    </div>
+       <div ng-if="worlduniversityranking.parameters['refine.country']">
+          <ods-chart align-month="true">
+           <ods-chart-query context="worlduniversityranking" field-x="university_name" maxpoints="10" sort="serie1-1">
+             <ods-chart-serie expression-y="total_score" chart-type="column" function-y="AVG" color="#FCD23B" scientific-display="true">
+             </ods-chart-serie>
+           </ods-chart-query>
+          </ods-chart>
+         </div>
        </div>
 
       <div class="col-md-3">
