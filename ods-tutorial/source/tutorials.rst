@@ -34,3 +34,4 @@ At the beginning of each tutorial, you will find:
    :caption: ★★★ Expert
 
    dashboard_modules/how_to_create_tabs
+   dashboard_modules/how_to_hide_or_show_widgets
