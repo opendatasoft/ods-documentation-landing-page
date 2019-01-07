@@ -1,13 +1,14 @@
 Welcome to the tutorials of OpenDataSoft!
 =========================================
 
-This documentation contains all OpenDataSoft tutorials. They consist in a sequence of steps leading to the creation of a deliverable using the OpenDataSoft platform.
+This documentation contains all OpenDataSoft tutorials. They consist in a sequence of steps leading to the creation of a deliverable using the OpenDataSoft platform. Most of the time, the deliverable is an HTML page.
 
 At the beginning of each tutorial, you will find:
 
-- the description of the deliverable as well as the list of goals for the tutorial,
-- a difficulty level,
-- an estimated time needed to complete the tutorial.
+- the difficulty level,
+- an estimated time needed to complete the tutorial,
+- the description of the deliverable,
+- and the list of what you will learn through the tutorial.
 
 .. admonition:: Important
    :class: important
@@ -40,11 +41,9 @@ At the beginning of each tutorial, you will find:
    :caption: ★★★ Advanced
 
    dashboard_modules/how_to_create_tabs
-   dashboard_modules/how_to_hide_or_show_widgets
+   dashboard_modules/how_to_make_visualizations_match_filters
 
 .. toctree::
    :hidden:
    :maxdepth: 1
    :caption: Expert
-
-   

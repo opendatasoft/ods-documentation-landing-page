@@ -792,7 +792,7 @@ In HTML code, this is what our dashboard will look like:
 
     27 + Save again and click the Open page button to see the final result!
 
-
+|
 
 .. rst-class:: block-prerequisite-congratulation
 
