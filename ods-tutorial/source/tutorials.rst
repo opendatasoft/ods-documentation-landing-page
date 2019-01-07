@@ -27,3 +27,10 @@ At the beginning of each tutorial, you will find:
    :caption: ★★☆ Intermediate
 
    dashboard/how_to_build_dashboard_part2
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: ★★★ Expert
+
+   dashboard_modules/how_to_create_tabs
