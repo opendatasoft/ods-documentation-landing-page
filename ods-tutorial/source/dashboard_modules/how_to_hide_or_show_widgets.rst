@@ -76,7 +76,7 @@ In this tutorial, we will create a page comprised of a visualization and its rel
 
 .. rst-class:: img-hide
 
-    SCREENSHOT
+    .. image:: images/steps_m2/step1.png
 
 .. rst-class:: block-step
 
@@ -109,11 +109,11 @@ In this tutorial, we will create a page comprised of a visualization and its rel
 
 .. rst-class:: img-hide
 
-    SCREENSHOT
+    .. image:: images/steps_m2/step2.png
 
 .. rst-class:: block-step
 
-    3 + Add a filter related to the chosen dataset, using the `odsFacets <https://help.opendatasoft.com/widgets/#/api/ods-widgets.directive:odsFacets>`_ widget. Here, we retrieve the Country filter that already is an existing facet on the dataset published on Data.
+    3 + Add a filter related to the chosen dataset, using the `odsFacets <https://help.opendatasoft.com/widgets/#/api/ods-widgets.directive:odsFacets>`_ widget. Here, we retrieved the Country filter that already is an existing facet on the dataset published on Data.
 
 .. code-block:: html
 
@@ -141,7 +141,7 @@ In this tutorial, we will create a page comprised of a visualization and its rel
 
 .. rst-class:: img-hide
 
-    SCREENSHOT
+    .. image:: images/steps_m2/step3.png
 
 .. rst-class:: block-step
 
@@ -149,7 +149,7 @@ In this tutorial, we will create a page comprised of a visualization and its rel
 
 .. rst-class:: img-hide
 
-    SCREENSHOT
+    .. image:: images/steps_m2/step4.png
 
 We need an alternative visualization, that will only be displayed if the filter is used. This alternative visualization will replace the default, unfiltered chart that becomes useless once filtered. Let's do this!
 
@@ -164,7 +164,7 @@ We need an alternative visualization, that will only be displayed if the filter 
 
 .. rst-class:: block-step
 
-    5 + Before diving into AngularJS directives and expressions, let's add the widget code of our alternative visualization, right below the first one. Here, we chose to display a column chart representing the top 10 of the best universities in the ranking. For each university, the chart shows their average score. Keep in mind that this chart will only be displayed when the filter is used, meaning that the new 2nd option chart will always show the top 10 universities per chosen country.
+    5 + Before diving into AngularJS directives and expressions, let's add the widget code of our alternative visualization, right below the first one. Here, we chose to display a column chart representing the top 10 of the best universities in the ranking. For each university, the chart shows their average score. Keep in mind that this chart will only be displayed when the filter is used, meaning that the new alternative chart will always show the top 10 universities per chosen country.
 
 .. admonition:: Important
    :class: important
@@ -204,7 +204,7 @@ We need an alternative visualization, that will only be displayed if the filter 
 
 .. rst-class:: img-hide
 
-    SCREENSHOT
+    .. image:: images/steps_m2/step5.png
 
 .. rst-class:: block-step
 
@@ -247,7 +247,7 @@ We need an alternative visualization, that will only be displayed if the filter 
 
 .. rst-class:: img-hide
 
-    SCREENSHOT
+    .. image:: images/steps_m2/step6.png
 
 .. rst-class:: block-step
 
@@ -261,7 +261,7 @@ Let's take a look at the syntax of the expression we are going to use.
 
 ``ng-if`` is the AngularJS directive. It is always followed by an equals sign ``=`` which indicates that what comes after is an expression. This expression will be evaluated by the directive, and it must always be written between double quotes ``"``.
 
-``mycontext.parameters`` can be seen as an object which contains a list of context-related parameters that act as filters. The list of parameters must be written between brackets ``[]``, and each separate parameter must be written between single quotes``'``. For this tutorial, since it is the use of the ``Country`` filter that will determine which chart visualization option should be displayed, we need the ``mycontext.parameters`` object to use the filter parameter in our ``ng-if`` expression. ``mycontext`` must be replaced by the name of the page context.
+``mycontext.parameters`` can be seen as an object which contains a list of context-related parameters that act as filters. The list of parameters must be written between brackets ``[ ]``, and each separate parameter must be written between single quotes ``'``. For this tutorial, since it is the use of the ``Country`` filter that will determine which chart visualization option should be displayed, we need the ``mycontext.parameters`` object to use the filter parameter in our ``ng-if`` expression. ``mycontext`` must be replaced by the name of the page context.
 
 - ``refine`` indicates that we use a filter parameter.
 - ``.field_ID`` allows us to precise which specific filter we are going to use. ``field_ID`` must be replaced by the technical identifier of the field that is used as filter.
@@ -309,7 +309,7 @@ Basically, the ``ng-if`` syntax could be read as such: "If ``mycontext`` is filt
 
 .. rst-class:: img-hide
 
-    SCREENSHOT
+    .. image:: images/steps_m2/step8.png
 
 .. rst-class:: block-step
 
@@ -317,7 +317,7 @@ Basically, the ``ng-if`` syntax could be read as such: "If ``mycontext`` is filt
 
 .. rst-class:: img-hide
 
-    SCREENSHOT
+    .. image:: images/steps_m2/step9.png
 
 .. rst-class:: block-step
 
@@ -375,7 +375,7 @@ An exclamation mark ``!``, placed at the beginning of an expression, reverses it
 
 .. rst-class:: img-hide
 
-    SCREENSHOT
+    .. image:: images/steps_m2/step11.png
 
 .. rst-class:: block-step
 
@@ -383,7 +383,7 @@ An exclamation mark ``!``, placed at the beginning of an expression, reverses it
 
 .. rst-class:: img-hide
 
-    SCREENSHOT
+    .. image:: images/steps_m2/step12.png
 
 
 
@@ -448,7 +448,7 @@ An exclamation mark ``!``, placed at the beginning of an expression, reverses it
 
 .. rst-class:: img-hide
 
-    SCREENSHOT
+    .. image:: images/steps_m2/step13.png
 
 .. rst-class:: block-step
 
@@ -517,10 +517,9 @@ An exclamation mark ``!``, placed at the beginning of an expression, reverses it
 
 .. rst-class:: img-hide
 
-    SCREENSHOT
+    .. image:: images/steps_m2/step14.png
 
-
-
+|
 
 .. rst-class:: block-prerequisite-congratulation
 
