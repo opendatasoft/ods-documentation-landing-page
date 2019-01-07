@@ -1,5 +1,5 @@
-How to make visualizations match filters
-========================================
+How to make visualizations match filters (with AngularJS)
+=========================================================
 
 
 .. role:: tutorial-keycap(emphasis)

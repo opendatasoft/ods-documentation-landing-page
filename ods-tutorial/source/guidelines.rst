@@ -5,8 +5,6 @@ Guidelines
 
    Difficulty levels
 
-All our tutorials are ranked by difficulty level. Read the quick guidelines below to know what to expect depending on the difficulty level.
-
 Most tutorials are ranked by the 3 difficulty levels below:
 
 - ★☆☆ **Beginners**: no specific knowledge of the OpenDataSoft platform required. Every step and element will be explained in details, although only a few technical elements will be introduced. The Beginner level is for anyone who wants to discover more technical features of the OpenDataSoft platform.
