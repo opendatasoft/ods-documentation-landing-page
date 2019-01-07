@@ -6,18 +6,24 @@ This documentation contains all OpenDataSoft tutorials. They consist in a sequen
 At the beginning of each tutorial, you will find:
 
 - the description of the deliverable as well as the list of goals for the tutorial,
-- a difficulty level:
-
-  - ★☆☆ Beginners
-  - ★★☆ Intermediate
-  - ★★★ Expert
-
+- a difficulty level,
 - an estimated time needed to complete the tutorial.
+
+.. admonition:: Important
+   :class: important
+
+   Do not hesitate to read the :doc:`tutorials guidelines <guidelines>` before choosing and following any tutorial. They especially contain more information about how the tutorials are ranked, and what is required and expected depending on the different difficulty levels.
 
 .. toctree::
    :hidden:
    :maxdepth: 1
-   :caption: ★☆☆ Beginners
+
+   guidelines
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: ★☆☆ Beginner
 
    dashboard/how_to_build_dashboard_part1
 
@@ -31,7 +37,14 @@ At the beginning of each tutorial, you will find:
 .. toctree::
    :hidden:
    :maxdepth: 1
-   :caption: ★★★ Expert
+   :caption: ★★★ Advanced
 
    dashboard_modules/how_to_create_tabs
    dashboard_modules/how_to_hide_or_show_widgets
+
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :caption: Expert
+
+   
