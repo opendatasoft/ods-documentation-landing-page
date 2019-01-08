@@ -7,7 +7,7 @@ How to make visualizations match filters (with AngularJS)
 
 .. rst-class:: header-information-tutorial
 
-    ★★★ Advanced - time: 45 minutes
+    ★★★ Advanced - time: 30 minutes
 
 *This tutorial will teach you how to create different visualizations options to match related filters. This can be useful especially with charts, since they can sometimes become useless once related filters are activated. This tutorial will be fully customizable and reusable in any dashboard or piece of content created with HTML/CSS on OpenDataSoft.*
 
