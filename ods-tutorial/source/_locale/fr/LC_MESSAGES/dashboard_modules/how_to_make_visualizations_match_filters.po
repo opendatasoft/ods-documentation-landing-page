@@ -1,0 +1,488 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Rev_FR1 <datawords.proofread.fr1@gmail.com>, 2019
+# Trad_FR1 <datawords.translator.fr1@gmail.com>, 2019
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Tutorials 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-08 10:37+0100\n"
+"PO-Revision-Date: 2019-01-08 09:37+0000\n"
+"Last-Translator: Trad_FR1 <datawords.translator.fr1@gmail.com>, 2019\n"
+"Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:2
+msgid "How to make visualizations match filters (with AngularJS)"
+msgstr ""
+"Créer des visualisations qui correspondent à des filtres (avec AngularJS)"
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:10
+msgid "★★★ Advanced - time: 30 minutes"
+msgstr "★★★ Avancé - durée : 30 minutes"
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:12
+msgid ""
+"*This tutorial will teach you how to create different visualizations options"
+" to match related filters. This can be useful especially with charts, since "
+"they can sometimes become useless once related filters are activated. This "
+"tutorial will be fully customizable and reusable in any dashboard or piece "
+"of content created with HTML/CSS on OpenDataSoft.*"
+msgstr ""
+"*Dans ce tutoriel, vous allez apprendre à créer différentes options de "
+"visualisations qui correspondent à des filtres associés. Cela peut être "
+"particulièrement utile avec les graphes, puisque ces derniers perdent de "
+"leur intérêt une fois les filtres associés activés. Ce tutoriel peut être "
+"entièrement personnalisé et réutilisé avec n'importe quel tableau de bord ou"
+" élément de contenu créé avec HTML/CSS sur OpenDataSoft.*"
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:16
+msgid "During this tutorial, you will learn:"
+msgstr "Au cours de ce tutoriel, vous allez apprendre :"
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:18
+msgid "how to use the ``ng-if`` AngularJS directive"
+msgstr "comment utiliser la directive AngularJS ``ng-if``"
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:19
+msgid ""
+"when and how to use the ``context.parameters`` object inside the ``ng-if`` "
+"directive"
+msgstr ""
+"quand et comment utiliser l'objet ``context.parameters`` dans la directive "
+"``ng-if``"
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:25
+msgid "**PREREQUISITES**"
+msgstr "**PRÉREQUIS**"
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:27
+msgid ""
+"In order to test this tutorial and/or integrate the hide/show configuration "
+"on widgets in an already existing page, you need to have access to the back "
+"office of an OpenDataSoft portal and be granted the \"Edit all pages\" "
+"permission."
+msgstr ""
+"Pour tester ce tutoriel et/ou intégrer la configuration masquer/afficher aux"
+" widgets d'une page existante, vous avez besoin d'un accès à l'interface "
+"d'administration d'un portail OpenDataSoft, ainsi que de la permission "
+"\"Éditer toutes les pages\"."
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:28
+msgid ""
+"Since this tutorial is labeled as \"Advanced\" in terms of difficulty level,"
+" we assume that you already know HTML and CSS well enough to recognize and "
+"understand their structures and how they work. Other more technical elements"
+" will however be explained in details."
+msgstr ""
+"Le niveau de difficulté de ce tutoriel étant \"Avancé\", nous partons du "
+"principe que vous connaissez suffisamment bien HTML et CSS pour reconnaître "
+"et comprendre leurs structures et fonctionnements respectifs. Toutefois, "
+"d'autres points plus techniques seront expliqués en détail."
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:29
+msgid ""
+"We highly recommend to follow the tutorial with the `Shanghai World "
+"University Ranking <https://data.opendatasoft.com/explore/dataset/shanghai-"
+"world-university-ranking%40public/>`_ dataset, used throughout the whole "
+"tutorial. If you however choose to follow the tutorial with another dataset,"
+" keep in mind that you will need to adapt each step."
+msgstr ""
+"Nous vous recommandons vivement de suivre ce tutoriel avec le jeu de données"
+" <https://data.opendatasoft.com/explore/dataset/shanghai-world-university-"
+"ranking%40public/>`_, qui est utilisé ici. Toutefois, si vous préférez "
+"choisir un autre jeu de données pour suivre le tutoriel, pensez à adapter "
+"chaque étape."
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:36
+msgid "Show all images"
+msgstr "Afficher toutes les images"
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:40
+msgid "Hide all images"
+msgstr "Masquer toutes les images"
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:47
+msgid "Create the base"
+msgstr "Créer la base"
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:49
+msgid ""
+"In this tutorial, we will create a page comprised of a visualization and its"
+" related dataset filter, using the `Shanghai World University Ranking "
+"<https://data.opendatasoft.com/explore/dataset/shanghai-world-university-"
+"ranking%40public/>`_ dataset that can be found on our OpenDataSoft data "
+"network."
+msgstr ""
+"Dans ce tutoriel, nous allons créer une page composée d'une visualisation et"
+" de son filtre de jeu de données associé à l'aide du jeu de données "
+"`Shanghai World University Ranking "
+"<https://data.opendatasoft.com/explore/dataset/shanghai-world-university-"
+"ranking%40public/>`, disponible sur notre réseau de données OpenDataSoft."
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:53
+msgid ""
+"1 + Let's start our page by adding the widget code of the visualization of "
+"our choice. Here, we chose to display a scatter plot chart representing the "
+"top 20 of the best countries in the ranking. For each country, the chart "
+"shows their average score."
+msgstr ""
+"1 + Commençons à créer notre page en ajoutant le code de widget de la "
+"visualisation souhaitée. Ici, nous avons choisi d'afficher un nuage de "
+"points représentant le top 20 des meilleurs pays du classement. Pour chaque "
+"pays, le graphe indique le score moyen."
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:55
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:336
+msgid "Note"
+msgstr "Remarque"
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:58
+msgid ""
+"Depending on whether you try this tutorial on a new page or in an existing "
+"dashboard, you will perhaps see the ``<div class=\"container\">`` and ``<div"
+" class=\"ods-box\">`` tags: both are default tags that create the default "
+"frame of any OpenDataSoft page. If you want to keep this frame, make sure to"
+" add the code of the tutorial between these default tags."
+msgstr ""
+"En fonction de l'environnement (nouvelle page ou tableau de bord existant) "
+"dans lequel vous effectuez ce tutoriel, vous pourrez peut-être voir les tags"
+" ``<div class=\"container\">`` et ``<div class=\"ods-box\">``. Il s'agit des"
+" tags par défaut qui créent le cadre par défaut d'une page OpenDataSoft. Si "
+"vous souhaitez conserver ce cadre, veillez à ajouter le code du tutoriel "
+"entre ces tags par défaut."
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:83
+msgid ""
+"2 + Before going any further, declare the unique context of your page, using"
+" the `odsDatasetContext <https://help.opendatasoft.com/widgets/#/api/ods-"
+"widgets.directive:odsDatasetContext>`_ widget. This will allow our widgets "
+"to interact with one another - and it always is the proper way to build a "
+"dashboard."
+msgstr ""
+"2 + Avant de continuer, déclarez le contexte unique de votre page à l'aide "
+"du widget `odsDatasetContext <https://help.opendatasoft.com/widgets/#/api"
+"/ods-widgets.directive:odsDatasetContext>`_. Cela va permettre à nos widgets"
+" d'interagir entre eux, et constitue une étape importante dans la création "
+"d'un tableau de bord."
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:85
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:169
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:401
+msgid "Important"
+msgstr "Important"
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:88
+msgid ""
+"Don't forget to delete the ``ods-dataset-context`` tag above the code of the"
+" chart widget. Also, replace the current context name (here, "
+"``shanghaiworlduniversityrankingpublic``) by the new one (here, "
+"``worlduniversityranking``)."
+msgstr ""
+"Pensez à supprimer le tag  ``ods-dataset-context`` au-dessus du code du "
+"widget de graphe. Remplacez également le nom du contexte actuel (ici, "
+"``shanghaiworlduniversityrankingpublic``) par le nouveau (ici "
+"``worlduniversityranking``)."
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:116
+msgid ""
+"3 + Add a filter related to the chosen dataset, using the `odsFacets "
+"<https://help.opendatasoft.com/widgets/#/api/ods-"
+"widgets.directive:odsFacets>`_ widget. Here, we retrieved the Country filter"
+" that already is an existing facet on the dataset published on Data."
+msgstr ""
+"3 + Ajoutez un filtre associé au jeu de données choisi à l'aide du widget "
+"`odsFacets <https://help.opendatasoft.com/widgets/#/api/ods-"
+"widgets.directive:odsFacets>`_. Ici, nous avons récupéré le filtre Country, "
+"qui est une facette existante du jeu de données publié sur Données."
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:148
+msgid ""
+"4 + Click on :tutorial-keycap:`Preview`. Technically, everything works well:"
+" the chart indeed updates according to the chosen filter option. However, "
+"the filtered chart becomes completely useless, because it only displays one "
+"single point."
+msgstr ""
+"4 + Cliquez sur :tutorial-keycap:`Aperçu`. D'un point de vue technique, tout"
+" fonctionne correctement : le graphe se met à jour en fonction de l'option "
+"de filtre choisie. Toutefois, le graphe filtré devient complètement inutile,"
+" puisqu'il n'affiche qu'un seul point. "
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:154
+msgid ""
+"We need an alternative visualization, that will only be displayed if the "
+"filter is used. This alternative visualization will replace the default, "
+"unfiltered chart that becomes useless once filtered. Let's do this!"
+msgstr ""
+"Nous avons besoin d'une autre visualisation, qui s'affiche uniquement si le "
+"filtre est utilisé. Cette visualisation alternative remplace celle par "
+"défaut, c'est-à-dire le graphe non filtré qui perd de son intérêt une fois "
+"filtré. C'est parti !"
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:162
+msgid "Add an alternative visualization, with AngularJS"
+msgstr "Ajouter une visualisation alternative avec AngularJS"
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:167
+msgid ""
+"5 + Before diving into AngularJS directives and expressions, let's add the "
+"widget code of our alternative visualization, right below the first one. "
+"Here, we chose to display a column chart representing the top 10 of the best"
+" universities in the ranking. For each university, the chart shows their "
+"average score. Keep in mind that this chart will only be displayed when the "
+"filter is used, meaning that the new alternative chart will always show the "
+"top 10 universities per chosen country."
+msgstr ""
+"5 + Avant d'explorer les expressions et directives AngularJS, ajoutons le "
+"code de widget de notre visualisation optionnelle juste en dessous du "
+"premier. Ici, nous avons choisi d’afficher un diagramme en bâtons "
+"représentant le top 10 des meilleures universités du classement. Pour chaque"
+" université, le score moyen est affiché dans le graphe. Gardez à l'esprit "
+"que ce graphe est uniquement affiché quand le filtre est utilisé, ce qui "
+"signifie que le nouveau graphe optionnel affichera toujours le top 10 des "
+"universités par pays choisi."
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:172
+msgid ""
+"Don't forget to clean the code and to replace the context name with the one "
+"we declared earlier (see step 2)."
+msgstr ""
+"N'oubliez pas d'effacer le code et de remplacer le nom du contexte par celui"
+" déclaré plus tôt (cf. étape 2)."
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:211
+msgid ""
+"6 + It is now time to tackle AngularJS! We will need to add an AngularJS "
+"directive to both visualizations: the default one (that should NOT be "
+"displayed if the filter is used) and the alternative chart (that should ONLY"
+" be displayed if the filter is used). Since any AngularJS directive must be "
+"added into an HTML tag, and seeing our code, the best way to do in order to "
+"keep our code clean is to add ``div`` tags. Wrap each chart between ``div`` "
+"tags."
+msgstr ""
+"6 + Le moment est venu de s'intéresser à AngularJS. Nous allons devoir "
+"ajouter une directive AngularJS aux deux visualisations : celle par défaut "
+"(qui NE doit PAS être affichée si le filtre est utilisé) et le graphe "
+"optionnel (qui doit UNIQUEMENT être affiché si le filtre est utilisé). Les "
+"directives AngularJS devant être ajoutées dans un tag HTML, la meilleure "
+"méthode pour ce faire après avoir observé le code est d'ajouter des tags  "
+"``div``. De cette façon, le code pourra rester propre. Enveloppez maintenant"
+" chaque graphe entre des tags ``div``.  "
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:254
+msgid ""
+"7 + We now have a perfect place to write our AngularJS directives! Let's "
+"start with the alternative chart, the one that must only be displayed if the"
+" filter is used. To do so, we need to use the ``ng-if`` AngularJS directive."
+" The ``ng-if`` directive is a conditional expression that determines whether"
+" an HTML element should be displayed or not."
+msgstr ""
+"7 + Nous disposons désormais de l'environnement idéal pour écrire nos "
+"directives AngularJS ! Commençons par le graphe alternatif, celui qui doit "
+"uniquement être affiché si le filtre est utilisé. Pour ce faire, nous devons"
+" utiliser la directive AngularJS ``ng-if``. Il s'agit d'une expression "
+"conditionnelle qui détermine si un élément HTML doit être affiché ou non."
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:256
+msgid "Let's take a look at the syntax of the expression we are going to use."
+msgstr "Observons la syntaxe de l'expression que nous allons utiliser."
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:262
+msgid ""
+"``ng-if`` is the AngularJS directive. It is always followed by an equals "
+"sign ``=`` which indicates that what comes after is an expression. This "
+"expression will be evaluated by the directive, and it must always be written"
+" between double quotes ``\"``."
+msgstr ""
+"``ng-click`` est la directive AngularJS. Elle est toujours suivie d'un signe"
+" égal, ``=``, qui indique que ce qui vient après est une expression. Cette "
+"expression sera évaluée par la directive et doit toujours se trouver entre "
+"des guillemets doubles ``\"``."
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:264
+msgid ""
+"``mycontext.parameters`` can be seen as an object which contains a list of "
+"context-related parameters that act as filters. The list of parameters must "
+"be written between brackets ``[ ]``, and each separate parameter must be "
+"written between single quotes ``'``. For this tutorial, since it is the use "
+"of the ``Country`` filter that will determine which chart visualization "
+"option should be displayed, we need the ``mycontext.parameters`` object to "
+"use the filter parameter in our ``ng-if`` expression. ``mycontext`` must be "
+"replaced by the name of the page context."
+msgstr ""
+"``mycontext.parameters``  peut être vu comme un objet qui contient une liste"
+" de paramètres en lien avec le contexte, qui jouent le rôle de filtres. La "
+"liste de paramètres doit être placée entre des crochets  ``[ ]``, et chaque "
+"paramètre doit être placé entre des guillemets simples ``'``. Dans le cadre "
+"de ce tutoriel, puisque c'est l'utilisation du filtre ``Country``qui va "
+"déterminer l'option de visualisation de graphe à afficher, nous avons besoin"
+" de l'objet ``mycontext.parameters`` pour utiliser le paramètre de filtre "
+"dans notre expression ``ng-if``. ``mycontext`` doit être remplacé par le nom"
+" du contexte de la page."
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:266
+msgid "``refine`` indicates that we use a filter parameter."
+msgstr "``refine`` indique que nous utilisons un paramètre de filtre."
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:267
+msgid ""
+"``.field_ID`` allows us to precise which specific filter we are going to "
+"use. ``field_ID`` must be replaced by the technical identifier of the field "
+"that is used as filter."
+msgstr ""
+"``.field_ID`` nous permet de préciser le filtre spécifique que nous allons "
+"appliqué. ``field_ID`` doit être remplacé par l'identifiant technique du "
+"champ utilisé comme filtre. "
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:269
+msgid ""
+"Basically, the ``ng-if`` syntax could be read as such: \"If ``mycontext`` is"
+" filtered with ``field_ID``, [display the related HTML elements]\"."
+msgstr ""
+"Pour faire simple, la syntaxe ``ng-if`` signifie : \" Si ``mycontext``  est "
+"filtré avec ``field_ID``, [les éléments HTML associés sont affichés] \"."
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:273
+msgid ""
+"8 + Add the ``ng-if`` directive into the ``div`` tag wrapping the "
+"alternative chart. Don't forget to replace ``mycontext`` with the name of "
+"page context (see step 2) and ``field_ID`` with the technical identifier of "
+"the dataset field that we use as filter (see step 3). In this tutorial, "
+"``mycontext`` is replaced with ``worlduniversityranking`` and ``field_ID`` "
+"is replaced with ``country``."
+msgstr ""
+"8 + Ajoutez la directive ``ng-if`` au tag ``div`` enveloppant le graphe "
+"alternatif. Pensez à remplacer ``mycontext`` par le nom du contexte de la "
+"page (cf. étape 2) et ``field_ID`` par l'identifiant technique du champ du "
+"jeu de données que nous utilisons en tant que filtre (cf. étape 3). Dans ce "
+"tutoriel, ``mycontext`` est remplacé par ``worlduniversityranking``, et "
+"``field_ID`` par ``country``."
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:316
+msgid ""
+"9 + Click on :tutorial-keycap:`Preview`: by default, our alternative chart "
+"is hidden. But when the filter is used, it appears!"
+msgstr ""
+"9 + Cliquez sur :tutorial-keycap:`Aperçu` : notre graphe optionnel est "
+"masqué par défaut. Mais une fois le filtre utilisé, il apparaît !"
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:324
+msgid ""
+"10 + It's time to make the default chart disappear when the filter is used "
+"(and the alternative chart is displayed)! Basically, we want this expression"
+" to do the exact opposite of what the previous did. The good news is: there "
+"is a way to do so, that doesn't require the rewriting of a whole new "
+"expression. All we need is to reuse our previous expression, and add one "
+"single character at the beginning of it: an exclamation mark ``!``."
+msgstr ""
+"10 + Il est temps de faire disparaître le graphe par défaut quand le filtre "
+"est utilisé (et le graphe alternatif affiché) ! Nous voulons simplement que "
+"cette expression fasse l'exact opposé de ce que nous avons fait "
+"précédemment. La bonne nouvelle ? Vous pouvez le faire sans avoir à écrire "
+"une toute nouvelle expression. Nous avons seulement besoin de réutiliser "
+"l'expression précédente et d'ajouter un seul caractère au début de celle-ci "
+": un point d'exclamation ``!``."
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:330
+msgid ""
+"An exclamation mark ``!``, placed at the beginning of an expression, "
+"reverses its behaviour. Basically, this expression could be read: \"If "
+"``mycontext`` is filtered with ``field_ID``, [DO NOT display the related "
+"HTML elements]\"."
+msgstr ""
+"Placé au début d'une expression, un point d'exclamation ``!`` inverse le "
+"comportement de celle-ci. Pour faire simple, l'expression signifie : \"Si "
+"``mycontext`` est filtré avec ``field_ID``, [les éléments HTML associés NE "
+"sont PAS affichés] \"."
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:334
+msgid ""
+"11 + Add the ``ng-if`` directive into the ``div`` tag wrapping the first, "
+"default chart. Don't forget to replace ``mycontext`` and ``field_ID`` as in "
+"the previous expression (see step 8)."
+msgstr ""
+"11 + Ajoutez la directive ``ng-if`` dans le tag ``div`` enveloppant le "
+"premier graphe par défaut. Pensez à remplacer ``mycontext`` et ``field_ID`` "
+"comme dans l'expression précédente (cf. étape 8)."
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:339
+msgid ""
+"You can also copy the previous ``ng-if`` directive with its expression, and "
+"add a ``!`` at the beginning."
+msgstr ""
+"Vous pouvez également copier la directive ``ng-if`` précédente avec son "
+"expression et ajouter ``!`` au début de celle-ci."
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:382
+msgid "12 + Click on :tutorial-keycap:`Preview`: it all works perfectly!"
+msgstr ""
+"12 + Cliquez sur :tutorial-keycap:`Aperçu` : tout fonctionne parfaitement !"
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:394
+msgid "Add the finishing touches"
+msgstr "Ajouter la touche finale"
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:399
+msgid ""
+"13 + At this point, the only thing left to do is to make the page prettier! "
+"Let's organize our HTML elements using Bootstap. For this tutorial, we are "
+"going to use a single row, that will be split in 2: the visualization will "
+"be on the left while the the filter will be displayed on the right. "
+"Considering the size of a visualization compared of that of a list of "
+"filters, we will use 9 columns for the visualization and 3 for the filters."
+msgstr ""
+"13 + À ce stade, il ne nous reste plus qu'à embellir la page ! Organisons "
+"nos éléments HTML à l'aide de Bootstrap. Dans le cadre de ce tutoriel, nous "
+"allons utiliser une seule ligne qui sera divisée en 2 : la visualisation se "
+"trouvera à gauche, tandis que le filtre s'affichera à droite. Compte tenu de"
+" la taille d'une visualisation par rapport à celle d'une liste de filtres, "
+"nous allons utiliser 9 colonnes pour la visualisation et 3 pour les filtres."
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:404
+msgid ""
+"If you are not familiar with Bootstrap and how it allows to organize a web "
+"page, check our :doc:`\"How to build a dashboard (part 2)\" tutorial "
+"</dashboard/how_to_build_dashboard_part2>` (section \"Format your dashboard:"
+" organize your widgets in rows and columns\")."
+msgstr ""
+"Si vous ne maîtrisez pas Bootstrap, ni la façon dont il organise une page "
+"Web, consultez notre tutoriel :doc:`\"Créer un tableau de bord (2e "
+"partie)\"</dashboard/how_to_build_dashboard_part2>` (section \"Mettre en "
+"forme votre tableau de bord : organiser vos widgets en lignes et en "
+"colonnes\")."
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:455
+msgid ""
+"14 + And finally, let's add titles and textual indications, to make sure "
+"that everyone understands how the page and its content work."
+msgstr ""
+"14 + Pour finir, ajoutons des titres et des indications textuelles pour "
+"garantir que tout le monde comprend le fonctionnement de la page et de son "
+"contenu."
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:526
+msgid "**CONGRATULATIONS!**"
+msgstr "**FÉLICITATIONS !**"
+
+#: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:528
+msgid ""
+"You have finished this tutorial and you now know how to create different "
+"visualizations options to make sure they match the filters of the page. And "
+"hopefully your now feel comfortable enough with the combination of ``ng-if``"
+" and ``context.parameters`` to be able to use it again on your own!"
+msgstr ""
+"Vous avez terminé ce tutoriel et savez maintenant comment créer différentes "
+"options de visualisations pour vous assurer qu'elles correspondent aux "
+"filtres de la page. De plus, vous devez suffisamment maîtriser la "
+"combinaison de ``ng-if`` et ``context.parameters`` pour l'utiliser à votre "
+"guise !"

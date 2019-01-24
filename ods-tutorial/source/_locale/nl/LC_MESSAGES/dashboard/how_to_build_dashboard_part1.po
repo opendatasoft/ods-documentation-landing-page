@@ -1,16 +1,20 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2018, OpenDataSoft
+# Copyright (C) 2019, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Tutorials package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2018
+# Translator_NL1 <datawords.translator.nl1@gmail.com>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Tutorials 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-13 21:42+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2018\n"
+"POT-Creation-Date: 2019-01-08 10:37+0100\n"
+"PO-Revision-Date: 2018-09-13 19:34+0000\n"
+"Last-Translator: Translator_NL1 <datawords.translator.nl1@gmail.com>, 2019\n"
 "Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -72,7 +76,7 @@ msgstr ""
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:29
 msgid ""
-"We highly recomment to follow the tutorial with the  `World Heritage List "
+"We highly recommend to follow the tutorial with the  `World Heritage List "
 "dataset published on our data network, Data "
 "<https://data.opendatasoft.com/explore/dataset/world-heritage-list%40public-"
 "us/map/?location=2,18.46273,-0.44037&basemap=mapbox.streets>`_. This dataset"
@@ -82,16 +86,16 @@ msgid ""
 " will also need to adapt your own page code for it to match your chosen "
 "dataset."
 msgstr ""
-"We raden sterk aan om de handleiding te volgen met de dataset `World "
-"Heritage List die gepubliceerd staat op ons datanetwerk, Data "
+"We raden sterk aan om de handleiding te volgen met de `World Heritage List "
+"dataset die op ons datanetwerk staat, Data "
 "<https://data.opendatasoft.com/explore/dataset/world-heritage-list%40public-"
 "us/map/?location=2,18.46273,-0.44037&basemap=mapbox.streets>`_. Deze dataset"
-" zal onze voorbeelddataset zijn die in de gehele handleiding zal worden "
-"gebruikt. Indien u er evenwel voor kiest om de handleiding met een andere "
-"dataset te volgen, zorg er dan voor dat u er een kiest met een "
-"Tabelweergave, alsook een Kaartweergave en een Analyseweergave. Ook zult u "
-"uw eigen paginacode moeten aanpassen zodat deze overeenstemt met de door u "
-"gekozen dataset."
+" is de dataset die als voorbeeld wordt gebruikt doorheen de volledige "
+"handleiding. Indien u er echter voor kiest om de handleiding met een andere "
+"dataset te volgen, zorg er dan voor dat u er een kiste met een Tabel-"
+"weergave, alsook een Kaart-weergave en een Analyse-weergave. U moet ook uw "
+"eigen paginacode aanpassen zodat deze overeenstemt met de door u gekozen "
+"dataset."
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:36
 msgid "Show all images"

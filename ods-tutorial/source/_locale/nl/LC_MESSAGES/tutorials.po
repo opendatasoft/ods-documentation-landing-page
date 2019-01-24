@@ -1,16 +1,19 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2018, OpenDataSoft
+# Copyright (C) 2019, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Tutorials package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Translator_NL1 <datawords.translator.nl1@gmail.com>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Tutorials 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-13 21:42+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Translator_NL1 <datawords.translator.nl1@gmail.com>, 2018\n"
+"POT-Creation-Date: 2019-01-08 10:37+0100\n"
+"PO-Revision-Date: 2018-09-13 19:42+0000\n"
+"Last-Translator: Translator_NL1 <datawords.translator.nl1@gmail.com>, 2019\n"
 "Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,40 +29,46 @@ msgstr "Welkom bij de handleidingen van OpenDataSoft!"
 msgid ""
 "This documentation contains all OpenDataSoft tutorials. They consist in a "
 "sequence of steps leading to the creation of a deliverable using the "
-"OpenDataSoft platform."
+"OpenDataSoft platform. Most of the time, the deliverable is an HTML page."
 msgstr ""
-"Deze documentatie bevat alle handleidingen van OpenDataSoft. Ze bestaan uit "
-"een opeenvolging van stappen die leiden tot het aanmaken van een resultaat "
-"door gebruik te maken van het OpenDataSoft-platform."
+"Deze documentatie bevat alle handleidingen over OpenDataSoft. Ze zijn "
+"opgebouwd uit een opeenvolging van stappen die leiden tot het komen tot een "
+"resultaat door gebruik te maken van het OpenDataSoft-portaal. In de meeste "
+"gevallen is het resultaat een HTML-pagina."
 
 #: ../../source/tutorials.rst:6
 msgid "At the beginning of each tutorial, you will find:"
 msgstr "Bij het begin van elke handleiding vindt u het volgende terug:"
 
 #: ../../source/tutorials.rst:8
-msgid ""
-"the description of the deliverable as well as the list of goals for the "
-"tutorial,"
-msgstr ""
-"de beschrijving van het resultaat, alsook de lijst met doelstellingen voor "
-"de handleiding,"
+msgid "the difficulty level,"
+msgstr "de moeilijkheidsgraad,"
 
 #: ../../source/tutorials.rst:9
-msgid "a difficulty level:"
-msgstr "een moeilijkheidsniveau:"
+msgid "an estimated time needed to complete the tutorial,"
+msgstr "de geschatte tijd die nodig is om de handleiding te doorlopen,"
+
+#: ../../source/tutorials.rst:10
+msgid "the description of the deliverable,"
+msgstr "de beschrijving van het resultaat,"
 
 #: ../../source/tutorials.rst:11
-msgid "★☆☆ Beginners"
-msgstr "★☆☆ Beginners"
-
-#: ../../source/tutorials.rst:12
-msgid "★★☆ Intermediate"
-msgstr "★★☆ Intermediate"
+msgid "and the list of what you will learn through the tutorial."
+msgstr "en de lijst van wat u met de handleiding zult leren."
 
 #: ../../source/tutorials.rst:13
-msgid "★★★ Expert"
-msgstr "★★★ Expert"
+msgid "Important"
+msgstr "Belangrijk"
 
-#: ../../source/tutorials.rst:15
-msgid "an estimated time needed to complete the tutorial."
-msgstr "een geschatte tijd die nodig is om de handleiding te voltooien."
+#: ../../source/tutorials.rst:16
+msgid ""
+"Do not hesitate to read the :doc:`tutorials guidelines <guidelines>` before "
+"choosing and following any tutorial. They especially contain more "
+"information about how the tutorials are ranked, and what is required and "
+"expected depending on the different difficulty levels."
+msgstr ""
+"Aarzel niet om de :doc:`handleidingsrichtlijnen <guidelines>` te lezen "
+"alvorens een handleiding te kiezen en te volgen. Ze bevatten meer informatie"
+" over hoe de handleidingen onderverdeeld zijn volgens moeilijkheidsgraad en "
+"wat nodig is en verwacht wordt afhankelijk van de verschillende "
+"moeilijkheidsniveaus."

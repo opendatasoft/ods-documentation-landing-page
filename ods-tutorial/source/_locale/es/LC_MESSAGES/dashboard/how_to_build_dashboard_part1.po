@@ -1,16 +1,20 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2018, OpenDataSoft
+# Copyright (C) 2019, OpenDataSoft
 # This file is distributed under the same license as the OpenDataSoft Tutorials package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2018
+# Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2019
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: OpenDataSoft Tutorials 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-13 21:42+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Super Traducteur <thibaut.dupre+shared@opendatasoft.com>, 2018\n"
+"POT-Creation-Date: 2019-01-08 10:37+0100\n"
+"PO-Revision-Date: 2018-09-13 19:34+0000\n"
+"Last-Translator: Translator_Data_ES1 <datawords.translator.es1@gmail.com>, 2019\n"
 "Language-Team: Spanish (https://www.transifex.com/opendatasoft/teams/57849/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -69,7 +73,7 @@ msgstr ""
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:29
 msgid ""
-"We highly recomment to follow the tutorial with the  `World Heritage List "
+"We highly recommend to follow the tutorial with the  `World Heritage List "
 "dataset published on our data network, Data "
 "<https://data.opendatasoft.com/explore/dataset/world-heritage-list%40public-"
 "us/map/?location=2,18.46273,-0.44037&basemap=mapbox.streets>`_. This dataset"
