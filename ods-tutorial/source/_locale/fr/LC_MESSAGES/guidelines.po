@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Trad_FR1 <datawords.translator.fr1@gmail.com>, 2019
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Tutorials 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-08 10:37+0100\n"
+"PO-Revision-Date: 2019-01-08 09:37+0000\n"
+"Last-Translator: Trad_FR1 <datawords.translator.fr1@gmail.com>, 2019\n"
+"Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../source/guidelines.rst:2
+msgid "Guidelines"
+msgstr "Instructions"
+
+#: ../../source/guidelines.rst:6
+msgid "Difficulty levels"
+msgstr "Niveaux de difficulté"
+
+#: ../../source/guidelines.rst:8
+msgid "Most tutorials are ranked by the 3 difficulty levels below:"
+msgstr ""
+"La plupart des tutoriels sont classés en fonction des 3 niveaux de "
+"difficulté ci-dessous :"
+
+#: ../../source/guidelines.rst:10
+msgid ""
+"★☆☆ **Beginner**: no specific knowledge of the OpenDataSoft platform "
+"required. Every step and element will be explained in details, although only"
+" a few technical elements will be introduced. The Beginner level is for "
+"anyone who wants to discover more technical features of the OpenDataSoft "
+"platform."
+msgstr ""
+"★☆☆ **Débutant** : aucune connaissance spécifique de la plateforme "
+"OpenDataSoft n'est requise. L'ensemble des étapes et éléments est expliqué "
+"en détail, même si quelques points techniques peuvent être introduits. Le "
+"niveau Débutant s'adresse aux personnes souhaitant découvrir davantage de "
+"fonctions techniques de la plateforme OpenDataSoft."
+
+#: ../../source/guidelines.rst:11
+msgid ""
+"★★☆ **Intermediate**: a good knowledge of the OpenDataSoft platform is a "
+"definite plus, but no technical background is required. Technical elements "
+"(e.g. widgets, HTML, CSS) will be introduced but explained in details. The "
+"Intermediate level is great for those who have already experimented with the"
+" platform and wish to be accompanied while learning about more technical "
+"topics and elements."
+msgstr ""
+"★★☆ **Intermédiaire** : une bonne connaissance de la plateforme OpenDataSoft"
+" est un plus, mais aucune compétence technique n'est requise. Des points "
+"techniques (p. ex. widgets, HTML, CSS) seront introduits, mais expliqués en "
+"détail. Le niveau Intermédiaire est idéal pour les personnes ayant déjà "
+"utilisé la plateforme et souhaitant être accompagnées dans leur "
+"apprentissage sur des points et sujets plus techniques."
+
+#: ../../source/guidelines.rst:12
+msgid ""
+"★★★ **Advanced**: a good knowledge of the OpenDataSoft platform and of the "
+"basics of HTML & CSS (what they are used for, how they work, what is the "
+"logic and syntax behind them) are required. Advanced technical elements "
+"(e.g. AngularJS) will be introduced but explained in details. The Advanced "
+"level is for the resourceful ones who want to extend their technical "
+"knowledge."
+msgstr ""
+"★★★ **Avancé** : une bonne connaissance de la plateforme OpenDataSoft, ainsi"
+" que des fondamentaux de HTML et CSS (rôles, fonctionnements, logiques et "
+"syntaxes associés) est requise. Des points techniques avancés (p. ex. "
+"AngularJS) seront introduits, mais expliqués en détail. Le niveau Avancé "
+"s'adresse aux plus ambitieux, qui souhaitent développer leurs connaissances "
+"techniques."
+
+#: ../../source/guidelines.rst:14
+msgid ""
+"These 3 levels are gradual, which means that one can start with Beginner "
+"tutorials and end up following Advanced tutorials after a while, once they "
+"have acquired more knowledge through the different tutorials."
+msgstr ""
+"Ces 3 niveaux sont progressifs : vous pouvez commencer par suivre des "
+"tutoriels de niveau Débutant, puis, au fil du temps, passer aux tutoriels de"
+" niveau Avancé grâce aux connaissances acquises via les différents "
+"tutoriels."
+
+#: ../../source/guidelines.rst:16
+msgid ""
+"A few tutorials are not ranked as the others. They are labeled **Expert**. "
+"These tutorials require a developed technical background. They include very "
+"advanced technical elements that will not be explained in details."
+msgstr ""
+"Quelques tutoriels ne sont pas classés dans ces catégories. Il s'agit des "
+"tutoriels **Expert**, qui requièrent de solides compétences techniques. En "
+"effet, ils abordent des points techniques très avancés qui ne sont pas "
+"expliqués en détail."

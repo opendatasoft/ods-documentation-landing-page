@@ -27,3 +27,18 @@ file_filter = source/_locale/<lang>/LC_MESSAGES/tutorials.po
 source_file = build/locale/tutorials.pot
 source_lang = en
 
+[documentation-5.guidelines]
+file_filter = source/_locale/<lang>/LC_MESSAGES/guidelines.po
+source_file = build/locale/guidelines.pot
+source_lang = en
+
+[documentation-5.dashboard_modules--how_to_create_tabs]
+file_filter = source/_locale/<lang>/LC_MESSAGES/dashboard_modules/how_to_create_tabs.po
+source_file = build/locale/dashboard_modules/how_to_create_tabs.pot
+source_lang = en
+
+[documentation-5.dashboard_modules--how_to_make_visualizations_match_filters]
+file_filter = source/_locale/<lang>/LC_MESSAGES/dashboard_modules/how_to_make_visualizations_match_filters.po
+source_file = build/locale/dashboard_modules/how_to_make_visualizations_match_filters.pot
+source_lang = en
+

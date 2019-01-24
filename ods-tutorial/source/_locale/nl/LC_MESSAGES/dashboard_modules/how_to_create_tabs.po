@@ -1,0 +1,693 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Translator_NL1 <datawords.translator.nl1@gmail.com>, 2019
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Tutorials 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-08 10:37+0100\n"
+"PO-Revision-Date: 2019-01-08 09:37+0000\n"
+"Last-Translator: Translator_NL1 <datawords.translator.nl1@gmail.com>, 2019\n"
+"Language-Team: Dutch (https://www.transifex.com/opendatasoft/teams/57849/nl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:2
+msgid "How to create tabs (with AngularJS)"
+msgstr "Hoe tabbladen aanmaken (met AngularJS)"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:10
+msgid "★★★ Advanced - time: 45 minutes"
+msgstr "★★★ Geavanceerd - tijd: 45 minuten"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:12
+msgid ""
+"*This tutorial will teach you how to create tabs using AngularJS. These tabs"
+" will be fully customizable and reusable in any dashboard or piece of "
+"content created with HTML/CSS on OpenDataSoft.*"
+msgstr ""
+"*In deze handleiding leert u hoe u tabbladen kunt aanmaken met AngularJS. "
+"Deze tabbladen zijn volledig gepersonaliseerd en kunnen in elke dashboard of"
+" stuk content gebruikt worden dat op OpenDataSoft is aangemaakt met "
+"HTML/CSS.*"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:16
+msgid ""
+"During this tutorial, you will learn how to use 4 AngularJS directives:"
+msgstr ""
+"In deze handleiding leert u hoe u 4 AngularJS-richtlijnen moet gebruiken:"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:18
+msgid "``ng-if``"
+msgstr "``ng-if``"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:19
+msgid "``ng-click``"
+msgstr "``ng-click``"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:20
+msgid "``ng-class``"
+msgstr "``ng-class``"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:21
+msgid "``ng-init``"
+msgstr "``ng-init``"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:26
+msgid "**PREREQUISITES**"
+msgstr "**VOORVEREISTEN**"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:28
+msgid ""
+"In order to test this tutorial and/or integrate the tabs in an already "
+"existing page, you need to have access to the back office of an OpenDataSoft"
+" portal and be granted the \"Edit all pages\" permission."
+msgstr ""
+"Om deze handleiding uit te testen en/of de tabbladen in een reeds bestaande "
+"pagina te integreren, moet u toegang hebben tot de back office van een "
+"OpenDataSoft-portaal en moet u de toelating \"Alle pagina's bewerken\" "
+"hebben."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:29
+msgid ""
+"Since this tutorial is labeled as \"Advanced\" in terms of difficulty level,"
+" we assume that you already know HTML and CSS well enough to recognize and "
+"understand their structures and how they work. Other more technical elements"
+" will however be explained in details."
+msgstr ""
+"Aangezien deze handleiding aangemerkt staat als \"Geavanceerd\" in termen "
+"van moeilijkheidsgraad, nemen we aan dat u al voldoende vertrouwd bent met "
+"HTML en CSS om de structuren ervan te herkennen en te begrijpen en om te "
+"weten hoe ze werken. Andere meer technische elementen zullen echter "
+"gedetailleerd worden uitgelegd."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:36
+msgid "Show all images"
+msgstr "Alle afbeeldingen tonen"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:40
+msgid "Hide all images"
+msgstr "Alle afbeeldingen verbergen"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:47
+msgid "Create the structure"
+msgstr "De structuur aanmaken"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:52
+msgid ""
+"1 + In this tutorial, we will create 3 tabs, considering that each tab is "
+"comprised of a clickable tab title and the content of the tab. In our code, "
+"we will manage the tab titles on the one hand and the tab contents on the "
+"other hand. Let's start with the structure of our tab titles! Put each tab "
+"title in an ``<a>`` tag, and all ``<a>`` tags into a ``<div>`` tag."
+msgstr ""
+"1 + In deze handleiding maken we 3 tabbladen aan, waarbij we ervan uitgaan "
+"dat elk tabblad bestaat uit een tabbladtitel die kan worden aangeklikt en de"
+" content van het tabblad. In onze code zullen we enerzijds de tabbladtitels "
+"en anderzijds de tabbladcontent beheren. Laten we beginnen met de structuur "
+"van onze tabbladtitels! Plaats elke tabbladtitel in een ``<a>`` tag, and all"
+" ``<a>`` tags into a ``<div>`` tag."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:54
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:59
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:126
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:352
+msgid "Note"
+msgstr "Opmerking"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:57
+msgid ""
+"For this tutorial, we chose to put the tab titles in an ``<a>`` tag for "
+"accessibility reasons. That tag is also handy because it allows all titles "
+"to be displayed on the same line. If you feel comfortable enough with "
+"HTML/CSS, you can put your tab titles in another tag, but keep in mind that "
+"you will probably have to use more CSS to make them look like in this "
+"tutorial."
+msgstr ""
+"Voor deze handleiding kiezen we ervoor om de tabbladtitels omwille van "
+"toegankelijkheidsredenen in een ``<a>`` tag te plaatsen. Deze tag is ook "
+"handig omdat hij toelaat dat alle titels op dezelfde lijn worden "
+"weergegeven. Wanneer u denkt voldoende vertrouwd te zijn met HTML/CSS, kunt "
+"u uw tabbladtitels in een andere tag plaatsen, maar denk eraan dat u "
+"waarschijnlijk meer CSS zal moeten gebruiken om ze er te laten uitzien zoals"
+" in deze handleiding."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:62
+msgid ""
+"Depending on whether you try this tutorial on a new page or in an existing "
+"dashboard, you will perhaps see the ``<div class=\"container\">`` and ``<div"
+" class=\"ods-box\">`` tags: both are default tags that create the default "
+"frame of any OpenDataSoft page. If you want to keep this frame, make sure to"
+" add the code of the tutorial between these default tags."
+msgstr ""
+"Afhankelijk van het feit of u deze handleiding uitprobeert op een nieuwe "
+"pagina of in een bestaand dashboard, zult u misschien de tags ``<div "
+"class=\"container\">`` en ``<div class=\"ods-box\">`` zien: beide zijn "
+"standaard tags die het standaard kader van een OpenDataSoft-pagina aanmaken."
+" Indien u dit kader wilt behouden, zorg er dan voor dat u de code van de "
+"handleiding tussen deze standaard tags toevoegt."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:84
+msgid ""
+"2 + Right under the tab titles, let's add the tab contents. Put each of them"
+" in a ``<div>`` tag."
+msgstr ""
+"2 + Rechts onder de tabbladtitels voegen we de content van het tabblad toe. "
+"Plaats elk ervan in een ``<div>`` tag."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:116
+msgid ""
+"3 + Now that we have the base, we should add some CSS for the tabs to look "
+"like proper tabs. Go to the CSS section of the page you are working on."
+msgstr ""
+"3 + Nu we de basis hebben zouden we enkele CSS kunnen toevoegen om de "
+"tabbladen er te laten uitzien als echte tabbladen. Ga naar de CSS-sectie van"
+" de pagina waar u aan werkt."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:124
+msgid ""
+"4 + First, create the default CSS class that will be applied on each tab "
+"title. Here, we will especially work on the ``padding`` property to make "
+"sure the tabs are seen as 3 separate items. We will also change the color of"
+" the text."
+msgstr ""
+"4 + Maak eerst de standaard CSS-klasse aan die toegepast zal worden op elke "
+"tabbladtitel. Hier zult u vooral werken aan de eigenschap \"padding\" om er "
+"zeker van te zijn dat de tabbladen worden gezien als 3 afzonderlijke items. "
+"We zullen ook de kleur van de tekst wijzigen."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:129
+msgid ""
+"For this tutorial, comments have been added in the CSS code. They are here "
+"as reminders to know which class or property does what. If you feel "
+"comfortable with CSS, don't hesitate to remove these comments. Note also "
+"that the name of the CSS class, ``tab``, has been chosen because it is easy "
+"to read and to understand on which HTML element it will be applied. Do feel "
+"free to rename it though."
+msgstr ""
+"Voor deze handleiding werden er commentaren toegevoegd in de CSS-code. Ze "
+"zijn daar als geheugensteuntje om te weten welke klasse of eigenschap wat "
+"doet. Wanneer u met CSS vertrouwd bent, aarzel dan niet om deze commentaren "
+"te verwijderen. Merk ook op dat de naam van de CSS-klasse, \"tab\", werd "
+"gekozen om deze gemakkelijk kan worden gelezen en om te begrijpen op welk "
+"HTML-element ze zal worden toegepast. Het staat u evenwel vrij om deze een "
+"andere naam te geven."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:144
+msgid ""
+"5 + Go back to the HTML section of the page you are working on. Now that the"
+" CSS class has been created, we can apply it on the HTML tags containing the"
+" tabs titles."
+msgstr ""
+"5 + Keer terug naar de HTML-sectie van de pagina waar u aan werkt. Nu de "
+"CSS-klasse werd aangemaakt, kunnen we deze toepassen op de HTML-tags waarin "
+"de tabbladtitels staan."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:176
+msgid ""
+"6 + Second, we are going to give a bit more style to the tab contents. This "
+"time, instead of creating a whole new CSS class, we are going to use an "
+"already existing one. ``ods-box`` is a default OpenDataSoft CSS style that "
+"wraps the HTML items into a thin border. It will help us give the impression"
+" that our tab contents are a little bit 'outside' the rest of the page "
+"content. Add a ``<div>`` tag wrapping all the tab contents, with the ``ods-"
+"box`` CSS class in it."
+msgstr ""
+"6 + Ten tweede gaan we de content van het tabblad iets meer stijl geven. "
+"Deze keer gaan we een reeds bestaande CSS-klasse gebruiken in plaats van een"
+" volledige nieuwe aan te maken. \"ods-box\" is een standaard CSS-stijl in "
+"OpenDataSoft die de HTML-items met een dunne rand omringt. Het zal ons "
+"helpen om de indruk te geven dat de contents van ons tabblad iets \"buiten\""
+" de rest van de paginacontent ligt. Voeg een ``<div>`` tag toe die de "
+"contents van alle tabbladen omringt en waarin de CSS-klasse ``ods-box`` in "
+"zit."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:210
+msgid ""
+"7 + Check the preview of your page. We have created the structure of our "
+"tabs!"
+msgstr ""
+"7 + Controleer de voorbeeldweergave van uw pagina. We hebben de structuur "
+"van onze tabbladen aangemaakt!"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:222
+msgid "Add AngularJS"
+msgstr "Voeg AngularJS toe"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:227
+msgid ""
+"8 + It's now time for AngularJS to come into play! We will need to use 4 "
+"AngularJS directives to make our tabs work. Let's start with ``ng-click``. "
+"This directive is basically used to tell AngularJS what to do when clicking "
+"on an HTML element. In our case, ``ng-click`` will allow us to switch from "
+"one tab to another."
+msgstr ""
+"8 + Het is nu tijd om AngularJS erbij te betrekken! We moeten 4 AngularJS-"
+"richtlijnen gebruiken om onze tabbladen te laten werken. We beginnen met "
+"``ng-click``. Deze richtlijn wordt vooral gebruikt om AngularJS te vertellen"
+" wat moet gebeuren wanneer een HTML-element wordt aangeklikt. In ons geval "
+"zal ``ng-click`` ons toelaten van het ene tabblad naar een ander over te "
+"schakelen."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:229
+msgid ""
+"First thing first: let's take a look at the syntax to understand how to use "
+"the ``ng-click`` directive."
+msgstr ""
+"We beginnen bij het begin: laten we een kijkje nemen naar de syntax om te "
+"begrijpen hoe we de richtlijn ``ng-click`` moeten gebruiken."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:235
+msgid ""
+"``ng-click`` is the AngularJS directive. It is always followed by an equals "
+"sign ``=`` which indicates that what comes after is an expression. This "
+"expression will be evaluated by the directive, and it must always be written"
+" between double quotes ``\"``."
+msgstr ""
+"``ng-click`` is de AngularJS-richtlijn. Deze wordt altijd gevolgd door een "
+"gelijkheidsteken ``=`` dat aangeeft dat wat erna komt, een uitdrukking is. "
+"Deze uitdrukking zal worden geëvalueerd door de richtlijn en moet altijd "
+"geschreven zijn tussen twee dubbele aanhalingstekens ``\"``."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:237
+msgid ""
+"In the expression, we will assign a value to a variable. At this point, "
+"neither the variable nor the value exist, we must create them."
+msgstr ""
+"In de uitdrukking zullen we een waarde toekennen aan een variabele. Op dit "
+"moment bestaan noch de variabele, noch de waarde. We moeten deze aanmaken."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:239
+msgid ""
+"The variable comes first. The variable is the link between all the AngularJS"
+" directives that will be used throughout this tutorial. Choose a name that "
+"is self-explanatory, to make sure that your code can be understood by "
+"someone else. In this tutorial, we will name the variable ``tabselector``."
+msgstr ""
+"Eerst komt de variabele. De variabele is een link tussen alle AngularJS-"
+"richtlijnen die doorheen deze volledige handleiding zal worden gebruikt. "
+"Kies een naam die voor zich spreekt om ervoor te zorgen dat uw code door "
+"iemand anders kan worden begrepen. In deze handleiding zullen we de "
+"variabele de naam ``tabselector`` geven."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:240
+msgid ""
+"Second comes an equals sign ``=`` which separates the variable from the "
+"value."
+msgstr ""
+"Daarna komt een gelijkheidsteken ``=`` dat de variabele scheidt van de "
+"waarde."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:241
+msgid ""
+"Third comes the value. It must always be written between single quotes "
+"``'``. The value is the identifier of a tab. Each tab that is created must "
+"have its very own identifier. There again, make sure that the name of the "
+"value is self-explanatory. In this tutorial, we will have 3 values for the 3"
+" tabs, and we will name them ``firsttab``, ``secondtab`` and ``thirdtab``."
+msgstr ""
+"Ten derde komt de waarde. Deze moet altijd geschreven staan tussen enkele "
+"aanhalingstekens ``'``. De waarde is de identifier van een tabblad. Elk "
+"tabblad dat wordt aangemaakt moet zijn eigen specifieke identifier hebben. "
+"Zorg er opnieuw voor dat de naam van de waarde voor zich spreekt. In deze "
+"handleiding zullen we 3 waarden hebben voor de 3 tabbladen en zullen we ze "
+"de naam ``firsttab``, ``secondtab`` en ``thirdtab`` geven."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:245
+msgid ""
+"9 + Add the ``ng-click`` directive in the HTML ``<a>`` tag of each tab "
+"title. At this point, we have indicated to AngularJS that we have 3 "
+"different clickable entities: our 3 tab titles."
+msgstr ""
+"9 + Voeg de richtlijn ``ng-click`` toe in de HTML ``<a>`` tag van elke "
+"tabbladtitel. Op dit moment hebben we aan AngularJS aangegeven dat we 3 "
+"verschillende entiteiten hebben die kunnen worden aangeklikt: onze 3 "
+"tabbladtitels."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:279
+msgid ""
+"10 + On to ``ng-if`` now! The ``ng-if`` directive is a conditional "
+"expression that determines whether an HTML element should be displayed or "
+"not. In our case, ``ng-if`` will allow us to display the right tab content "
+"when clicking on a tab title."
+msgstr ""
+"10 + Nu is het de beurt aan ``ng-if``! De richtlijn ``ng-if``  is een "
+"voorwaardelijke uitdrukking die bepaalt of een HTML-element al dan niet moet"
+" worden weergegeven. In ons geval zal ``ng-if`` ons toelaten om de juiste "
+"tabcontent weer te geven wanneer op een tabbladtitel wordt geklikt."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:281
+msgid ""
+"Let's take a look at the syntax to understand how to use the ``ng-if`` "
+"directive."
+msgstr ""
+"Laten we een kijkje nemen naar de syntax om te begrijpen hoe we de richtlijn"
+" ``ng-if`` moeten gebruiken."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:287
+msgid ""
+"The structure of the ``ng-if`` directive is the same as for ``ng-click``. "
+"The name of the directive is followed by an equals sign ``=`` and the "
+"expression that will be evaluated by the ``ng-if`` directive is written "
+"between double quotes ``\"``."
+msgstr ""
+"De structuur van de ``ng-if``-richtlijn is dezelfde als die voor ``ng-"
+"click``. De naam van de richtlijn wordt gevolgd door een gelijkheidsteken "
+"``=`` en de uitdrukking die wordt geëvalueerd door de ``ng-if``-richtlijn "
+"wordt geschreven tussen dubbele aanhalingstekens ``\"``."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:289
+msgid "But the syntax differs a little bit. In the expression,"
+msgstr "Maar de syntax is iets anders. In de uitdrukking,"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:291
+msgid "The variable is the same we created in step 8."
+msgstr ""
+"De variabele is dezelfde als diegene die we hebben aangemaakt in stap 8."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:292
+msgid ""
+"Here is where the syntax differs: this time, the variable and value must be "
+"separated by 2 equals signs ``==``. It indicates that we express a "
+"condition."
+msgstr ""
+"Het is hier dat de syntax verschillend is: dit keer moeten de variabele en "
+"de waarde gescheiden worden door 2 gelijkheidstekens  ``==``. Hiermee wordt "
+"aangegeven dat we een voorwaarde uitdrukken."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:293
+msgid ""
+"The value (written between single quotes ``'``) is the same we created in "
+"step 8."
+msgstr ""
+"De waarde (die geschreven staat tussen enkele aanhalingstekens ``'``) is "
+"dezelfde als diegene die we aangemaakt hebben in stap 8."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:295
+msgid ""
+"Basically, the ``ng-if`` syntax could be read as such: \"If ``myvariable`` "
+"equals ``myvalue``, [display the content of the HTML element corresponding "
+"to ``myvalue``]\"."
+msgstr ""
+"In essentie zou de ``ng-if``-syntax gelezen kunnen worden als volgt: "
+"\"Wanneer ``myvariable`` gelijk is aan ``myvalue``, [de content weergeven "
+"van het HTML-element dat overeenstemt met ``myvalue``]\"."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:299
+msgid ""
+"11 + Add the ``ng-if`` directive in the HTML ``<div>`` tag of each tab "
+"content. Don't forget to put all 3 values to match the 3 tab contents. At "
+"this point, we have indicated AngularJS which tab content to display "
+"depending on which tab title is selected."
+msgstr ""
+"11 + Voeg de ``ng-if``-richtlijn toe in de HTML ``<div>`` tag van elke "
+"tabcontent. Vergeet niet om alle 3 de waarden te plaatsen om overeen te "
+"stemmen met de 3 tabcontents. Op dit moment hebben we aan AngularJS "
+"aangegeven welke tabcontent moet worden weergegeven afhankelijk van welke "
+"tabbladtitel is geselecteerd."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:333
+msgid ""
+"12 + It's time to tackle ``ng-init``! This directive is used to initialize a"
+" variable: it basically means that when a web page is loaded, the code "
+"behind that page is going to be read from the first to the last line. ``ng-"
+"init`` will indicate that from there, AngularJS will be used, and which "
+"variable will be used. In our case, ``ng-init`` will also be used to "
+"indicate which tab content should be displayed by default."
+msgstr ""
+"12 + Het is nu tijd om dieper in te gaan op ``ng-init``! Deze richtlijn "
+"wordt gebruikt om een variabele te initialiseren: dit betekent dat wanneer "
+"een webpagina wordt opgeladen, de code achter die pagina gelezen gaat worden"
+" van de eerste tot de laatste lijn. ``ng-init`` zal aangeven dat vanaf dan "
+"AngularJS zal worden gebruikt en welke variabele zal worden gebruikt. In ons"
+" geval zal ``ng-init`` ook gebruikt worden welke tabcontent standaard dient "
+"te worden weergegeven."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:335
+msgid ""
+"Let's take a look at the syntax to understand how to use the ``ng-init`` "
+"directive."
+msgstr ""
+"Laten we een kijkje nemen naar de syntax om te begrijpen hoe de ``ng-"
+"init``-richtlijn moet worden gebruikt."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:341
+msgid ""
+"The syntax of the ``ng-init`` directive is exactly the same as for ``ng-"
+"click`` (see step 8)."
+msgstr ""
+"De syntax van de ``ng-init``-richtlijn is precies dezelfde als voor ``ng-"
+"click`` (zie stap 8)."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:343
+msgid "In the expression:"
+msgstr "In de uitdrukking:"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:345
+msgid ""
+"The variable is the same we created in step 8 and have been using since."
+msgstr ""
+"De variabele is dezelfde als diegene die we hebben aangemaakt in stap 8 en "
+"die we sindsdien hebben gebruikt."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:346
+msgid ""
+"The value (written between single quotes ``'``) is the identifier of the tab"
+" which content will be display by default."
+msgstr ""
+"De waarde (die geschreven staat tussen enkele aanhalingstekens ``'``) is de "
+"identifier van het tabblad waarvan de content standaard zal worden "
+"weergegeven."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:350
+msgid ""
+"13 + Add the ``ng-init`` directive in an HTML tag that wraps the whole code "
+"of the tabs. For this tutorial, since we created a whole new page, our whole"
+" page code is already wrapped in 2 default frame tags: ``<div class"
+"=\"container-fluid\">`` and ``<div class=\"ods-box\">``. We will thus put "
+"``ng-init`` in the default ``<div class=\"ods-box\">`` tag. At this point, "
+"our tabs are fully functional!"
+msgstr ""
+"13 + Voeg de ``ng-init``-richtlijn toe in een HTML tag die de volledige code"
+" van de tabbladen omringt. Voor deze handleiding en aangezien we een "
+"volledig nieuwe pagina hebben aangemaakt, is onze volledige paginacode reeds"
+" omringd in 2 standaard kadertags: ``<div class=\"container-fluid\">`` en "
+"``<div class=\"ods-box\">``. Bijgevolg plaatsen we ``ng-init`` in de "
+"standaard ``<div class=\"ods-box\">`` tag. Op dit moment zijn onze tabbladen"
+" volledig functioneel!"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:355
+msgid ""
+"If you did not create a whole new page for this tutorial and do not have "
+"these default frame tags, you could add regular ``<div>`` tag to wrap the "
+"tabs code, and add the ``ng-init`` directive in it."
+msgstr ""
+"Indien u geen volledig nieuwe pagina heeft aangemaakt voor deze handleiding "
+"en deze standaard kadertags niet heeft, zou u een gewone  ``<div>`` tag "
+"kunnen toevoegen om de code van de tabbladen te omringen en er een ``ng-"
+"init`` -richtlijn in kunnen toevoegen."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:389
+msgid ""
+"14 + Check the preview. Although our tabs fully work by now, there is still "
+"something that is missing. Nothing indicates which tab is selected! Let's do"
+" this, starting with the creation of a \"selected tab\" style."
+msgstr ""
+"14 + Controleer de voorbeeldweergave. Hoewel onze tabbladen nu volledig "
+"werken, ontbreekt er nog altijd iets. Er is niets dat aangeeft welk tabblad "
+"is geselecteerd! Laten we dit nu doen, te beginnen met aanmaken van een "
+"stijl \"geselecteerd tabblad\"."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:397
+msgid ""
+"15 + Go back to the CSS section of the page you are working on, to create a "
+"distinct style which easily indicates which tab is selected. Here, we will "
+"call this CSS class ``activetab`` and play with both the text color and a "
+"bold border under the text."
+msgstr ""
+"15 + Keer terug naar de CSS-sectie van de pagina waar u aan werkt om een "
+"afzonderlijke stijl aan te maken die gemakkelijk aangeeft welk tabblad is "
+"geselecteerd. We zullen deze CSS-klasse hier ``activetab`` noemen en met "
+"zowel de tekstkleur als een dikke rand onder de tekst spelen."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:412
+msgid ""
+"16 + Go back to the HTML section of the page you are working on. We will now"
+" apply our CSS style using our fourth (and last!) AngularJS directive: ``ng-"
+"class``. This directive is a conditional expression that determines whether "
+"a CSS class will apply on an HTML element or not. In our case, ``ng-class`` "
+"will be used to apply a particular style to a tab title when it is selected."
+msgstr ""
+"16 + Keer terug naar de HTML-sectie van de pagina waar u aan werkt. We gaan "
+"nu onze CSS-stijl toepassen door gebruik te maken van onze vierde (en "
+"laatste) AngularJS-richtlijn: ``ng-class``. Deze richtlijn is een "
+"voorwaardelijke uitdrukking die bepaalt of een CSS-klasse op een HTML-"
+"element zal worden toegepast of niet. In ons geval zal ``ng-class`` worden "
+"gebruik om een welbepaalde stijl toe te passen op een tabbladtitel wanneer "
+"deze wordt geselecteerd."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:414
+msgid ""
+"Let's take a look at the syntax to understand how to use the ``ng-class`` "
+"directive."
+msgstr ""
+"Laten we een kijkje nemen naar de syntax om te begrijpen hoe we de richtlijn"
+" ``ng-class`` moeten gebruiken."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:420
+msgid ""
+"The structure of the ``ng-class`` directive is the same as for the other "
+"directives: the name of the directive is followed right after by an equals "
+"sign ``=``, and the expression that will be evaluated by the directive is "
+"written between double quotes ``\"``."
+msgstr ""
+"De structuur van de ``ng-class``-richtlijn is dezelfde als voor de andere "
+"richtlijnen: de naam van de richtlijn wordt rechts erachter gevolgd door een"
+" gelijkheidsteken``=`` en de uitdrukking die geëvalueerd zal worden door de "
+"richtlijn, wordt geschreven tussen dubbele aanhalingstekens ``\"``."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:422
+msgid "But here is how the expression should be for this directive:"
+msgstr ""
+"Maar dit is hoe de uitdrukking er zou moeten uitzien voor deze richtlijn:"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:424
+msgid "The expression must also be enclosed between curly brackets ``{}``."
+msgstr "De uitdrukking moet ook tussen accolades ``{}`` staan."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:425
+msgid ""
+"Inside the curly brackets ``{}``, first comes the name of the CSS class that"
+" should be used. It must be written between single quotes ``'``."
+msgstr ""
+"Tussen de accolades ``{}`` komt eerst de naam van de CSS-klasse die gebruikt"
+" zou moeten worden. Deze moet tussen enkele aanhalingstekens  ``'`` "
+"geschreven zijn."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:426
+msgid "Right after the name of the CSS class, there must be a colon ``:``."
+msgstr ""
+"Vlak achter de naam van de CSS-klasse moet er een dubbele punt``:`` staan."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:427
+msgid ""
+"Then comes the variable/value part that is exactly like the ``ng-if`` "
+"expression (see step 10). We should find the name of the variable as well as"
+" the name of the value (written between single quotes ``'``). The variable "
+"and value must be separated by 2 equals signs ``==``."
+msgstr ""
+"Dan volgt het deel variabele/waarde dat precies hetzelfde is zoals de ``ng-"
+"if``-uitdrukking (zie stap 10). We zouden de naam van de variabele alsook de"
+" naam van de waarde (geschreven tussen enkele aanhalingstekens  ``'`` moeten"
+" terugvinden. De variabele en de waarde moeten gescheiden zijn door 2 "
+"gelijkheidstekens ``==``."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:429
+msgid ""
+"Basically, the ``ng-class`` syntax could be read as such: \"``mycssclass`` "
+"must be used when ``myvariable`` equals ``myvalue``\"."
+msgstr ""
+"In essentie zou de ``ng-class``-syntax als volgt kunnen worden gelezen: "
+"\"``mycssclass`` moet gebruikt worden wanneer ``myvariable`` gelijk is aan "
+"``myvalue``\"."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:433
+msgid ""
+"17 + Add the ``ng-class`` directive in the HTML ``<a>`` tag of each tab "
+"title. Don't forget to put all 3 values to match the 3 tab titles."
+msgstr ""
+"17 + Voeg de ``ng-class``-richtlijn toe in de HTML ``<a>`` tag van elke "
+"tabbladtitel. Vergeet niet om alle 3 de waarden te plaatsen om overeen te "
+"stemmen met de 3 tabbladtitels."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:470
+msgid "Finalize the tabs"
+msgstr "Voltooi de tabbladen"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:476
+msgid ""
+"18 + Our ``ng-class`` directive works! But it isn't so pretty, is it? Let's "
+"go back to the CSS section to add the finishing touches! Here, we're going "
+"to add more space around the tab titles to avoid the border to fall into the"
+" tab content area. We are also going to highlight the possible selection of "
+"a tab title by building a specific style only visible when the mouse hovers "
+"the tab titles."
+msgstr ""
+"18 + Onze ``ng-class``-richtlijn werkt! Maar het is niet echt mooi, "
+"nietwaar? Laten we terugkeren naar de CSS-sectie om de finishing touch toe "
+"te voegen. Hier gaan we extra ruimte toevoegen rond de tabbladtitels om te "
+"vermijden dat de rand in de ruimte van de tabcontent valt. We gaan ook de "
+"mogelijke selectie van een tabbladtitel beklemtonen door een specifieke "
+"stijl op te bouwen die enkel zichtbaar is wanneer de muiscursor over de "
+"tabbladtitels wordt bewogen."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:496
+msgid ""
+"19 + Go back to the HTML section to apply the whole new CSS style. Our "
+"``tabs`` CSS class will do very well in the ``div`` tag that wraps all the "
+"tab titles. As for ``tab:hover``, since it is built on top of the main CSS "
+"class ``tab``, it automatically applies to the HTML elements with the "
+"``tab`` CSS class."
+msgstr ""
+"19 + Keer terug naar de HTML-sectie om de volledig nieuwe CSS-stijl toe te "
+"passen. Onze CSS-klasse ``tabs`` zal het bijzonder goed doen in de tag "
+"``div`` die alle tabbladtitels omringt. Wat ``tab:hover`` betreft, aangezien"
+" deze bovenop de belangrijkste CSS-klasse ``tab`` is gebouwd, wordt deze "
+"automatisch toegepast op de HTML-elementen met de CSS-klasse ``tab``."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:536
+msgid ""
+"20 + There we go! We have created our very own tabs! The only thing left to "
+"do is to replace every example text by real content."
+msgstr ""
+"20 + Klaar! We hebben onze volledig eigen tabbladen aangemaakt! Het enige "
+"wat we nu nog moeten doen is elke voorbeeldtekst vervangen door echte "
+"content."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:538
+msgid ""
+"You are free to choose the tab titles and to add your own tab contents. For "
+"this tutorial, we will complete the tabs using the `Shanghai World "
+"University Ranking <https://data.opendatasoft.com/explore/dataset/shanghai-"
+"world-university-ranking%40public>`_ dataset. The first tab will contain the"
+" table visualization, the second tab will contain a map created with the Map"
+" Builder and the third tab will contain a chart visualization. Each tab "
+"title will of course indicate what the tab content is about, and they will "
+"be preceded by a `Font Awesome <https://fontawesome.com/>`_ icon (just to "
+"spice things up a bit!)."
+msgstr ""
+"Het staat u volledig vrij om de tabbladtitels te kiezen en om uw eigen "
+"tabcontents toe te voegen. Voor deze handleiding zullen we de tabbladen "
+"vervolledigen door gebruik te maken van de `Shanghai World University "
+"Ranking <https://data.opendatasoft.com/explore/dataset/shanghai-world-"
+"university-ranking%40public>`_ dataset. Het eerste tabblad zal de weergave "
+"van het tabblad bevatten, het tweede tabblad zal een kaart bevatten die "
+"aangemaakt is met de Map Builder en het derde tabblad zal een "
+"grafiekweergave bevatten. Elke tabbladtitel zal natuurlijk aangeven waar de "
+"tabcontent over gaat en ze zullen worden voorafgegaan door een `Font Awesome"
+" <https://fontawesome.com/>`_ icoon (net om het iets pittiger te maken!)."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:648
+msgid "**CONGRATULATIONS!**"
+msgstr "**GEFELICITEERD!**"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:650
+msgid ""
+"You have finished this tutorial and you now know how to create tabs using "
+"AngularJS, and hopefully your now feel comfortable enough with ``ng-click``,"
+" ``ng-if``, ``ng-init`` and ``ng-class`` to be able to use them again on "
+"your own!"
+msgstr ""
+"U heeft deze handleiding volledig doorlopen en weet nu hoe u tabbladen moet "
+"aanmaken met behulp van AngularJS. Hopelijk bent u nu voldoende vertrouwd "
+"met  ``ng-click``, ``ng-if``, ``ng-init`` en ``ng-class`` om deze later "
+"zelfstandig opnieuw te kunnen gebruiken!"

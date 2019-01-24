@@ -1,0 +1,674 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, OpenDataSoft
+# This file is distributed under the same license as the OpenDataSoft Tutorials package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Rev_FR1 <datawords.proofread.fr1@gmail.com>, 2019
+# Trad_FR1 <datawords.translator.fr1@gmail.com>, 2019
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenDataSoft Tutorials 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-08 10:37+0100\n"
+"PO-Revision-Date: 2019-01-08 09:37+0000\n"
+"Last-Translator: Trad_FR1 <datawords.translator.fr1@gmail.com>, 2019\n"
+"Language-Team: French (https://www.transifex.com/opendatasoft/teams/57849/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:2
+msgid "How to create tabs (with AngularJS)"
+msgstr "Créer des onglets (avec AngularJS)"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:10
+msgid "★★★ Advanced - time: 45 minutes"
+msgstr "★★★ Avancé - durée : 45 minutes"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:12
+msgid ""
+"*This tutorial will teach you how to create tabs using AngularJS. These tabs"
+" will be fully customizable and reusable in any dashboard or piece of "
+"content created with HTML/CSS on OpenDataSoft.*"
+msgstr ""
+"*Dans ce tutoriel, vous allez apprendre à créer des onglets à l'aide "
+"d'AngularJS. Ces derniers pourront être entièrement personnalisés et "
+"réutilisés dans n'importe quel tableau de bord ou élément de contenu créé "
+"avec HTML/CSS sur OpenDataSoft.*"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:16
+msgid ""
+"During this tutorial, you will learn how to use 4 AngularJS directives:"
+msgstr ""
+"Au cours de ce tutoriel, vous allez apprendre à utiliser 4 directives "
+"AngularJS :"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:18
+msgid "``ng-if``"
+msgstr "``ng-if``"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:19
+msgid "``ng-click``"
+msgstr "``ng-click``"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:20
+msgid "``ng-class``"
+msgstr "``ng-class``"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:21
+msgid "``ng-init``"
+msgstr "``ng-init``"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:26
+msgid "**PREREQUISITES**"
+msgstr "**PRÉREQUIS**"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:28
+msgid ""
+"In order to test this tutorial and/or integrate the tabs in an already "
+"existing page, you need to have access to the back office of an OpenDataSoft"
+" portal and be granted the \"Edit all pages\" permission."
+msgstr ""
+"Pour tester ce tutoriel et/ou intégrer les onglets à une page existante, "
+"vous avez besoin d'un accès à l'interface d'administration d'un portail "
+"OpenDataSoft, ainsi que de la permission \"Éditer toutes les pages\"."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:29
+msgid ""
+"Since this tutorial is labeled as \"Advanced\" in terms of difficulty level,"
+" we assume that you already know HTML and CSS well enough to recognize and "
+"understand their structures and how they work. Other more technical elements"
+" will however be explained in details."
+msgstr ""
+"Le niveau de difficulté de ce tutoriel étant \"Avancé\", nous partons du "
+"principe que vous connaissez suffisamment bien HTML et CSS pour reconnaître "
+"et comprendre leurs structures et fonctionnements respectifs. Toutefois, "
+"d'autres points plus techniques seront expliqués en détail."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:36
+msgid "Show all images"
+msgstr "Afficher toutes les images"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:40
+msgid "Hide all images"
+msgstr "Masquer toutes les images"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:47
+msgid "Create the structure"
+msgstr "Créer la structure"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:52
+msgid ""
+"1 + In this tutorial, we will create 3 tabs, considering that each tab is "
+"comprised of a clickable tab title and the content of the tab. In our code, "
+"we will manage the tab titles on the one hand and the tab contents on the "
+"other hand. Let's start with the structure of our tab titles! Put each tab "
+"title in an ``<a>`` tag, and all ``<a>`` tags into a ``<div>`` tag."
+msgstr ""
+"1 + Dans ce tutoriel, nous allons créer 3 onglets, chacun comprenant un "
+"titre cliquable et un contenu. Dans notre code, nous allons gérer les titres"
+" d'onglet d'un côté et les contenus de l'autre. Commençons dès maintenant "
+"par la structure de nos titres d'onglet : placez chaque titre d'onglet dans "
+"un tag ``<a>``, puis tous les tags ``<a>`` dans un tag ``<div>``."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:54
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:59
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:126
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:352
+msgid "Note"
+msgstr "Remarque"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:57
+msgid ""
+"For this tutorial, we chose to put the tab titles in an ``<a>`` tag for "
+"accessibility reasons. That tag is also handy because it allows all titles "
+"to be displayed on the same line. If you feel comfortable enough with "
+"HTML/CSS, you can put your tab titles in another tag, but keep in mind that "
+"you will probably have to use more CSS to make them look like in this "
+"tutorial."
+msgstr ""
+"Dans le cadre de ce tutoriel, nous avons choisi de placer les titres "
+"d'onglet dans des tags ``<a>`` à des fins d’accessibilité. Ce tag est aussi "
+"pratique, puisqu'il permet d'afficher tous les titres sur la même ligne. Si "
+"vous maîtrisez suffisamment HTML/CSS, vous pouvez placer vos titres d'onglet"
+" dans un autre tag, mais gardez à l'esprit que vous allez probablement "
+"devoir utiliser davantage CSS pour qu'ils ressemblent à l'exemple donné dans"
+" ce tutoriel."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:62
+msgid ""
+"Depending on whether you try this tutorial on a new page or in an existing "
+"dashboard, you will perhaps see the ``<div class=\"container\">`` and ``<div"
+" class=\"ods-box\">`` tags: both are default tags that create the default "
+"frame of any OpenDataSoft page. If you want to keep this frame, make sure to"
+" add the code of the tutorial between these default tags."
+msgstr ""
+"En fonction de l'environnement (nouvelle page ou tableau de bord existant) "
+"dans lequel vous effectuez ce tutoriel, vous pourrez peut-être voir les tags"
+" ``<div class=\"container\">`` et ``<div class=\"ods-box\">``. Il s'agit des"
+" tags par défaut qui créent le cadre par défaut d'une page OpenDataSoft. Si "
+"vous souhaitez conserver ce cadre, veillez à ajouter le code du tutoriel "
+"entre ces tags par défaut."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:84
+msgid ""
+"2 + Right under the tab titles, let's add the tab contents. Put each of them"
+" in a ``<div>`` tag."
+msgstr ""
+"2 + Ajoutons maintenant les contenus d'onglet sous les titres d'onglet. "
+"Placez-les dans un tag ``<div>``."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:116
+msgid ""
+"3 + Now that we have the base, we should add some CSS for the tabs to look "
+"like proper tabs. Go to the CSS section of the page you are working on."
+msgstr ""
+"3 + La base étant créée, nous devons ajouter des éléments CSS pour que nos "
+"onglets ressemblent à des onglets dignes de ce nom. Accédez à la section CSS"
+" de la page sur laquelle vous travaillez."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:124
+msgid ""
+"4 + First, create the default CSS class that will be applied on each tab "
+"title. Here, we will especially work on the ``padding`` property to make "
+"sure the tabs are seen as 3 separate items. We will also change the color of"
+" the text."
+msgstr ""
+"4 + Commencez par créer la classe CSS par défaut, qui sera appliquée à tous "
+"les titres d'onglet. Nous allons tout particulièrement travailler sur la "
+"propriété ``padding`` pour nous assurer que les onglets apparaissent comme 3"
+" éléments distincts. En outre, nous allons modifier la couleur du texte."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:129
+msgid ""
+"For this tutorial, comments have been added in the CSS code. They are here "
+"as reminders to know which class or property does what. If you feel "
+"comfortable with CSS, don't hesitate to remove these comments. Note also "
+"that the name of the CSS class, ``tab``, has been chosen because it is easy "
+"to read and to understand on which HTML element it will be applied. Do feel "
+"free to rename it though."
+msgstr ""
+"Dans le cadre de ce tutoriel, nous avons ajouté des commentaires dans le "
+"code CSS, ainsi que des rappels pour expliquer le rôle de chaque classe ou "
+"propriété. Si vous maîtrisez CSS, n'hésitez pas à supprimer ces "
+"commentaires. Notez également que le nom de la classe CSS, ``tab``, a été "
+"choisi car il est lisible et permet de comprendre à quel élément HTML il va "
+"être appliqué. Néanmoins, vous pouvez le renommer si vous le souhaitez."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:144
+msgid ""
+"5 + Go back to the HTML section of the page you are working on. Now that the"
+" CSS class has been created, we can apply it on the HTML tags containing the"
+" tabs titles."
+msgstr ""
+"5 + Revenez à la section HTML de la page sur laquelle vous travaillez. "
+"Puisque la classe CSS a été créée, nous pouvons l'appliquer aux tags HTML "
+"qui contiennent les titres d'onglet."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:176
+msgid ""
+"6 + Second, we are going to give a bit more style to the tab contents. This "
+"time, instead of creating a whole new CSS class, we are going to use an "
+"already existing one. ``ods-box`` is a default OpenDataSoft CSS style that "
+"wraps the HTML items into a thin border. It will help us give the impression"
+" that our tab contents are a little bit 'outside' the rest of the page "
+"content. Add a ``<div>`` tag wrapping all the tab contents, with the ``ods-"
+"box`` CSS class in it."
+msgstr ""
+"6 + Ensuite, nous allons mettre en page les contenus d'onglet. Cette fois, "
+"au lieu de créer une toute nouvelle classe CSS, nous allons en utiliser une "
+"existante. ``ods-box`` est un style CSS OpenDataSoft par défaut qui "
+"enveloppe les éléments HTML dans une bordure fine. Cela nous permet de "
+"donner l'impression que les contenus de notre onglet sont légèrement \"en "
+"dehors\" du reste du contenu de la page. Ajoutez un tag ``<div>`` qui "
+"enveloppe tous les contenus de l'onglet avec la classe CSS ``ods-box``."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:210
+msgid ""
+"7 + Check the preview of your page. We have created the structure of our "
+"tabs!"
+msgstr ""
+"7 + Consultez l'aperçu de votre page. C'est fait, nous avons créé la "
+"structure de nos onglets !"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:222
+msgid "Add AngularJS"
+msgstr "Ajouter AngularJS"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:227
+msgid ""
+"8 + It's now time for AngularJS to come into play! We will need to use 4 "
+"AngularJS directives to make our tabs work. Let's start with ``ng-click``. "
+"This directive is basically used to tell AngularJS what to do when clicking "
+"on an HTML element. In our case, ``ng-click`` will allow us to switch from "
+"one tab to another."
+msgstr ""
+"8 + C'est le moment où AngularJS entre en jeu ! Nous allons avoir besoin "
+"d'utiliser 4 directives AngularJS pour que nos onglets fonctionnent. "
+"Commençons par ``ng-click``, une directive essentiellement utilisée pour "
+"indiquer à AngularJS ce qu'il doit faire lorsqu'un utilisateur clique sur un"
+" élément HTML. Ici, ``ng-click`` va nous permettre de basculer d'un onglet à"
+" l'autre."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:229
+msgid ""
+"First thing first: let's take a look at the syntax to understand how to use "
+"the ``ng-click`` directive."
+msgstr ""
+"Commençons déjà par observer la syntaxe pour comprendre comment utiliser la "
+"directive ``ng-click``."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:235
+msgid ""
+"``ng-click`` is the AngularJS directive. It is always followed by an equals "
+"sign ``=`` which indicates that what comes after is an expression. This "
+"expression will be evaluated by the directive, and it must always be written"
+" between double quotes ``\"``."
+msgstr ""
+"``ng-click`` est la directive AngularJS. Elle est toujours suivie d'un signe"
+" égal, ``=``, qui indique que ce qui vient après est une expression. Cette "
+"expression sera évaluée par la directive et doit toujours se trouver entre "
+"des guillemets doubles ``\"``."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:237
+msgid ""
+"In the expression, we will assign a value to a variable. At this point, "
+"neither the variable nor the value exist, we must create them."
+msgstr ""
+"Dans l'expression, nous allons attribuer une valeur à une variable. Comme "
+"aucune variable ni valeur n'existe à ce stade, nous devons les créer."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:239
+msgid ""
+"The variable comes first. The variable is the link between all the AngularJS"
+" directives that will be used throughout this tutorial. Choose a name that "
+"is self-explanatory, to make sure that your code can be understood by "
+"someone else. In this tutorial, we will name the variable ``tabselector``."
+msgstr ""
+"La variable se trouve au début. Elle constitue le lien entre toutes les "
+"directives AngularJS qui seront utilisées au cours de ce tutoriel. "
+"Choisissez un nom explicite pour vous assurer que votre code peut être "
+"compris par tout le monde. Dans ce tutoriel, nous allons nommer la variable "
+"``tabselector``."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:240
+msgid ""
+"Second comes an equals sign ``=`` which separates the variable from the "
+"value."
+msgstr ""
+"Arrive ensuite le signe égal, ``=``, qui sépare la variable de la valeur."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:241
+msgid ""
+"Third comes the value. It must always be written between single quotes "
+"``'``. The value is the identifier of a tab. Each tab that is created must "
+"have its very own identifier. There again, make sure that the name of the "
+"value is self-explanatory. In this tutorial, we will have 3 values for the 3"
+" tabs, and we will name them ``firsttab``, ``secondtab`` and ``thirdtab``."
+msgstr ""
+"Enfin, la valeur ferme la marche. Elle doit toujours être placée entre des "
+"guillemets simples ``'``. La valeur joue le rôle d'identifiant d'un onglet ;"
+" chaque onglet créé doit avoir un identifiant unique. Une fois encore, "
+"veillez à ce que le nom de la valeur soit explicite. Dans ce tutoriel, nous "
+"allons avoir 3 valeurs pour les 3 onglets, nommés  ``firsttab``, "
+"``secondtab`` et ``thirdtab``."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:245
+msgid ""
+"9 + Add the ``ng-click`` directive in the HTML ``<a>`` tag of each tab "
+"title. At this point, we have indicated to AngularJS that we have 3 "
+"different clickable entities: our 3 tab titles."
+msgstr ""
+"9 + Ajoutez la directive ``ng-click`` dans le tag HTML ``<a>`` de chaque "
+"titre d'onglet. À ce stade, nous avons indiqué à AngularJS que nous avons 3 "
+"entités cliquables différentes : nos 3 titres d'onglet."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:279
+msgid ""
+"10 + On to ``ng-if`` now! The ``ng-if`` directive is a conditional "
+"expression that determines whether an HTML element should be displayed or "
+"not. In our case, ``ng-if`` will allow us to display the right tab content "
+"when clicking on a tab title."
+msgstr ""
+"10 + Passons maintenant à ``ng-if`` ! La directive ``ng-if`` est une "
+"expression conditionnelle qui détermine si un élément HTML doit être affiché"
+" ou non. Ici, ``ng-if`` nous permet d'afficher le contenu d'onglet approprié"
+" lorsque l'utilisateur clique sur un titre d'onglet."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:281
+msgid ""
+"Let's take a look at the syntax to understand how to use the ``ng-if`` "
+"directive."
+msgstr ""
+"Observons la syntaxe pour comprendre comment utiliser la directive ``ng-"
+"if``."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:287
+msgid ""
+"The structure of the ``ng-if`` directive is the same as for ``ng-click``. "
+"The name of the directive is followed by an equals sign ``=`` and the "
+"expression that will be evaluated by the ``ng-if`` directive is written "
+"between double quotes ``\"``."
+msgstr ""
+"La structure de la directive ``ng-if`` est identique à celle de ``ng-"
+"click``. Le nom de la directive est suivi d'un signe égal, ``=``, et "
+"l'expression évaluée par la directive  ``ng-if`` est placée entre des "
+"guillemets doubles ``\"``."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:289
+msgid "But the syntax differs a little bit. In the expression,"
+msgstr "Toutefois, la syntaxe diffère légèrement. Dans l'expression, "
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:291
+msgid "The variable is the same we created in step 8."
+msgstr "La variable est identique à celle créée à l'étape 8."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:292
+msgid ""
+"Here is where the syntax differs: this time, the variable and value must be "
+"separated by 2 equals signs ``==``. It indicates that we express a "
+"condition."
+msgstr ""
+"Voici ce qui diffère au niveau de la syntaxe : cette fois, la variable et la"
+" valeur doivent être séparées par 2 signes égal, ``==``. Cela indique qu'il "
+"s'agit d'une condition."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:293
+msgid ""
+"The value (written between single quotes ``'``) is the same we created in "
+"step 8."
+msgstr ""
+"La valeur (placée entre des guillemets simples ``'``) est identique à celle "
+"créée à l'étape 8."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:295
+msgid ""
+"Basically, the ``ng-if`` syntax could be read as such: \"If ``myvariable`` "
+"equals ``myvalue``, [display the content of the HTML element corresponding "
+"to ``myvalue``]\"."
+msgstr ""
+"Pour faire simple, la syntaxe ``ng-if`` signifie : \" Si ``myvariable`` est "
+"égal à ``myvalue``, [le contenu de l'élément HTML correspondant à "
+"``myvalue`` est affiché`] \"."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:299
+msgid ""
+"11 + Add the ``ng-if`` directive in the HTML ``<div>`` tag of each tab "
+"content. Don't forget to put all 3 values to match the 3 tab contents. At "
+"this point, we have indicated AngularJS which tab content to display "
+"depending on which tab title is selected."
+msgstr ""
+"11 + Ajoutez la directive ``ng-if`` dans le tag HTML ``<div>`` de chaque "
+"contenu d'onglet. N'oubliez pas d'ajouter les 3 valeurs correspondant aux 3 "
+"contenus d'onglet. À ce stade, nous avons indiqué à AngularJS quel contenu "
+"d'onglet afficher en fonction du titre d'onglet sélectionné."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:333
+msgid ""
+"12 + It's time to tackle ``ng-init``! This directive is used to initialize a"
+" variable: it basically means that when a web page is loaded, the code "
+"behind that page is going to be read from the first to the last line. ``ng-"
+"init`` will indicate that from there, AngularJS will be used, and which "
+"variable will be used. In our case, ``ng-init`` will also be used to "
+"indicate which tab content should be displayed by default."
+msgstr ""
+"12 + Il est temps de nous intéresser à ``ng-init`` ! Cette directive sert à "
+"initialiser une variable, c'est-à-dire que quand une page Web est chargée, "
+"le code se trouvant derrière la page en question va être lu de la première à"
+" la dernière ligne. ``ng-init`` indique qu'à partir d'ici, AngularJS est "
+"utilisé et spécifie le type de variable appliqué. Ici, ``ng-init`` permet "
+"également d'indiquer quel contenu d'onglet doit être affiché par défaut."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:335
+msgid ""
+"Let's take a look at the syntax to understand how to use the ``ng-init`` "
+"directive."
+msgstr ""
+"Observons la syntaxe pour comprendre comment utiliser la directive ``ng-"
+"init``."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:341
+msgid ""
+"The syntax of the ``ng-init`` directive is exactly the same as for ``ng-"
+"click`` (see step 8)."
+msgstr ""
+"La syntaxe de la directive ``ng-init`` est en tout point identique à celle "
+"de ``ng-click`` (cf. étape 8)."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:343
+msgid "In the expression:"
+msgstr "Dans l'expression :"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:345
+msgid ""
+"The variable is the same we created in step 8 and have been using since."
+msgstr ""
+"La variable est identique à celle créée à l'étape 8 et utilisée jusqu'alors."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:346
+msgid ""
+"The value (written between single quotes ``'``) is the identifier of the tab"
+" which content will be display by default."
+msgstr ""
+"La valeur (placée entre des guillemets simples ``'``) est l'identifiant de "
+"l'onglet dont le contenu sera affiché par défaut."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:350
+msgid ""
+"13 + Add the ``ng-init`` directive in an HTML tag that wraps the whole code "
+"of the tabs. For this tutorial, since we created a whole new page, our whole"
+" page code is already wrapped in 2 default frame tags: ``<div class"
+"=\"container-fluid\">`` and ``<div class=\"ods-box\">``. We will thus put "
+"``ng-init`` in the default ``<div class=\"ods-box\">`` tag. At this point, "
+"our tabs are fully functional!"
+msgstr ""
+"13 + Ajoutez la directive ``ng-init`` à un tag HTML qui enveloppe l'ensemble"
+" du code des onglets. Dans le cadre de ce tutoriel, puisque nous avons créé "
+"une nouvelle page, le code de la page est enveloppé dans 2 tags de cadre par"
+" défaut : ``<div class=\"container-fluid\">`` et  ``<div class=\"ods-"
+"box\">``. Nous allons ensuite placer ``ng-init`` dans le tag ``<div class"
+"=\"ods-box\">`` par défaut. Nos onglets sont maintenant fonctionnels !"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:355
+msgid ""
+"If you did not create a whole new page for this tutorial and do not have "
+"these default frame tags, you could add regular ``<div>`` tag to wrap the "
+"tabs code, and add the ``ng-init`` directive in it."
+msgstr ""
+"Si vous n'avez pas créé de page pour ce tutoriel, et si vous n'avez pas ces "
+"tags de cadre par défaut, vous pouvez ajouter un tag ``<div>`` normal pour "
+"envelopper le code des onglets et ajouter la directive ``ng-init`` dans "
+"celui-ci."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:389
+msgid ""
+"14 + Check the preview. Although our tabs fully work by now, there is still "
+"something that is missing. Nothing indicates which tab is selected! Let's do"
+" this, starting with the creation of a \"selected tab\" style."
+msgstr ""
+"14 + Consultez l'aperçu. Même si nos onglets sont entièrement fonctionnels, "
+"il manque un petit quelque chose... En effet, rien n'indique quel onglet est"
+" sélectionné. Remédions à cela en commençant par créer un style \"onglet "
+"sélectionné\"."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:397
+msgid ""
+"15 + Go back to the CSS section of the page you are working on, to create a "
+"distinct style which easily indicates which tab is selected. Here, we will "
+"call this CSS class ``activetab`` and play with both the text color and a "
+"bold border under the text."
+msgstr ""
+"15 + Revenez à la section CSS de la page sur laquelle vous travaillez, puis "
+"créez un style distinct qui indique de façon claire l'onglet actuellement "
+"sélectionné. Nous allons appeler cette classe CSS ``activetab``, puis jouer "
+"avec la couleur du texte et une bordure en gras sous le texte."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:412
+msgid ""
+"16 + Go back to the HTML section of the page you are working on. We will now"
+" apply our CSS style using our fourth (and last!) AngularJS directive: ``ng-"
+"class``. This directive is a conditional expression that determines whether "
+"a CSS class will apply on an HTML element or not. In our case, ``ng-class`` "
+"will be used to apply a particular style to a tab title when it is selected."
+msgstr ""
+"16 + Revenez à la section HTML de la page sur laquelle vous travaillez. Nous"
+" allons maintenant appliquer notre style CSS à l'aide de notre quatrième (et"
+" dernière !) directive AngularJS : ``ng-class``. Cette directive est une "
+"expression conditionnelle qui détermine si une classe CSS va être appliquée "
+"à un élément HTML ou non. Ici, ``ng-class`` va être utilisée pour appliquer "
+"un style particulier au titre d'un onglet quand celui-ci est sélectionné."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:414
+msgid ""
+"Let's take a look at the syntax to understand how to use the ``ng-class`` "
+"directive."
+msgstr ""
+"Observons la syntaxe pour comprendre comment utiliser la directive ``ng-"
+"class``."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:420
+msgid ""
+"The structure of the ``ng-class`` directive is the same as for the other "
+"directives: the name of the directive is followed right after by an equals "
+"sign ``=``, and the expression that will be evaluated by the directive is "
+"written between double quotes ``\"``."
+msgstr ""
+"La structure de la directive ``ng-class`` est identique à celle des autres "
+"directives : le nom de la directive est directement suivi d'un signe égal, "
+"``=``, et l'expression évaluée par la directive  ``ng-if`` est placée entre "
+"des guillemets doubles ``\"``."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:422
+msgid "But here is how the expression should be for this directive:"
+msgstr "Mais voici le format de l'expression pour cette directive :"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:424
+msgid "The expression must also be enclosed between curly brackets ``{}``."
+msgstr "L'expression doit également être placée entre des accolades ``{}``."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:425
+msgid ""
+"Inside the curly brackets ``{}``, first comes the name of the CSS class that"
+" should be used. It must be written between single quotes ``'``."
+msgstr ""
+"Dans les accolades ``{}``, le nom de la classe CSS doit figurer en premier "
+"et être placé entre des guillemets simples ``'``."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:426
+msgid "Right after the name of the CSS class, there must be a colon ``:``."
+msgstr "Puis, deux-points ``:`` doivent être ajoutés."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:427
+msgid ""
+"Then comes the variable/value part that is exactly like the ``ng-if`` "
+"expression (see step 10). We should find the name of the variable as well as"
+" the name of the value (written between single quotes ``'``). The variable "
+"and value must be separated by 2 equals signs ``==``."
+msgstr ""
+"Vient ensuite la partie variable/valeur, qui est exactement identique à "
+"l'expression ``ng-if`` (cf. étape 10). Nous devons avoir le nom de la "
+"variable et le nom de la valeur (placés entre des guillemets simples ``'``)."
+" La variable et la valeur doivent être séparées par 2 signes égal, ``==``. "
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:429
+msgid ""
+"Basically, the ``ng-class`` syntax could be read as such: \"``mycssclass`` "
+"must be used when ``myvariable`` equals ``myvalue``\"."
+msgstr ""
+"Pour faire simple, la syntaxe ``ng-class`` signifie : \" ``mycssclass`` doit"
+" être utilisé quand ``myvariable`` est égal à ``myvalue`` \"."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:433
+msgid ""
+"17 + Add the ``ng-class`` directive in the HTML ``<a>`` tag of each tab "
+"title. Don't forget to put all 3 values to match the 3 tab titles."
+msgstr ""
+"17 + Ajoutez la directive ``ng-class`` dans le tag HTML ``<a>`` de chaque "
+"titre d'onglet. N'oubliez pas d'ajouter les 3 valeurs qui correspondent aux "
+"3 titres d'onglet."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:470
+msgid "Finalize the tabs"
+msgstr "Finaliser les onglets"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:476
+msgid ""
+"18 + Our ``ng-class`` directive works! But it isn't so pretty, is it? Let's "
+"go back to the CSS section to add the finishing touches! Here, we're going "
+"to add more space around the tab titles to avoid the border to fall into the"
+" tab content area. We are also going to highlight the possible selection of "
+"a tab title by building a specific style only visible when the mouse hovers "
+"the tab titles."
+msgstr ""
+"18 + Notre directive ``ng-class`` fonctionne ! Par contre, l'esthétique n'y "
+"est pas... Revenons à la section CSS pour apporter la touche finale. Ici, "
+"nous allons ajouter plus d'espace entre les titres d'onglet pour éviter que "
+"la bordure ne se retrouve dans la zone du contenu de l'onglet. Nous allons "
+"également mettre en valeur la sélection possible du titre d'un onglet en "
+"créant un style spécifique uniquement visible lorsque la souris survole les "
+"titres d'onglet."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:496
+msgid ""
+"19 + Go back to the HTML section to apply the whole new CSS style. Our "
+"``tabs`` CSS class will do very well in the ``div`` tag that wraps all the "
+"tab titles. As for ``tab:hover``, since it is built on top of the main CSS "
+"class ``tab``, it automatically applies to the HTML elements with the "
+"``tab`` CSS class."
+msgstr ""
+"19 + Revenez à la section HTML pour appliquer le tout nouveau style CSS. "
+"Notre classe ``tabs`` fera parfaitement l'affaire dans le tag ``div`` qui "
+"enveloppe tous les titres d'onglet. En ce qui concerne ``tab:hover``, "
+"puisqu'il repose sur la classe CSS ``tab`` principale, il s'applique "
+"automatiquement aux éléments HTML avec la classe CSS ``tab``."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:536
+msgid ""
+"20 + There we go! We have created our very own tabs! The only thing left to "
+"do is to replace every example text by real content."
+msgstr ""
+"20 + Et voilà ! Nous avons créé nos onglets personnalisés ! Il ne nous reste"
+" plus qu'à remplacer chaque exemple de texte par du contenu réel."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:538
+msgid ""
+"You are free to choose the tab titles and to add your own tab contents. For "
+"this tutorial, we will complete the tabs using the `Shanghai World "
+"University Ranking <https://data.opendatasoft.com/explore/dataset/shanghai-"
+"world-university-ranking%40public>`_ dataset. The first tab will contain the"
+" table visualization, the second tab will contain a map created with the Map"
+" Builder and the third tab will contain a chart visualization. Each tab "
+"title will of course indicate what the tab content is about, and they will "
+"be preceded by a `Font Awesome <https://fontawesome.com/>`_ icon (just to "
+"spice things up a bit!)."
+msgstr ""
+"Vous pouvez choisir les titres d'onglet à votre convenance et ajouter les "
+"contenus d'onglet souhaités. Dans le cadre de ce tutoriel, nous allons "
+"renseigner les onglets avec le jeu de données `Shanghai World University "
+"Ranking <https://data.opendatasoft.com/explore/dataset/shanghai-world-"
+"university-ranking%40public>`. Le premier onglet hébergera la visualisation "
+"de tableau, le deuxième, une carte créée avec l'Éditeur de carte et le "
+"troisième, une visualisation de graphe. Chaque titre d'onglet indiquera le "
+"contenu de l'onglet et sera précédé d'une icône `Font Awesome "
+"<https://fontawesome.com/>`_ (pour corser un peu les choses)."
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:648
+msgid "**CONGRATULATIONS!**"
+msgstr "**FÉLICITATIONS !**"
+
+#: ../../source/dashboard_modules/how_to_create_tabs.rst:650
+msgid ""
+"You have finished this tutorial and you now know how to create tabs using "
+"AngularJS, and hopefully your now feel comfortable enough with ``ng-click``,"
+" ``ng-if``, ``ng-init`` and ``ng-class`` to be able to use them again on "
+"your own!"
+msgstr ""
+"Vous avez terminé ce tutoriel et savez maintenant comment créer des onglets "
+"à l'aide d'AngularJS. De plus, vous devez suffisamment maîtriser les "
+"directives ``ng-click``, ``ng-if``, ``ng-init`` et ``ng-class`` pour les "
+"utiliser à votre guise !"
