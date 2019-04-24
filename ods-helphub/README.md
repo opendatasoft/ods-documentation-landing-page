@@ -3,7 +3,7 @@
 ## :bulb: Description
 
 This website is the entry point for the all documentations. There is 2 pages, the first regroups the principal documentations and the second regroups the APIs documentations.
-This is finality of documentation harmonisation with OpenDataSoft's identity.
+This is finality of documentation harmonisation with Opendatasoft's identity.
 
 ## :green_book: Template
 

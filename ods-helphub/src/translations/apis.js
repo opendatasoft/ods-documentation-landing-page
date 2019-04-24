@@ -9,11 +9,11 @@ export default {
             nl: "APIs"
         },
         description: {
-            en: "Welcome to OpenDataSoft's help hub for APIs - the centralized help site for all OpenDataSoft's APIs",
-            fr: "Bienvenue dans le centre d'aide d'OpenDataSoft pour les API - le site d'aide centralisé pour toutes les API d'OpenDataSoft",
-            es: "Bienvenido a la central de ayuda de OpenDataSoft para API: el sitio de ayuda centralizado para todas las API de OpenDataSoft",
-            de: "Willkommen im Hilfebereich für APIs von OpenDataSoft - der zentralen Hilfeseite für alle APIs von OpenDataSoft",
-            nl: "Welkom op de help hub van OpenDataSoft - de gecentraliseerde helpsite voor alle API's van OpenDataSoft"
+            en: "Welcome to Opendatasoft's help hub for APIs - the centralized help site for all Opendatasoft's APIs",
+            fr: "Bienvenue dans le centre d'aide d'Opendatasoft pour les API - le site d'aide centralisé pour toutes les API d'Opendatasoft",
+            es: "Bienvenido a la central de ayuda de Opendatasoft para API: el sitio de ayuda centralizado para todas las API de Opendatasoft",
+            de: "Willkommen im Hilfebereich für APIs von Opendatasoft - der zentralen Hilfeseite für alle APIs von Opendatasoft",
+            nl: "Welkom op de help hub van Opendatasoft - de gecentraliseerde helpsite voor alle API's van Opendatasoft"
         },
         image: {
             en: "Image URL",
@@ -33,11 +33,11 @@ export default {
     },
 
     descBottom: {
-        en: "Use these APIs to access datasets on your OpenDataSoft portal or on third party websites or integrations.",
-        fr: "Utilisez ces API pour accéder aux ensembles de données sur votre portail OpenDataSoft ou sur des sites Web tiers ou des intégrations.",
-        es: "Utilice estas API para acceder a conjuntos de datos en el portal de OpenDataSoft o en sitios web o integraciones de terceros.",
-        de: "Verwenden Sie diese APIs, um auf die Datensätze Ihres OpenDataSoft-Portals oder auf Websites und Integrationen von Drittanbietern zuzugreifen.",
-        nl: "Gebruik deze API's om toegang te krijgen tot datasets op uw OpenDataSoft-portaal of op websites van derden of integraties."
+        en: "Use these APIs to access datasets on your Opendatasoft portal or on third party websites or integrations.",
+        fr: "Utilisez ces API pour accéder aux ensembles de données sur votre portail Opendatasoft ou sur des sites Web tiers ou des intégrations.",
+        es: "Utilice estas API para acceder a conjuntos de datos en el portal de Opendatasoft o en sitios web o integraciones de terceros.",
+        de: "Verwenden Sie diese APIs, um auf die Datensätze Ihres Opendatasoft-Portals oder auf Websites und Integrationen von Drittanbietern zuzugreifen.",
+        nl: "Gebruik deze API's om toegang te krijgen tot datasets op uw Opendatasoft-portaal of op websites van derden of integraties."
     },
 
     searchv1: {
@@ -49,11 +49,11 @@ export default {
             nl: "ODS Search V1"
         },
         desc: {
-            en: "OpenDataSoft's search API<br>Version 1",
-            fr: "L'API de recherche OpenDataSoft<br>Version 1",
-            es: "API de búsqueda de OpenDataSoft<br>Versión 1",
-            de: "Search API von OpenDataSoft<br>Version 1",
-            nl: "OpenDataSoft's search API<br>Version 1"
+            en: "Opendatasoft's search API<br>Version 1",
+            fr: "L'API de recherche Opendatasoft<br>Version 1",
+            es: "API de búsqueda de Opendatasoft<br>Versión 1",
+            de: "Search API von Opendatasoft<br>Version 1",
+            nl: "Opendatasoft's search API<br>Version 1"
         },
         url: {
             en: "/apis/ods-search-v1/",
@@ -73,11 +73,11 @@ export default {
             nl: "ODS Search V2"
         },
         desc: {
-            en: "OpenDataSoft's search API<br>Version 2",
-            fr: "L'API de recherche OpenDataSoft<br>Version 2",
-            es: "API de búsqueda de OpenDataSoft<br>Versión 2",
-            de: "Search API von OpenDataSoft<br>Version 2",
-            nl: "OpenDataSoft's search API<br>Version 2"
+            en: "Opendatasoft's search API<br>Version 2",
+            fr: "L'API de recherche Opendatasoft<br>Version 2",
+            es: "API de búsqueda de Opendatasoft<br>Versión 2",
+            de: "Search API von Opendatasoft<br>Version 2",
+            nl: "Opendatasoft's search API<br>Version 2"
         },
         url: {
             en: "/apis/ods-search-v2/",
