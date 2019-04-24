@@ -2,6 +2,7 @@ ods-tutorial/build
 node_modules/
 dist/
 build/
+*.mo
 **/*.pyc
 *.log
 .DS_Store

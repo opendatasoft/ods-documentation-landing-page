@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2016, OpenDataSoft
-# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# Copyright (C) 2016, Opendatasoft
+# This file is distributed under the same license as the Opendatasoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 #, fuzzy
@@ -25,10 +25,10 @@ msgstr "Creazione di un dashboard dinamico... passo dopo passo!"
 #: ../../source/creating_content/tutorials/dashboard/dashboard.rst:4
 msgid ""
 "The aim of this tutorial is to create very easily a dashboard by using "
-"widgets, AngularJS and CSS tools provided by OpenDataSoft platform."
+"widgets, AngularJS and CSS tools provided by Opendatasoft platform."
 msgstr ""
 "Durante questo tutorial creeremo in modo molto semplice un dashboard "
-"utilizzando gli strumenti forniti dalla piattaforma OpenDataSoft, come i "
+"utilizzando gli strumenti forniti dalla piattaforma Opendatasoft, come i "
 "widget, AngularJS e i CSS."
 
 #: ../../source/creating_content/tutorials/dashboard/dashboard.rst:19
@@ -135,11 +135,11 @@ msgstr "entreprises-immatriculees-en-2016"
 
 #: ../../source/creating_content/tutorials/dashboard/dashboard.rst:40
 msgid ""
-"You can simply use the `Add a dataset from the OpenDataSoft network` button "
+"You can simply use the `Add a dataset from the Opendatasoft network` button "
 "when you add a new source of data in your dataset."
 msgstr ""
 "Per fare ciò, clicca semplicemente sul pulsante `Aggiungi un dataset dalla "
-"rete OpenDataSoft`."
+"rete Opendatasoft`."
 
 #: ../../source/creating_content/tutorials/dashboard/dashboard.rst:45
 msgid "Go to **Backoffice -> Pages -> New page**"
@@ -448,7 +448,7 @@ msgid ""
 msgstr ""
 "Come nella modalità di visualizzazione Esplora, è molto utile disporre di "
 "filtri per i dataset per affinare le tue ricerche. Il widget dei filtri "
-"OpenDataSoft è denominato `ods-facets <http://opendatasoft.github.io/ods-"
+"Opendatasoft è denominato `ods-facets <http://opendatasoft.github.io/ods-"
 "widgets/docs/#/api/ods-widgets.directive:odsFacets>`_."
 
 #: ../../source/creating_content/tutorials/dashboard/dashboard.rst:340
@@ -634,10 +634,10 @@ msgstr ""
 
 #: ../../source/creating_content/tutorials/dashboard/dashboard.rst:564
 msgid ""
-"As OpenDataSoft widgets library rely on **AngularJS** we will use it's "
+"As Opendatasoft widgets library rely on **AngularJS** we will use it's "
 "syntax to read the **context**."
 msgstr ""
-"Dato che la libreria di widget OpenDataSoft si basa su **AngularJS**, "
+"Dato che la libreria di widget Opendatasoft si basa su **AngularJS**, "
 "utilizzeremo questo tipo di sintassi per leggere il **contesto**."
 
 #: ../../source/creating_content/tutorials/dashboard/dashboard.rst:563
@@ -903,11 +903,11 @@ msgstr "Aggiungi un link di download"
 
 #: ../../source/creating_content/tutorials/dashboard/dashboard.rst:873
 msgid ""
-"As the export tab of each datasets in OpenDataSoft platform, we can export "
+"As the export tab of each datasets in Opendatasoft platform, we can export "
 "only filtered records, it's interresting to have a link or button to do the "
 "same (for offline use of the data for exemple)."
 msgstr ""
-"Nella scheda Esporta di ogni dataset della piattaforma OpenDataSoft è "
+"Nella scheda Esporta di ogni dataset della piattaforma Opendatasoft è "
 "possibile esportare solo i record filtrati. Sarebbe utile disporre qui della"
 " stessa funzionalità tramite un link o un pulsante, ad esempio per poter "
 "utilizzare i dati offline."

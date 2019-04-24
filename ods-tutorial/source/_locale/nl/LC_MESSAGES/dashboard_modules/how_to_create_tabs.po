@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019, OpenDataSoft
-# This file is distributed under the same license as the OpenDataSoft Tutorials package.
+# Copyright (C) 2019, Opendatasoft
+# This file is distributed under the same license as the Opendatasoft Tutorials package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
@@ -9,7 +9,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenDataSoft Tutorials 1.0\n"
+"Project-Id-Version: Opendatasoft Tutorials 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-08 10:37+0100\n"
 "PO-Revision-Date: 2019-01-08 09:37+0000\n"
@@ -33,11 +33,11 @@ msgstr "★★★ Geavanceerd - tijd: 45 minuten"
 msgid ""
 "*This tutorial will teach you how to create tabs using AngularJS. These tabs"
 " will be fully customizable and reusable in any dashboard or piece of "
-"content created with HTML/CSS on OpenDataSoft.*"
+"content created with HTML/CSS on Opendatasoft.*"
 msgstr ""
 "*In deze handleiding leert u hoe u tabbladen kunt aanmaken met AngularJS. "
 "Deze tabbladen zijn volledig gepersonaliseerd en kunnen in elke dashboard of"
-" stuk content gebruikt worden dat op OpenDataSoft is aangemaakt met "
+" stuk content gebruikt worden dat op Opendatasoft is aangemaakt met "
 "HTML/CSS.*"
 
 #: ../../source/dashboard_modules/how_to_create_tabs.rst:16
@@ -69,12 +69,12 @@ msgstr "**VOORVEREISTEN**"
 #: ../../source/dashboard_modules/how_to_create_tabs.rst:28
 msgid ""
 "In order to test this tutorial and/or integrate the tabs in an already "
-"existing page, you need to have access to the back office of an OpenDataSoft"
+"existing page, you need to have access to the back office of an Opendatasoft"
 " portal and be granted the \"Edit all pages\" permission."
 msgstr ""
 "Om deze handleiding uit te testen en/of de tabbladen in een reeds bestaande "
 "pagina te integreren, moet u toegang hebben tot de back office van een "
-"OpenDataSoft-portaal en moet u de toelating \"Alle pagina's bewerken\" "
+"Opendatasoft-portaal en moet u de toelating \"Alle pagina's bewerken\" "
 "hebben."
 
 #: ../../source/dashboard_modules/how_to_create_tabs.rst:29
@@ -146,13 +146,13 @@ msgid ""
 "Depending on whether you try this tutorial on a new page or in an existing "
 "dashboard, you will perhaps see the ``<div class=\"container\">`` and ``<div"
 " class=\"ods-box\">`` tags: both are default tags that create the default "
-"frame of any OpenDataSoft page. If you want to keep this frame, make sure to"
+"frame of any Opendatasoft page. If you want to keep this frame, make sure to"
 " add the code of the tutorial between these default tags."
 msgstr ""
 "Afhankelijk van het feit of u deze handleiding uitprobeert op een nieuwe "
 "pagina of in een bestaand dashboard, zult u misschien de tags ``<div "
 "class=\"container\">`` en ``<div class=\"ods-box\">`` zien: beide zijn "
-"standaard tags die het standaard kader van een OpenDataSoft-pagina aanmaken."
+"standaard tags die het standaard kader van een Opendatasoft-pagina aanmaken."
 " Indien u dit kader wilt behouden, zorg er dan voor dat u de code van de "
 "handleiding tussen deze standaard tags toevoegt."
 
@@ -216,7 +216,7 @@ msgstr ""
 msgid ""
 "6 + Second, we are going to give a bit more style to the tab contents. This "
 "time, instead of creating a whole new CSS class, we are going to use an "
-"already existing one. ``ods-box`` is a default OpenDataSoft CSS style that "
+"already existing one. ``ods-box`` is a default Opendatasoft CSS style that "
 "wraps the HTML items into a thin border. It will help us give the impression"
 " that our tab contents are a little bit 'outside' the rest of the page "
 "content. Add a ``<div>`` tag wrapping all the tab contents, with the ``ods-"
@@ -225,7 +225,7 @@ msgstr ""
 "6 + Ten tweede gaan we de content van het tabblad iets meer stijl geven. "
 "Deze keer gaan we een reeds bestaande CSS-klasse gebruiken in plaats van een"
 " volledige nieuwe aan te maken. \"ods-box\" is een standaard CSS-stijl in "
-"OpenDataSoft die de HTML-items met een dunne rand omringt. Het zal ons "
+"Opendatasoft die de HTML-items met een dunne rand omringt. Het zal ons "
 "helpen om de indruk te geven dat de contents van ons tabblad iets \"buiten\""
 " de rest van de paginacontent ligt. Voeg een ``<div>`` tag toe die de "
 "contents van alle tabbladen omringt en waarin de CSS-klasse ``ods-box`` in "

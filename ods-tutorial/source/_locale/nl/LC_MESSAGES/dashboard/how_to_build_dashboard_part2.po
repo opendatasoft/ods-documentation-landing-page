@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2018, OpenDataSoft
-# This file is distributed under the same license as the OpenDataSoft Tutorials package.
+# Copyright (C) 2018, Opendatasoft
+# This file is distributed under the same license as the Opendatasoft Tutorials package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenDataSoft Tutorials 1.0\n"
+"Project-Id-Version: Opendatasoft Tutorials 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-13 21:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -45,8 +45,8 @@ msgid "how to link widgets together using a context"
 msgstr "hoe met behulp van een context widgets aan elkaar koppelen"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:19
-msgid "how to add other OpenDataSoft widgets"
-msgstr "hoe andere OpenDataSoft-widgets toevoegen"
+msgid "how to add other Opendatasoft widgets"
+msgstr "hoe andere Opendatasoft-widgets toevoegen"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:20
 msgid "how to use CSS classes to format and organize your dashboard"
@@ -60,10 +60,10 @@ msgstr "**VOORVEREISTEN**"
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:26
 msgid ""
 "In order to create a dashboard, you need to have access to the back office "
-"of an OpenDataSoft portal and the \"Edit all pages\" permission."
+"of an Opendatasoft portal and the \"Edit all pages\" permission."
 msgstr ""
 "Om een dashboard te kunnen aanmaken, moet u toegang hebben tot de back-"
-"office van een OpenDataSoft-portaal en moet u de toelating \"Alle pagina's "
+"office van een Opendatasoft-portaal en moet u de toelating \"Alle pagina's "
 "bewerken\" hebben."
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:27
@@ -196,15 +196,15 @@ msgstr ""
 " volgens diezelfde filter. Onze widgets zijn aan elkaar gekoppeld!"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:165
-msgid "Add more OpenDataSoft widgets"
-msgstr "Meer OpenDataSoft-widgets toevoegen"
+msgid "Add more Opendatasoft widgets"
+msgstr "Meer Opendatasoft-widgets toevoegen"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:169
 msgid ""
 "5 + Now that our widgets are linked, why not add more widgets to make our "
 "dashboard even better? Let's start by adding a search bar. It would allow us"
 " to make a textual research on all the visualizations at the same time. Go "
-"to the OpenDataSoft widgets documentation to learn more about the widget we "
+"to the Opendatasoft widgets documentation to learn more about the widget we "
 "are goint to use, which is called `odsTextSearch "
 "<https://help.opendatasoft.com/widgets/#/api/ods-"
 "widgets.directive:odsTextSearch>`_."
@@ -213,7 +213,7 @@ msgstr ""
 "toevoegen om ons dashboard zelfs nog beter te maken? We beginnen met het "
 "toevoegen van een zoekbalk. Hiermee kunnen we tezelfdertijd "
 "tekstzoekopdrachten uitvoeren op alle weergaven. Ga naar de documentatie "
-"over OpenDataSoft-widgets voor meer informatie over de widget die we gaan "
+"over Opendatasoft-widgets voor meer informatie over de widget die we gaan "
 "gebruiken, genaamd `odsTextSearch "
 "<https://help.opendatasoft.com/widgets/#/api/ods-"
 "widgets.directive:odsTextSearch>`_."
@@ -313,7 +313,7 @@ msgstr ""
 msgid ""
 "11 + Let's add another very useful element to our dashboard: filters! It "
 "would allow us to apply filters on our visualizations, just like when "
-"navigating a dataset. Go to the OpenDataSoft widgets documentation to learn "
+"navigating a dataset. Go to the Opendatasoft widgets documentation to learn "
 "more about the widget we are goint to use, which is called `odsFacets "
 "<https://help.opendatasoft.com/widgets/#/api/ods-"
 "widgets.directive:odsFacets>`_."
