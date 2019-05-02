@@ -83,20 +83,37 @@ export default {
     }
 }
 
+.ods-nav {
+    display: flex;
+    display: -ms-flexbox;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .ods-nav__link {
+    font-size: 11px;
+    background-color: transparent;
     color: white;
-    border-bottom: 2px solid transparent;
-    padding: 5px 0;
-    &:hover {
-        border-bottom: 2px solid white;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    outline: none;
+    margin: auto @spacing-50 / 2;
+
+    &:hover, :focus, :active, &.active {
+        background-color: @blue-medium;
     }
+
     @media (max-width: @mobile-width) {
-        margin: 15px auto;
-        width: auto;
+        /*margin: 15px auto;*/
+        /*width: auto;*/
     }
     @media (min-width: @desktop-width) {
-        margin: auto 20px;
-        font-size: 18px;
+        /*margin: auto 20px;*/
+        /*font-size: 18px;*/
         &:first-child {
             margin-left: 0;
         }
@@ -112,10 +129,6 @@ export default {
         padding: 5px 0;
         height: 25px;
     }
-}
-
-.ods-nav__link.active {
-    border-bottom: 2px solid white;
 }
 
 </style>

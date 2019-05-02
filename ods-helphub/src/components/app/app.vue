@@ -65,7 +65,11 @@ export default {
 @import "../../assets/less/variables";
 @import "../../assets/less/components";
 
-body {
+* {
+    box-sizing: border-box;
+}
+
+html {
     &:extend(.default-font);
 }
 
@@ -87,7 +91,7 @@ a {
         margin: 120px auto 0 auto;
     }
     @media (min-width: @desktop-width) {
-        width: 870px;
+        width: 752px;
         margin: 100px auto 0 auto;
     }
 }

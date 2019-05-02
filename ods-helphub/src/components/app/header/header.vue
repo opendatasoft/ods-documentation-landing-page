@@ -91,6 +91,8 @@ export default {
 @import "../../../assets/less/variables";
 @import "../../../assets/less/components";
 
+@header-height: 80px;
+
 .ods-header {
     width: 100%;
     position: fixed;
@@ -112,7 +114,7 @@ export default {
 
 .ods-header__brand {
     display: flex;
-    height: 100px;
+    height: @header-height;
     @media (max-width: @mobile-width) {
         width: 100%;
         justify-content: space-evenly;
@@ -147,7 +149,7 @@ export default {
 
 .ods-header__link-logo {
     margin: auto 0;
-    height: 80px;
+    height: @header-height - 20px;
 }
 
 .ods-header__content-logo {
@@ -173,10 +175,10 @@ export default {
 
 .ods-header__logo {
     @media (max-width: @mobile-width) {
-        height: 70px;
+        height: @header-height - 30px;
     }
     @media (min-width: @desktop-width) {
-        height: 80px;
+        height: @header-height - 20px;
     }
 }
 
