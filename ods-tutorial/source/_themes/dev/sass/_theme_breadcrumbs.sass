@@ -2,7 +2,17 @@
   +clearfix
 
 .wy-breadcrumbs li
+  @extend %text-100
   display: inline-block
+  color: $gray-medium
+  text-transform: uppercase
+
+  a
+    color: $gray-medium
+
+    &:hover
+      color: $link-color-hover
+
   &.wy-breadcrumbs-aside
     float: right
   a
@@ -32,6 +42,3 @@
 @media print
   .wy-breadcrumbs li.wy-breadcrumbs-aside
     display: none
-
-.breadcrumb-tutorial
-  margin-left: 70px
