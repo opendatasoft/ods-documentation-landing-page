@@ -90,6 +90,7 @@ a {
 
 .ods-wrapper {
     height: 100%;
+    min-height: ~"calc(100vh - @{header-height} - @{footer-height} - 2 * @{spacing-300})";
     @media (max-width: @mobile-width) {
         width: 100%;
         margin: 120px auto 0 auto;

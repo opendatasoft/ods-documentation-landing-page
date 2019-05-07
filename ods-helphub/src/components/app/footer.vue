@@ -36,8 +36,6 @@ export default {
 @import "../../assets/less/variables";
 @import "../../assets/less/components";
 
-@footer-height: 50px;
-
 .footer-container {
     display: flex;
     justify-content: space-between;
