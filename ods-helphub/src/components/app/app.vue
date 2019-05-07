@@ -68,9 +68,13 @@ export default {
 * {
     box-sizing: border-box;
 }
-
 html {
-    &:extend(.default-font);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", Helvetica;
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
 }
 
 a {
@@ -92,7 +96,7 @@ a {
     }
     @media (min-width: @desktop-width) {
         width: 752px;
-        margin: 100px auto 0 auto;
+        margin: @header-height + @spacing-300 auto @spacing-300 auto;
     }
 }
 
