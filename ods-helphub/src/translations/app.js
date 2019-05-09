@@ -1,11 +1,11 @@
 export default {
 
     basePageTitle: {
-        en: "OpenDataSoft Help Hub",
-        fr: "OpenDataSoft Help Hub",
-        es: "OpenDataSoft Help Hub",
-        de: "OpenDataSoft Help Hub",
-        nl: "OpenDataSoft Help Hub"
+        en: "Opendatasoft Help Hub",
+        fr: "Opendatasoft Help Hub",
+        es: "Opendatasoft Help Hub",
+        de: "Opendatasoft Help Hub",
+        nl: "Opendatasoft Help Hub"
     },
 
     /* Header */

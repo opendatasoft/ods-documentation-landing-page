@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2018, OpenDataSoft
-# This file is distributed under the same license as the OpenDataSoft Tutorials package.
+# Copyright (C) 2018, Opendatasoft
+# This file is distributed under the same license as the Opendatasoft Tutorials package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenDataSoft Tutorials 1.0\n"
+"Project-Id-Version: Opendatasoft Tutorials 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-13 21:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -45,8 +45,8 @@ msgid "how to link widgets together using a context"
 msgstr "à lier des widgets à l'aide d'un contexte ;"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:19
-msgid "how to add other OpenDataSoft widgets"
-msgstr "à ajouter d'autres widgets OpenDataSoft ;"
+msgid "how to add other Opendatasoft widgets"
+msgstr "à ajouter d'autres widgets Opendatasoft ;"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:20
 msgid "how to use CSS classes to format and organize your dashboard"
@@ -61,10 +61,10 @@ msgstr "**PRÉREQUIS**"
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:26
 msgid ""
 "In order to create a dashboard, you need to have access to the back office "
-"of an OpenDataSoft portal and the \"Edit all pages\" permission."
+"of an Opendatasoft portal and the \"Edit all pages\" permission."
 msgstr ""
 "Pour créer un tableau de bord, vous avez besoin d'un accès à l'interface "
-"d'administration d'un portail OpenDataSoft, ainsi que de la permission "
+"d'administration d'un portail Opendatasoft, ainsi que de la permission "
 "\"Éditer toutes les pages\"."
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:27
@@ -200,15 +200,15 @@ msgstr ""
 " widgets sont maintenant liés !"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:165
-msgid "Add more OpenDataSoft widgets"
-msgstr "Ajouter d'autres widgets OpenDataSoft"
+msgid "Add more Opendatasoft widgets"
+msgstr "Ajouter d'autres widgets Opendatasoft"
 
 #: ../../source/dashboard/how_to_build_dashboard_part2.rst:169
 msgid ""
 "5 + Now that our widgets are linked, why not add more widgets to make our "
 "dashboard even better? Let's start by adding a search bar. It would allow us"
 " to make a textual research on all the visualizations at the same time. Go "
-"to the OpenDataSoft widgets documentation to learn more about the widget we "
+"to the Opendatasoft widgets documentation to learn more about the widget we "
 "are goint to use, which is called `odsTextSearch "
 "<https://help.opendatasoft.com/widgets/#/api/ods-"
 "widgets.directive:odsTextSearch>`_."
@@ -217,7 +217,7 @@ msgstr ""
 "d'autres pour avoir un tableau de bord encore plus perfectionné ? Commençons"
 " par ajouter une barre de recherche. Elle nous permettra d'effectuer des "
 "recherches textuelles sur toutes les visualisations en même temps. Accédez à"
-" la documentation sur les widgets OpenDataSoft pour en apprendre davantage "
+" la documentation sur les widgets Opendatasoft pour en apprendre davantage "
 "sur le widget que nous allons utiliser, appelé `odsTextSearch "
 "<https://help.opendatasoft.com/widgets/#/api/ods-"
 "widgets.directive:odsTextSearch>`_."
@@ -315,7 +315,7 @@ msgstr ""
 msgid ""
 "11 + Let's add another very useful element to our dashboard: filters! It "
 "would allow us to apply filters on our visualizations, just like when "
-"navigating a dataset. Go to the OpenDataSoft widgets documentation to learn "
+"navigating a dataset. Go to the Opendatasoft widgets documentation to learn "
 "more about the widget we are goint to use, which is called `odsFacets "
 "<https://help.opendatasoft.com/widgets/#/api/ods-"
 "widgets.directive:odsFacets>`_."
@@ -323,7 +323,7 @@ msgstr ""
 "11 + Ajoutons un autre élément très utile à notre tableau de bord : des "
 "filtres ! Ils vont nous permettre de filtrer nos visualisations, comme "
 "lorsque nous parcourons un jeu de données. Accédez à la documentation sur "
-"les widgets OpenDataSoft pour en apprendre davantage sur le widget que nous "
+"les widgets Opendatasoft pour en apprendre davantage sur le widget que nous "
 "allons utiliser, appelé `odsFacets "
 "<https://help.opendatasoft.com/widgets/#/api/ods-"
 "widgets.directive:odsFacets>`_."

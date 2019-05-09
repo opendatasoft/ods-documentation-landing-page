@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019, OpenDataSoft
-# This file is distributed under the same license as the OpenDataSoft Tutorials package.
+# Copyright (C) 2019, Opendatasoft
+# This file is distributed under the same license as the Opendatasoft Tutorials package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
@@ -9,7 +9,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenDataSoft Tutorials 1.0\n"
+"Project-Id-Version: Opendatasoft Tutorials 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-08 10:37+0100\n"
 "PO-Revision-Date: 2019-01-08 09:37+0000\n"
@@ -35,14 +35,14 @@ msgid ""
 " to match related filters. This can be useful especially with charts, since "
 "they can sometimes become useless once related filters are activated. This "
 "tutorial will be fully customizable and reusable in any dashboard or piece "
-"of content created with HTML/CSS on OpenDataSoft.*"
+"of content created with HTML/CSS on Opendatasoft.*"
 msgstr ""
 "*In diesem Tutorial erfahren Sie, wie Sie verschiedene "
 "Visualisierungsoptionen erstellen können, um die dazugehörigen Filter "
 "anzupassen. Dies kann insbesondere bei Diagrammen nützlich sein, die "
 "unbrauchbar sind, wenn bestimmte Filter aktiviert sind. Dieses Tutorial ist "
 "komplett anpassbar und wiederverwendbar in jedem Dashboard oder Inhalt, der "
-"mit HTML/CSS auf OpenDataSoft* erstellt wurde."
+"mit HTML/CSS auf Opendatasoft* erstellt wurde."
 
 #: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:16
 msgid "During this tutorial, you will learn:"
@@ -68,12 +68,12 @@ msgstr "**VORRAUSSETZUNGEN**"
 msgid ""
 "In order to test this tutorial and/or integrate the hide/show configuration "
 "on widgets in an already existing page, you need to have access to the back "
-"office of an OpenDataSoft portal and be granted the \"Edit all pages\" "
+"office of an Opendatasoft portal and be granted the \"Edit all pages\" "
 "permission."
 msgstr ""
 "Um dieses Tutorial zu testen und/oder die Verbergen/Anzeigen-Konfiguration "
 "von Widgets in eine bereits bestehende Seite zu integrieren, benötigen Sie "
-"Zugriff auf das Backoffice eines OpenDataSoft-Portals und die Berechtigung "
+"Zugriff auf das Backoffice eines Opendatasoft-Portals und die Berechtigung "
 "\"Alle Seiten bearbeiten\"."
 
 #: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:28
@@ -120,14 +120,14 @@ msgid ""
 "In this tutorial, we will create a page comprised of a visualization and its"
 " related dataset filter, using the `Shanghai World University Ranking "
 "<https://data.opendatasoft.com/explore/dataset/shanghai-world-university-"
-"ranking%40public/>`_ dataset that can be found on our OpenDataSoft data "
+"ranking%40public/>`_ dataset that can be found on our Opendatasoft data "
 "network."
 msgstr ""
 "In diesem Tutorial erstellen wir eine Seite, die aus einer Visualisierung "
 "und dem dazugehörigen Datensatz-Filter besteht. Dafür verwenden wir den "
 "Datensatz `Shanghai World University Ranking "
 "<https://data.opendatasoft.com/explore/dataset/shanghai-world-university-"
-"ranking%40public/>`_, den Sie in unserem OpenDataSoft-Datennetzwerk finden."
+"ranking%40public/>`_, den Sie in unserem Opendatasoft-Datennetzwerk finden."
 
 #: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:53
 msgid ""
@@ -151,13 +151,13 @@ msgid ""
 "Depending on whether you try this tutorial on a new page or in an existing "
 "dashboard, you will perhaps see the ``<div class=\"container\">`` and ``<div"
 " class=\"ods-box\">`` tags: both are default tags that create the default "
-"frame of any OpenDataSoft page. If you want to keep this frame, make sure to"
+"frame of any Opendatasoft page. If you want to keep this frame, make sure to"
 " add the code of the tutorial between these default tags."
 msgstr ""
 "Je nachdem, ob Sie dieses Tutorial auf einer neuen Seite oder in einem "
 "bestehenden Dashboard ausprobieren, sehen Sie ggf. die Tags ``<div "
 "class=\"container\">`` und ``<div class=\"ods-box\">``: bei beiden handelt "
-"es sich um Standard-Tags, die den Standardrahmen einer OpenDataSoft-Seite "
+"es sich um Standard-Tags, die den Standardrahmen einer Opendatasoft-Seite "
 "bilden. Wenn Sie diesen Rahmen beibehalten möchten, stellen Sie sicher, dass"
 " Sie den Code des Tutorials zwischen diese Standard-Tags einfügen."
 

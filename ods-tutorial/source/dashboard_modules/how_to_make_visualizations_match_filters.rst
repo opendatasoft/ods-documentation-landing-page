@@ -9,7 +9,7 @@ How to make visualizations match filters (with AngularJS)
 
     ★★★ Advanced - time: 30 minutes
 
-*This tutorial will teach you how to create different visualizations options to match related filters. This can be useful especially with charts, since they can sometimes become useless once related filters are activated. This tutorial will be fully customizable and reusable in any dashboard or piece of content created with HTML/CSS on OpenDataSoft.*
+*This tutorial will teach you how to create different visualizations options to match related filters. This can be useful especially with charts, since they can sometimes become useless once related filters are activated. This tutorial will be fully customizable and reusable in any dashboard or piece of content created with HTML/CSS on Opendatasoft.*
 
 .. image:: images/module2_final.png
 
@@ -24,7 +24,7 @@ During this tutorial, you will learn:
 
  **PREREQUISITES**
 
- - In order to test this tutorial and/or integrate the hide/show configuration on widgets in an already existing page, you need to have access to the back office of an OpenDataSoft portal and be granted the "Edit all pages" permission.
+ - In order to test this tutorial and/or integrate the hide/show configuration on widgets in an already existing page, you need to have access to the back office of an Opendatasoft portal and be granted the "Edit all pages" permission.
  - Since this tutorial is labeled as "Advanced" in terms of difficulty level, we assume that you already know HTML and CSS well enough to recognize and understand their structures and how they work. Other more technical elements will however be explained in details.
  - We highly recommend to follow the tutorial with the `Shanghai World University Ranking <https://data.opendatasoft.com/explore/dataset/shanghai-world-university-ranking%40public/>`_ dataset, used throughout the whole tutorial. If you however choose to follow the tutorial with another dataset, keep in mind that you will need to adapt each step.
 
@@ -46,7 +46,7 @@ During this tutorial, you will learn:
 
     Create the base
 
-In this tutorial, we will create a page comprised of a visualization and its related dataset filter, using the `Shanghai World University Ranking <https://data.opendatasoft.com/explore/dataset/shanghai-world-university-ranking%40public/>`_ dataset that can be found on our OpenDataSoft data network.
+In this tutorial, we will create a page comprised of a visualization and its related dataset filter, using the `Shanghai World University Ranking <https://data.opendatasoft.com/explore/dataset/shanghai-world-university-ranking%40public/>`_ dataset that can be found on our Opendatasoft data network.
 
 .. rst-class:: block-step
 
@@ -55,7 +55,7 @@ In this tutorial, we will create a page comprised of a visualization and its rel
 .. admonition:: Note
    :class: note
 
-   Depending on whether you try this tutorial on a new page or in an existing dashboard, you will perhaps see the ``<div class="container">`` and ``<div class="ods-box">`` tags: both are default tags that create the default frame of any OpenDataSoft page. If you want to keep this frame, make sure to add the code of the tutorial between these default tags.
+   Depending on whether you try this tutorial on a new page or in an existing dashboard, you will perhaps see the ``<div class="container">`` and ``<div class="ods-box">`` tags: both are default tags that create the default frame of any Opendatasoft page. If you want to keep this frame, make sure to add the code of the tutorial between these default tags.
 
 .. code-block:: html
 

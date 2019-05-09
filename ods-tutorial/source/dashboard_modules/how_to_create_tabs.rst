@@ -9,7 +9,7 @@ How to create tabs (with AngularJS)
 
     ★★★ Advanced - time: 45 minutes
 
-*This tutorial will teach you how to create tabs using AngularJS. These tabs will be fully customizable and reusable in any dashboard or piece of content created with HTML/CSS on OpenDataSoft.*
+*This tutorial will teach you how to create tabs using AngularJS. These tabs will be fully customizable and reusable in any dashboard or piece of content created with HTML/CSS on Opendatasoft.*
 
 .. image:: images/module1_final.png
 
@@ -25,7 +25,7 @@ During this tutorial, you will learn how to use 4 AngularJS directives:
 
  **PREREQUISITES**
 
- - In order to test this tutorial and/or integrate the tabs in an already existing page, you need to have access to the back office of an OpenDataSoft portal and be granted the "Edit all pages" permission.
+ - In order to test this tutorial and/or integrate the tabs in an already existing page, you need to have access to the back office of an Opendatasoft portal and be granted the "Edit all pages" permission.
  - Since this tutorial is labeled as "Advanced" in terms of difficulty level, we assume that you already know HTML and CSS well enough to recognize and understand their structures and how they work. Other more technical elements will however be explained in details.
 
 
@@ -59,7 +59,7 @@ During this tutorial, you will learn how to use 4 AngularJS directives:
 .. admonition:: Note
    :class: note
 
-   Depending on whether you try this tutorial on a new page or in an existing dashboard, you will perhaps see the ``<div class="container">`` and ``<div class="ods-box">`` tags: both are default tags that create the default frame of any OpenDataSoft page. If you want to keep this frame, make sure to add the code of the tutorial between these default tags.
+   Depending on whether you try this tutorial on a new page or in an existing dashboard, you will perhaps see the ``<div class="container">`` and ``<div class="ods-box">`` tags: both are default tags that create the default frame of any Opendatasoft page. If you want to keep this frame, make sure to add the code of the tutorial between these default tags.
 
 .. code-block:: html
 
@@ -173,7 +173,7 @@ During this tutorial, you will learn how to use 4 AngularJS directives:
 
 .. rst-class:: block-step
 
-    6 + Second, we are going to give a bit more style to the tab contents. This time, instead of creating a whole new CSS class, we are going to use an already existing one. ``ods-box`` is a default OpenDataSoft CSS style that wraps the HTML items into a thin border. It will help us give the impression that our tab contents are a little bit 'outside' the rest of the page content. Add a ``<div>`` tag wrapping all the tab contents, with the ``ods-box`` CSS class in it.
+    6 + Second, we are going to give a bit more style to the tab contents. This time, instead of creating a whole new CSS class, we are going to use an already existing one. ``ods-box`` is a default Opendatasoft CSS style that wraps the HTML items into a thin border. It will help us give the impression that our tab contents are a little bit 'outside' the rest of the page content. Add a ``<div>`` tag wrapping all the tab contents, with the ``ods-box`` CSS class in it.
 
 .. code-block:: html
 

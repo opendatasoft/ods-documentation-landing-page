@@ -6,7 +6,7 @@
         <a class="ods-footer__logo"
             href="https://www.opendatasoft.com/">
             <img src="../../assets/img/ODS_logo_footer.svg"
-                alt="OpenDataSoft logo">
+                alt="Opendatasoft logo">
         </a>
 
         <langs class="ods-footer__lang"
