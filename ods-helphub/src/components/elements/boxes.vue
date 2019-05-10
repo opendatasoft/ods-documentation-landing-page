@@ -92,12 +92,13 @@ export default {
     border-radius: 4px;
     transition: 0.2s;
 
+    &:hover {
+        box-shadow: 0px 0px 10px 0px tint(@grey-border, 15%);
+        background-color: @light-100;
+    }
 
     @media (min-width: @desktop-width) {
         /*width: 330px;*/
-        &:hover {
-            box-shadow: 0px 0px 10px 0px tint(@grey-border, 15%);
-        }
     }
 }
 
