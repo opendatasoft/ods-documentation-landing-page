@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019, OpenDataSoft
-# This file is distributed under the same license as the OpenDataSoft Tutorials package.
+# Copyright (C) 2019, Opendatasoft
+# This file is distributed under the same license as the Opendatasoft Tutorials package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
@@ -9,7 +9,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenDataSoft Tutorials 1.0\n"
+"Project-Id-Version: Opendatasoft Tutorials 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-08 10:37+0100\n"
 "PO-Revision-Date: 2019-01-08 09:37+0000\n"
@@ -36,7 +36,7 @@ msgid ""
 " to match related filters. This can be useful especially with charts, since "
 "they can sometimes become useless once related filters are activated. This "
 "tutorial will be fully customizable and reusable in any dashboard or piece "
-"of content created with HTML/CSS on OpenDataSoft.*"
+"of content created with HTML/CSS on Opendatasoft.*"
 msgstr ""
 "*In deze handleiding leert u hoe u verschillende weergaveopties kunt "
 "aanmaken om overeen te stemmen met eraan verbonden filters. Dit kan vooral "
@@ -44,7 +44,7 @@ msgstr ""
 "eenmaal de eraan verbonden filters worden geactiveerd. Deze handleiding kan "
 "volledig worden gepersonaliseerd en opnieuw worden gebruikt in elke "
 "dashboard of stuk content dat aangemaakt wordt met HTML/CSS op "
-"OpenDataSoft.*"
+"Opendatasoft.*"
 
 #: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:16
 msgid "During this tutorial, you will learn:"
@@ -70,12 +70,12 @@ msgstr "**VOORVEREISTEN**"
 msgid ""
 "In order to test this tutorial and/or integrate the hide/show configuration "
 "on widgets in an already existing page, you need to have access to the back "
-"office of an OpenDataSoft portal and be granted the \"Edit all pages\" "
+"office of an Opendatasoft portal and be granted the \"Edit all pages\" "
 "permission."
 msgstr ""
 "Om deze handleiding uit te testen en/of de configuratie van widgets in een "
 "reeds bestaande pagina te verbergen of te tonen, moet u toegang hebben tot "
-"de back office van een OpenDataSoft-portaal en moet u de toelating \"Alle "
+"de back office van een Opendatasoft-portaal en moet u de toelating \"Alle "
 "pagina's bewerken\" hebben."
 
 #: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:28
@@ -123,14 +123,14 @@ msgid ""
 "In this tutorial, we will create a page comprised of a visualization and its"
 " related dataset filter, using the `Shanghai World University Ranking "
 "<https://data.opendatasoft.com/explore/dataset/shanghai-world-university-"
-"ranking%40public/>`_ dataset that can be found on our OpenDataSoft data "
+"ranking%40public/>`_ dataset that can be found on our Opendatasoft data "
 "network."
 msgstr ""
 "In deze handleiding zullen we een pagina aanmaken die bestaat uit een "
 "weergave en de eraan verbonden datasetfilter. We gebruiken hierbij de "
 "`Shanghai World University Ranking "
 "<https://data.opendatasoft.com/explore/dataset/shanghai-world-university-"
-"ranking%40public/>`_ dataset die terug te vinden is op ons OpenDataSoft "
+"ranking%40public/>`_ dataset die terug te vinden is op ons Opendatasoft "
 "datanetwerk."
 
 #: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:53
@@ -155,13 +155,13 @@ msgid ""
 "Depending on whether you try this tutorial on a new page or in an existing "
 "dashboard, you will perhaps see the ``<div class=\"container\">`` and ``<div"
 " class=\"ods-box\">`` tags: both are default tags that create the default "
-"frame of any OpenDataSoft page. If you want to keep this frame, make sure to"
+"frame of any Opendatasoft page. If you want to keep this frame, make sure to"
 " add the code of the tutorial between these default tags."
 msgstr ""
 "Afhankelijk van het feit of u deze handleiding uitprobeert op een nieuwe "
 "pagina of in een bestaand dashboard, zult u misschien de tags ``<div "
 "class=\"container\">`` en ``<div class=\"ods-box\">`` zien: beide zijn "
-"standaard tags die het standaard kader van een OpenDataSoft-pagina aanmaken."
+"standaard tags die het standaard kader van een Opendatasoft-pagina aanmaken."
 " Indien u dit kader wilt behouden, zorg er dan voor dat u de code van de "
 "handleiding tussen deze standaard tags toevoegt."
 

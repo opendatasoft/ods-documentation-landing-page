@@ -1,6 +1,6 @@
-# OpenDataSoft's documentation
+# Opendatasoft's documentation
 
-This repository contains documentation resources for OpenDataSoft Tutorials.
+This repository contains documentation resources for Opendatasoft Tutorials.
 
 All content in written in english, translations are managed with transifex at https://www.transifex.com/opendatasoft/documentation-5/
 Please ask to join the group to contribute to the translation effort.
@@ -60,15 +60,15 @@ make pdf-fr
 **N.B.** The pdf generator fails when it encounters untranslated texts.
 You may have to comment not fully translated sections out of the root `index.rst` so that the build passes.
 
-To generate the PDF version of the manual, you will need to do several things: 
+To generate the PDF version of the manual, you will need to do several things:
 - Open the illustrator files in an image editing software (you can use Affinity Designer, Sketch or Adobe Illustrator)
-- Update the date of the front cover for the language you're working on 
+- Update the date of the front cover for the language you're working on
 - Export the cover as a PDF
 - Generate the PDF
 - Remove the ugly default cover
 - Stitch the generated cover to the generated PDF manual (you can use Apple Preview)
-- Because the SVG fails, it's preferable to remove the final sections (by deleting the pages - note that you can only do this at the end of the document or you will mess the page counts. 
-- If page break shows unwanted sections headers, you can use a white rectangle to hide some elements. 
+- Because the SVG fails, it's preferable to remove the final sections (by deleting the pages - note that you can only do this at the end of the document or you will mess the page counts.
+- If page break shows unwanted sections headers, you can use a white rectangle to hide some elements.
 
 ## Troubleshooting
 
@@ -145,7 +145,7 @@ You should strive to constrain the topic of each page to a single topic. Related
 a blog post or a newsletter for example
 - Use present tense
 - When describing steps, use imperative. e.g. "Click on this button, then type in the title..."
-- When talking about OpenDataSoft as a company, use "us" or "OpenDataSoft"
+- When talking about Opendatasoft as a company, use "us" or "Opendatasoft"
 
 ### Mandatory
 
@@ -207,7 +207,7 @@ a blog post or a newsletter for example
 
 ```
 .. rst-class:: header-information-tutorial
-    
+
     ★☆☆ Beginner - time: 30 minutes
 
 ```
@@ -218,7 +218,7 @@ a blog post or a newsletter for example
 
 ```
 .. rst-class:: block-step
-    
+
     7 + Save your page.
 
 ```
@@ -227,15 +227,15 @@ a blog post or a newsletter for example
 
 ```
 .. rst-class:: img-hide
-    
+
     .. image:: images/step6.png
 
 ```
-Or, 
+Or,
 
 ```
 .. rst-class:: img-hide
-    
+
     .. image:: images/step6.png
     .. image:: images/step7.png
     .. image:: images/step8.png

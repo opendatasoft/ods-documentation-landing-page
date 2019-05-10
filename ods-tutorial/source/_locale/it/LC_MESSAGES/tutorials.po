@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2018, OpenDataSoft
-# This file is distributed under the same license as the OpenDataSoft Tutorials package.
+# Copyright (C) 2018, Opendatasoft
+# This file is distributed under the same license as the Opendatasoft Tutorials package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenDataSoft Tutorials 1.0\n"
+"Project-Id-Version: Opendatasoft Tutorials 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-13 21:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -18,14 +18,14 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../source/tutorials.rst:2
-msgid "Welcome to the tutorials of OpenDataSoft!"
+msgid "Welcome to the tutorials of Opendatasoft!"
 msgstr ""
 
 #: ../../source/tutorials.rst:4
 msgid ""
-"This documentation contains all OpenDataSoft tutorials. They consist in a "
+"This documentation contains all Opendatasoft tutorials. They consist in a "
 "sequence of steps leading to the creation of a deliverable using the "
-"OpenDataSoft platform."
+"Opendatasoft platform."
 msgstr ""
 
 #: ../../source/tutorials.rst:6

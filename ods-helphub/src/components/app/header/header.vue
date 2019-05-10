@@ -11,7 +11,7 @@
                  class="ods-header__logo">
                 <img
                     src="../../../assets/img/ods-logo-helphub.svg"
-                    alt="OpenDataSoft HelpHub Logo">
+                    alt="Opendatasoft HelpHub Logo">
             </router-link>
 
             <div class="ods-header__content-menu-toggle">

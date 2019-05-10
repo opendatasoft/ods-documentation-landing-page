@@ -9,11 +9,11 @@ export default {
             nl: "Home"
         },
         description: {
-            en: "Welcome to OpenDataSoft's help hub - the centralized help site for all OpenDataSoft's products.",
-            fr: "Bienvenu au centre d'aide OpenDataSoft - le site qui centralise l'aide pour tous les produits OpenDataSoft.",
-            es: "Bienvenido a la central de ayuda deOpenDataSoft, el sitio de ayuda centralizado para todos los productos deOpenDataSoft.",
-            de: "Willkommen im Hilfebereich von OpenDataSoft - der zentralen Hilfeseite für alle Produkte von OpenDataSoft.",
-            nl: "Welkom op de help hub van OpenDataSoft- de gecentraliseerde helpsite voor alle producten vanOpenDataSoft."
+            en: "Welcome to Opendatasoft's help hub - the centralized help site for all Opendatasoft's products.",
+            fr: "Bienvenu au centre d'aide Opendatasoft - le site qui centralise l'aide pour tous les produits Opendatasoft.",
+            es: "Bienvenido a la central de ayuda deOpendatasoft, el sitio de ayuda centralizado para todos los productos deOpendatasoft.",
+            de: "Willkommen im Hilfebereich von Opendatasoft - der zentralen Hilfeseite für alle Produkte von Opendatasoft.",
+            nl: "Welkom op de help hub van Opendatasoft- de gecentraliseerde helpsite voor alle producten vanOpendatasoft."
         },
         image: {
             en: "Image URL",
@@ -34,11 +34,11 @@ export default {
             nl: "Handleiding"
         },
         desc: {
-            en: "Discover what OpenDataSoft's solution can do for you: how to publish data, design dashboards, beautiful visualisations, and much more.",
-            fr: "Découvrez ce que la solution OpenDataSoft peut faire pour vous: comment publier des données, concevoir des tableaux de bord, de belles visualisations, et bien plus encore.",
-            es: "Descubra qué puede hacer por usted la solución deOpenDataSoft: cómo publicar datos, diseñar paneles, bonitas visualizaciones, etc.",
-            de: "Entdecken Sie, wie die Lösung von OpenDataSoft Ihnen helfen kann: erfahren Sie, wie man Daten veröffentlicht, Dashboards und tolle Visualisierungen gestaltet und vieles mehr.",
-            nl: "Ontdek wat de oplossingen van OpenDataSoftvoor u kunnen doen: hoe u data kunt publiceren, dashboards kunt ontwerpen, mooie weergaves en nog veel meer."
+            en: "Discover what Opendatasoft's solution can do for you: how to publish data, design dashboards, beautiful visualisations, and much more.",
+            fr: "Découvrez ce que la solution Opendatasoft peut faire pour vous: comment publier des données, concevoir des tableaux de bord, de belles visualisations, et bien plus encore.",
+            es: "Descubra qué puede hacer por usted la solución deOpendatasoft: cómo publicar datos, diseñar paneles, bonitas visualizaciones, etc.",
+            de: "Entdecken Sie, wie die Lösung von Opendatasoft Ihnen helfen kann: erfahren Sie, wie man Daten veröffentlicht, Dashboards und tolle Visualisierungen gestaltet und vieles mehr.",
+            nl: "Ontdek wat de oplossingen van Opendatasoftvoor u kunnen doen: hoe u data kunt publiceren, dashboards kunt ontwerpen, mooie weergaves en nog veel meer."
         },
         url: {
             en: "/platform/en/",
@@ -112,11 +112,11 @@ export default {
             nl: "Widgets"
         },
         desc: {
-            en: "Discover OpenDataSoft's widgets library, a selection of web components to build rich and interactive pages to visualize data.",
-            fr: "Découvrez la bibliothèque de widgets OpenDataSoft, une sélection de composants Web pour créer des pages riches et interactives afin de visualiser les données.",
-            es: "Descubra la biblioteca de widgets de OpenDataSoft, una selección de componentes web para crear páginas interactivas y de calidad a fin de visualizar datos.",
-            de: "Entdecken Sie die Widgets-Bibliothek von OpenDataSoft: hier finden Sie unterschiedliche Webkomponenten, mit denen Sie ansprechende und interaktive Seiten zur Datenvisualisierung gestalten können.",
-            nl: "Ontdek de widgets-bibliotheek van OpenDataSoft, een selectie van web components om rijke en interactieve pagina's op te bouwen om data te bekijken."
+            en: "Discover Opendatasoft's widgets library, a selection of web components to build rich and interactive pages to visualize data.",
+            fr: "Découvrez la bibliothèque de widgets Opendatasoft, une sélection de composants Web pour créer des pages riches et interactives afin de visualiser les données.",
+            es: "Descubra la biblioteca de widgets de Opendatasoft, una selección de componentes web para crear páginas interactivas y de calidad a fin de visualizar datos.",
+            de: "Entdecken Sie die Widgets-Bibliothek von Opendatasoft: hier finden Sie unterschiedliche Webkomponenten, mit denen Sie ansprechende und interaktive Seiten zur Datenvisualisierung gestalten können.",
+            nl: "Ontdek de widgets-bibliotheek van Opendatasoft, een selectie van web components om rijke en interactieve pagina's op te bouwen om data te bekijken."
         },
         url: {
             en: "/widgets/#/api/",
@@ -164,11 +164,11 @@ export default {
             nl: "Tutorials"
         },
         desc: {
-            en: "Discover what OpenDataSoft's solution can do for you: how to publish data, design dashboards, beautiful visualisations, and much more.",
-            fr: "Découvrez ce que la solution OpenDataSoft peut faire pour vous: comment publier des données, concevoir des tableaux de bord, de belles visualisations, et bien plus encore.",
-            es: "Descubra qué puede hacer por usted la solución deOpenDataSoft: cómo publicar datos, diseñar paneles, bonitas visualizaciones, etc.",
-            de: "Entdecken Sie, wie die Lösung von OpenDataSoft Ihnen helfen kann: erfahren Sie, wie man Daten veröffentlicht, Dashboards und tolle Visualisierungen gestaltet und vieles mehr.",
-            nl: "Ontdek wat de oplossingen van OpenDataSoftvoor u kunnen doen: hoe u data kunt publiceren, dashboards kunt ontwerpen, mooie weergaves en nog veel meer."
+            en: "Discover what Opendatasoft's solution can do for you: how to publish data, design dashboards, beautiful visualisations, and much more.",
+            fr: "Découvrez ce que la solution Opendatasoft peut faire pour vous: comment publier des données, concevoir des tableaux de bord, de belles visualisations, et bien plus encore.",
+            es: "Descubra qué puede hacer por usted la solución deOpendatasoft: cómo publicar datos, diseñar paneles, bonitas visualizaciones, etc.",
+            de: "Entdecken Sie, wie die Lösung von Opendatasoft Ihnen helfen kann: erfahren Sie, wie man Daten veröffentlicht, Dashboards und tolle Visualisierungen gestaltet und vieles mehr.",
+            nl: "Ontdek wat de oplossingen van Opendatasoftvoor u kunnen doen: hoe u data kunt publiceren, dashboards kunt ontwerpen, mooie weergaves en nog veel meer."
         },
         url: {
             en: "/tutorials/en/",

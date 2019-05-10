@@ -9,7 +9,7 @@ How to build a dashboard (part 1)
 
     ★☆☆ Beginner - time: 30 minutes
 
-*This tutorial will teach you how to create a dashboard using 3 visualizations from a dataset published on an OpenDataSoft portal.*
+*This tutorial will teach you how to create a dashboard using 3 visualizations from a dataset published on an Opendatasoft portal.*
 
 .. image:: images/dashboard1_final.png
 
@@ -18,14 +18,14 @@ During this tutorial, you will learn:
 - what a widget is
 - what an iframe is
 - what is the difference between a widget and an iframe
-- how to use a widget in a content page created with OpenDataSoft
+- how to use a widget in a content page created with Opendatasoft
 
 
 .. rst-class:: block-prerequisite-congratulation
 
  **PREREQUISITES**
 
- - In order to create a dashboard, you need to have access to the back office of an OpenDataSoft portal and the "Edit all pages" permission.
+ - In order to create a dashboard, you need to have access to the back office of an Opendatasoft portal and the "Edit all pages" permission.
  - We highly recommend to follow the tutorial with the  `World Heritage List dataset published on our data network, Data <https://data.opendatasoft.com/explore/dataset/world-heritage-list%40public-us/map/?location=2,18.46273,-0.44037&basemap=mapbox.streets>`_. This dataset will be our example dataset used throughout the whole tutorial. If you however choose to follow the tutorial with another dataset, make sure to choose one with a Table view, as well as a Map view and an Analyze view. You will also need to adapt your own page code for it to match your chosen dataset.
 
 
@@ -156,7 +156,7 @@ The ``<div class="container-fluid">`` and ``<div class="ods-box" >`` tags help f
 .. admonition:: Important
    :class: important
 
-   A widget is a piece of code that allows anyone to integrate an interactive element directly on a webpage. In OpenDataSoft, there are several widgets which are `all listed and explained in the widget documentation <https://help.opendatasoft.com/widgets/#/api/>`_. Some of the most common OpenDataSoft widgets -those we will use in this tutorial- are the visualization widgets. Each data visualization of a published dataset is indeed available as a widget, which code is displayed below the visualization, ready to be copied!
+   A widget is a piece of code that allows anyone to integrate an interactive element directly on a webpage. In Opendatasoft, there are several widgets which are `all listed and explained in the widget documentation <https://help.opendatasoft.com/widgets/#/api/>`_. Some of the most common Opendatasoft widgets -those we will use in this tutorial- are the visualization widgets. Each data visualization of a published dataset is indeed available as a widget, which code is displayed below the visualization, ready to be copied!
 
 .. rst-class:: block-step
 
@@ -185,9 +185,9 @@ The ``<div class="container-fluid">`` and ``<div class="ods-box" >`` tags help f
 .. admonition:: Important
    :class: important
 
-   An iframe is a way to easily and safely integrate OpenDataSoft content in an isolated frame, independent from the rest of the page. If you want to integrate OpenDataSoft content outside the OpenDataSoft environment, iframes would be the best way to go, even though some interaction and customization work would probably be needed. Widgets could also be integrated into a page outside the OpenDataSoft environment, but know that heavy work would be required.
+   An iframe is a way to easily and safely integrate Opendatasoft content in an isolated frame, independent from the rest of the page. If you want to integrate Opendatasoft content outside the Opendatasoft environment, iframes would be the best way to go, even though some interaction and customization work would probably be needed. Widgets could also be integrated into a page outside the Opendatasoft environment, but know that heavy work would be required.
 
-   Since we are building a dashboard directly in an OpenDataSoft page, using OpenDataSoft widgets is the best option. In the OpenDataSoft environment, they are indeed easily customizable and very interactive with other widgets.
+   Since we are building a dashboard directly in an Opendatasoft page, using Opendatasoft widgets is the best option. In the Opendatasoft environment, they are indeed easily customizable and very interactive with other widgets.
 
 .. rst-class:: block-step
 
@@ -204,7 +204,7 @@ The ``<div class="container-fluid">`` and ``<div class="ods-box" >`` tags help f
 
 .. rst-class:: block-step
 
-    13 + Go back to the back office, to continue to edit your OpenDataSoft content page.
+    13 + Go back to the back office, to continue to edit your Opendatasoft content page.
 
 .. rst-class:: img-hide
 

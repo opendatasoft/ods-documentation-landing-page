@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2016, OpenDataSoft
-# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# Copyright (C) 2016, Opendatasoft
+# This file is distributed under the same license as the Opendatasoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 #, fuzzy
@@ -25,5 +25,5 @@ msgstr ""
 msgid ""
 "In this section are listed and documented all features related to creation "
 "of a page. These features are available in the Pages section of the back "
-"office of an OpenDataSoft domain."
+"office of an Opendatasoft domain."
 msgstr ""

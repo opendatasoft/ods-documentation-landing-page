@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019, OpenDataSoft
-# This file is distributed under the same license as the OpenDataSoft Tutorials package.
+# Copyright (C) 2019, Opendatasoft
+# This file is distributed under the same license as the Opendatasoft Tutorials package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
@@ -9,7 +9,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenDataSoft Tutorials 1.0\n"
+"Project-Id-Version: Opendatasoft Tutorials 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-08 10:37+0100\n"
 "PO-Revision-Date: 2019-01-08 09:37+0000\n"
@@ -33,11 +33,11 @@ msgstr "★★★ Sachkundige - Dauer: 45 Minuten"
 msgid ""
 "*This tutorial will teach you how to create tabs using AngularJS. These tabs"
 " will be fully customizable and reusable in any dashboard or piece of "
-"content created with HTML/CSS on OpenDataSoft.*"
+"content created with HTML/CSS on Opendatasoft.*"
 msgstr ""
 "*In diesem Tutorial erfahren Sie, wie Sie Tabs mit AngularJS erstellen "
 "können. Diese Tabs sind komplett anpassbar und wiederverwendbar in jedem "
-"Dashboard oder Inhalt, der mit HTML/CSS auf OpenDataSoft erstellt wurde.*"
+"Dashboard oder Inhalt, der mit HTML/CSS auf Opendatasoft erstellt wurde.*"
 
 #: ../../source/dashboard_modules/how_to_create_tabs.rst:16
 msgid ""
@@ -68,12 +68,12 @@ msgstr "**VORRAUSSETZUNGEN**"
 #: ../../source/dashboard_modules/how_to_create_tabs.rst:28
 msgid ""
 "In order to test this tutorial and/or integrate the tabs in an already "
-"existing page, you need to have access to the back office of an OpenDataSoft"
+"existing page, you need to have access to the back office of an Opendatasoft"
 " portal and be granted the \"Edit all pages\" permission."
 msgstr ""
 "Um dieses Tutorial zu testen und/oder die Tabs in eine bereits bestehende "
 "Seite zu integrieren, benötigen Sie Zugriff auf das Backoffice eines "
-"OpenDataSoft-Portals und die Berechtigung \"Alle Seiten bearbeiten\"."
+"Opendatasoft-Portals und die Berechtigung \"Alle Seiten bearbeiten\"."
 
 #: ../../source/dashboard_modules/how_to_create_tabs.rst:29
 msgid ""
@@ -140,13 +140,13 @@ msgid ""
 "Depending on whether you try this tutorial on a new page or in an existing "
 "dashboard, you will perhaps see the ``<div class=\"container\">`` and ``<div"
 " class=\"ods-box\">`` tags: both are default tags that create the default "
-"frame of any OpenDataSoft page. If you want to keep this frame, make sure to"
+"frame of any Opendatasoft page. If you want to keep this frame, make sure to"
 " add the code of the tutorial between these default tags."
 msgstr ""
 "Je nachdem, ob Sie dieses Tutorial auf einer neuen Seite oder in einem "
 "bestehenden Dashboard ausprobieren, sehen Sie ggf. die Tags ``<div "
 "class=\"container\">`` und ``<div class=\"ods-box\">``: bei beiden handelt "
-"es sich um Standard-Tags, die den Standardrahmen einer OpenDataSoft-Seite "
+"es sich um Standard-Tags, die den Standardrahmen einer Opendatasoft-Seite "
 "bilden. Wenn Sie diesen Rahmen beibehalten möchten, stellen Sie sicher, dass"
 " Sie den Code des Tutorials zwischen diese Standard-Tags einfügen."
 
@@ -209,7 +209,7 @@ msgstr ""
 msgid ""
 "6 + Second, we are going to give a bit more style to the tab contents. This "
 "time, instead of creating a whole new CSS class, we are going to use an "
-"already existing one. ``ods-box`` is a default OpenDataSoft CSS style that "
+"already existing one. ``ods-box`` is a default Opendatasoft CSS style that "
 "wraps the HTML items into a thin border. It will help us give the impression"
 " that our tab contents are a little bit 'outside' the rest of the page "
 "content. Add a ``<div>`` tag wrapping all the tab contents, with the ``ods-"
@@ -217,7 +217,7 @@ msgid ""
 msgstr ""
 "6 + Anschließend verleihen wir dem Inhalt des Tabs etwas mehr Stil. Anstatt "
 "eine völlig neue CSS-Klasse zu erstellen, werden wir diesmal eine bereits "
-"bestehende verwenden. ``ods-box`` ist ein standardmäßiger OpenDataSoft-CSS-"
+"bestehende verwenden. ``ods-box`` ist ein standardmäßiger Opendatasoft-CSS-"
 "Stil, der die HTML-Elemente mit einen dünnen Rand umgibt. Damit wird der "
 "Eindruck erweckt, dass unser Tab-Inhalt ein wenig \"außerhalb\" des "
 "restlichen Seiteninhalts liegt.  Fügen Sie ein ``<div>``-Tag hinzu, das den "

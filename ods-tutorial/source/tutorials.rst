@@ -1,7 +1,7 @@
-Welcome to the tutorials of OpenDataSoft!
+Welcome to the tutorials of Opendatasoft!
 =========================================
 
-This documentation contains all OpenDataSoft tutorials. They consist in a sequence of steps leading to the creation of a deliverable using the OpenDataSoft platform. Most of the time, the deliverable is an HTML page.
+This documentation contains all Opendatasoft tutorials. They consist in a sequence of steps leading to the creation of a deliverable using the Opendatasoft platform. Most of the time, the deliverable is an HTML page.
 
 At the beginning of each tutorial, you will find:
 

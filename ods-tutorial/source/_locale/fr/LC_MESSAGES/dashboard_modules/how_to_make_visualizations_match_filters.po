@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019, OpenDataSoft
-# This file is distributed under the same license as the OpenDataSoft Tutorials package.
+# Copyright (C) 2019, Opendatasoft
+# This file is distributed under the same license as the Opendatasoft Tutorials package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
@@ -10,7 +10,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenDataSoft Tutorials 1.0\n"
+"Project-Id-Version: Opendatasoft Tutorials 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-08 10:37+0100\n"
 "PO-Revision-Date: 2019-01-08 09:37+0000\n"
@@ -37,14 +37,14 @@ msgid ""
 " to match related filters. This can be useful especially with charts, since "
 "they can sometimes become useless once related filters are activated. This "
 "tutorial will be fully customizable and reusable in any dashboard or piece "
-"of content created with HTML/CSS on OpenDataSoft.*"
+"of content created with HTML/CSS on Opendatasoft.*"
 msgstr ""
 "*Dans ce tutoriel, vous allez apprendre à créer différentes options de "
 "visualisations qui correspondent à des filtres associés. Cela peut être "
 "particulièrement utile avec les graphes, puisque ces derniers perdent de "
 "leur intérêt une fois les filtres associés activés. Ce tutoriel peut être "
 "entièrement personnalisé et réutilisé avec n'importe quel tableau de bord ou"
-" élément de contenu créé avec HTML/CSS sur OpenDataSoft.*"
+" élément de contenu créé avec HTML/CSS sur Opendatasoft.*"
 
 #: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:16
 msgid "During this tutorial, you will learn:"
@@ -70,12 +70,12 @@ msgstr "**PRÉREQUIS**"
 msgid ""
 "In order to test this tutorial and/or integrate the hide/show configuration "
 "on widgets in an already existing page, you need to have access to the back "
-"office of an OpenDataSoft portal and be granted the \"Edit all pages\" "
+"office of an Opendatasoft portal and be granted the \"Edit all pages\" "
 "permission."
 msgstr ""
 "Pour tester ce tutoriel et/ou intégrer la configuration masquer/afficher aux"
 " widgets d'une page existante, vous avez besoin d'un accès à l'interface "
-"d'administration d'un portail OpenDataSoft, ainsi que de la permission "
+"d'administration d'un portail Opendatasoft, ainsi que de la permission "
 "\"Éditer toutes les pages\"."
 
 #: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:28
@@ -121,14 +121,14 @@ msgid ""
 "In this tutorial, we will create a page comprised of a visualization and its"
 " related dataset filter, using the `Shanghai World University Ranking "
 "<https://data.opendatasoft.com/explore/dataset/shanghai-world-university-"
-"ranking%40public/>`_ dataset that can be found on our OpenDataSoft data "
+"ranking%40public/>`_ dataset that can be found on our Opendatasoft data "
 "network."
 msgstr ""
 "Dans ce tutoriel, nous allons créer une page composée d'une visualisation et"
 " de son filtre de jeu de données associé à l'aide du jeu de données "
 "`Shanghai World University Ranking "
 "<https://data.opendatasoft.com/explore/dataset/shanghai-world-university-"
-"ranking%40public/>`, disponible sur notre réseau de données OpenDataSoft."
+"ranking%40public/>`, disponible sur notre réseau de données Opendatasoft."
 
 #: ../../source/dashboard_modules/how_to_make_visualizations_match_filters.rst:53
 msgid ""
@@ -152,13 +152,13 @@ msgid ""
 "Depending on whether you try this tutorial on a new page or in an existing "
 "dashboard, you will perhaps see the ``<div class=\"container\">`` and ``<div"
 " class=\"ods-box\">`` tags: both are default tags that create the default "
-"frame of any OpenDataSoft page. If you want to keep this frame, make sure to"
+"frame of any Opendatasoft page. If you want to keep this frame, make sure to"
 " add the code of the tutorial between these default tags."
 msgstr ""
 "En fonction de l'environnement (nouvelle page ou tableau de bord existant) "
 "dans lequel vous effectuez ce tutoriel, vous pourrez peut-être voir les tags"
 " ``<div class=\"container\">`` et ``<div class=\"ods-box\">``. Il s'agit des"
-" tags par défaut qui créent le cadre par défaut d'une page OpenDataSoft. Si "
+" tags par défaut qui créent le cadre par défaut d'une page Opendatasoft. Si "
 "vous souhaitez conserver ce cadre, veillez à ajouter le code du tutoriel "
 "entre ces tags par défaut."
 

@@ -16,14 +16,14 @@ How to build a dashboard (part 2)
 During this tutorial, you will learn:
 
 - how to link widgets together using a context
-- how to add other OpenDataSoft widgets
+- how to add other Opendatasoft widgets
 - how to use CSS classes to format and organize your dashboard
 
 .. rst-class:: block-prerequisite-congratulation
 
  **PREREQUISITES**
 
- - In order to create a dashboard, you need to have access to the back office of an OpenDataSoft portal and the "Edit all pages" permission.
+ - In order to create a dashboard, you need to have access to the back office of an Opendatasoft portal and the "Edit all pages" permission.
  - You are highly recommended to follow the first part of this dashboard tutorial, :doc:`"How to build a dashboard (part 1)" <how_to_build_dashboard_part1>`, since this second part starts with what we ended with in the first part. The prerequisites of the first part also contain all information about the chosen example dataset.
 
 
@@ -162,11 +162,11 @@ As you can see, we have a context for each widget. First, it is not so useful in
 
 .. rst-class:: title-level-2
 
-    Add more OpenDataSoft widgets
+    Add more Opendatasoft widgets
 
 .. rst-class:: block-step
 
-    5 + Now that our widgets are linked, why not add more widgets to make our dashboard even better? Let's start by adding a search bar. It would allow us to make a textual research on all the visualizations at the same time. Go to the OpenDataSoft widgets documentation to learn more about the widget we are goint to use, which is called `odsTextSearch <https://help.opendatasoft.com/widgets/#/api/ods-widgets.directive:odsTextSearch>`_.
+    5 + Now that our widgets are linked, why not add more widgets to make our dashboard even better? Let's start by adding a search bar. It would allow us to make a textual research on all the visualizations at the same time. Go to the Opendatasoft widgets documentation to learn more about the widget we are goint to use, which is called `odsTextSearch <https://help.opendatasoft.com/widgets/#/api/ods-widgets.directive:odsTextSearch>`_.
 
 In the odsTextSearch widget documentation, you have several information:
 
@@ -311,7 +311,7 @@ In the odsTextSearch widget documentation, you have several information:
 
 .. rst-class:: block-step
 
-    11 + Let's add another very useful element to our dashboard: filters! It would allow us to apply filters on our visualizations, just like when navigating a dataset. Go to the OpenDataSoft widgets documentation to learn more about the widget we are goint to use, which is called `odsFacets <https://help.opendatasoft.com/widgets/#/api/ods-widgets.directive:odsFacets>`_.
+    11 + Let's add another very useful element to our dashboard: filters! It would allow us to apply filters on our visualizations, just like when navigating a dataset. Go to the Opendatasoft widgets documentation to learn more about the widget we are goint to use, which is called `odsFacets <https://help.opendatasoft.com/widgets/#/api/ods-widgets.directive:odsFacets>`_.
 
 .. admonition:: Important
    :class: important

@@ -1,7 +1,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenDataSoft Tutorials 1.0\n"
+"Project-Id-Version: Opendatasoft Tutorials 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-09-10 15:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -22,7 +22,7 @@ msgstr ""
 #: ../../source/dashboard/index.rst:10
 msgid ""
 "*This tutorial will teach you how to create a dashboard using 3 "
-"visualizations from a dataset published on an OpenDataSoft portal.*"
+"visualizations from a dataset published on an Opendatasoft portal.*"
 msgstr ""
 
 #: ../../source/dashboard/index.rst:12
@@ -42,7 +42,7 @@ msgid "what is the difference between a widget and an iframe"
 msgstr ""
 
 #: ../../source/dashboard/index.rst:17
-msgid "how to use a widget in a content page created with OpenDataSoft"
+msgid "how to use a widget in a content page created with Opendatasoft"
 msgstr ""
 
 #: ../../source/dashboard/index.rst:21
@@ -52,7 +52,7 @@ msgstr ""
 #: ../../source/dashboard/index.rst:23
 msgid ""
 "In order to create a dashboard, you need to have access to the back office "
-"of an OpenDataSoft portal and the \"Edit all pages\" permission."
+"of an Opendatasoft portal and the \"Edit all pages\" permission."
 msgstr ""
 
 #: ../../source/dashboard/index.rst:24
@@ -163,9 +163,9 @@ msgstr ""
 #: ../../source/dashboard/index.rst:130
 msgid ""
 "A widget is a piece of code that allows anyone to integrate an interactive "
-"element directly on a webpage. In OpenDataSoft, there are several widgets "
+"element directly on a webpage. In Opendatasoft, there are several widgets "
 "which are all listed and explained in the widget documentation. Some of the "
-"most common OpenDataSoft widgets -those we will use in this tutorial- are "
+"most common Opendatasoft widgets -those we will use in this tutorial- are "
 "the visualization widgets. Each data visualizations of a published dataset "
 "is indeed available as a widget, which code is displayed below the "
 "visualization, ready to be copied!"
@@ -194,13 +194,13 @@ msgstr ""
 
 #: ../../source/dashboard/index.rst:147
 msgid ""
-"An iframe allows anyone to show OpenDataSoft content in an isolated frame, "
+"An iframe allows anyone to show Opendatasoft content in an isolated frame, "
 "independent from the rest of the page. Iframes, as opposed to widgets, are "
 "indeed all-in-one, integrated, and secure, so they can be embedded outside "
-"the OpenDataSoft environment, at the cost of interaction and customization. "
+"the Opendatasoft environment, at the cost of interaction and customization. "
 "Widgets are more customizable and interactive (i.e: several widgets on the "
 "same page can interact with each other), but can only work inside "
-"OpenDataSoft pages."
+"Opendatasoft pages."
 msgstr ""
 
 #: ../../source/dashboard/index.rst:151
@@ -216,7 +216,7 @@ msgstr ""
 
 #: ../../source/dashboard/index.rst:159
 msgid ""
-"13 + Go back to the back office, to continue to edit your OpenDataSoft "
+"13 + Go back to the back office, to continue to edit your Opendatasoft "
 "content page."
 msgstr ""
 
