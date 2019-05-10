@@ -1,15 +1,15 @@
 <template>
 
-    <footer class="ods-footer"
+    <footer class="footer-container"
         :class="{ 'ods-footer--active' : isSlideOut }">
         
-        <a class="ods-footer__logo"
+        <a class="footer-container__logo"
             href="https://www.opendatasoft.com/">
-            <img src="../../assets/img/ODS_logo_footer.svg"
+            <img src="../../assets/img/ods-logo.svg"
                 alt="Opendatasoft logo">
         </a>
 
-        <langs class="ods-footer__lang"
+        <langs class="footer-container__lang"
             :lang="lang">
         </langs>
         
@@ -36,34 +36,21 @@ export default {
 @import "../../assets/less/variables";
 @import "../../assets/less/components";
 
-.ods-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 50;
-    width: 100%;
-    height: 60px;
-    background-color: @blue-light;
+.footer-container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: @light-100;
+    border-top: 1px solid @light-300;
+    height: @footer-height;
+    width: 100%;
 }
 
-.ods-footer--active {
-    border-top: 1px solid white;
-}
-
-.ods-footer__logo {
-    margin: auto;
-    height: 40px;
-}
-
-.ods-footer__logo img {
-    height: 40px;
-}
-
-.ods-footer__lang {
-    @media (max-width: @mobile-width) {
-        display: none!important;
+.footer-container__logo {
+    margin: auto 0 auto @spacing-300;
+    img {
+        height: 24px;
+        width: auto;
     }
 }
-
 </style>

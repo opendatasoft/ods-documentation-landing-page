@@ -6,11 +6,6 @@
         <navigation :lang="lang"
             :trad="trad">
         </navigation>
-
-        <div class="ods-header__slideout-separator"></div>
-
-        <langs :lang="lang"></langs>
-
     </div>
 
 </template>
@@ -38,14 +33,13 @@ export default {
 @import "../../../assets/less/components";
 
 .ods-header__slideout {
-    top: 101px;
+    top: @header-height;
     right: -300px;
     width: 300px;
     height: 100vh;
-    background-color: @blue-light;
+    background-color: @identity-300;
     z-index: 49;
     transition: 0.5s;
-    padding-top: 15px;
     position: absolute;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
@@ -53,11 +47,6 @@ export default {
     @media (min-width: @desktop-width) {
         display: none;
     }
-}
-
-.ods-header__slideout-separator {
-    border-top: 1px solid white;
-    margin: 5px 30px;
 }
 
 .ods-header__slideout--active {

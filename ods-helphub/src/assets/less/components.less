@@ -2,10 +2,11 @@
 .default-button {
     border: none;
     background-color: white;
-    color: @blue-light;
-    padding: 5px 10px;
-    font-weight: 500;
+    color: @identity-300;
+    padding: @spacing-50*2;
     border-radius: 4px;
+    cursor: pointer;
+    font-family: @font-family;
 }
 
 // Buttons langs
@@ -32,23 +33,21 @@
 //- Container default
 .default-container {
     display: flex;
-    height: auto;
-    @media (max-width: @mobile-width) {
-        flex-direction: column;
-        padding: 20px 0 0 0;
-        margin-bottom: 60px;
-    }
+    flex-wrap: wrap;
+    justify-content: center;
+    //height: auto;
+    //@media (max-width: @mobile-width) {
+    //    flex-direction: column;
+    //    padding: 20px 0 0 0;
+    //    margin-bottom: 60px;
+    //}
     @media (min-width: @desktop-width) {
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        padding: 42px 40px 0 40px;
-        margin-bottom: 70px;
+        justify-content: flex-start;
     }
-    @media all and (-ms-high-contrast: active),
-    (-ms-high-contrast:none) {
-        width: auto
-    }
+    //@media all and (-ms-high-contrast: active),
+    //(-ms-high-contrast:none) {
+    //    width: auto
+    //}
 }
 
 //- Box style
@@ -56,13 +55,11 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    border: 1px solid lighten(@grey-border, 35%);
+    border: 1px solid @grey-border;
     background-color: @grey-bg;
-    border-radius: 8px;
+    border-radius: 4px;
     transition: 0.5s;
-    -webkit-box-shadow: 4px 4px 12px -1px lighten(@grey-border, 33%);
-    -moz-box-shadow: 4px 4px 12px -1px lighten(@grey-border, 33%);
-    box-shadow: 4px 4px 12px -1px lighten(@grey-border, 33%);
+
     @media (max-width: @mobile-width) {
         padding: 20px 20px 20px 0;
         margin: 0 auto;
