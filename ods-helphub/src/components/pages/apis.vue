@@ -1,63 +1,59 @@
 <template>
-
-    <div class="ods-container">
-
+    <div>
         <p class="ods-container__description">
             
             {{ trad.descTop[lang] }}
             
         </p>
-         
-        <boxes :lang="lang"
-            :trad="trad.searchv1"
-            :img="img.search"
-            :sizeBox="classSizeBox"
-            :sizeIcon="classSizeIcon"
-            :isHref="true"/>
-        
-        <boxes :lang="lang"
-            :trad="trad.searchv2"
-            :img="img.search"
-            :sizeBox="classSizeBox"
-            :sizeIcon="classSizeIcon"
-            :isHref="true"/>
+        <div class="ods-container">
+            <boxes :lang="lang"
+                :trad="trad.searchv1"
+                :img="img.search"
+                :sizeBox="classSizeBox"
+                :sizeIcon="classSizeIcon"
+                :isHref="true"/>
+            
+            <boxes :lang="lang"
+                :trad="trad.searchv2"
+                :img="img.search"
+                :sizeBox="classSizeBox"
+                :sizeIcon="classSizeIcon"
+                :isHref="true"/>
 
-        <boxes :lang="lang"
-            :trad="trad.csw"
-            :img="img.csw"
-            :sizeBox="classSizeBox"
-            :sizeIcon="classSizeIconSmall"
-            :isHref="true"/>
+            <boxes :lang="lang"
+                :trad="trad.csw"
+                :img="img.csw"
+                :sizeBox="classSizeBox"
+                :sizeIcon="classSizeIconSmall"
+                :isHref="true"/>
 
-        <boxes :lang="lang"
-            :trad="trad.wfs"
-            :img="img.wfs"
-            :sizeBox="classSizeBox"
-            :sizeIcon="classSizeIconSmall"
-            :isHref="true"/>
+            <boxes :lang="lang"
+                :trad="trad.wfs"
+                :img="img.wfs"
+                :sizeBox="classSizeBox"
+                :sizeIcon="classSizeIconSmall"
+                :isHref="true"/>
 
-        <boxes :lang="lang"
-            :trad="trad.odata"
-            :img="img.odata"
-            :sizeBox="classSizeBox"
-            :sizeIcon="classSizeIcon"
-            :isHref="true"/>
+            <boxes :lang="lang"
+                :trad="trad.odata"
+                :img="img.odata"
+                :sizeBox="classSizeBox"
+                :sizeIcon="classSizeIcon"
+                :isHref="true"/>
 
-        <boxes :lang="lang"
-            :trad="trad.tpf"
-            :img="img.tpf"
-            :sizeBox="classSizeBox"
-            :sizeIcon="classSizeIconMedium"
-            :isHref="true"/>
-                
+            <boxes :lang="lang"
+                :trad="trad.tpf"
+                :img="img.tpf"
+                :sizeBox="classSizeBox"
+                :sizeIcon="classSizeIconMedium"
+                :isHref="true"/>
+        </div>
         <p class="ods-container__description">
             
             {{ trad.descBottom[lang] }}
         
         </p>
-        
     </div>
-
 </template>
 
 <script>
@@ -118,10 +114,6 @@ export default {
 <style lang='less'>
 @import "../../assets/less/variables";
 @import "../../assets/less/components";
-
-.ods-container {
-    &:extend(.default-container);
-}
 
 .ods-container__description {
     color: @blue-dark;

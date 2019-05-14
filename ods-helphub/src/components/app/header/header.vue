@@ -7,21 +7,12 @@
 
             <div class="ods-header__content-block"></div>
 
-            <div class="ods-header__content-logo">
-            
             <router-link to="home"
-                class="ods-header__link-logo">
-                <img v-if="this.$route.name === 'apis'"
-                    class="ods-header__logo"
-                    src="../../../assets/img/ODS_logo_api_blanc.svg"
-                    alt="OpenDataSoft APIs Logo">
-                <img v-else
-                    class="ods-header__logo"
-                    src="../../../assets/img/ODS_logo_help_hub_blanc.svg"
-                    alt="OpenDataSoft HelpHub Logo">
+                 class="ods-header__logo">
+                <img
+                    src="../../../assets/img/ods-logo-helphub.svg"
+                    alt="Opendatasoft HelpHub Logo">
             </router-link>
-
-            </div>
 
             <div class="ods-header__content-menu-toggle">
             
@@ -93,6 +84,7 @@ export default {
 
 .ods-header {
     width: 100%;
+    height: @header-height;
     position: fixed;
     top: 0;
     left: 0;
@@ -102,34 +94,26 @@ export default {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
+        align-items: center;
     }
-}
-
-.ods-header--active {
-    border-bottom: 1px solid white;
 }
 
 
 .ods-header__brand {
-    display: flex;
-    height: 100px;
     @media (max-width: @mobile-width) {
         width: 100%;
-        justify-content: space-evenly;
+        justify-content: space-around;
+        display: flex;
+        height: 100%;
+        margin: auto 0;
     }
     @media (min-width: @desktop-width) {
         width: auto;
-        padding-left: 40px;
+        padding-left: @spacing-300;
     }
 }
 
 .ods-header__content-block {
-    min-width: 23%;
-
-    @media (max-width: 321px) {
-        min-width: 20%;    
-    }
-
     @media (min-width: @desktop-width) {
         display: none;
     }
@@ -141,13 +125,11 @@ export default {
 }
 
 .ods-header__content-menu-toggle {
-    width: 25%;
     justify-content: space-around;
 }
 
 .ods-header__link-logo {
     margin: auto 0;
-    height: 80px;
 }
 
 .ods-header__content-logo {
@@ -156,8 +138,9 @@ export default {
 
 .ods-header__menu-toggle {
     &:extend(.default-button);
-    &:extend(.default-font);
-    margin: auto auto;
+    font-size: @font-size-200;
+    line-height: @line-height-200;
+    margin: auto 0;
     &:focus {
         outline: none;
     }
@@ -172,11 +155,12 @@ export default {
 }
 
 .ods-header__logo {
-    @media (max-width: @mobile-width) {
-        height: 70px;
-    }
-    @media (min-width: @desktop-width) {
-        height: 80px;
+    margin: auto 0;
+
+    img {
+        height: 26px;
+        width: 140px;
+        vertical-align: middle;
     }
 }
 

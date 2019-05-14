@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019, OpenDataSoft
-# This file is distributed under the same license as the OpenDataSoft Tutorials package.
+# Copyright (C) 2019, Opendatasoft
+# This file is distributed under the same license as the Opendatasoft Tutorials package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
@@ -9,7 +9,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenDataSoft Tutorials 1.0\n"
+"Project-Id-Version: Opendatasoft Tutorials 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-08 10:37+0100\n"
 "PO-Revision-Date: 2019-01-08 09:37+0000\n"
@@ -37,28 +37,28 @@ msgstr ""
 
 #: ../../source/guidelines.rst:10
 msgid ""
-"★☆☆ **Beginner**: no specific knowledge of the OpenDataSoft platform "
+"★☆☆ **Beginner**: no specific knowledge of the Opendatasoft platform "
 "required. Every step and element will be explained in details, although only"
 " a few technical elements will be introduced. The Beginner level is for "
-"anyone who wants to discover more technical features of the OpenDataSoft "
+"anyone who wants to discover more technical features of the Opendatasoft "
 "platform."
 msgstr ""
 "★☆☆ **Principiante**: no se necesita ningún conocimiento específico de la "
-"plataforma OpenDataSoft. Todos los pasos y elementos se explicarán de forma "
+"plataforma Opendatasoft. Todos los pasos y elementos se explicarán de forma "
 "detallada, aunque solo se introducirán unos cuantos elementos técnicos. El "
 "nivel Principiante es para cualquier usuario que desee descubrir más "
-"características técnicas de la plataforma OpenDataSoft."
+"características técnicas de la plataforma Opendatasoft."
 
 #: ../../source/guidelines.rst:11
 msgid ""
-"★★☆ **Intermediate**: a good knowledge of the OpenDataSoft platform is a "
+"★★☆ **Intermediate**: a good knowledge of the Opendatasoft platform is a "
 "definite plus, but no technical background is required. Technical elements "
 "(e.g. widgets, HTML, CSS) will be introduced but explained in details. The "
 "Intermediate level is great for those who have already experimented with the"
 " platform and wish to be accompanied while learning about more technical "
 "topics and elements."
 msgstr ""
-"★★☆ **Intermedio**: un buen conocimiento de la plataforma OpenDataSoft es "
+"★★☆ **Intermedio**: un buen conocimiento de la plataforma Opendatasoft es "
 "definitivamente un plus, pero no se necesita ninguna formación técnica. Se "
 "introducirán elementos técnicos (p. ej. widgets, HTML y CSS), pero se "
 "explicarán de forma detallada. El nivel Intermedio es excelente para los "
@@ -67,7 +67,7 @@ msgstr ""
 
 #: ../../source/guidelines.rst:12
 msgid ""
-"★★★ **Advanced**: a good knowledge of the OpenDataSoft platform and of the "
+"★★★ **Advanced**: a good knowledge of the Opendatasoft platform and of the "
 "basics of HTML & CSS (what they are used for, how they work, what is the "
 "logic and syntax behind them) are required. Advanced technical elements "
 "(e.g. AngularJS) will be introduced but explained in details. The Advanced "
@@ -75,7 +75,7 @@ msgid ""
 "knowledge."
 msgstr ""
 "★★★ **Avanzado**: se necesita un buen conocimiento de la plataforma "
-"OpenDataSoft y los aspectos básicos de HTML y CSS (para qué se utilizan, "
+"Opendatasoft y los aspectos básicos de HTML y CSS (para qué se utilizan, "
 "cómo funcionan, y cuál es su lógica y sintaxis). Se introducirán elementos "
 "técnicos avanzados (p. ej. AngularJS), pero se explicarán de forma "
 "detallada. El nivel Avanzado es para los usuarios con iniciativa y habilidad"

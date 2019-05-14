@@ -114,10 +114,6 @@ export default {
 @import "../../assets/less/variables";
 @import "../../assets/less/components";
 
-.ods-container {
-    &:extend(.default-container);
-}
-
 .ods-container__support {
     @media (max-width: @mobile-width) {
         text-align: center;

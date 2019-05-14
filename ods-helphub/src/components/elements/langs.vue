@@ -67,62 +67,25 @@ export default {
 @import "../../assets/less/components";
 
 .ods-lang {
-    padding: 0;
-    display: flex;
-    @media (max-width: @mobile-width) {
-        flex-direction: column;
-        width: 300px;
-        margin: 0 0 220px 0;
-        position: static;
-        height: auto;
-    }
-    @media (min-width: @desktop-width) {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        height: 100%;
-        width: auto;
-        flex-direction: row;
-        margin: 0 20px 0 0;
-    }
+    margin: 0 @spacing-300;
 }
 
 .ods-lang__item {
-    color: @blue-medium;
-    background-color: white;
-    padding: 7px;
-    border-radius: 4px;
-    font-weight: 500;
-    &:hover {
-        color:white;
-        background-color: @blue-medium;
+    font-size: @font-size-200;
+    line-height: @line-height-200;
+    color: @light-700;
+    text-transform: uppercase;
+    margin-right: @spacing-50;
+
+    &:visited {
+        color: @light-700;
     }
-    @media (max-width: @mobile-width) {
-        margin: 15px auto;
-        line-height: 25px;
-        &:first-child {
-            margin-top: 20px;
-        }
-    }
-    @media (min-width: @desktop-width) {
-        margin: auto 20px;
+    
+    &:hover,
+    &.active {
+        color: @identity-300;
     }
 }
 
-//- IE 10 / 11
-@media all and (-ms-high-contrast: active), (-ms-high-contrast:none) {
-    .ods-lang {
-        height: auto;
-        margin-bottom: 20px;
-    }
-    *::-ms-backdrop, .ods-lang {
-        margin-bottom: 15px;
-    }
-}
-
-.ods-lang__item.active {
-    background-color: @blue-medium;
-    color: white;
-}
 
 </style>

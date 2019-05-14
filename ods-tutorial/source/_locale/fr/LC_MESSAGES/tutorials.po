@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019, OpenDataSoft
-# This file is distributed under the same license as the OpenDataSoft Tutorials package.
+# Copyright (C) 2019, Opendatasoft
+# This file is distributed under the same license as the Opendatasoft Tutorials package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
@@ -10,7 +10,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenDataSoft Tutorials 1.0\n"
+"Project-Id-Version: Opendatasoft Tutorials 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-08 10:37+0100\n"
 "PO-Revision-Date: 2018-09-13 19:42+0000\n"
@@ -23,18 +23,18 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: ../../source/tutorials.rst:2
-msgid "Welcome to the tutorials of OpenDataSoft!"
-msgstr "Bienvenue dans les tutoriels d'OpenDataSoft !"
+msgid "Welcome to the tutorials of Opendatasoft!"
+msgstr "Bienvenue dans les tutoriels d'Opendatasoft !"
 
 #: ../../source/tutorials.rst:4
 msgid ""
-"This documentation contains all OpenDataSoft tutorials. They consist in a "
+"This documentation contains all Opendatasoft tutorials. They consist in a "
 "sequence of steps leading to the creation of a deliverable using the "
-"OpenDataSoft platform. Most of the time, the deliverable is an HTML page."
+"Opendatasoft platform. Most of the time, the deliverable is an HTML page."
 msgstr ""
-"Cette documentation rassemble tous les tutoriels d'OpenDataSoft. Ces "
+"Cette documentation rassemble tous les tutoriels d'Opendatasoft. Ces "
 "derniers correspondent à une séquence d'étapes menant à la création d'un "
-"élément à l'aide de la plateforme OpenDataSoft. La plupart du temps, il "
+"élément à l'aide de la plateforme Opendatasoft. La plupart du temps, il "
 "s'agit d'une page HTML."
 
 #: ../../source/tutorials.rst:6

@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019, OpenDataSoft
-# This file is distributed under the same license as the OpenDataSoft Tutorials package.
+# Copyright (C) 2019, Opendatasoft
+# This file is distributed under the same license as the Opendatasoft Tutorials package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
@@ -10,7 +10,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OpenDataSoft Tutorials 1.0\n"
+"Project-Id-Version: Opendatasoft Tutorials 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-08 10:37+0100\n"
 "PO-Revision-Date: 2018-09-13 19:34+0000\n"
@@ -33,10 +33,10 @@ msgstr "★☆☆ Beginner - tijd: 30 minuten"
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:12
 msgid ""
 "*This tutorial will teach you how to create a dashboard using 3 "
-"visualizations from a dataset published on an OpenDataSoft portal.*"
+"visualizations from a dataset published on an Opendatasoft portal.*"
 msgstr ""
 "*In deze handleiding leert u hoe u een dashboard kunt aanmaken met behulp "
-"van 3 weergaven uit een dataset die gepubliceerd is op een OpenDataSoft-"
+"van 3 weergaven uit een dataset die gepubliceerd is op een Opendatasoft-"
 "portaal.*"
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:16
@@ -56,10 +56,10 @@ msgid "what is the difference between a widget and an iframe"
 msgstr "wat het verschil is tussen een widget en een iframe"
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:21
-msgid "how to use a widget in a content page created with OpenDataSoft"
+msgid "how to use a widget in a content page created with Opendatasoft"
 msgstr ""
 "hoe u een widget kunt gebruiken in een contentpagina die is aangemaakt met "
-"OpenDataSoft"
+"Opendatasoft"
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:26
 msgid "**PREREQUISITES**"
@@ -68,10 +68,10 @@ msgstr "**VOORVEREISTEN**"
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:28
 msgid ""
 "In order to create a dashboard, you need to have access to the back office "
-"of an OpenDataSoft portal and the \"Edit all pages\" permission."
+"of an Opendatasoft portal and the \"Edit all pages\" permission."
 msgstr ""
 "Om een dashboard te kunnen aanmaken, moet u toegang hebben tot de back-"
-"office van een OpenDataSoft-portaal en moet u de toelating \"Alle pagina's "
+"office van een Opendatasoft-portaal en moet u de toelating \"Alle pagina's "
 "bewerken\" hebben."
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:29
@@ -218,19 +218,19 @@ msgstr "Neem de widget code voor een weergave"
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:159
 msgid ""
 "A widget is a piece of code that allows anyone to integrate an interactive "
-"element directly on a webpage. In OpenDataSoft, there are several widgets "
+"element directly on a webpage. In Opendatasoft, there are several widgets "
 "which are `all listed and explained in the widget documentation "
 "<https://help.opendatasoft.com/widgets/#/api/>`_. Some of the most common "
-"OpenDataSoft widgets -those we will use in this tutorial- are the "
+"Opendatasoft widgets -those we will use in this tutorial- are the "
 "visualization widgets. Each data visualization of a published dataset is "
 "indeed available as a widget, which code is displayed below the "
 "visualization, ready to be copied!"
 msgstr ""
 "Een widget is een stukje code waarmee iemand een interactief element "
-"rechtstreeks op een internetpagina kan integreren. In OpenDataSoft zijn er "
+"rechtstreeks op een internetpagina kan integreren. In Opendatasoft zijn er "
 "verschillende widgets die allemaal opgelijst en uitgelegd worden in de "
 "documentatie over widgets <https://help.opendatasoft.com/widgets/#/api/>`_. "
-"Sommige van de meest voorkomende OpenDataSoft-widgets - diegene die we in "
+"Sommige van de meest voorkomende Opendatasoft-widgets - diegene die we in "
 "deze handleiding zullen gebruiken - zijn de weergavewidgets. Elke "
 "dataweergave van een gepubliceerde dataset is inderdaad beschikbaar als een "
 "widget, waarvan de code onder de weergave staat, die klaar is om te worden "
@@ -266,30 +266,30 @@ msgstr ""
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:188
 msgid ""
-"An iframe is a way to easily and safely integrate OpenDataSoft content in an"
+"An iframe is a way to easily and safely integrate Opendatasoft content in an"
 " isolated frame, independent from the rest of the page. If you want to "
-"integrate OpenDataSoft content outside the OpenDataSoft environment, iframes"
+"integrate Opendatasoft content outside the Opendatasoft environment, iframes"
 " would be the best way to go, even though some interaction and customization"
 " work would probably be needed. Widgets could also be integrated into a page"
-" outside the OpenDataSoft environment, but know that heavy work would be "
+" outside the Opendatasoft environment, but know that heavy work would be "
 "required."
 msgstr ""
-"Een iframe is een eenvoudige en veilige manier om content van OpenDataSoft "
+"Een iframe is een eenvoudige en veilige manier om content van Opendatasoft "
 "te integreren in een losstaand kader, los van de rest van de pagina. Indien "
-"u content van OpenDataSoft wil integreren buiten de OpenDataSoft-omgeving, "
+"u content van Opendatasoft wil integreren buiten de Opendatasoft-omgeving, "
 "zijn iframes de beste manier om dit te doen, hoewel hiervoor waarschijnlijk "
 "enig interactie- en aanpassingswerk voor nodig zal zijn. Er zouden ook "
-"widgets geïntegreerd kunnen worden in een pagina buiten de OpenDataSoft-"
+"widgets geïntegreerd kunnen worden in een pagina buiten de Opendatasoft-"
 "omgeving, maar weet dat hiervoor heel wat werk nodig zal zijn."
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:190
 msgid ""
-"Since we are building a dashboard directly in an OpenDataSoft page, using "
-"OpenDataSoft widgets is the best option. In the OpenDataSoft environment, "
+"Since we are building a dashboard directly in an Opendatasoft page, using "
+"Opendatasoft widgets is the best option. In the Opendatasoft environment, "
 "they are indeed easily customizable and very interactive with other widgets."
 msgstr ""
-"Aangezien we een dashboard rechtstreeks in een OpenDataSoft-pagina bouwen, "
-"is het gebruik van OpenDataSoft-widgets de beste optie. In de OpenDataSoft-"
+"Aangezien we een dashboard rechtstreeks in een Opendatasoft-pagina bouwen, "
+"is het gebruik van Opendatasoft-widgets de beste optie. In de Opendatasoft-"
 "omgeving zijn ze immers gemakkelijk aanpasbaar en bijzonder interactief met "
 "andere widgets."
 
@@ -309,10 +309,10 @@ msgstr "Een weergave widget toevoegen aan uw pagina"
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:207
 msgid ""
-"13 + Go back to the back office, to continue to edit your OpenDataSoft "
+"13 + Go back to the back office, to continue to edit your Opendatasoft "
 "content page."
 msgstr ""
-"13 + Ga terug naar de back-office om de OpenDataSoft-contentpagina verder te"
+"13 + Ga terug naar de back-office om de Opendatasoft-contentpagina verder te"
 " bewerken."
 
 #: ../../source/dashboard/how_to_build_dashboard_part1.rst:215

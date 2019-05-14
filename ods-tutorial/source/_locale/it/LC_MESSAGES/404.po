@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2016, OpenDataSoft
-# This file is distributed under the same license as the OpenDataSoft Documentation package.
+# Copyright (C) 2016, Opendatasoft
+# This file is distributed under the same license as the Opendatasoft Documentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 #, fuzzy

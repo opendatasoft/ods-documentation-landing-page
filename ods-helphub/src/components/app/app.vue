@@ -65,8 +65,16 @@ export default {
 @import "../../assets/less/variables";
 @import "../../assets/less/components";
 
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", Helvetica;
+    font-size: 15px;
+}
+
 body {
-    &:extend(.default-font);
+    margin: 0;
 }
 
 a {
@@ -82,13 +90,14 @@ a {
 
 .ods-wrapper {
     height: 100%;
+    min-height: ~"calc(100vh - @{header-height} - @{footer-height} - 2 * @{spacing-300})";
     @media (max-width: @mobile-width) {
         width: 100%;
         margin: 120px auto 0 auto;
     }
     @media (min-width: @desktop-width) {
-        width: 870px;
-        margin: 100px auto 0 auto;
+        width: 752px;
+        margin: @header-height + @spacing-300 auto @spacing-300 auto;
     }
 }
 
