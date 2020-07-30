@@ -1,7 +1,7 @@
 <template>
 
     <div class="ods-container">
-            
+
         <boxes :lang="lang"
             :trad="trad.platform"
             :img="img.platform"
@@ -43,10 +43,17 @@
             :sizeBox="classSizeBox"
             :sizeIcon="classSizeIcon"
             :isHref="true"/>
-        
+
         <boxes :lang="lang"
             :trad="trad.support"
             :img="img.support"
+            :sizeBox="classSizeBox"
+            :sizeIcon="classSizeIcon"
+            :isHref="true"/>
+
+        <boxes :lang="lang"
+            :trad="trad.academy"
+            :img="img.discovery"
             :sizeBox="classSizeBox"
             :sizeIcon="classSizeIcon"
             :isHref="true"/>

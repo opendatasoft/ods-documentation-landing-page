@@ -57,6 +57,14 @@ export default {
         nl: "Tutorials"
     },
 
+    academy: {
+        en: "Academy",
+        fr: "Académie",
+        es: "Academy",
+        de: "Academy",
+        nl: "Academy"
+    },
+
     btn_menu: {
         en: "Help Hub",
         fr: "Help Hub",

@@ -180,6 +180,32 @@ export default {
 
     },
 
+    academy: {
+
+        title: {
+            en: "Academy",
+            es: "Academy",
+            de: "Academy",
+            nl: "Academy",
+            fr: "Académie"
+        },
+        desc: {
+            en: "Build and advance your skills as an Opendatasoft user and grow your data sharing expertise thanks to our courses and learning resources.",
+            es: "Build and advance your skills as an Opendatasoft user and grow your data sharing expertise thanks to our courses and learning resources.",
+            de: "Build and advance your skills as an Opendatasoft user and grow your data sharing expertise thanks to our courses and learning resources.",
+            nl: "Build and advance your skills as an Opendatasoft user and grow your data sharing expertise thanks to our courses and learning resources.",
+            fr: "Devenez un power user de la plateforme Opendatasoft et développez votre expertise du partage de données grâce à nos cours et nos ressources pédagogiques."
+        },
+        url: {
+            fr: "https://academy.opendatasoft.com/",
+            en: "https://academy.opendatasoft.com/page/homepage",
+            es: "https://academy.opendatasoft.com/page/homepage",
+            de: "https://academy.opendatasoft.com/page/homepage",
+            nl: "https://academy.opendatasoft.com/page/homepage"
+        }
+
+    },
+
     support: {
         title: {
             en: "Support",
