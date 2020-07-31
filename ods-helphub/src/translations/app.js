@@ -59,7 +59,7 @@ export default {
 
     academy: {
         en: "Academy",
-        fr: "Académie",
+        fr: "Academy",
         es: "Academy",
         de: "Academy",
         nl: "Academy"
