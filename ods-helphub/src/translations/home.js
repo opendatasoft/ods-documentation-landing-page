@@ -187,7 +187,7 @@ export default {
             es: "Academy",
             de: "Academy",
             nl: "Academy",
-            fr: "Académie"
+            fr: "Academy"
         },
         desc: {
             en: "Build and advance your skills as an Opendatasoft user and grow your data sharing expertise thanks to our courses and learning resources.",
