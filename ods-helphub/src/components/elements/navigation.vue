@@ -45,13 +45,6 @@
         </div>
 
         <div class="ods-header__nav-item">
-            <a href="/tutorials/en/"
-                class="ods-nav__link">
-                {{ trad.tutorials[lang] }}
-            </a>
-        </div>
-
-        <div class="ods-header__nav-item">
           <a :href="lang === 'fr' ? 'https://academy.opendatasoft.com/' : 'https://academy.opendatasoft.com/page/homepage'"
               class="ods-nav__link">
               {{ trad.academy[lang] }}

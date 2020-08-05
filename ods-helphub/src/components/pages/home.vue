@@ -38,8 +38,8 @@
             :isHref="false"/>
 
         <boxes :lang="lang"
-            :trad="trad.tutorials"
-            :img="img.tutorial"
+            :trad="trad.academy"
+            :img="img.discovery"
             :sizeBox="classSizeBox"
             :sizeIcon="classSizeIcon"
             :isHref="true"/>
@@ -51,12 +51,6 @@
             :sizeIcon="classSizeIcon"
             :isHref="true"/>
 
-        <boxes :lang="lang"
-            :trad="trad.academy"
-            :img="img.discovery"
-            :sizeBox="classSizeBox"
-            :sizeIcon="classSizeIcon"
-            :isHref="true"/>
 
     </div>
 
