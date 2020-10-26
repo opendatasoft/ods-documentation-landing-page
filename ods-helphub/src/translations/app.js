@@ -17,12 +17,12 @@ export default {
         nl: "Handleiding"
     },
 
-    discovery: {
-        en: "Discovery",
-        fr: "Discovery",
-        es: "Discovery",
-        de: "Discovery",
-        nl: "Discovery"
+    codelibrary: {
+        en: "Code Library",
+        fr: "Code Library",
+        es: "Code Library",
+        de: "Code Library",
+        nl: "Code Library"
     },
 
     faq: {

@@ -17,9 +17,9 @@
         </div>
 
         <div class="ods-header__nav-item">
-            <a href="https://discovery.opendatasoft.com/"
+            <a href="https://codelibrary.opendatasoft.com/"
                 class="ods-nav__link">
-                {{ trad.discovery[lang] }}
+                {{ trad.codelibrary[lang] }}
             </a>
         </div>
 

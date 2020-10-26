@@ -10,8 +10,8 @@
             :isHref="true"/>
 
         <boxes :lang="lang"
-            :trad="trad.discovery"
-            :img="img.discovery"
+            :trad="trad.codelibrary"
+            :img="img.codelibrary"
             :sizeBox="classSizeBox"
             :sizeIcon="classSizeIcon"
             :isHref="true"/>
@@ -39,7 +39,7 @@
 
         <boxes :lang="lang"
             :trad="trad.academy"
-            :img="img.discovery"
+            :img="img.codelibrary"
             :sizeBox="classSizeBox"
             :sizeIcon="classSizeIcon"
             :isHref="true"/>
@@ -67,7 +67,7 @@ import boxes from '../elements/boxes.vue';
 
 //- Images
 import platform from '../../assets/img/ODS_picto_platform.svg';
-import discovery from '../../assets/img/ODS_picto_discovery.svg';
+import codelibrary from '../../assets/img/ODS_picto_codelibrary.svg';
 import faq from '../../assets/img/ODS_picto_faq.svg';
 import widgets from '../../assets/img/ODS_picto_widget.svg';
 import tutorial from '../../assets/img/ODS_picto_tuto.svg';
@@ -84,7 +84,7 @@ export default {
             trad: tradHome,
             img: {
                 platform: platform,
-                discovery: discovery,
+                codelibrary: codelibrary,
                 faq: faq,
                 widgets: widgets,
                 tutorial: tutorial,

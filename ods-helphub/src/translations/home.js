@@ -50,14 +50,14 @@ export default {
 
     },
 
-    discovery: {
+    codelibrary: {
 
         title: {
-            en: "Discovery",
-            fr: "Discovery",
-            es: "Discovery",
-            de: "Discovery",
-            nl: "Discovery"
+            en: "Code library",
+            fr: "Code library",
+            es: "Code library",
+            de: "Code library",
+            nl: "Code library"
         },
         desc: {
             en: "A curated selection of demonstrations and use cases with live examples, code excerpts and tips to turn your portal into a powerhouse!",
@@ -67,11 +67,11 @@ export default {
             nl: "Een uitgelezen selectie van demonstraties en use cases met live voorbeelden, code excerpts en tips om uw portaal om te toveren tot een powerhouse!"
         },
         url: {
-            en: "https://discovery.opendatasoft.com",
-            fr: "https://discovery.opendatasoft.com",
-            es: "https://discovery.opendatasoft.com",
-            de: "https://discovery.opendatasoft.com",
-            nl: "https://discovery.opendatasoft.com"
+            en: "https://codelibrary.opendatasoft.com",
+            fr: "https://codelibrary.opendatasoft.com",
+            es: "https://codelibrary.opendatasoft.com",
+            de: "https://codelibrary.opendatasoft.com",
+            nl: "https://codelibrary.opendatasoft.com"
         }
 
     },
