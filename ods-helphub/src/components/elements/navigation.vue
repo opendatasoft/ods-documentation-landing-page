@@ -17,9 +17,9 @@
         </div>
 
         <div class="ods-header__nav-item">
-            <a href="https://discovery.opendatasoft.com/"
+            <a href="https://codelibrary.opendatasoft.com/"
                 class="ods-nav__link">
-                {{ trad.discovery[lang] }}
+                {{ trad.codelibrary[lang] }}
             </a>
         </div>
 
@@ -45,14 +45,14 @@
         </div>
 
         <div class="ods-header__nav-item">
-            <a href="/tutorials/en/"
-                class="ods-nav__link">
-                {{ trad.tutorials[lang] }}
-            </a>
+          <a :href="lang === 'fr' ? 'https://academy.opendatasoft.com/' : 'https://academy.opendatasoft.com/page/homepage'"
+              class="ods-nav__link">
+              {{ trad.academy[lang] }}
+          </a>
         </div>
 
     </div>
-    
+
 </template>
 
 <script>
