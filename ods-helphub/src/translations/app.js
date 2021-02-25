@@ -65,6 +65,14 @@ export default {
         nl: "Academy"
     },
 
+    releasenotes: {
+        en: "Release notes",
+        fr: "Notes de version",
+        es: "Notas de la versión",
+        de: "Veröffentlichungshinweise",
+        nl: "Nota's vrijgeven"
+    },
+
     btn_menu: {
         en: "Help Hub",
         fr: "Help Hub",
