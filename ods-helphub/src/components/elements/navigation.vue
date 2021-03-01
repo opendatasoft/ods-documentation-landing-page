@@ -51,7 +51,7 @@
           </a>
         </div>
 
-                <div class="ods-header__nav-item">
+        <div class="ods-header__nav-item">
             <a href="https://documentation-resources.opendatasoft.com/pages/release-notes/?headless=true"
                 class="ods-nav__link">
                 {{ trad.releasenotes[lang] }}
