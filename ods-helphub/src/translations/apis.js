@@ -64,27 +64,27 @@ export default {
         }
     },
 
-    searchv2: {
+    explorev2: {
         title: {
-            en: "ODS Search V2",
-            fr: "ODS Search V2",
-            es: "ODS Search V2",
-            de: "ODS Search V2",
-            nl: "ODS Search V2"
+            en: "Explore API V2",
+            fr: "Explore API V2",
+            es: "Explore API V2",
+            de: "Explore API V2",
+            nl: "Explore API V2"
         },
         desc: {
-            en: "Opendatasoft's search API<br>Version 2",
-            fr: "L'API de recherche Opendatasoft<br>Version 2",
-            es: "API de búsqueda de Opendatasoft<br>Versión 2",
-            de: "Search API von Opendatasoft<br>Version 2",
-            nl: "Opendatasoft's search API<br>Version 2"
+            en: "Opendatasoft's Explore API<br>Version 2",
+            fr: "L'API d'exploration Opendatasoft<br>Version 2",
+            es: "API Explore Opendatasoft<br>Versión 2",
+            de: "Explore API von Opendatasoft<br>Version 2",
+            nl: "Opendatasoft's explore API<br>Version 2"
         },
         url: {
-            en: "/apis/ods-search-v2/",
-            fr: "/apis/ods-search-v2/",
-            es: "/apis/ods-search-v2/",
-            de: "/apis/ods-search-v2/",
-            nl: "/apis/ods-search-v2/"
+            en: "/apis/ods-explore-v2/",
+            fr: "/apis/ods-explore-v2/",
+            es: "/apis/ods-explore-v2/",
+            de: "/apis/ods-explore-v2/",
+            nl: "/apis/ods-explore-v2/"
         }
     },
 
