@@ -14,7 +14,7 @@
                 :isHref="true"/>
             
             <boxes :lang="lang"
-                :trad="trad.explorev2"
+                :trad="trad.searchv2"
                 :img="img.search"
                 :sizeBox="classSizeBox"
                 :sizeIcon="classSizeIcon"
