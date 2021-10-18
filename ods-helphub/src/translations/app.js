@@ -49,14 +49,6 @@ export default {
         nl: "APIs"
     },
 
-    tutorials: {
-        en: "Tutorials",
-        fr: "Tutoriels",
-        es: "Tutoriales",
-        de: "Tutorials",
-        nl: "Tutorials"
-    },
-
     academy: {
         en: "Academy",
         fr: "Academy",
