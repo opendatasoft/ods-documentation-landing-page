@@ -8,10 +8,3 @@ This website is the entry point for the all documentations. There is 2 pages, th
     
 * Repository : https://github.com/opendatasoft/ods-documentation-landing-page/tree/master/ods-helphub
 * Website : https://www.help.opendatasoft.com
-
-## ODS Tutorials
-
-This website contains tutorials that allow users to make the best use of OpenDataSoft products.
-
-* Repository : https://github.com/opendatasoft/ods-documentation-landing-page/tree/master/ods-tutorial
-* Website : https://www.help.opendatasoft.com/tutorials/en

@@ -154,32 +154,6 @@ export default {
 
     },
 
-    tutorials: {
-
-        title: {
-            en: "Tutorials",
-            fr: "Tutoriels",
-            es: "Tutoriales",
-            de: "Tutorials",
-            nl: "Tutorials"
-        },
-        desc: {
-            en: "Discover what Opendatasoft's solution can do for you: how to publish data, design dashboards, beautiful visualisations, and much more.",
-            fr: "Découvrez ce que la solution Opendatasoft peut faire pour vous: comment publier des données, concevoir des tableaux de bord, de belles visualisations, et bien plus encore.",
-            es: "Descubra qué puede hacer por usted la solución deOpendatasoft: cómo publicar datos, diseñar paneles, bonitas visualizaciones, etc.",
-            de: "Entdecken Sie, wie die Lösung von Opendatasoft Ihnen helfen kann: erfahren Sie, wie man Daten veröffentlicht, Dashboards und tolle Visualisierungen gestaltet und vieles mehr.",
-            nl: "Ontdek wat de oplossingen van Opendatasoftvoor u kunnen doen: hoe u data kunt publiceren, dashboards kunt ontwerpen, mooie weergaves en nog veel meer."
-        },
-        url: {
-            en: "/tutorials/en/",
-            fr: "/tutorials/fr/",
-            es: "/tutorials/es/",
-            de: "/tutorials/de/",
-            nl: "/tutorials/nl/"
-        }
-
-    },
-
     academy: {
 
         title: {
