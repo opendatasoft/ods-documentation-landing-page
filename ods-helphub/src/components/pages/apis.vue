@@ -7,13 +7,6 @@
         </p>
         <div class="ods-container">
             <boxes :lang="lang"
-                :trad="trad.searchv1"
-                :img="img.search"
-                :sizeBox="classSizeBox"
-                :sizeIcon="classSizeIcon"
-                :isHref="true"/>
-            
-            <boxes :lang="lang"
                 :trad="trad.explorev2"
                 :img="img.search"
                 :sizeBox="classSizeBox"
