@@ -70,7 +70,6 @@ import platform from '../../assets/img/ODS_picto_platform.svg';
 import codelibrary from '../../assets/img/ODS_picto_codelibrary.svg';
 import faq from '../../assets/img/ODS_picto_faq.svg';
 import widgets from '../../assets/img/ODS_picto_widget.svg';
-import tutorial from '../../assets/img/ODS_picto_tuto.svg';
 import api from '../../assets/img/ODS_picto_api.svg';
 import support from '../../assets/img/ODS_logo_support.svg';
 
@@ -87,7 +86,6 @@ export default {
                 codelibrary: codelibrary,
                 faq: faq,
                 widgets: widgets,
-                tutorial: tutorial,
                 api: api,
                 support: support
             },
