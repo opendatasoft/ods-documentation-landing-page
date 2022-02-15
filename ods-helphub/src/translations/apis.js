@@ -40,6 +40,23 @@ export default {
         nl: "Gebruik deze API's om toegang te krijgen tot datasets op uw Opendatasoft-portaal of op websites van derden of integraties."
     },
 
+    deprecated: {
+        title: {
+            en: "Deprecated APIs:",
+            fr: "Obsolète APIs:",
+            es: "Obsoleto APIs:",
+            de: "Veralteter APIs:",
+            nl: "Afgeschafte APIs:"
+        },
+        desc: {
+            en: "The following APIs are deprecated: they are supported but you should not start a new project or a new integration with them.",
+            fr: "The following APIs are deprecated: they are supported but you should not start a new project or a new integration with them.",
+            es: "The following APIs are deprecated: they are supported but you should not start a new project or a new integration with them.",
+            de: "The following APIs are deprecated: they are supported but you should not start a new project or a new integration with them.",
+            nl: "The following APIs are deprecated: they are supported but you should not start a new project or a new integration with them."
+        }
+    },
+
     searchv1: {
         title: {
             en: "ODS Search V1",
