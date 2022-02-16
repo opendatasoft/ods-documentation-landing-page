@@ -123,17 +123,17 @@ export default {
 
 .ods-container__description {
     color: @blue-dark;
-    {
-        margin-bottom: 40px;
-    }
     @media (max-width: @mobile-width) {
         margin: 0 15px;
         text-align: center;
+        margin-bottom: 20px;
     }
     @media (min-width: @desktop-width) {
         text-align: initial;
         margin: 0 5px;
+        margin-bottom: 20px;
     }
+    
 }
 
 </style>
