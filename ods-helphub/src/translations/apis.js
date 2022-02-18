@@ -42,11 +42,11 @@ export default {
 
     deprecated: {
         title: {
-            en: "Deprecated APIs:",
-            fr: "Obsolète APIs:",
-            es: "Obsoleto APIs:",
-            de: "Veralteter APIs:",
-            nl: "Afgeschafte APIs:"
+            en: "Former APIs:",
+            fr: "Anciennes APIs:",
+            es: "Anterior APIs:",
+            de: "Früher APIs:",
+            nl: "Vorig APIs:"
         },
         desc: {
             en: "The following APIs are deprecated: they are supported but you should not start a new project or a new integration with them.",
