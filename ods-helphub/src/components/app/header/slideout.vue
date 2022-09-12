@@ -37,12 +37,13 @@ export default {
     right: -300px;
     width: 300px;
     height: 100vh;
-    background-color: @identity-300;
+    background-color: white;
     z-index: 49;
     transition: 0.5s;
     position: absolute;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.13);
     
     @media (min-width: @desktop-width) {
         display: none;
