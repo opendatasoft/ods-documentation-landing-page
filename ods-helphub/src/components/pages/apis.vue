@@ -1,18 +1,10 @@
 <template>
     <div>
         <p class="ods-container__description">
-            
             {{ trad.descTop[lang] }}
-            
+            {{ trad.descBottom[lang] }}
         </p>
         <div class="ods-container">
-            <boxes :lang="lang"
-                :trad="trad.searchv1"
-                :img="img.search"
-                :sizeBox="classSizeBox"
-                :sizeIcon="classSizeIcon"
-                :isHref="true"/>
-            
             <boxes :lang="lang"
                 :trad="trad.explorev2"
                 :img="img.search"
@@ -47,12 +39,24 @@
                 :sizeBox="classSizeBox"
                 :sizeIcon="classSizeIconMedium"
                 :isHref="true"/>
+           
         </div>
+
+        <h2>{{ trad.deprecated.title[lang] }}</h2>
+
         <p class="ods-container__description">
-            
-            {{ trad.descBottom[lang] }}
-        
+            {{ trad.deprecated.desc[lang] }}
         </p>
+
+        <div class="ods-container">
+            <boxes :lang="lang"
+                :trad="trad.searchv1"
+                :img="img.search"
+                :sizeBox="classSizeBox"
+                :sizeIcon="classSizeIcon"
+                :isHref="true"/>
+        </div>
+
     </div>
 </template>
 
@@ -67,6 +71,7 @@ import boxes from '../elements/boxes.vue';
 
 //- Images
 import search from '../../assets/img/ODS_logo_api_search.svg';
+import search_deprecated from '../../assets/img/ODS_logo_api_search_deprecated.svg';
 import csw from '../../assets/img/ODS_logo_CSW.svg';
 import wcs from '../../assets/img/ODS_logo_WCS.svg';
 import wfs from '../../assets/img/ODS_logo_WFS.svg';
@@ -83,6 +88,7 @@ export default {
             trad: tradApis,
             img: {
                 search: search,
+                search_deprecated: search_deprecated,
                 csw: csw,
                 wcs: wcs,
                 wfs: wfs,
@@ -117,18 +123,17 @@ export default {
 
 .ods-container__description {
     color: @blue-dark;
-    &:first-child,
-    &:last-child {
-        margin-bottom: 40px;
-    }
     @media (max-width: @mobile-width) {
         margin: 0 15px;
         text-align: center;
+        margin-bottom: 20px;
     }
     @media (min-width: @desktop-width) {
         text-align: initial;
         margin: 0 5px;
+        margin-bottom: 20px;
     }
+    
 }
 
 </style>

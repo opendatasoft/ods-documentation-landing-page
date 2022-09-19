@@ -3,13 +3,6 @@
     <div class="ods-nav">
 
         <div class="ods-header__nav-item">
-            <router-link :to="{ name : 'home', params: { lang: lang }}"
-                class="ods-nav__link">
-                Help Hub
-            </router-link>
-        </div>
-
-        <div class="ods-header__nav-item">
             <a :href="`/platform/${lang}/`"
                 class="ods-nav__link">
                 {{ trad.platform[lang] }}
@@ -108,7 +101,8 @@ export default {
     margin: auto @spacing-50/2  auto @spacing-50/2;
     font-size: .733rem;
     line-height: 1.5;
-
+    border-radius: 0;
+    border-bottom: 3px solid transparent;
     &:first-child {
         margin-left: 0;
     }
@@ -117,33 +111,38 @@ export default {
     }
 
     @media (max-width: @mobile-width) {
-        margin: @spacing-200 auto 0 auto;
+        margin: @spacing-200 auto 0 @spacing-200;
 
         &:first-child {
-            margin-left: auto;
+            margin-left: @spacing-200;
             margin-top: 0;
         }
 
         &:last-child {
             margin-right: auto;
         }
-
+        &:hover, :focus, :active, &.active {
+            color: black;
+            font-weight: 400;
+            border-radius: 0px;
+            border-bottom: 3px solid @blue-dark;
+        }
     }
 }
 
 .ods-nav__link {
-    letter-spacing: 0.8px;
     background-color: transparent;
-    color: white;
+    color: #565656;
     border: none;
     padding: 8px;
     border-radius: 4px;
     text-transform: uppercase;
     outline: none;
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 27px;
+    letter-spacing: 0.8px;
 
-    &:hover, :focus, :active, &.active {
-        background-color: @blue-medium;
-    }
 
     @media (max-width: @mobile-width) {
     }
