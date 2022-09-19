@@ -66,11 +66,11 @@ export default {
     },
 
     btn_menu: {
-        en: "Help Hub",
-        fr: "Help Hub",
-        es: "Help Hub",
-        de: "Help Hub",
-        nl: "Help Hub"
+        en: "Menu",
+        fr: "Menu",
+        es: "Menu",
+        de: "Menu",
+        nl: "Menu"
     }
 
 };

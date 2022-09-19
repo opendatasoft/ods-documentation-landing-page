@@ -10,8 +10,11 @@
             <router-link to="home"
                  class="ods-header__logo">
                 <img
-                    src="../../../assets/img/ods-logo-helphub.svg"
-                    alt="Opendatasoft HelpHub Logo">
+                    src="../../../assets/img/ods-logo-noir.svg"
+                    alt="Opendatasoft Logo">
+                <div class="ods-header__brandname">
+                    Help Center
+                </div>
             </router-link>
 
             <div class="ods-header__content-menu-toggle">
@@ -21,7 +24,15 @@
                         id="nav-button"
                         :class="{ 'ods-header__menu-toggle--active' : isSlideOut }"
                         @click="emitToggleSlideOut()">
-                    {{ trad.btn_menu[lang] }}
+                    <!-- {{ trad.btn_menu[lang] }} -->
+                    <img
+                        class="ods-header__menu-toggle__openlogo"
+                        src="../../../assets/img/apps-custo.svg"
+                        alt="Open Help Center menu">
+                    <img
+                        class="ods-header__menu-toggle__closelogo"
+                        src="../../../assets/img/close-line.svg"
+                        alt="Close Help Center menu">
                 </button>
 
             </div>
@@ -89,7 +100,10 @@ export default {
     top: 0;
     left: 0;
     z-index: 50;
-    background-color: @blue-light;
+    background-color: white;
+    color: black;
+    box-shadow: 0.0px 0.0px 13.0px 0px rgba(0, 0, 0, 0.13);
+
     @media (min-width: @desktop-width) {
         display: flex;
         flex-direction: row;
@@ -102,7 +116,7 @@ export default {
 .ods-header__brand {
     @media (max-width: @mobile-width) {
         width: 100%;
-        justify-content: space-around;
+        justify-content: space-between;
         display: flex;
         height: 100%;
         margin: auto 0;
@@ -122,6 +136,7 @@ export default {
 .ods-header__content-menu-toggle,
 .ods-header__content-logo {
     display: flex;
+    z-index: 50;
 }
 
 .ods-header__content-menu-toggle {
@@ -149,19 +164,40 @@ export default {
     }
 }
 
-.ods-header__menu-toggle--active {
-    background-color: @blue-medium!important;
-    color: white!important;
+.ods-header__menu-toggle--active .ods-header__menu-toggle__openlogo {
+    display: none;
+}
+
+.ods-header__menu-toggle__closelogo {
+    display: none;
+}
+.ods-header__menu-toggle--active .ods-header__menu-toggle__closelogo {
+    display: block;
 }
 
 .ods-header__logo {
     margin: auto 0;
+    display: flex;
+    align-items: center;
 
     img {
         height: 26px;
         width: 140px;
         vertical-align: middle;
     }
+}
+
+.ods-header__brandname {
+  min-width: 130px;
+  color: #565656;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 27px;
+  letter-spacing: 0.8px;
+  padding-left: 13px;
+  border-left: 1px solid;
+  margin-left: 13px;
+  text-align: left;
 }
 
 .ods-header__nav {
