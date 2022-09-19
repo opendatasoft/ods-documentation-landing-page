@@ -33,7 +33,8 @@ export default {
 @import "../../../assets/less/components";
 
 .ods-header__slideout {
-    top: @header-height;
+    top: 0px;
+    padding-top: @header-height;
     right: -300px;
     width: 300px;
     height: 100vh;

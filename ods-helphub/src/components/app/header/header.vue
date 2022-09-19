@@ -116,7 +116,7 @@ export default {
 .ods-header__brand {
     @media (max-width: @mobile-width) {
         width: 100%;
-        justify-content: space-around;
+        justify-content: space-between;
         display: flex;
         height: 100%;
         margin: auto 0;
@@ -136,6 +136,7 @@ export default {
 .ods-header__content-menu-toggle,
 .ods-header__content-logo {
     display: flex;
+    z-index: 50;
 }
 
 .ods-header__content-menu-toggle {
@@ -178,9 +179,7 @@ export default {
     margin: auto 0;
     display: flex;
     align-items: center;
-    @media (max-width: @mobile-width) {
-        
-    }
+
     img {
         height: 26px;
         width: 140px;
@@ -199,9 +198,6 @@ export default {
   border-left: 1px solid;
   margin-left: 13px;
   text-align: left;
-
-  @media (max-width: @mobile-width) {
-    }
 }
 
 .ods-header__nav {

@@ -102,7 +102,7 @@ export default {
     font-size: .733rem;
     line-height: 1.5;
     border-radius: 0;
-
+    border-bottom: 3px solid transparent;
     &:first-child {
         margin-left: 0;
     }
