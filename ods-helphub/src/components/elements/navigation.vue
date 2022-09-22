@@ -138,15 +138,13 @@ export default {
     border-radius: 4px;
     text-transform: uppercase;
     outline: none;
-    font-size: 15px;
-    font-weight: 200;
+    font-size: 14px;
+    font-weight: 300;
     line-height: 27px;
     letter-spacing: 0.8px;
 
-
-    @media (max-width: @mobile-width) {
-    }
-    @media (min-width: @desktop-width) {
+    &:hover, :focus, :active, &.active {
+        color: black;
     }
 }
 
