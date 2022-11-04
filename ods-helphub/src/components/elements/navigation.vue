@@ -17,13 +17,6 @@
         </div>
 
         <div class="ods-header__nav-item">
-            <a :href="`/faq-glossary/${lang}/`"
-                class="ods-nav__link">
-                {{ trad.faq[lang] }}
-            </a>
-        </div>
-
-        <div class="ods-header__nav-item">
             <a href="/widgets/#/api/"
                 class="ods-nav__link">
                 {{ trad.widgets[lang] }}
@@ -45,7 +38,7 @@
         </div>
 
         <div class="ods-header__nav-item">
-            <a href="https://documentation-resources.opendatasoft.com/pages/release-notes/?headless=true"
+            <a href="https://changes.opendatasoft.com/"
                 class="ods-nav__link">
                 {{ trad.releasenotes[lang] }}
             </a>
