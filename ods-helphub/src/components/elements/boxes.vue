@@ -127,6 +127,7 @@ export default {
 
 .ods-container__box-apis {
     min-height: 80px;
+    min-width: 350px;
 }
 
 .ods-container__box-icon {
