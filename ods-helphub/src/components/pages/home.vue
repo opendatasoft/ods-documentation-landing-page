@@ -3,8 +3,15 @@
     <div class="ods-container">
 
         <boxes :lang="lang"
-            :trad="trad.platform"
-            :img="img.platform"
+            :trad="trad.userguide"
+            :img="img.userguide"
+            :sizeBox="classSizeBox"
+            :sizeIcon="classSizeIcon"
+            :isHref="true"/>
+
+        <boxes :lang="lang"
+            :trad="trad.academy"
+            :img="img.codelibrary"
             :sizeBox="classSizeBox"
             :sizeIcon="classSizeIcon"
             :isHref="true"/>
@@ -16,12 +23,12 @@
             :sizeIcon="classSizeIcon"
             :isHref="true"/>
 
-        <boxes :lang="lang"
+        <!--boxes :lang="lang"
             :trad="trad.faq"
             :img="img.faq"
             :sizeBox="classSizeBox"
             :sizeIcon="classSizeIcon"
-            :isHref="true"/>
+            :isHref="true"/-->
 
         <boxes :lang="lang"
             :trad="trad.widgets"
@@ -38,19 +45,18 @@
             :isHref="false"/>
 
         <boxes :lang="lang"
-            :trad="trad.academy"
-            :img="img.codelibrary"
-            :sizeBox="classSizeBox"
-            :sizeIcon="classSizeIcon"
-            :isHref="true"/>
-
-        <boxes :lang="lang"
             :trad="trad.support"
             :img="img.support"
             :sizeBox="classSizeBox"
             :sizeIcon="classSizeIcon"
             :isHref="true"/>
 
+        <boxes :lang="lang"
+            :trad="trad.platform"
+            :img="img.platform"
+            :sizeBox="classSizeBox"
+            :sizeIcon="classSizeIcon"
+            :isHref="true"/>
 
     </div>
 
@@ -83,6 +89,7 @@ export default {
             trad: tradHome,
             img: {
                 platform: platform,
+                userguide: platform,
                 codelibrary: codelibrary,
                 faq: faq,
                 widgets: widgets,

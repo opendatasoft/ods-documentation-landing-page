@@ -3,10 +3,17 @@
     <div class="ods-nav">
 
         <div class="ods-header__nav-item">
-            <a :href="`/platform/${lang}/`"
+            <a :href="`https://userguide.opendatasoft.com/l/${lang}/`"
                 class="ods-nav__link">
                 {{ trad.platform[lang] }}
             </a>
+        </div>
+
+        <div class="ods-header__nav-item">
+          <a :href="lang === 'fr' ? 'https://academy.opendatasoft.com/' : 'https://academy.opendatasoft.com/page/homepage'"
+              class="ods-nav__link">
+              {{ trad.academy[lang] }}
+          </a>
         </div>
 
         <div class="ods-header__nav-item">
@@ -28,13 +35,6 @@
                 class="ods-nav__link">
                 {{ trad.apis[lang] }}
             </router-link>
-        </div>
-
-        <div class="ods-header__nav-item">
-          <a :href="lang === 'fr' ? 'https://academy.opendatasoft.com/' : 'https://academy.opendatasoft.com/page/homepage'"
-              class="ods-nav__link">
-              {{ trad.academy[lang] }}
-          </a>
         </div>
 
         <div class="ods-header__nav-item">

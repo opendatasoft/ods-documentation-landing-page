@@ -27,15 +27,15 @@ export default {
     platform: {
 
         title: {
-            en: "User guide",
-            fr: "Guide utilisateur",
+            en: "User guide (old)",
+            fr: "Guide utilisateur (ancienne version)",
             es: "Manual de usuario",
             de: "Bedienungsanleitung",
             nl: "Handleiding"
         },
         desc: {
-            en: "Discover what Opendatasoft's solution can do for you: how to publish data, design dashboards, beautiful visualisations, and much more.",
-            fr: "Découvrez ce que la solution Opendatasoft peut faire pour vous: comment publier des données, concevoir des tableaux de bord, de belles visualisations, et bien plus encore.",
+            en: "Soon to be deprecated",
+            fr: "Bientôt déprécié",
             es: "Descubra qué puede hacer por usted la solución deOpendatasoft: cómo publicar datos, diseñar paneles, bonitas visualizaciones, etc.",
             de: "Entdecken Sie, wie die Lösung von Opendatasoft Ihnen helfen kann: erfahren Sie, wie man Daten veröffentlicht, Dashboards und tolle Visualisierungen gestaltet und vieles mehr.",
             nl: "Ontdek wat de oplossingen van Opendatasoftvoor u kunnen doen: hoe u data kunt publiceren, dashboards kunt ontwerpen, mooie weergaves en nog veel meer."
@@ -50,6 +50,32 @@ export default {
 
     },
 
+    userguide: {
+
+        title: {
+            en: "User guide β",
+            fr: "Guide utilisateur β",
+            es: "Manual de usuario β",
+            de: "Bedienungsanleitung β",
+            nl: "Handleiding β"
+        },
+        desc: {
+            en: "Complete documentation: how to shape and share data, design experiences and build usage.",
+            fr: "Documentation complète : comment mettre en forme et partager des données, concevoir des data experiences et augmenter l'usage.",
+            es: "Descubra qué puede hacer por usted la solución de Opendatasoft: cómo publicar datos, diseñar paneles, bonitas visualizaciones, etc.",
+            de: "Entdecken Sie, wie die Lösung von Opendatasoft Ihnen helfen kann: erfahren Sie, wie man Daten veröffentlicht, Dashboards und tolle Visualisierungen gestaltet und vieles mehr.",
+            nl: "Ontdek wat de oplossingen van Opendatasoftvoor u kunnen doen: hoe u data kunt publiceren, dashboards kunt ontwerpen, mooie weergaves en nog veel meer."
+        },
+        url: {
+            en: "https://userguide.opendatasoft.com/",
+            fr: "https://userguide.opendatasoft.com/",
+            es: "https://userguide.opendatasoft.com/",
+            de: "https://userguide.opendatasoft.com/",
+            nl: "https://userguide.opendatasoft.com/"
+        }
+
+    },
+
     codelibrary: {
 
         title: {
@@ -60,8 +86,8 @@ export default {
             nl: "Code library"
         },
         desc: {
-            en: "A curated selection of demonstrations and use cases with live examples, code excerpts and tips to turn your portal into a powerhouse!",
-            fr: "Une sélection de démonstrations et de cas d'utilisation avec des exemples en direct, des extraits de code et des conseils pour rendre votre portail ultra-dynamique !",
+            en: "A curated selection of demonstrations and use cases with live examples, code snippets and tips to turn your portal into a powerhouse!",
+            fr: "Une sélection de démonstrations et de cas d'utilisation avec des exemples dynamiques, des extraits de code et des conseils pour rendre votre portail ultra-dynamique !",
             es: "Una selección exclusiva de demostraciones y casos de uso con ejemplos en vivo, fragmentos de código y consejos para convertir su portal en un centro neurálgico de comunicación !",
             de: "Eine hilfreiche Auswahl an Demonstrationen und Anwendungsfällen mit konkreten Beispielen, Code-Auszügen und Tipps, um das Beste aus Ihrem Portal herauszuholen!",
             nl: "Een uitgelezen selectie van demonstraties en use cases met live voorbeelden, code excerpts en tips om uw portaal om te toveren tot een powerhouse!"
