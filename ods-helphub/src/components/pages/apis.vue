@@ -41,12 +41,13 @@
                 :isHref="true"/>
            
         </div>
+        <div class="ods-container__description">
+            <h2>{{ trad.deprecated.title[lang] }}</h2>
 
-        <h2>{{ trad.deprecated.title[lang] }}</h2>
-
-        <p class="ods-container__description">
-            {{ trad.deprecated.desc[lang] }}
-        </p>
+            <p class="ods-container__description">
+                {{ trad.deprecated.desc[lang] }}
+            </p>
+        </div>
 
         <div class="ods-container">
             <boxes :lang="lang"
@@ -125,12 +126,12 @@ export default {
     color: @blue-dark;
     @media (max-width: @mobile-width) {
         margin: 0 15px;
-        text-align: center;
+        text-align: left;
         margin-bottom: 20px;
     }
     @media (min-width: @desktop-width) {
         text-align: initial;
-        margin: 0 5px;
+        margin: 0;
         margin-bottom: 20px;
     }
     
