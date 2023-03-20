@@ -23,13 +23,6 @@
             :sizeIcon="classSizeIcon"
             :isHref="true"/>
 
-        <!--boxes :lang="lang"
-            :trad="trad.faq"
-            :img="img.faq"
-            :sizeBox="classSizeBox"
-            :sizeIcon="classSizeIcon"
-            :isHref="true"/-->
-
         <boxes :lang="lang"
             :trad="trad.widgets"
             :img="img.widgets"
@@ -47,13 +40,6 @@
         <boxes :lang="lang"
             :trad="trad.support"
             :img="img.support"
-            :sizeBox="classSizeBox"
-            :sizeIcon="classSizeIcon"
-            :isHref="true"/>
-
-        <boxes :lang="lang"
-            :trad="trad.platform"
-            :img="img.platform"
             :sizeBox="classSizeBox"
             :sizeIcon="classSizeIcon"
             :isHref="true"/>
@@ -88,7 +74,6 @@ export default {
         return {
             trad: tradHome,
             img: {
-                platform: platform,
                 userguide: platform,
                 codelibrary: codelibrary,
                 faq: faq,

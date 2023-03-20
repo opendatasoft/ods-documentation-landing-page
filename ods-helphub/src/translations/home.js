@@ -24,40 +24,14 @@ export default {
         }
     },
 
-    platform: {
-
-        title: {
-            en: "User guide (old)",
-            fr: "Guide utilisateur (ancienne version)",
-            es: "Manual de usuario",
-            de: "Bedienungsanleitung",
-            nl: "Handleiding"
-        },
-        desc: {
-            en: "Soon to be deprecated",
-            fr: "Bientôt déprécié",
-            es: "Descubra qué puede hacer por usted la solución deOpendatasoft: cómo publicar datos, diseñar paneles, bonitas visualizaciones, etc.",
-            de: "Entdecken Sie, wie die Lösung von Opendatasoft Ihnen helfen kann: erfahren Sie, wie man Daten veröffentlicht, Dashboards und tolle Visualisierungen gestaltet und vieles mehr.",
-            nl: "Ontdek wat de oplossingen van Opendatasoftvoor u kunnen doen: hoe u data kunt publiceren, dashboards kunt ontwerpen, mooie weergaves en nog veel meer."
-        },
-        url: {
-            en: "/platform/en/",
-            fr: "/platform/fr/",
-            es: "/platform/es/",
-            de: "/platform/de/",
-            nl: "/platform/nl/"
-        }
-
-    },
-
     userguide: {
 
         title: {
-            en: "User guide β",
-            fr: "Guide utilisateur β",
-            es: "Manual de usuario β",
-            de: "Bedienungsanleitung β",
-            nl: "Handleiding β"
+            en: "User guide",
+            fr: "Guide utilisateur",
+            es: "Manual de usuario",
+            de: "Bedienungsanleitung",
+            nl: "Handleiding"
         },
         desc: {
             en: "Complete documentation: how to shape and share data, design experiences and build usage.",
@@ -67,11 +41,11 @@ export default {
             nl: "Ontdek wat de oplossingen van Opendatasoftvoor u kunnen doen: hoe u data kunt publiceren, dashboards kunt ontwerpen, mooie weergaves en nog veel meer."
         },
         url: {
-            en: "https://userguide.opendatasoft.com/",
-            fr: "https://userguide.opendatasoft.com/",
-            es: "https://userguide.opendatasoft.com/",
-            de: "https://userguide.opendatasoft.com/",
-            nl: "https://userguide.opendatasoft.com/"
+            en: "https://userguide.opendatasoft.com/l/en",
+            fr: "https://userguide.opendatasoft.com/l/fr",
+            es: "https://userguide.opendatasoft.com/l/en",
+            de: "https://userguide.opendatasoft.com/l/en",
+            nl: "https://userguide.opendatasoft.com/l/en"
         }
 
     },
