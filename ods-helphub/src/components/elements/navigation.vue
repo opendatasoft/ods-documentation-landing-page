@@ -5,7 +5,7 @@
         <div class="ods-header__nav-item">
             <a :href="`https://userguide.opendatasoft.com/l/${lang}/`"
                 class="ods-nav__link">
-                {{ trad.platform[lang] }}
+                {{ trad.userguide[lang] }}
             </a>
         </div>
 
