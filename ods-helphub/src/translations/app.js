@@ -9,7 +9,7 @@ export default {
     },
 
     /* Header */
-    platform: {
+    userguide: {
         en: "User guide",
         fr: "Guide utilisateur",
         es: "Manual de usuario",
