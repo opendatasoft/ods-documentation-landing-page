@@ -13,6 +13,13 @@
                 :isHref="true"/>
 
             <boxes :lang="lang"
+                :trad="trad.automationv1"
+                :img="img.search"
+                :sizeBox="classSizeBox"
+                :sizeIcon="classSizeIcon"
+                :isHref="true"/>
+
+            <boxes :lang="lang"
                 :trad="trad.csw"
                 :img="img.csw"
                 :sizeBox="classSizeBox"
