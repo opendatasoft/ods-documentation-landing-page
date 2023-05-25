@@ -105,6 +105,30 @@ export default {
         }
     },
 
+    automationv1: {
+        title: {
+            en: "Automation API V1",
+            fr: "Automation API V1",
+            es: "Automation API V1",
+            de: "Automation API V1",
+            nl: "Automation API V1"
+        },
+        desc: {
+            en: "Opendatasoft's Automation API<br>Version 1",
+            fr: "Opendatasoft Automation API<br>Version 1",
+            es: "API Automation Opendatasoft<br>Versión 1",
+            de: "Automation API von Opendatasoft<br>Version 1",
+            nl: "Opendatasoft's Automation API<br>Version 1"
+        },
+        url: {
+            en: "/apis/ods-automation-v1/",
+            fr: "/apis/ods-automation-v1/",
+            es: "/apis/ods-automation-v1/",
+            de: "/apis/ods-automation-v1/",
+            nl: "/apis/ods-automation-v1/"
+        }
+    },
+
     csw: {
         title: {
             en: "CSW",
