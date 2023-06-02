@@ -105,6 +105,30 @@ export default {
         }
     },
 
+    automationv1: {
+        title: {
+            en: "Automation API V1",
+            fr: "Automation API V1",
+            es: "Automation API V1",
+            de: "Automation API V1",
+            nl: "Automation API V1"
+        },
+        desc: {
+            en: "Opendatasoft's Automation API<br>Version 1 - Beta",
+            fr: "Opendatasoft Automation API<br>Version 1 - Bêta",
+            es: "API Automation Opendatasoft<br>Versión 1 - Beta",
+            de: "Automation API von Opendatasoft<br>Version 1 - Beta",
+            nl: "Opendatasoft's Automation API<br>Version 1 - Beta"
+        },
+        url: {
+            en: "/apis/ods-automation-v1/",
+            fr: "/apis/ods-automation-v1/",
+            es: "/apis/ods-automation-v1/",
+            de: "/apis/ods-automation-v1/",
+            nl: "/apis/ods-automation-v1/"
+        }
+    },
+
     csw: {
         title: {
             en: "CSW",
@@ -129,7 +153,7 @@ export default {
         }
     },
 
-    wfs: {
+    wfs_v1: {
         title: {
             en: "WFS",
             fr: "WFS",
@@ -145,13 +169,38 @@ export default {
             nl: "Web Feature Service<br>Version 1.1.0"
         },
         url: {
-            en: "/apis/wfs/",
-            fr: "/apis/wfs/",
-            es: "/apis/wfs/",
-            de: "/apis/wfs/",
-            nl: "/apis/wfs/"
+            en: "/apis/wfs-v1/",
+            fr: "/apis/wfs-v1/",
+            es: "/apis/wfs-v1/",
+            de: "/apis/wfs-v1/",
+            nl: "/apis/wfs-v1/"
         }
     },
+
+    wfs_v2: {
+        title: {
+            en: "WFS",
+            fr: "WFS",
+            es: "WFS",
+            de: "WFS",
+            nl: "WFS"
+        },
+        desc: {
+            en: "Web Feature Service<br>Version 2.0.0",
+            fr: "Web Feature Service<br>Version 2.0.0",
+            es: "Web Feature Service<br>Versión 2.0.0",
+            de: "Web Feature Service<br>Version 2.0.0",
+            nl: "Web Feature Service<br>Version 2.0.0"
+        },
+        url: {
+            en: "/apis/wfs-v2/",
+            fr: "/apis/wfs-v2/",
+            es: "/apis/wfs-v2/",
+            de: "/apis/wfs-v2/",
+            nl: "/apis/wfs-v2/"
+        }
+    },
+
 
     odata: {
         title: {

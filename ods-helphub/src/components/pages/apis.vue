@@ -13,6 +13,13 @@
                 :isHref="true"/>
 
             <boxes :lang="lang"
+                :trad="trad.automationv1"
+                :img="img.search"
+                :sizeBox="classSizeBox"
+                :sizeIcon="classSizeIcon"
+                :isHref="true"/>
+
+            <boxes :lang="lang"
                 :trad="trad.csw"
                 :img="img.csw"
                 :sizeBox="classSizeBox"
@@ -20,7 +27,7 @@
                 :isHref="true"/>
 
             <boxes :lang="lang"
-                :trad="trad.wfs"
+                :trad="trad.wfs_v2"
                 :img="img.wfs"
                 :sizeBox="classSizeBox"
                 :sizeIcon="classSizeIconSmall"
@@ -50,12 +57,21 @@
         </div>
 
         <div class="ods-container">
+
             <boxes :lang="lang"
                 :trad="trad.searchv1"
                 :img="img.search"
                 :sizeBox="classSizeBox"
                 :sizeIcon="classSizeIcon"
                 :isHref="true"/>
+
+            <boxes :lang="lang"
+                :trad="trad.wfs_v1"
+                :img="img.wfs"
+                :sizeBox="classSizeBox"
+                :sizeIcon="classSizeIconSmall"
+                :isHref="true"/>
+
         </div>
 
     </div>
