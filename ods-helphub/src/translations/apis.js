@@ -169,11 +169,11 @@ export default {
             nl: "Web Feature Service<br>Version 1.1.0"
         },
         url: {
-            en: "/apis/wfs/v1",
-            fr: "/apis/wfs/v1",
-            es: "/apis/wfs/v1",
-            de: "/apis/wfs/v1",
-            nl: "/apis/wfs/v1"
+            en: "/apis/wfs-v1",
+            fr: "/apis/wfs-v1",
+            es: "/apis/wfs-v1",
+            de: "/apis/wfs-v1",
+            nl: "/apis/wfs-v1"
         }
     },
 
@@ -193,11 +193,11 @@ export default {
             nl: "Web Feature Service<br>Version 2.0.0"
         },
         url: {
-            en: "/apis/wfs/v2",
-            fr: "/apis/wfs/v2",
-            es: "/apis/wfs/v2",
-            de: "/apis/wfs/v2",
-            nl: "/apis/wfs/v2"
+            en: "/apis/wfs-v2",
+            fr: "/apis/wfs-v2",
+            es: "/apis/wfs-v2",
+            de: "/apis/wfs-v2",
+            nl: "/apis/wfs-v2"
         }
     },
 
