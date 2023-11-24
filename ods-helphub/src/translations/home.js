@@ -76,6 +76,32 @@ export default {
 
     },
 
+    inspiration: {
+
+        title: {
+            en: "Get Inspired",
+            fr: "Sources d'inspiration",
+            es: "Get Inspired",
+            de: "Get Inspired",
+            nl: "Get Inspired"
+        },
+        desc: {
+            en: "What is the impact of data sharing today? Take a look at over a hundred initiatives produced by the Opendatasoft community and get inspired!",
+            fr: "A quelle(s) fin(s) le partage de données peut-il servir ? Plus d'une centaine d'exemples sont listés ici pour vous inspirer !",
+            es: "What is the impact of data sharing today? Take a look at over a hundred initiatives produced by the Opendatasoft community and get inspired!",
+            de: "What is the impact of data sharing today? Take a look at over a hundred initiatives produced by the Opendatasoft community and get inspired!",
+            nl: "What is the impact of data sharing today? Take a look at over a hundred initiatives produced by the Opendatasoft community and get inspired!"
+        },
+        url: {
+            en: "https://data.opendatasoft.com/pages/sources-inspiration/",
+            fr: "https://data.opendatasoft.com/pages/sources-inspiration/",
+            es: "https://data.opendatasoft.com/pages/sources-inspiration/",
+            de: "https://data.opendatasoft.com/pages/sources-inspiration/",
+            nl: "https://data.opendatasoft.com/pages/sources-inspiration/"
+        }
+
+    },
+
     faq: {
 
         title: {
