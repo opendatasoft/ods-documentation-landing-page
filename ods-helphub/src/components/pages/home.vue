@@ -17,6 +17,13 @@
             :isHref="true"/>
 
         <boxes :lang="lang"
+            :trad="trad.inspiration"
+            :img="img.codelibrary"
+            :sizeBox="classSizeBox"
+            :sizeIcon="classSizeIcon"
+            :isHref="true"/>
+
+        <boxes :lang="lang"
             :trad="trad.codelibrary"
             :img="img.codelibrary"
             :sizeBox="classSizeBox"
