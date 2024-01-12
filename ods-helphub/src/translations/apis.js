@@ -114,11 +114,11 @@ export default {
             nl: "Automation API V1"
         },
         desc: {
-            en: "Opendatasoft's Automation API<br>Version 1 - Beta",
-            fr: "Opendatasoft Automation API<br>Version 1 - Bêta",
-            es: "API Automation Opendatasoft<br>Versión 1 - Beta",
-            de: "Automation API von Opendatasoft<br>Version 1 - Beta",
-            nl: "Opendatasoft's Automation API<br>Version 1 - Beta"
+            en: "Opendatasoft's Automation API<br>Version 1",
+            fr: "Opendatasoft Automation API<br>Version 1",
+            es: "API Automation Opendatasoft<br>Versión 1",
+            de: "Automation API von Opendatasoft<br>Version 1",
+            nl: "Opendatasoft's Automation API<br>Version 1"
         },
         url: {
             en: "/apis/ods-automation-v1/",
